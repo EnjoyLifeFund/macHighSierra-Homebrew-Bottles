@@ -1,0 +1,10 @@
+bot bazel;git add *;git commit -m Add bazel;git push
+bot gdk-pixbuf;git add *;git commit -m Add gdk-pixbuf;git push
+bot libgcrypt;git add *;git commit -m Add libgcrypt;git push
+bot lz4;git add *;git commit -m Add lz4;git push
+bot opencv;git add *;git commit -m Add opencv;git push
+bot osquery;git add *;git commit -m Add osquery;git push
+bot pyqt;git add *;git commit -m Add pyqt;git push
+bot qt;git add *;git commit -m Add qt;git push
+bot snappy;git add *;git commit -m Add snappy;git push
+bot valgrind;git add *;git commit -m Add valgrind;git push

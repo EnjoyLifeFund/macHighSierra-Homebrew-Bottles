@@ -1,0 +1,10 @@
+bazel
+gdk-pixbuf
+libgcrypt
+lz4
+opencv
+osquery
+pyqt
+qt
+snappy
+valgrind
