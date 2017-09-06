@@ -1,21 +1,21 @@
 ==> Upgrading 1 outdated package, with result:
-pango 1.40.12
-==> Upgrading pango 
-==> Downloading https://download.gnome.org/sources/pango/1.40/pango-1.40.12.tar.xz
-==> Downloading from http://mirror.umd.edu/gnome/sources/pango/1.40/pango-1.40.12.tar.xz
-==> ./configure --disable-silent-rules --prefix=/usr/local/Cellar/pango/1.40.12 --with-html-dir=/usr/local/Cellar/pango/1.40.12/share/doc --enable-introspection=yes --enable-man --enable-static --without-xft
-==> make
-==> make install
+heroku 6.14.17
+==> Upgrading heroku 
+==> Downloading https://registry.npmjs.org/heroku-cli/-/heroku-cli-6.14.17.tgz
+==> npm install -ddd --global --build-from-source --cache=/Users/dojo/Library/Caches/Homebrew/npm_cache --prefix=/usr/local/Cellar/heroku/6.14.17/libexec /private/tmp/heroku-20170905-1085-1j1jkro/package/heroku-cli-6.14.17.tgz
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall pango`
-🍺  /usr/local/Cellar/pango/1.40.12: 105 files, 4.5MB, built in 1 minute 20 seconds
-==> Determining pango bottle rebuild...
-==> Bottling pango-1.40.12.high_sierra.bottle.1.tar.gz...
-./pango-1.40.12.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall heroku`
+🍺  /usr/local/Cellar/heroku/6.14.17: 6,400 files, 39.5MB, built in 43 seconds
+==> Determining heroku bottle rebuild...
+==> Bottling heroku-6.14.17.high_sierra.bottle.1.tar.gz...
+==> Detecting if heroku-6.14.17.high_sierra.bottle.1.tar.gz is relocatable...
+./heroku-6.14.17.high_sierra.bottle.1.tar.gz
   bottle do
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "a7def162e99dfd8d5b8d822e393e0287a38e78ba2e8bad06496e82dc3a9c2ae2" => :high_sierra
+    sha256 "0e72b8c9c8f1b03286e7910246eb2adbe36222bb6182df16267041418eb0b93c" => :high_sierra
   end
-Removing: /usr/local/Cellar/pango/1.40.11... (105 files, 4.5MB)
-==> This operation has freed approximately 4.5MB of disk space.
-==> Postinstalling pango
+Removing: /usr/local/Cellar/heroku/6.14.16... (6,400 files, 39.5MB)
+Removing: /Users/dojo/Library/Caches/Homebrew/npm_cache... (1,823 files, 14.4MB)
+==> This operation has freed approximately 54.0MB of disk space.
+==> Postinstalling heroku
