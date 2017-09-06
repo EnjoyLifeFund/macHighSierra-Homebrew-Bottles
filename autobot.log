@@ -1,26 +1,3 @@
 ==> Upgrading 1 outdated package, with result:
-rust 1.20.0
-==> Upgrading rust 
-==> Downloading https://static.rust-lang.org/dist/rustc-1.20.0-src.tar.gz
-==> ./configure --prefix=/usr/local/Cellar/rust/1.20.0 --enable-clang --release-channel=stable
-==> make
-Last 15 lines from /Users/dojo/Library/Logs/Homebrew/rust/02.make:
- Downloading bitflags v0.9.1
- Downloading log v0.3.8
- Downloading quick-error v1.2.0
-warning: spurious network error (2 tries remaining): [28] Timeout was reached (Operation too slow. Less than 10 bytes/sec transferred the last 30 seconds)
-warning: spurious network error (1 tries remaining): [7] Couldn't connect to server
-error: unable to get packages from source
-
-Caused by:
-  [7] Couldn't connect to server
-thread 'main' panicked at 'command did not execute successfully: "/private/tmp/rust-20170906-31620-f4j2ur/rustc-1.20.0-src/build/x86_64-apple-darwin/stage0/bin/cargo" "metadata" "--format-version" "1" "--manifest-path" "/private/tmp/rust-20170906-31620-f4j2ur/rustc-1.20.0-src/src/libstd/Cargo.toml"
-expected success, got: exit code: 101', src/build_helper/lib.rs:138
-note: Run with `RUST_BACKTRACE=1` for a backtrace.
-failed to run: /private/tmp/rust-20170906-31620-f4j2ur/rustc-1.20.0-src/build/bootstrap/debug/bootstrap build
-Build completed unsuccessfully in 0:02:30
-make: *** [all] Error 1
-
-Do not report this issue to Homebrew/brew or Homebrew/core!
-
-==> Postinstalling rust
+valgrind 3.13.0
+==> Postinstalling valgrind
