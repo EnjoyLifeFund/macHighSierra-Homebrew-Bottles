@@ -1,70 +1,66 @@
+==> Auto-updated Homebrew!
+Updated 1 tap (caskroom/cask).
+No changes to formulae.
+
 ==> Upgrading 1 outdated package, with result:
-qt 5.9.1
-==> Upgrading qt 
-==> Downloading https://download.qt.io/official_releases/qt/5.9/5.9.1/single/qt-everywhere-opensource-src-5.9.1.tar.xz
-Already downloaded: /Users/dojo/Library/Caches/Homebrew/qt-5.9.1.tar.xz
-==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/e8fe6567/qt5/restore-pc-files.patch
-Already downloaded: /Users/dojo/Library/Caches/Homebrew/qt--patch-48ff18be2f4050de7288bddbae7f47e949512ac4bcd126c2f504be2ac701158b.patch
-==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/a627e0a/qt5/QTBUG-56814.patch
-Already downloaded: /Users/dojo/Library/Caches/Homebrew/qt--patch-b18e4715fcef2992f051790d3784a54900508c93350c25b0f2228cb058567142.patch
-==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/45282b5b48/qt/high-sierra.diff
-Already downloaded: /Users/dojo/Library/Caches/Homebrew/qt--patch-d8589d747a9ce0b7b7ddf1b59c4d999bbf8a02261e047a602cff39bea151eb42.diff
+ruby 2.4.1_2
+==> Upgrading ruby --with-gmp
+==> Downloading https://cache.ruby-lang.org/pub/ruby/2.4/ruby-2.4.1.tar.bz2
+==> Downloading https://bugs.ruby-lang.org/attachments/download/6692/rubygems-2612-ruby24.patch
+==> Downloading https://bugs.ruby-lang.org/attachments/download/6693/rubygems-2613-ruby24.patch
 ==> Patching
-==> Applying restore-pc-files.patch
-patching file qtbase/mkspecs/features/qt_module.prf
-Hunk #1 succeeded at 264 (offset 19 lines).
-==> Applying QTBUG-56814.patch
-patching file qttools/src/macdeployqt/shared/shared.cpp
-patch unexpectedly ends in middle of line
-Hunk #1 succeeded at 821 with fuzz 2 (offset 18 lines).
-==> Applying high-sierra.diff
-patching file qtbase/src/gui/painting/qcoregraphics.mm
-patching file qtbase/src/gui/painting/qcoregraphics_p.h
-patching file qtconnectivity/src/bluetooth/osx/osxbtcentralmanager.mm
-patching file qtconnectivity/src/bluetooth/osx/osxbtledeviceinquiry.mm
-==> ./configure -verbose -prefix /usr/local/Cellar/qt/5.9.1 -release -opensource -confirm-license -system-zlib -qt-libpng -qt-libjpeg -qt-freetype -qt-pcre -nomake tests -no-rpath -pkg-config -dbus-runtime -nomake examples
+==> Applying rubygems-2612-ruby24.patch
+patching file lib/rubygems.rb
+patching file lib/rubygems/commands/open_command.rb
+patching file lib/rubygems/commands/query_command.rb
+patching file lib/rubygems/commands/sources_command.rb
+patching file lib/rubygems/dependency_list.rb
+patching file lib/rubygems/installer.rb
+patching file lib/rubygems/platform.rb
+patching file lib/rubygems/security.rb
+patching file lib/rubygems/server.rb
+patching file lib/rubygems/specification.rb
+patching file lib/rubygems/test_case.rb
+patching file test/rubygems/test_gem.rb
+patching file test/rubygems/test_gem_commands_open_command.rb
+patching file test/rubygems/test_gem_commands_query_command.rb
+patching file test/rubygems/test_gem_commands_sources_command.rb
+patching file test/rubygems/test_gem_installer.rb
+patching file test/rubygems/test_require.rb
+==> Applying rubygems-2613-ruby24.patch
+patching file lib/rubygems.rb
+patching file lib/rubygems/commands/query_command.rb
+patching file lib/rubygems/installer.rb
+patching file lib/rubygems/remote_fetcher.rb
+patching file lib/rubygems/specification.rb
+patching file lib/rubygems/text.rb
+patching file test/rubygems/test_gem_commands_query_command.rb
+patching file test/rubygems/test_gem_installer.rb
+patching file test/rubygems/test_gem_remote_fetcher.rb
+patching file test/rubygems/test_gem_specification.rb
+patching file test/rubygems/test_gem_text.rb
+==> ./configure --prefix=/usr/local/Cellar/ruby/2.4.1_2 --enable-shared --disable-silent-rules --with-sitedir=/usr/local/lib/ruby/site_ruby --with-vendordir=/usr/local/lib/ruby/vendor_ruby --disable-install-doc --with-opt-dir=/usr/local/opt/libyaml:/usr/local/opt/openssl:/usr/local/opt/readline:/usr/local/opt/gmp
 ==> make
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall qt`
+You can run it manually using `brew postinstall ruby`
 ==> Caveats
-We agreed to the Qt opensource license for you.
-If this is unacceptable you should uninstall.
-
-This formula is keg-only, which means it was not symlinked into /usr/local,
-because Qt 5 has CMake issues when linked.
-
-If you need to have this software first in your PATH run:
-  echo 'export PATH="/usr/local/opt/qt/bin:$PATH"' >> ~/.bash_profile
-
-For compilers to find this software you may need to set:
-    LDFLAGS:  -L/usr/local/opt/qt/lib
-    CPPFLAGS: -I/usr/local/opt/qt/include
-For pkg-config to find this software you may need to set:
-    PKG_CONFIG_PATH: /usr/local/opt/qt/lib/pkgconfig
-
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/ruby
 ==> Summary
-🍺  /usr/local/Cellar/qt/5.9.1: 9,021 files, 278.3MB, built in 339 minutes 22 seconds
+🍺  /usr/local/Cellar/ruby/2.4.1_2: 1,191 files, 15.6MB, built in 4 minutes 55 seconds
 ==> Auto-updated Homebrew!
-Updated 2 taps (caskroom/cask, homebrew/core).
-==> Updated Formulae
-cheat
-conan
-eprover
-exact-image
-eye-d3
-fabric
-harfbuzz
-sysbench
+Updated 1 tap (caskroom/drivers).
+No changes to formulae.
 
-==> Determining qt bottle rebuild...
-==> Bottling qt-5.9.1.high_sierra.bottle.1.tar.gz...
-==> Detecting if qt-5.9.1.high_sierra.bottle.1.tar.gz is relocatable...
-./qt-5.9.1.high_sierra.bottle.1.tar.gz
+==> Determining ruby bottle rebuild...
+==> Bottling ruby-2.4.1_2.high_sierra.bottle.1.tar.gz...
+==> Detecting if ruby-2.4.1_2.high_sierra.bottle.1.tar.gz is relocatable...
+./ruby-2.4.1_2.high_sierra.bottle.1.tar.gz
   bottle do
     rebuild 1
-    sha256 "58c1a14c35ab128c8b127f1cebf03942319bcc0b2f31f29520b49e396a90222b" => :high_sierra
+    sha256 "ef80dcb8b16eab7b025bec04b02e196200b54601333051109fc36032412adffd" => :high_sierra
   end
-Removing: /usr/local/Cellar/qt/5.9.0... (10,140 files, 305.7MB)
-==> This operation has freed approximately 305.7MB of disk space.
-==> Postinstalling qt
+Removing: /usr/local/Cellar/ruby/2.4.1_1... (1,192 files, 15.6MB)
+==> This operation has freed approximately 15.6MB of disk space.
+==> Postinstalling ruby
