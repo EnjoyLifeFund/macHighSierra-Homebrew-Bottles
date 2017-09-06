@@ -1,33 +1,81 @@
 ==> Upgrading 1 outdated package, with result:
-opencv 3.3.0_3
-==> Upgrading opencv 
-==> Downloading https://github.com/opencv/opencv/archive/3.3.0.tar.gz
-==> Downloading from https://codeload.github.com/opencv/opencv/tar.gz/3.3.0
-==> Downloading https://github.com/opencv/opencv_contrib/archive/3.3.0.tar.gz
-==> Downloading from https://codeload.github.com/opencv/opencv_contrib/tar.gz/3.3.0
-==> cmake .. -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/opencv/3.3.0_3 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -DCMAKE_OSX_DEPLOYMENT_TARGET= -DBUILD_JASPER=OFF -DBUILD_JPEG=ON -DBUILD_OPENEXR=OFF -DBUILD_PERF_TESTS=OFF -DBUILD_PNG=OFF -DBUILD_TESTS=OFF -DBUILD_TIFF=OFF -DBUILD_ZLIB=OFF -DBUILD_opencv_java=OFF -DOPENCV_ENABLE_NONFREE=ON -DOPENCV_EXTRA_MODULES_PATH=/private/tmp/opencv-20170905-85764-nh9ziu/opencv-3.3.0/opencv_contrib/modules -DWITH_1394=OFF -DWITH_CUDA=OFF -DWITH_EIGEN=ON -DWITH_FFMPEG=ON -DWITH_GPHOTO2=OFF -DWITH_GSTREAMER=OFF -DWITH_JASPER=OFF -DWITH_OPENEXR=ON -DWITH_OPENGL=OFF -DWITH_QT=OFF -DWITH_TBB=OFF -DWITH_VTK=OFF -DBUILD_opencv_python2=ON -DBUILD_opencv_python3=ON -DPYTHON2_EXECUTABLE=/usr/local/opt/python/libexec/bin/python -DPYTHON2_LIBRARY=/usr/local/Cellar/python/2.7.13_1/Frameworks/Python.framework/Versions/2.7/lib/libpython2.7.dylib -DPYTHON2_INCLUDE_DIR=/usr/local/Cellar/python/2.7.13_1/Frameworks/Python.framework/Versions/2.7/include/python2.7 -DPYTHON3_EXECUTABLE=/usr/local/opt/python3/bin/python3 -DPYTHON3_LIBRARY=/usr/local/opt/python3/Frameworks/Python.framework/Versions/3.6/lib/python3.6/config-3.6m-darwin/libpython3.6.dylib -DPYTHON3_INCLUDE_DIR=/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6/include/python3.6m -DENABLE_SSE41=OFF -DENABLE_SSE42=OFF -DENABLE_AVX=OFF -DENABLE_AVX2=OFF
+osquery 2.7.0_1
+==> Upgrading osquery 
+==> Installing dependencies for osquery: snappy, rocksdb
+==> Installing osquery dependency: snappy
+==> Downloading https://github.com/google/snappy/archive/1.1.7.tar.gz
+==> Downloading from https://codeload.github.com/google/snappy/tar.gz/1.1.7
+==> cmake . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/snappy/1.1.7 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev
+==> make install
+==> make clean
+==> cmake . -DBUILD_SHARED_LIBS=ON -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/snappy/1.1.7 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev
+==> make install
+🍺  /usr/local/Cellar/snappy/1.1.7: 18 files, 117.9KB, built in 31 seconds
+==> Installing osquery dependency: rocksdb
+==> Downloading https://github.com/facebook/rocksdb/archive/v5.7.3.tar.gz
+==> Downloading from https://codeload.github.com/facebook/rocksdb/tar.gz/v5.7.3
+==> make clean
+==> make static_lib
+==> make shared_lib
+==> make tools
+==> make install INSTALL_PATH=/usr/local/Cellar/rocksdb/5.7.3
+==> make clean
+==> make static_lib
+==> make shared_lib
+==> make install INSTALL_PATH=/usr/local/Cellar/rocksdb/5.7.3
+🍺  /usr/local/Cellar/rocksdb/5.7.3: 104 files, 79.2MB, built in 13 minutes 16 seconds
+==> Installing osquery
+==> Cloning https://github.com/facebook/osquery.git
+==> Checking out tag 2.7.0
+==> Downloading https://github.com/facebook/osquery/commit/c50a9b1e82f.patch?full_index=1
+==> Patching
+==> Applying c50a9b1e82f.patch
+patching file CMakeLists.txt
+==> Downloading https://github.com/aws/aws-sdk-cpp/archive/1.1.20.tar.gz
+==> Downloading from https://codeload.github.com/aws/aws-sdk-cpp/tar.gz/1.1.20
+==> cmake .. -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/osquery/2.7.0_1 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -DSTATIC_LINKING=1 -DNO_HTTP_CLIENT=1 -DMINIMIZE_SIZE=ON -DBUILD_SHARED_LIBS=OFF -DBUILD_ONLY=ec2;firehose;kinesis;sts -DCMAKE_INSTALL_PREFIX=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/aws-sdk-cpp
+==> make
+==> make install
+==> Downloading https://github.com/cpp-netlib/cpp-netlib/archive/cpp-netlib-0.12.0-final.tar.gz
+==> Downloading from https://codeload.github.com/cpp-netlib/cpp-netlib/tar.gz/cpp-netlib-0.12.0-final
+==> cmake . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/osquery/2.7.0_1 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -DCMAKE_INSTALL_PREFIX=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/cpp-netlib -DCPP-NETLIB_BUILD_TESTS=OFF -DCPP-NETLIB_BUILD_EXAMPLES=OFF
+==> make
+==> make install
+==> Downloading https://github.com/theopolis/linenoise-ng/archive/v1.0.1.tar.gz
+==> Downloading from https://codeload.github.com/theopolis/linenoise-ng/tar.gz/v1.0.1
+==> cmake .. -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/osquery/2.7.0_1 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -DCMAKE_INSTALL_PREFIX=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/linenoise -DCMAKE_CXX_FLAGS=-mno-avx -fPIC
+==> make
+==> make install
+==> Downloading https://www.apache.org/dyn/closer.cgi?path=/thrift/0.10.0/thrift-0.10.0.tar.gz
+==> Best Mirror http://mirrors.sonic.net/apache/thrift/0.10.0/thrift-0.10.0.tar.gz
+==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/66bf587/osquery/patch-thrift-0.10.diff
+==> patch -p1 -i patch-thrift-0.10.diff
+==> ./configure --prefix=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/thrift --libdir=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/thrift/lib --without-ruby --disable-tests --without-php_extension --without-haskell --without-java --without-perl --without-php --without-erlang --without-go --without-qt --without-qt4 --without-nodejs --without-python --with-cpp --with-openssl=/usr/local/opt/openssl
+==> make -j4
+==> make install
+==> Downloading https://files.pythonhosted.org/packages/c0/41/bae1254e0396c0cc8cf1751cb7d9afc90a602353695af5952530482c963f/MarkupSafe-0.23.tar.gz
+==> python setup.py install --prefix=/private/tmp/osquery-20170905-4681-81c4cy/third-party/python/ --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/5f/bd/5815d4d925a2b8cbbb4b4960f018441b0c65f24ba29f3bdcfb3c8218a307/Jinja2-2.8.1.tar.gz
+==> python setup.py install --prefix=/private/tmp/osquery-20170905-4681-81c4cy/third-party/python/ --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/d9/c8/8c7a2ab8ec108ba9ab9a4762c5a0d67c283d41b13b5ce46be81fdcae3656/psutil-5.0.1.tar.gz
+==> python setup.py install --prefix=/private/tmp/osquery-20170905-4681-81c4cy/third-party/python/ --single-version-externally-managed --record=installed.txt
+==> cmake . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/osquery/2.7.0_1 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -Daws-cpp-sdk-core_library:FILEPATH=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/aws-sdk-cpp/lib/libaws-cpp-sdk-core.a -Daws-cpp-sdk-firehose_library:FILEPATH=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/aws-sdk-cpp/lib/libaws-cpp-sdk-firehose.a -Daws-cpp-sdk-kinesis_library:FILEPATH=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/aws-sdk-cpp/lib/libaws-cpp-sdk-kinesis.a -Daws-cpp-sdk-sts_library:FILEPATH=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/aws-sdk-cpp/lib/libaws-cpp-sdk-sts.a -Dcppnetlib-client-connections_library:FILEPATH=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/cpp-netlib/lib/libcppnetlib-client-connections.a -Dcppnetlib-uri_library:FILEPATH=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/cpp-netlib/lib/libcppnetlib-uri.a -Dlinenoise_library:FILEPATH=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/linenoise/lib/liblinenoise.a -Dthrift_library:FILEPATH=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/thrift/lib/libthrift.a -DCMAKE_CXX_FLAGS_RELEASE:STRING=-DNDEBUG -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/libxml2 -I/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/aws-sdk-cpp/include -I/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/cpp-netlib/include -I/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/linenoise/include -I/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/thrift/include -Wl,-L/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/linenoise/lib
 ==> make
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall opencv`
-==> Caveats
-Python modules have been installed and Homebrew's site-packages is not
-in your Python sys.path, so you will not be able to import the modules
-this formula installed. If you plan to develop with these modules,
-please run:
-  mkdir -p /Users/dojo/Library/Python/2.7/lib/python/site-packages
-  echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> /Users/dojo/Library/Python/2.7/lib/python/site-packages/homebrew.pth
-==> Summary
-🍺  /usr/local/Cellar/opencv/3.3.0_3: 537 files, 125.2MB, built in 19 minutes 36 seconds
-==> Determining opencv bottle rebuild...
-==> Bottling opencv-3.3.0_3.high_sierra.bottle.1.tar.gz...
-==> Detecting if opencv-3.3.0_3.high_sierra.bottle.1.tar.gz is relocatable...
-./opencv-3.3.0_3.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall osquery`
+🍺  /usr/local/Cellar/osquery/2.7.0_1: 96 files, 30.2MB, built in 18 minutes 28 seconds
+==> Determining osquery bottle rebuild...
+==> Bottling osquery-2.7.0_1.high_sierra.bottle.1.tar.gz...
+==> Detecting if osquery-2.7.0_1.high_sierra.bottle.1.tar.gz is relocatable...
+./osquery-2.7.0_1.high_sierra.bottle.1.tar.gz
   bottle do
+    cellar :any
     rebuild 1
-    sha256 "1fbc3bd616f31f204dfa3788371f8820d861abc6a01d2978d74777ab9bd3fa87" => :high_sierra
+    sha256 "a67f04783c395f0f0e00ff17ab5c16d40f8d43e4745406556c54072772cd43a3" => :high_sierra
   end
-Removing: /usr/local/Cellar/opencv/3.3.0_2... (532 files, 125.0MB)
-Removing: /Users/dojo/Library/Caches/Homebrew/java_cache... (287B)
-==> This operation has freed approximately 125.0MB of disk space.
-==> Postinstalling opencv
+Removing: /usr/local/Cellar/osquery/2.6.0... (95 files, 29.8MB)
+Removing: /usr/local/Cellar/rocksdb/5.7.2... (104 files, 79.6MB)
+Removing: /usr/local/Cellar/snappy/1.1.6... (18 files, 215KB)
+==> This operation has freed approximately 109.5MB of disk space.
+==> Postinstalling osquery
