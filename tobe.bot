@@ -1,21 +1,6 @@
-apr
-apr-util
-bash-completion
 bazel
-homebrew/science/boost-compute
 cassandra
-chromedriver
-coreutils
-cython
-e2fsprogs
-gcsfuse
-gd
 gdk-pixbuf
-gnuplot
-heroku
-libgcrypt
-libmagic
-libpng
 lldpd
 opencv
 osquery
@@ -26,5 +11,4 @@ rocksdb
 ruby
 rust
 snappy
-sqlite
 valgrind

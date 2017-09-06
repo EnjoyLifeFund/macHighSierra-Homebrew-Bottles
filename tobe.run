@@ -1,31 +1,21 @@
-bot apr;git add *;git commit -m "Add apr";git push
-bot apr-util;git add *;git commit -m "Add apr-util";git push
-bot bash-completion;git add *;git commit -m "Add bash-completion";git push
-bot bazel;git add *;git commit -m "Add bazel";git push
-bot homebrew/science/boost-compute;git add *;git commit -m "Add homebrew/science/boost-compute";git push
-bot cassandra;git add *;git commit -m "Add cassandra";git push
-bot chromedriver;git add *;git commit -m "Add chromedriver";git push
-bot coreutils;git add *;git commit -m "Add coreutils";git push
-bot cython;git add *;git commit -m "Add cython";git push
-bot e2fsprogs;git add *;git commit -m "Add e2fsprogs";git push
-bot gcsfuse;git add *;git commit -m "Add gcsfuse";git push
-bot gd;git add *;git commit -m "Add gd";git push
-bot gdk-pixbuf;git add *;git commit -m "Add gdk-pixbuf";git push
-bot gnuplot;git add *;git commit -m "Add gnuplot";git push
-bot heroku;git add *;git commit -m "Add heroku";git push
-bot libgcrypt;git add *;git commit -m "Add libgcrypt";git push
-bot libmagic;git add *;git commit -m "Add libmagic";git push
-bot libpng;git add *;git commit -m "Add libpng";git push
-bot lldpd;git add *;git commit -m "Add lldpd";git push
-bot opencv;git add *;git commit -m "Add opencv";git push
-bot osquery;git add *;git commit -m "Add osquery";git push
-bot pango;git add *;git commit -m "Add pango";git push
-bot pyqt;git add *;git commit -m "Add pyqt";git push
-bot qt;git add *;git commit -m "Add qt";git push
-bot rocksdb;git add *;git commit -m "Add rocksdb";git push
-bot ruby;git add *;git commit -m "Add ruby";git push
-bot rust;git add *;git commit -m "Add rust";git push
-bot snappy;git add *;git commit -m "Add snappy";git push
-bot sqlite;git add *;git commit -m "Add sqlite";git push
-bot valgrind;git add *;git commit -m "Add valgrind";git push
+function bot() {
+brew upgrade "$@" --build-bottle
+brew install "$@" --build-bottle 
+brew bottle "$@"
+brew cleanup
+brew postinstall "$@"
+}
+bot cassandra> autobot.log;$(brew info cassandra) > message.txt;git add *;git commit -F message.txt;git push;rm autobot.log
+bot gdk-pixbuf> autobot.log;$(brew info gdk-pixbuf) > message.txt;git add *;git commit -F message.txt;git push;rm autobot.log
+bot lldpd> autobot.log;$(brew info lldpd) > message.txt;git add *;git commit -F message.txt;git push;rm autobot.log
+bot opencv> autobot.log;$(brew info opencv) > message.txt;git add *;git commit -F message.txt;git push;rm autobot.log
+bot osquery> autobot.log;$(brew info osquery) > message.txt;git add *;git commit -F message.txt;git push;rm autobot.log
+bot pango> autobot.log;$(brew info pango) > message.txt;git add *;git commit -F message.txt;git push;rm autobot.log
+bot pyqt> autobot.log;$(brew info pyqt) > message.txt;git add *;git commit -F message.txt;git push;rm autobot.log
+bot qt> autobot.log;$(brew info qt) > message.txt;git add *;git commit -F message.txt;git push;rm autobot.log
+bot rocksdb> autobot.log;$(brew info rocksdb) > message.txt;git add *;git commit -F message.txt;git push;rm autobot.log
+bot ruby> autobot.log;$(brew info ruby) > message.txt;git add *;git commit -F message.txt;git push;rm autobot.log
+bot rust> autobot.log;$(brew info rust) > message.txt;git add *;git commit -F message.txt;git push;rm autobot.log
+bot snappy> autobot.log;$(brew info snappy) > message.txt;git add *;git commit -F message.txt;git push;rm autobot.log
+bot valgrind> autobot.log;$(brew info valgrind) > message.txt;git add *;git commit -F message.txt;git push;rm autobot.log
 brew cleanup
