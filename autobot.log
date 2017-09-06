@@ -1,21 +1,70 @@
 ==> Upgrading 1 outdated package, with result:
-heroku 6.14.17
-==> Upgrading heroku 
-==> Downloading https://registry.npmjs.org/heroku-cli/-/heroku-cli-6.14.17.tgz
-==> npm install -ddd --global --build-from-source --cache=/Users/dojo/Library/Caches/Homebrew/npm_cache --prefix=/usr/local/Cellar/heroku/6.14.17/libexec /private/tmp/heroku-20170905-1085-1j1jkro/package/heroku-cli-6.14.17.tgz
+qt 5.9.1
+==> Upgrading qt 
+==> Downloading https://download.qt.io/official_releases/qt/5.9/5.9.1/single/qt-everywhere-opensource-src-5.9.1.tar.xz
+Already downloaded: /Users/dojo/Library/Caches/Homebrew/qt-5.9.1.tar.xz
+==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/e8fe6567/qt5/restore-pc-files.patch
+Already downloaded: /Users/dojo/Library/Caches/Homebrew/qt--patch-48ff18be2f4050de7288bddbae7f47e949512ac4bcd126c2f504be2ac701158b.patch
+==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/a627e0a/qt5/QTBUG-56814.patch
+Already downloaded: /Users/dojo/Library/Caches/Homebrew/qt--patch-b18e4715fcef2992f051790d3784a54900508c93350c25b0f2228cb058567142.patch
+==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/45282b5b48/qt/high-sierra.diff
+Already downloaded: /Users/dojo/Library/Caches/Homebrew/qt--patch-d8589d747a9ce0b7b7ddf1b59c4d999bbf8a02261e047a602cff39bea151eb42.diff
+==> Patching
+==> Applying restore-pc-files.patch
+patching file qtbase/mkspecs/features/qt_module.prf
+Hunk #1 succeeded at 264 (offset 19 lines).
+==> Applying QTBUG-56814.patch
+patching file qttools/src/macdeployqt/shared/shared.cpp
+patch unexpectedly ends in middle of line
+Hunk #1 succeeded at 821 with fuzz 2 (offset 18 lines).
+==> Applying high-sierra.diff
+patching file qtbase/src/gui/painting/qcoregraphics.mm
+patching file qtbase/src/gui/painting/qcoregraphics_p.h
+patching file qtconnectivity/src/bluetooth/osx/osxbtcentralmanager.mm
+patching file qtconnectivity/src/bluetooth/osx/osxbtledeviceinquiry.mm
+==> ./configure -verbose -prefix /usr/local/Cellar/qt/5.9.1 -release -opensource -confirm-license -system-zlib -qt-libpng -qt-libjpeg -qt-freetype -qt-pcre -nomake tests -no-rpath -pkg-config -dbus-runtime -nomake examples
+==> make
+==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall heroku`
-🍺  /usr/local/Cellar/heroku/6.14.17: 6,400 files, 39.5MB, built in 43 seconds
-==> Determining heroku bottle rebuild...
-==> Bottling heroku-6.14.17.high_sierra.bottle.1.tar.gz...
-==> Detecting if heroku-6.14.17.high_sierra.bottle.1.tar.gz is relocatable...
-./heroku-6.14.17.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall qt`
+==> Caveats
+We agreed to the Qt opensource license for you.
+If this is unacceptable you should uninstall.
+
+This formula is keg-only, which means it was not symlinked into /usr/local,
+because Qt 5 has CMake issues when linked.
+
+If you need to have this software first in your PATH run:
+  echo 'export PATH="/usr/local/opt/qt/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/qt/lib
+    CPPFLAGS: -I/usr/local/opt/qt/include
+For pkg-config to find this software you may need to set:
+    PKG_CONFIG_PATH: /usr/local/opt/qt/lib/pkgconfig
+
+==> Summary
+🍺  /usr/local/Cellar/qt/5.9.1: 9,021 files, 278.3MB, built in 339 minutes 22 seconds
+==> Auto-updated Homebrew!
+Updated 2 taps (caskroom/cask, homebrew/core).
+==> Updated Formulae
+cheat
+conan
+eprover
+exact-image
+eye-d3
+fabric
+harfbuzz
+sysbench
+
+==> Determining qt bottle rebuild...
+==> Bottling qt-5.9.1.high_sierra.bottle.1.tar.gz...
+==> Detecting if qt-5.9.1.high_sierra.bottle.1.tar.gz is relocatable...
+./qt-5.9.1.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
     rebuild 1
-    sha256 "0e72b8c9c8f1b03286e7910246eb2adbe36222bb6182df16267041418eb0b93c" => :high_sierra
+    sha256 "58c1a14c35ab128c8b127f1cebf03942319bcc0b2f31f29520b49e396a90222b" => :high_sierra
   end
-Removing: /usr/local/Cellar/heroku/6.14.16... (6,400 files, 39.5MB)
-Removing: /Users/dojo/Library/Caches/Homebrew/npm_cache... (1,823 files, 14.4MB)
-==> This operation has freed approximately 54.0MB of disk space.
-==> Postinstalling heroku
+Removing: /usr/local/Cellar/qt/5.9.0... (10,140 files, 305.7MB)
+==> This operation has freed approximately 305.7MB of disk space.
+==> Postinstalling qt
