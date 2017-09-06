@@ -1,20 +1,27 @@
 ==> Upgrading 1 outdated package, with result:
-gdk-pixbuf 2.36.9
-==> Upgrading gdk-pixbuf 
-==> Downloading https://download.gnome.org/sources/gdk-pixbuf/2.36/gdk-pixbuf-2.36.9.tar.xz
-Already downloaded: /Users/dojo/Library/Caches/Homebrew/gdk-pixbuf-2.36.9.tar.xz
-==> ./configure --disable-maintainer-mode --enable-debug=no --prefix=/usr/local/Cellar/gdk-pixbuf/2.36.9 --enable-introspection=yes --disable-Bsymbolic --enable-static --without-gdiplus
+lldpd 0.9.8
+==> Upgrading lldpd 
+==> Downloading https://media.luffy.cx/files/lldpd/lldpd-0.9.8.tar.gz
+==> ./configure --prefix=/usr/local/Cellar/lldpd/0.9.8 --sysconfdir=/usr/local/etc --localstatedir=/usr/local/var --with-xml --with-readline --with-privsep-chroot=/var/empty --with-privsep-user=nobody --with-privsep-group=nogroup --with-launchddaemonsdir=no CPPFLAGS=-I/usr/local/opt/readline/include -DRONLY=1 LDFLAGS=-L/usr/local/opt/readline/lib --without-snmp
 ==> make
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall gdk-pixbuf`
-🍺  /usr/local/Cellar/gdk-pixbuf/2.36.9: 198 files, 4.3MB, built in 1 minute 19 seconds
-==> Determining gdk-pixbuf bottle rebuild...
-==> Bottling gdk-pixbuf-2.36.9.high_sierra.bottle.1.tar.gz...
-==> Detecting if gdk-pixbuf-2.36.9.high_sierra.bottle.1.tar.gz is relocatable...
-./gdk-pixbuf-2.36.9.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall lldpd`
+==> Caveats
+zsh completions have been installed to:
+  /usr/local/share/zsh/site-functions
+
+To have launchd start lldpd now and restart at startup:
+  sudo brew services start lldpd
+==> Summary
+🍺  /usr/local/Cellar/lldpd/0.9.8: 26 files, 893.5KB, built in 1 minute 31 seconds
+==> Determining lldpd bottle rebuild...
+==> Bottling lldpd-0.9.8.high_sierra.bottle.1.tar.gz...
+./lldpd-0.9.8.high_sierra.bottle.1.tar.gz
   bottle do
     rebuild 1
-    sha256 "505b1b2a167b3461d846e697b7830deabe48e183a50097a689b4a476d55d483f" => :high_sierra
+    sha256 "ac31ae32a2361c6bdaef7a6f62d5fb9dad7773476f16f89ccf21d6f69696824b" => :high_sierra
   end
-Removing: /usr/local/Cellar/gdk-pixbuf/2.36.8... (85 files, 1.4MB)
+Removing: /usr/local/Cellar/lldpd/0.9.7... (26 files, 887.4KB)
+==> This operation has freed approximately 887.4KB of disk space.
+==> Postinstalling lldpd

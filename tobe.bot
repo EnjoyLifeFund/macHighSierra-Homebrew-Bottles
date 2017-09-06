@@ -1,6 +1,4 @@
 bazel
-cassandra
-gdk-pixbuf
 lldpd
 opencv
 osquery
