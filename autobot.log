@@ -1,66 +1,26 @@
-==> Auto-updated Homebrew!
-Updated 1 tap (caskroom/cask).
-No changes to formulae.
-
 ==> Upgrading 1 outdated package, with result:
-ruby 2.4.1_2
-==> Upgrading ruby --with-gmp
-==> Downloading https://cache.ruby-lang.org/pub/ruby/2.4/ruby-2.4.1.tar.bz2
-==> Downloading https://bugs.ruby-lang.org/attachments/download/6692/rubygems-2612-ruby24.patch
-==> Downloading https://bugs.ruby-lang.org/attachments/download/6693/rubygems-2613-ruby24.patch
-==> Patching
-==> Applying rubygems-2612-ruby24.patch
-patching file lib/rubygems.rb
-patching file lib/rubygems/commands/open_command.rb
-patching file lib/rubygems/commands/query_command.rb
-patching file lib/rubygems/commands/sources_command.rb
-patching file lib/rubygems/dependency_list.rb
-patching file lib/rubygems/installer.rb
-patching file lib/rubygems/platform.rb
-patching file lib/rubygems/security.rb
-patching file lib/rubygems/server.rb
-patching file lib/rubygems/specification.rb
-patching file lib/rubygems/test_case.rb
-patching file test/rubygems/test_gem.rb
-patching file test/rubygems/test_gem_commands_open_command.rb
-patching file test/rubygems/test_gem_commands_query_command.rb
-patching file test/rubygems/test_gem_commands_sources_command.rb
-patching file test/rubygems/test_gem_installer.rb
-patching file test/rubygems/test_require.rb
-==> Applying rubygems-2613-ruby24.patch
-patching file lib/rubygems.rb
-patching file lib/rubygems/commands/query_command.rb
-patching file lib/rubygems/installer.rb
-patching file lib/rubygems/remote_fetcher.rb
-patching file lib/rubygems/specification.rb
-patching file lib/rubygems/text.rb
-patching file test/rubygems/test_gem_commands_query_command.rb
-patching file test/rubygems/test_gem_installer.rb
-patching file test/rubygems/test_gem_remote_fetcher.rb
-patching file test/rubygems/test_gem_specification.rb
-patching file test/rubygems/test_gem_text.rb
-==> ./configure --prefix=/usr/local/Cellar/ruby/2.4.1_2 --enable-shared --disable-silent-rules --with-sitedir=/usr/local/lib/ruby/site_ruby --with-vendordir=/usr/local/lib/ruby/vendor_ruby --disable-install-doc --with-opt-dir=/usr/local/opt/libyaml:/usr/local/opt/openssl:/usr/local/opt/readline:/usr/local/opt/gmp
+rust 1.20.0
+==> Upgrading rust 
+==> Downloading https://static.rust-lang.org/dist/rustc-1.20.0-src.tar.gz
+==> ./configure --prefix=/usr/local/Cellar/rust/1.20.0 --enable-clang --release-channel=stable
 ==> make
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall ruby`
-==> Caveats
-Emacs Lisp files have been installed to:
-  /usr/local/share/emacs/site-lisp/ruby
-==> Summary
-🍺  /usr/local/Cellar/ruby/2.4.1_2: 1,191 files, 15.6MB, built in 4 minutes 55 seconds
-==> Auto-updated Homebrew!
-Updated 1 tap (caskroom/drivers).
-No changes to formulae.
+Last 15 lines from /Users/dojo/Library/Logs/Homebrew/rust/02.make:
+ Downloading bitflags v0.9.1
+ Downloading log v0.3.8
+ Downloading quick-error v1.2.0
+warning: spurious network error (2 tries remaining): [28] Timeout was reached (Operation too slow. Less than 10 bytes/sec transferred the last 30 seconds)
+warning: spurious network error (1 tries remaining): [7] Couldn't connect to server
+error: unable to get packages from source
 
-==> Determining ruby bottle rebuild...
-==> Bottling ruby-2.4.1_2.high_sierra.bottle.1.tar.gz...
-==> Detecting if ruby-2.4.1_2.high_sierra.bottle.1.tar.gz is relocatable...
-./ruby-2.4.1_2.high_sierra.bottle.1.tar.gz
-  bottle do
-    rebuild 1
-    sha256 "ef80dcb8b16eab7b025bec04b02e196200b54601333051109fc36032412adffd" => :high_sierra
-  end
-Removing: /usr/local/Cellar/ruby/2.4.1_1... (1,192 files, 15.6MB)
-==> This operation has freed approximately 15.6MB of disk space.
-==> Postinstalling ruby
+Caused by:
+  [7] Couldn't connect to server
+thread 'main' panicked at 'command did not execute successfully: "/private/tmp/rust-20170906-31620-f4j2ur/rustc-1.20.0-src/build/x86_64-apple-darwin/stage0/bin/cargo" "metadata" "--format-version" "1" "--manifest-path" "/private/tmp/rust-20170906-31620-f4j2ur/rustc-1.20.0-src/src/libstd/Cargo.toml"
+expected success, got: exit code: 101', src/build_helper/lib.rs:138
+note: Run with `RUST_BACKTRACE=1` for a backtrace.
+failed to run: /private/tmp/rust-20170906-31620-f4j2ur/rustc-1.20.0-src/build/bootstrap/debug/bootstrap build
+Build completed unsuccessfully in 0:02:30
+make: *** [all] Error 1
+
+Do not report this issue to Homebrew/brew or Homebrew/core!
+
+==> Postinstalling rust
