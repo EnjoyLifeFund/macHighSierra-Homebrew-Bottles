@@ -1,81 +1,21 @@
 ==> Upgrading 1 outdated package, with result:
-osquery 2.7.0_1
-==> Upgrading osquery 
-==> Installing dependencies for osquery: snappy, rocksdb
-==> Installing osquery dependency: snappy
-==> Downloading https://github.com/google/snappy/archive/1.1.7.tar.gz
-==> Downloading from https://codeload.github.com/google/snappy/tar.gz/1.1.7
-==> cmake . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/snappy/1.1.7 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev
-==> make install
-==> make clean
-==> cmake . -DBUILD_SHARED_LIBS=ON -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/snappy/1.1.7 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev
-==> make install
-🍺  /usr/local/Cellar/snappy/1.1.7: 18 files, 117.9KB, built in 31 seconds
-==> Installing osquery dependency: rocksdb
-==> Downloading https://github.com/facebook/rocksdb/archive/v5.7.3.tar.gz
-==> Downloading from https://codeload.github.com/facebook/rocksdb/tar.gz/v5.7.3
-==> make clean
-==> make static_lib
-==> make shared_lib
-==> make tools
-==> make install INSTALL_PATH=/usr/local/Cellar/rocksdb/5.7.3
-==> make clean
-==> make static_lib
-==> make shared_lib
-==> make install INSTALL_PATH=/usr/local/Cellar/rocksdb/5.7.3
-🍺  /usr/local/Cellar/rocksdb/5.7.3: 104 files, 79.2MB, built in 13 minutes 16 seconds
-==> Installing osquery
-==> Cloning https://github.com/facebook/osquery.git
-==> Checking out tag 2.7.0
-==> Downloading https://github.com/facebook/osquery/commit/c50a9b1e82f.patch?full_index=1
-==> Patching
-==> Applying c50a9b1e82f.patch
-patching file CMakeLists.txt
-==> Downloading https://github.com/aws/aws-sdk-cpp/archive/1.1.20.tar.gz
-==> Downloading from https://codeload.github.com/aws/aws-sdk-cpp/tar.gz/1.1.20
-==> cmake .. -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/osquery/2.7.0_1 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -DSTATIC_LINKING=1 -DNO_HTTP_CLIENT=1 -DMINIMIZE_SIZE=ON -DBUILD_SHARED_LIBS=OFF -DBUILD_ONLY=ec2;firehose;kinesis;sts -DCMAKE_INSTALL_PREFIX=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/aws-sdk-cpp
-==> make
-==> make install
-==> Downloading https://github.com/cpp-netlib/cpp-netlib/archive/cpp-netlib-0.12.0-final.tar.gz
-==> Downloading from https://codeload.github.com/cpp-netlib/cpp-netlib/tar.gz/cpp-netlib-0.12.0-final
-==> cmake . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/osquery/2.7.0_1 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -DCMAKE_INSTALL_PREFIX=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/cpp-netlib -DCPP-NETLIB_BUILD_TESTS=OFF -DCPP-NETLIB_BUILD_EXAMPLES=OFF
-==> make
-==> make install
-==> Downloading https://github.com/theopolis/linenoise-ng/archive/v1.0.1.tar.gz
-==> Downloading from https://codeload.github.com/theopolis/linenoise-ng/tar.gz/v1.0.1
-==> cmake .. -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/osquery/2.7.0_1 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -DCMAKE_INSTALL_PREFIX=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/linenoise -DCMAKE_CXX_FLAGS=-mno-avx -fPIC
-==> make
-==> make install
-==> Downloading https://www.apache.org/dyn/closer.cgi?path=/thrift/0.10.0/thrift-0.10.0.tar.gz
-==> Best Mirror http://mirrors.sonic.net/apache/thrift/0.10.0/thrift-0.10.0.tar.gz
-==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/66bf587/osquery/patch-thrift-0.10.diff
-==> patch -p1 -i patch-thrift-0.10.diff
-==> ./configure --prefix=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/thrift --libdir=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/thrift/lib --without-ruby --disable-tests --without-php_extension --without-haskell --without-java --without-perl --without-php --without-erlang --without-go --without-qt --without-qt4 --without-nodejs --without-python --with-cpp --with-openssl=/usr/local/opt/openssl
-==> make -j4
-==> make install
-==> Downloading https://files.pythonhosted.org/packages/c0/41/bae1254e0396c0cc8cf1751cb7d9afc90a602353695af5952530482c963f/MarkupSafe-0.23.tar.gz
-==> python setup.py install --prefix=/private/tmp/osquery-20170905-4681-81c4cy/third-party/python/ --single-version-externally-managed --record=installed.txt
-==> Downloading https://files.pythonhosted.org/packages/5f/bd/5815d4d925a2b8cbbb4b4960f018441b0c65f24ba29f3bdcfb3c8218a307/Jinja2-2.8.1.tar.gz
-==> python setup.py install --prefix=/private/tmp/osquery-20170905-4681-81c4cy/third-party/python/ --single-version-externally-managed --record=installed.txt
-==> Downloading https://files.pythonhosted.org/packages/d9/c8/8c7a2ab8ec108ba9ab9a4762c5a0d67c283d41b13b5ce46be81fdcae3656/psutil-5.0.1.tar.gz
-==> python setup.py install --prefix=/private/tmp/osquery-20170905-4681-81c4cy/third-party/python/ --single-version-externally-managed --record=installed.txt
-==> cmake . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/osquery/2.7.0_1 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -Daws-cpp-sdk-core_library:FILEPATH=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/aws-sdk-cpp/lib/libaws-cpp-sdk-core.a -Daws-cpp-sdk-firehose_library:FILEPATH=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/aws-sdk-cpp/lib/libaws-cpp-sdk-firehose.a -Daws-cpp-sdk-kinesis_library:FILEPATH=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/aws-sdk-cpp/lib/libaws-cpp-sdk-kinesis.a -Daws-cpp-sdk-sts_library:FILEPATH=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/aws-sdk-cpp/lib/libaws-cpp-sdk-sts.a -Dcppnetlib-client-connections_library:FILEPATH=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/cpp-netlib/lib/libcppnetlib-client-connections.a -Dcppnetlib-uri_library:FILEPATH=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/cpp-netlib/lib/libcppnetlib-uri.a -Dlinenoise_library:FILEPATH=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/linenoise/lib/liblinenoise.a -Dthrift_library:FILEPATH=/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/thrift/lib/libthrift.a -DCMAKE_CXX_FLAGS_RELEASE:STRING=-DNDEBUG -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/libxml2 -I/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/aws-sdk-cpp/include -I/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/cpp-netlib/include -I/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/linenoise/include -I/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/thrift/include -Wl,-L/private/tmp/osquery-20170905-4681-81c4cy/brew_vendor/linenoise/lib
+pango 1.40.12
+==> Upgrading pango 
+==> Downloading https://download.gnome.org/sources/pango/1.40/pango-1.40.12.tar.xz
+==> Downloading from http://mirror.umd.edu/gnome/sources/pango/1.40/pango-1.40.12.tar.xz
+==> ./configure --disable-silent-rules --prefix=/usr/local/Cellar/pango/1.40.12 --with-html-dir=/usr/local/Cellar/pango/1.40.12/share/doc --enable-introspection=yes --enable-man --enable-static --without-xft
 ==> make
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall osquery`
-🍺  /usr/local/Cellar/osquery/2.7.0_1: 96 files, 30.2MB, built in 18 minutes 28 seconds
-==> Determining osquery bottle rebuild...
-==> Bottling osquery-2.7.0_1.high_sierra.bottle.1.tar.gz...
-==> Detecting if osquery-2.7.0_1.high_sierra.bottle.1.tar.gz is relocatable...
-./osquery-2.7.0_1.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall pango`
+🍺  /usr/local/Cellar/pango/1.40.12: 105 files, 4.5MB, built in 1 minute 20 seconds
+==> Determining pango bottle rebuild...
+==> Bottling pango-1.40.12.high_sierra.bottle.1.tar.gz...
+./pango-1.40.12.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any
     rebuild 1
-    sha256 "a67f04783c395f0f0e00ff17ab5c16d40f8d43e4745406556c54072772cd43a3" => :high_sierra
+    sha256 "a7def162e99dfd8d5b8d822e393e0287a38e78ba2e8bad06496e82dc3a9c2ae2" => :high_sierra
   end
-Removing: /usr/local/Cellar/osquery/2.6.0... (95 files, 29.8MB)
-Removing: /usr/local/Cellar/rocksdb/5.7.2... (104 files, 79.6MB)
-Removing: /usr/local/Cellar/snappy/1.1.6... (18 files, 215KB)
-==> This operation has freed approximately 109.5MB of disk space.
-==> Postinstalling osquery
+Removing: /usr/local/Cellar/pango/1.40.11... (105 files, 4.5MB)
+==> This operation has freed approximately 4.5MB of disk space.
+==> Postinstalling pango
