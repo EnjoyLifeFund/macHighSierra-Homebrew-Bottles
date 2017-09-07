@@ -1,21 +1,63 @@
 ==> Upgrading 1 outdated package, with result:
-heroku 6.14.20
-==> Upgrading heroku 
-==> Downloading https://registry.npmjs.org/heroku-cli/-/heroku-cli-6.14.20.tgz
-==> npm install -ddd --global --build-from-source --cache=/Users/dojo/Library/Caches/Homebrew/npm_cache --prefix=/usr/local/Cellar/heroku/6.14.20/libexec /private/tmp/heroku-20170907-71040-1ggnxon/package/heroku-cli-6.14.20.tgz
+libtiff 4.0.8_4
+==> Upgrading libtiff --with-xz
+==> Downloading http://download.osgeo.org/libtiff/tiff-4.0.8.tar.gz
+==> Downloading https://mirrors.ocf.berkeley.edu/debian/pool/main/t/tiff/tiff_4.0.8-5.debian.tar.xz
+==> Patching
+==> Applying patches/01-CVE-2015-7554.patch
+patching file tools/tiffsplit.c
+==> Applying patches/02-CVE.patch
+patching file ChangeLog
+patching file libtiff/tif_color.c
+==> Applying patches/03-CVE.patch
+patching file ChangeLog
+patching file libtiff/tif_getimage.c
+==> Applying patches/04-CVE-2016-10095_CVE-2017-9147.patch
+patching file ChangeLog
+patching file libtiff/tif_dir.h
+patching file libtiff/tif_dirinfo.c
+patching file libtiff/tif_dirread.c
+==> Applying patches/05-CVE-2017-9936.patch
+patching file ChangeLog
+patching file libtiff/tif_jbig.c
+==> Applying patches/06-OOM_in_gtTileContig.patch
+patching file ChangeLog
+patching file libtiff/tif_getimage.c
+patching file libtiff/tif_read.c
+patching file libtiff/tiffiop.h
+==> Applying patches/07-CVE-2017-10688.patch
+patching file ChangeLog
+patching file libtiff/tif_dirwrite.c
+==> Applying patches/08-LZW_compression_regression.patch
+patching file ChangeLog
+patching file libtiff/tif_lzw.c
+==> Applying patches/09-CVE-2017-11335.patch
+patching file ChangeLog
+patching file tools/tiff2pdf.c
+==> Applying patches/10-CVE-2017-13726.patch
+patching file ChangeLog
+patching file libtiff/tif_dirwrite.c
+==> Applying patches/11-CVE-2017-13727.patch
+patching file ChangeLog
+patching file libtiff/tif_dirwrite.c
+==> ./configure --prefix=/usr/local/Cellar/libtiff/4.0.8_4 --without-x --with-jpeg-include-dir=/usr/local/opt/jpeg/include --with-jpeg-lib-dir=/usr/local/opt/jpeg/lib --with-lzma-include-dir=/usr/local/opt/xz/include --with-lzma-lib-dir=/usr/local/opt/xz/lib
+==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall heroku`
-🍺  /usr/local/Cellar/heroku/6.14.20: 6,691 files, 40.2MB, built in 47 seconds
-==> Determining heroku bottle rebuild...
-==> Bottling heroku-6.14.20.high_sierra.bottle.1.tar.gz...
-==> Detecting if heroku-6.14.20.high_sierra.bottle.1.tar.gz is relocatable...
-./heroku-6.14.20.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall libtiff`
+🍺  /usr/local/Cellar/libtiff/4.0.8_4: 245 files, 3.4MB, built in 1 minute 4 seconds
+==> Auto-updated Homebrew!
+Updated 1 tap (caskroom/cask).
+No changes to formulae.
+
+==> Determining libtiff bottle rebuild...
+==> Bottling libtiff-4.0.8_4.high_sierra.bottle.1.tar.gz...
+==> Detecting if libtiff-4.0.8_4.high_sierra.bottle.1.tar.gz is relocatable...
+./libtiff-4.0.8_4.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
+    cellar :any
     rebuild 1
-    sha256 "164e5436e1f7e23062eb5dca5cf2ded008ee4d4252bb1ea4055a106aa242e9e0" => :high_sierra
+    sha256 "8ee08157b53e2126572824a6a55361d6e20bf705e3f433833a87931fbc2223e0" => :high_sierra
   end
-Removing: /usr/local/Cellar/heroku/6.14.17... (6,400 files, 39.5MB)
-Removing: /Users/dojo/Library/Caches/Homebrew/npm_cache... (1,840 files, 14.5MB)
-==> This operation has freed approximately 54MB of disk space.
-==> Postinstalling heroku
+Removing: /usr/local/Cellar/libtiff/4.0.8_3... (245 files, 3.4MB)
+==> This operation has freed approximately 3.4MB of disk space.
+==> Postinstalling libtiff
