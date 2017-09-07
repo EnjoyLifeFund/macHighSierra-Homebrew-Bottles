@@ -1,63 +1,44 @@
 ==> Upgrading 1 outdated package, with result:
-libtiff 4.0.8_4
-==> Upgrading libtiff --with-xz
-==> Downloading http://download.osgeo.org/libtiff/tiff-4.0.8.tar.gz
-==> Downloading https://mirrors.ocf.berkeley.edu/debian/pool/main/t/tiff/tiff_4.0.8-5.debian.tar.xz
-==> Patching
-==> Applying patches/01-CVE-2015-7554.patch
-patching file tools/tiffsplit.c
-==> Applying patches/02-CVE.patch
-patching file ChangeLog
-patching file libtiff/tif_color.c
-==> Applying patches/03-CVE.patch
-patching file ChangeLog
-patching file libtiff/tif_getimage.c
-==> Applying patches/04-CVE-2016-10095_CVE-2017-9147.patch
-patching file ChangeLog
-patching file libtiff/tif_dir.h
-patching file libtiff/tif_dirinfo.c
-patching file libtiff/tif_dirread.c
-==> Applying patches/05-CVE-2017-9936.patch
-patching file ChangeLog
-patching file libtiff/tif_jbig.c
-==> Applying patches/06-OOM_in_gtTileContig.patch
-patching file ChangeLog
-patching file libtiff/tif_getimage.c
-patching file libtiff/tif_read.c
-patching file libtiff/tiffiop.h
-==> Applying patches/07-CVE-2017-10688.patch
-patching file ChangeLog
-patching file libtiff/tif_dirwrite.c
-==> Applying patches/08-LZW_compression_regression.patch
-patching file ChangeLog
-patching file libtiff/tif_lzw.c
-==> Applying patches/09-CVE-2017-11335.patch
-patching file ChangeLog
-patching file tools/tiff2pdf.c
-==> Applying patches/10-CVE-2017-13726.patch
-patching file ChangeLog
-patching file libtiff/tif_dirwrite.c
-==> Applying patches/11-CVE-2017-13727.patch
-patching file ChangeLog
-patching file libtiff/tif_dirwrite.c
-==> ./configure --prefix=/usr/local/Cellar/libtiff/4.0.8_4 --without-x --with-jpeg-include-dir=/usr/local/opt/jpeg/include --with-jpeg-lib-dir=/usr/local/opt/jpeg/lib --with-lzma-include-dir=/usr/local/opt/xz/include --with-lzma-lib-dir=/usr/local/opt/xz/lib
+libxml2 2.9.5
+==> Upgrading libxml2 
+==> Downloading http://xmlsoft.org/sources/libxml2-2.9.5.tar.gz
+==> autoreconf -fiv
+==> ./configure --prefix=/usr/local/Cellar/libxml2/2.9.5 --without-python --without-lzma
+==> make
 ==> make install
+==> python setup.py install --prefix=/usr/local/Cellar/libxml2/2.9.5
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall libtiff`
-🍺  /usr/local/Cellar/libtiff/4.0.8_4: 245 files, 3.4MB, built in 1 minute 4 seconds
-==> Auto-updated Homebrew!
-Updated 1 tap (caskroom/cask).
-No changes to formulae.
+You can run it manually using `brew postinstall libxml2`
+==> Caveats
+This formula is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
 
-==> Determining libtiff bottle rebuild...
-==> Bottling libtiff-4.0.8_4.high_sierra.bottle.1.tar.gz...
-==> Detecting if libtiff-4.0.8_4.high_sierra.bottle.1.tar.gz is relocatable...
-./libtiff-4.0.8_4.high_sierra.bottle.1.tar.gz
+If you need to have this software first in your PATH run:
+  echo 'export PATH="/usr/local/opt/libxml2/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/libxml2/lib
+    CPPFLAGS: -I/usr/local/opt/libxml2/include
+For pkg-config to find this software you may need to set:
+    PKG_CONFIG_PATH: /usr/local/opt/libxml2/lib/pkgconfig
+
+
+If you need Python to find bindings for this keg-only formula, run:
+  echo /usr/local/opt/libxml2/lib/python2.7/site-packages >> /usr/local/lib/python2.7/site-packages/libxml2.pth
+  mkdir -p /Users/dojo/Library/Python/2.7/lib/python/site-packages
+  echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> /Users/dojo/Library/Python/2.7/lib/python/site-packages/homebrew.pth
+==> Summary
+🍺  /usr/local/Cellar/libxml2/2.9.5: 283 files, 10.9MB, built in 1 minute 57 seconds
+==> Determining libxml2 bottle rebuild...
+==> Bottling libxml2-2.9.5.high_sierra.bottle.1.tar.gz...
+==> Detecting if libxml2-2.9.5.high_sierra.bottle.1.tar.gz is relocatable...
+./libxml2-2.9.5.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any
     rebuild 1
-    sha256 "8ee08157b53e2126572824a6a55361d6e20bf705e3f433833a87931fbc2223e0" => :high_sierra
+    sha256 "a591ceb582afe2161d4719b72996e088b96ed73977ed45eaaa2056b619399692" => :high_sierra
   end
-Removing: /usr/local/Cellar/libtiff/4.0.8_3... (245 files, 3.4MB)
-==> This operation has freed approximately 3.4MB of disk space.
-==> Postinstalling libtiff
+Removing: /usr/local/Cellar/libxml2/2.9.4_4... (283 files, 10.9MB)
+==> This operation has freed approximately 10.9MB of disk space.
+==> Postinstalling libxml2
