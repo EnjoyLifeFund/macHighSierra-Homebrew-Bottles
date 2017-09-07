@@ -1,44 +1,27 @@
 ==> Upgrading 1 outdated package, with result:
-libxml2 2.9.5
-==> Upgrading libxml2 
-==> Downloading http://xmlsoft.org/sources/libxml2-2.9.5.tar.gz
-==> autoreconf -fiv
-==> ./configure --prefix=/usr/local/Cellar/libxml2/2.9.5 --without-python --without-lzma
+mpfr 3.1.6
+==> Upgrading mpfr 
+==> Downloading https://ftp.gnu.org/gnu/mpfr/mpfr-3.1.6.tar.xz
+Already downloaded: /Users/dojo/Library/Caches/Homebrew/mpfr-3.1.6.tar.xz
+==> ./configure --prefix=/usr/local/Cellar/mpfr/3.1.6 --disable-silent-rules
 ==> make
+==> make check
 ==> make install
-==> python setup.py install --prefix=/usr/local/Cellar/libxml2/2.9.5
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall libxml2`
-==> Caveats
-This formula is keg-only, which means it was not symlinked into /usr/local,
-because macOS already provides this software and installing another version in
-parallel can cause all kinds of trouble.
+You can run it manually using `brew postinstall mpfr`
+🍺  /usr/local/Cellar/mpfr/3.1.6: 26 files, 3.6MB, built in 2 minutes 51 seconds
+==> Auto-updated Homebrew!
+Updated 1 tap (caskroom/cask).
+No changes to formulae.
 
-If you need to have this software first in your PATH run:
-  echo 'export PATH="/usr/local/opt/libxml2/bin:$PATH"' >> ~/.bash_profile
-
-For compilers to find this software you may need to set:
-    LDFLAGS:  -L/usr/local/opt/libxml2/lib
-    CPPFLAGS: -I/usr/local/opt/libxml2/include
-For pkg-config to find this software you may need to set:
-    PKG_CONFIG_PATH: /usr/local/opt/libxml2/lib/pkgconfig
-
-
-If you need Python to find bindings for this keg-only formula, run:
-  echo /usr/local/opt/libxml2/lib/python2.7/site-packages >> /usr/local/lib/python2.7/site-packages/libxml2.pth
-  mkdir -p /Users/dojo/Library/Python/2.7/lib/python/site-packages
-  echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> /Users/dojo/Library/Python/2.7/lib/python/site-packages/homebrew.pth
-==> Summary
-🍺  /usr/local/Cellar/libxml2/2.9.5: 283 files, 10.9MB, built in 1 minute 57 seconds
-==> Determining libxml2 bottle rebuild...
-==> Bottling libxml2-2.9.5.high_sierra.bottle.1.tar.gz...
-==> Detecting if libxml2-2.9.5.high_sierra.bottle.1.tar.gz is relocatable...
-./libxml2-2.9.5.high_sierra.bottle.1.tar.gz
+==> Determining mpfr bottle rebuild...
+==> Bottling mpfr-3.1.6.high_sierra.bottle.1.tar.gz...
+./mpfr-3.1.6.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any
     rebuild 1
-    sha256 "a591ceb582afe2161d4719b72996e088b96ed73977ed45eaaa2056b619399692" => :high_sierra
+    sha256 "18a859bc20be1225aceb1913a54ceaffe2819a60ab4275734f5b00184c73f9b9" => :high_sierra
   end
-Removing: /usr/local/Cellar/libxml2/2.9.4_4... (283 files, 10.9MB)
-==> This operation has freed approximately 10.9MB of disk space.
-==> Postinstalling libxml2
+Removing: /usr/local/Cellar/mpfr/3.1.5... (26 files, 3.6MB)
+==> This operation has freed approximately 3.6MB of disk space.
+==> Postinstalling mpfr
