@@ -1,27 +1,68 @@
 ==> Upgrading 1 outdated package, with result:
-mpfr 3.1.6
-==> Upgrading mpfr 
-==> Downloading https://ftp.gnu.org/gnu/mpfr/mpfr-3.1.6.tar.xz
-Already downloaded: /Users/dojo/Library/Caches/Homebrew/mpfr-3.1.6.tar.xz
-==> ./configure --prefix=/usr/local/Cellar/mpfr/3.1.6 --disable-silent-rules
+pyqt 5.9_1
+==> Upgrading pyqt 
+==> Installing dependencies for pyqt: python3
+==> Installing pyqt dependency: python3
+==> Downloading https://www.python.org/ftp/python/3.6.2/Python-3.6.2.tar.xz
+Already downloaded: /Users/dojo/Library/Caches/Homebrew/python3-3.6.2.tar.xz
+==> ./configure --prefix=/usr/local/Cellar/python3/3.6.2 --enable-ipv6 --datarootdir=/usr/local/Cellar/python3/3.6.2/share --datadir=/usr/local/Cellar/python3/3.6.2/share --enable-framework=/usr/local/Cellar/python3/3.6.2/Frameworks --without-ensurepip --with-dtrace --without-gcc --enable-loadable-sqlite-extensions MACOSX_DEPLOYMENT_TARGET=10.13
 ==> make
-==> make check
+==> make install PYTHONAPPSDIR=/usr/local/Cellar/python3/3.6.2
+==> make frameworkinstallextras PYTHONAPPSDIR=/usr/local/Cellar/python3/3.6.2/share/python3
+==> Downloading https://files.pythonhosted.org/packages/87/1a/33d3d05569e857c5c5cc3e90d197bf4d9696dc740a05f66a09599d66e5bd/setuptools-32.2.0.zip
+==> Downloading https://files.pythonhosted.org/packages/11/b6/abcb525026a4be042b486df43905d6893fb04f05aac21c32c638e939e447/pip-9.0.1.tar.gz
+==> Downloading https://files.pythonhosted.org/packages/c9/1d/bd19e691fd4cfe908c76c429fe6e4436c9e83583c4414b54f6c85471954a/wheel-0.29.0.tar.gz
+==> /usr/local/Cellar/python3/3.6.2/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/local/Cellar/python3/3.6.2/bin --install-lib=/usr/local/lib/python3.6/site-packages --single-version-externally-managed --record=installed.txt
+==> /usr/local/Cellar/python3/3.6.2/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/local/Cellar/python3/3.6.2/bin --install-lib=/usr/local/lib/python3.6/site-packages --single-version-externally-managed --record=installed.txt
+==> /usr/local/Cellar/python3/3.6.2/bin/python3 -s setup.py --no-user-cfg install --force --verbose --install-scripts=/usr/local/Cellar/python3/3.6.2/bin --install-lib=/usr/local/lib/python3.6/site-packages --single-version-externally-managed --record=installed.txt
+==> Caveats
+Pip, setuptools, and wheel have been installed. To update them
+  pip3 install --upgrade pip setuptools wheel
+
+You can install Python packages with
+  pip3 install <package>
+
+They will install into the site-package directory
+  /usr/local/lib/python3.6/site-packages
+
+See: https://docs.brew.sh/Homebrew-and-Python.html
+==> Summary
+🍺  /usr/local/Cellar/python3/3.6.2: 7,959 files, 110.3MB, built in 3 minutes 36 seconds
+==> Installing pyqt
+==> Downloading https://downloads.sourceforge.net/project/pyqt/PyQt5/PyQt-5.9/PyQt5_gpl-5.9.tar.gz
+==> Downloading from https://astuteinternet.dl.sourceforge.net/project/pyqt/PyQt5/PyQt-5.9/PyQt5_gpl-5.9.tar.gz
+==> python configure.py --confirm-license --bindir=/usr/local/Cellar/pyqt/5.9_1/bin --destdir=/usr/local/Cellar/pyqt/5.9_1/lib/python2.7/site-packages --stubsdir=/usr/local/Cellar/pyqt/5.9_1/lib/python2.7/site-packages/PyQt5 --sipdir=/usr/local/Cellar/pyqt/5.9_1/share/sip/Qt5 --sip-incdir=/usr/local/opt/sip/include --qmake=/usr/local/opt/qt/bin/qmake QMAKE_MACOSX_DEPLOYMENT_TARGET=10.13 --qml-plugindir=/usr/local/Cellar/pyqt/5.9_1/share/pyqt/plugins --verbose
+==> make
 ==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall mpfr`
-🍺  /usr/local/Cellar/mpfr/3.1.6: 26 files, 3.6MB, built in 2 minutes 51 seconds
+==> make clean
+==> python3 configure.py --confirm-license --bindir=/usr/local/Cellar/pyqt/5.9_1/bin --destdir=/usr/local/Cellar/pyqt/5.9_1/lib/python3.6/site-packages --stubsdir=/usr/local/Cellar/pyqt/5.9_1/lib/python3.6/site-packages/PyQt5 --sipdir=/usr/local/Cellar/pyqt/5.9_1/share/sip/Qt5 --sip-incdir=/usr/local/opt/sip/include --qmake=/usr/local/opt/qt/bin/qmake QMAKE_MACOSX_DEPLOYMENT_TARGET=10.13 --qml-plugindir=/usr/local/Cellar/pyqt/5.9_1/share/pyqt/plugins --verbose
+Last 15 lines from /Users/dojo/Library/Logs/Homebrew/pyqt/05.python3:
+including the following traceback, to support@riverbankcomputing.com.
+Querying qmake about your Qt installation...
+Determining the details of your Qt installation...
+/usr/local/opt/qt/bin/qmake -o cfgtest_QtCore.mk cfgtest_QtCore.pro
+make -f cfgtest_QtCore.mk
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -stdlib=libc++ -headerpad_max_install_names  -arch x86_64 -Wl,-syslibroot,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -mmacosx-version-min=10.13 -Wl,-rpath,@executable_path/Frameworks -o cfgtest_QtCore.app/Contents/MacOS/cfgtest_QtCore cfgtest_QtCore.o   -F/usr/local/Cellar/qt/5.9.1/lib -framework QtCore -framework DiskArbitration -framework IOKit 
+cfgtest_QtCore.app/Contents/MacOS/cfgtest_QtCore cfgtest_QtCore.out
+Traceback (most recent call last):
+  File "configure.py", line 2906, in <module>
+    main(sys.argv)
+  File "configure.py", line 2872, in main
+    check_license(target_config, opts.license_confirmed)
+  File "configure.py", line 2666, in check_license
+    ltype = license.LicenseType
+AttributeError: module 'license' has no attribute 'LicenseType'
+
+Do not report this issue to Homebrew/brew or Homebrew/core!
+
+These open issues may also help:
+Formulae affected by Homebrew/brew#2482 https://github.com/Homebrew/homebrew-core/issues/13133
+Formulae without Sierra bottles https://github.com/Homebrew/homebrew-core/issues/6408
+
+
+
 ==> Auto-updated Homebrew!
 Updated 1 tap (caskroom/cask).
 No changes to formulae.
 
-==> Determining mpfr bottle rebuild...
-==> Bottling mpfr-3.1.6.high_sierra.bottle.1.tar.gz...
-./mpfr-3.1.6.high_sierra.bottle.1.tar.gz
-  bottle do
-    cellar :any
-    rebuild 1
-    sha256 "18a859bc20be1225aceb1913a54ceaffe2819a60ab4275734f5b00184c73f9b9" => :high_sierra
-  end
-Removing: /usr/local/Cellar/mpfr/3.1.5... (26 files, 3.6MB)
-==> This operation has freed approximately 3.6MB of disk space.
-==> Postinstalling mpfr
+==> Postinstalling pyqt
