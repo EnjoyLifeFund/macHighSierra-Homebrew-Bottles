@@ -1,3 +1,46 @@
 ==> Upgrading 1 outdated package, with result:
-valgrind 3.13.0
-==> Postinstalling valgrind
+freexl 1.0.3
+==> Upgrading freexl 
+==> Downloading https://www.gaia-gis.it/gaia-sins/freexl-sources/freexl-1.0.3.tar.gz
+==> ./configure --prefix=/usr/local/Cellar/freexl/1.0.3 --disable-silent-rules
+==> make check
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall freexl`
+🍺  /usr/local/Cellar/freexl/1.0.3: 12 files, 118.8KB, built in 2 minutes 21 seconds
+==> Determining freexl bottle rebuild...
+==> Bottling freexl-1.0.3.high_sierra.bottle.1.tar.gz...
+./freexl-1.0.3.high_sierra.bottle.1.tar.gz
+  bottle do
+    cellar :any
+    rebuild 1
+    sha256 "6e1edc4774c8d66ff23cee778edcb74239e55bbdef070912e3127ebab08ededa" => :high_sierra
+  end
+Removing: /usr/local/Cellar/freexl/1.0.2... (12 files, 118.7KB)
+Removing: /Users/dojo/Library/Caches/Homebrew/heroku-6.14.17.tgz... (6.6KB)
+Removing: /Users/dojo/Library/Logs/Homebrew/boost... (7 files, 18.5MB)
+Removing: /Users/dojo/Library/Logs/Homebrew/boost-mpi... (5 files, 335.5KB)
+Removing: /Users/dojo/Library/Logs/Homebrew/boost-python... (9 files, 566.2KB)
+Removing: /Users/dojo/Library/Logs/Homebrew/faac... (7 files, 217.5KB)
+Removing: /Users/dojo/Library/Logs/Homebrew/fdk-aac... (6 files, 533.5KB)
+Removing: /Users/dojo/Library/Logs/Homebrew/ffmpeg... (6 files, 4.2MB)
+Removing: /Users/dojo/Library/Logs/Homebrew/gnutls... (6 files, 5.4MB)
+Removing: /Users/dojo/Library/Logs/Homebrew/hadoop... (108B)
+Removing: /Users/dojo/Library/Logs/Homebrew/harfbuzz... (6 files, 1MB)
+Removing: /Users/dojo/Library/Logs/Homebrew/libav... (6 files, 3.1MB)
+Removing: /Users/dojo/Library/Logs/Homebrew/libogg... (7 files, 81.3KB)
+Removing: /Users/dojo/Library/Logs/Homebrew/libusb... (68B)
+Removing: /Users/dojo/Library/Logs/Homebrew/libvorbis... (6 files, 142.4KB)
+Removing: /Users/dojo/Library/Logs/Homebrew/libvpx... (5 files, 189.6KB)
+Removing: /Users/dojo/Library/Logs/Homebrew/libxml2... (10 files, 441.8KB)
+Removing: /Users/dojo/Library/Logs/Homebrew/mariadb... (8 files, 7.2MB)
+Removing: /Users/dojo/Library/Logs/Homebrew/nghttp2... (9 files, 737.5KB)
+Removing: /Users/dojo/Library/Logs/Homebrew/opencv3... (68B)
+Removing: /Users/dojo/Library/Logs/Homebrew/opus... (6 files, 390.3KB)
+Removing: /Users/dojo/Library/Logs/Homebrew/p11-kit... (9 files, 683.0KB)
+Removing: /Users/dojo/Library/Logs/Homebrew/parallel... (4 files, 8.3KB)
+Removing: /Users/dojo/Library/Logs/Homebrew/subversion... (13 files, 798.9KB)
+Removing: /Users/dojo/Library/Logs/Homebrew/swig... (7 files, 257.7KB)
+Removing: /Users/dojo/Library/Logs/Homebrew/tachyon... (109B)
+==> This operation has freed approximately 44.9MB of disk space.
+==> Postinstalling freexl
