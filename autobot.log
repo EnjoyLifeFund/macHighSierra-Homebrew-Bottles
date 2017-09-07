@@ -1,20 +1,21 @@
 ==> Upgrading 1 outdated package, with result:
-harfbuzz 1.5.1
-==> Upgrading harfbuzz --with-cairo
-==> Downloading https://www.freedesktop.org/software/harfbuzz/release/harfbuzz-1.5.1.tar.bz2
-==> ./configure --prefix=/usr/local/Cellar/harfbuzz/1.5.1 --with-coretext=yes --enable-static --with-cairo=yes --with-freetype=yes --with-glib=yes --with-gobject=yes --enable-introspection=yes --with-graphite2=yes --with-icu=yes
-==> make install
+heroku 6.14.20
+==> Upgrading heroku 
+==> Downloading https://registry.npmjs.org/heroku-cli/-/heroku-cli-6.14.20.tgz
+==> npm install -ddd --global --build-from-source --cache=/Users/dojo/Library/Caches/Homebrew/npm_cache --prefix=/usr/local/Cellar/heroku/6.14.20/libexec /private/tmp/heroku-20170907-71040-1ggnxon/package/heroku-cli-6.14.20.tgz
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall harfbuzz`
-🍺  /usr/local/Cellar/harfbuzz/1.5.1: 138 files, 5.5MB, built in 1 minute 49 seconds
-==> Determining harfbuzz bottle rebuild...
-==> Bottling harfbuzz-1.5.1.high_sierra.bottle.1.tar.gz...
-==> Detecting if harfbuzz-1.5.1.high_sierra.bottle.1.tar.gz is relocatable...
-./harfbuzz-1.5.1.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall heroku`
+🍺  /usr/local/Cellar/heroku/6.14.20: 6,691 files, 40.2MB, built in 47 seconds
+==> Determining heroku bottle rebuild...
+==> Bottling heroku-6.14.20.high_sierra.bottle.1.tar.gz...
+==> Detecting if heroku-6.14.20.high_sierra.bottle.1.tar.gz is relocatable...
+./heroku-6.14.20.high_sierra.bottle.1.tar.gz
   bottle do
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "32ff9b4917c87638ce3caaeca81027993253c76a06316fb4c7d9994c5b7c22f9" => :high_sierra
+    sha256 "164e5436e1f7e23062eb5dca5cf2ded008ee4d4252bb1ea4055a106aa242e9e0" => :high_sierra
   end
-Removing: /usr/local/Cellar/harfbuzz/1.5.0... (139 files, 5.6MB)
-==> This operation has freed approximately 5.6MB of disk space.
-==> Postinstalling harfbuzz
+Removing: /usr/local/Cellar/heroku/6.14.17... (6,400 files, 39.5MB)
+Removing: /Users/dojo/Library/Caches/Homebrew/npm_cache... (1,840 files, 14.5MB)
+==> This operation has freed approximately 54MB of disk space.
+==> Postinstalling heroku
