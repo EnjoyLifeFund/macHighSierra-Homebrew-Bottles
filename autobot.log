@@ -1,5 +1,35 @@
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+No changes to formulae.
 
+==> Upgrading 1 outdated package, with result:
+cmake 3.9.2
+==> Upgrading cmake --with-completion
+==> Downloading https://cmake.org/files/v3.9/cmake-3.9.2.tar.gz
+Already downloaded: /Users/dojo/Library/Caches/Homebrew/cmake-3.9.2.tar.gz
+==> ./bootstrap --prefix=/usr/local/Cellar/cmake/3.9.2 --no-system-libs --parallel=4 --datadir=/share/cmake --docdir=/share/doc/cmake --mandir=/share/man --system-zlib --system-bzip2 --system-curl --sphinx-man --sphinx-build=/usr/local/opt/sphinx-doc/bin/sphinx-build
+==> make
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall cmake`
+==> Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
 
-
-
-
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/cmake
+==> Summary
+🍺  /usr/local/Cellar/cmake/3.9.2: 2,272 files, 31.7MB, built in 15 minutes 15 seconds
+==> Determining cmake bottle rebuild...
+==> Bottling cmake-3.9.2.high_sierra.bottle.1.tar.gz...
+==> Detecting if cmake-3.9.2.high_sierra.bottle.1.tar.gz is relocatable...
+./cmake-3.9.2.high_sierra.bottle.1.tar.gz
+  bottle do
+    cellar :any
+    rebuild 1
+    sha256 "4623509a49c7ef5679cd30b345b60973251d00e1622d2b89cf09b8a86c9d6f9c" => :high_sierra
+  end
+Removing: /usr/local/Cellar/cmake/3.9.1... (2,270 files, 31.7MB)
+Removing: /Users/dojo/Library/Caches/Homebrew/java_cache... (287B)
+==> This operation has freed approximately 31.7MB of disk space.
+==> Postinstalling cmake
