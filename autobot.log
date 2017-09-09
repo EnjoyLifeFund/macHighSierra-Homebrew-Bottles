@@ -1,59 +1,32 @@
 ==> Upgrading 1 outdated package, with result:
-pyqt 5.9_1
-==> Upgrading pyqt 
-==> Downloading https://downloads.sourceforge.net/project/pyqt/PyQt5/PyQt-5.9/PyQt5_gpl-5.9.tar.gz
-Already downloaded: /Users/dojo/Library/Caches/Homebrew/pyqt-5.9.tar.gz
-==> python configure.py --with-debug --bindir=/usr/local/Cellar/pyqt/5.9_1/bin --destdir=/usr/local/Cellar/pyqt/5.9_1/lib/python2.7/site-packages --stubsdir=/usr/local/Cellar/pyqt/5.9_1/lib/python2.7/site-packages/PyQt5 --sipdir=/usr/local/Cellar/pyqt/5.9_1/share/sip/Qt5 --sip-incdir=/usr/local/opt/sip/include --qmake=/usr/local/opt/qt/bin/qmake QMAKE_MACOSX_DEPLOYMENT_TARGET=10.13 --qml-plugindir=/usr/local/Cellar/pyqt/5.9_1/share/pyqt/plugins --verbose
-Last 15 lines from /Users/dojo/Library/Logs/Homebrew/pyqt/01.python:
-configure.py
---with-debug
---bindir=/usr/local/Cellar/pyqt/5.9_1/bin
---destdir=/usr/local/Cellar/pyqt/5.9_1/lib/python2.7/site-packages
---stubsdir=/usr/local/Cellar/pyqt/5.9_1/lib/python2.7/site-packages/PyQt5
---sipdir=/usr/local/Cellar/pyqt/5.9_1/share/sip/Qt5
---sip-incdir=/usr/local/opt/sip/include
---qmake=/usr/local/opt/qt/bin/qmake
-QMAKE_MACOSX_DEPLOYMENT_TARGET=10.13
---qml-plugindir=/usr/local/Cellar/pyqt/5.9_1/share/pyqt/plugins
---verbose
-
-Usage: python configure.py [opts] [name=value] [name+=value]
-
-configure.py: error: no such option: --with-debug
-
-Do not report this issue to Homebrew/brew or Homebrew/core!
-
-These open issues may also help:
-Formulae affected by Homebrew/brew#2482 https://github.com/Homebrew/homebrew-core/issues/13133
-Formulae without Sierra bottles https://github.com/Homebrew/homebrew-core/issues/6408
+homebrew/science/boost-compute 1.65.1
+==> Upgrading homebrew/science/boost-compute 
+==> Downloading https://github.com/boostorg/compute/archive/boost-1.65.1.tar.gz
+==> Downloading from https://codeload.github.com/boostorg/compute/tar.gz/boost-1.65.1
+==> cmake . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/boost-compute/1.65.1 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev
+Last 15 lines from /Users/dojo/Library/Logs/Homebrew/boost-compute/01.cmake:
 
 
+CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+Please set them or make sure they are set and tested correctly in the CMake files:
+Boost_INCLUDE_DIR (ADVANCED)
+   used as include directory in directory /tmp/boost-compute-20170909-11726-7hui8z/compute-boost-1.65.1
+   used as include directory in directory /tmp/boost-compute-20170909-11726-7hui8z/compute-boost-1.65.1
+   used as include directory in directory /tmp/boost-compute-20170909-11726-7hui8z/compute-boost-1.65.1
+   used as include directory in directory /tmp/boost-compute-20170909-11726-7hui8z/compute-boost-1.65.1
+   used as include directory in directory /tmp/boost-compute-20170909-11726-7hui8z/compute-boost-1.65.1
+   used as include directory in directory /tmp/boost-compute-20170909-11726-7hui8z/compute-boost-1.65.1
 
-==> Downloading https://downloads.sourceforge.net/project/pyqt/PyQt5/PyQt-5.9/PyQt5_gpl-5.9.tar.gz
-Already downloaded: /Users/dojo/Library/Caches/Homebrew/pyqt-5.9.tar.gz
-==> python configure.py --with-debug --bindir=/usr/local/Cellar/pyqt/5.9_1/bin --destdir=/usr/local/Cellar/pyqt/5.9_1/lib/python2.7/site-packages --stubsdir=/usr/local/Cellar/pyqt/5.9_1/lib/python2.7/site-packages/PyQt5 --sipdir=/usr/local/Cellar/pyqt/5.9_1/share/sip/Qt5 --sip-incdir=/usr/local/opt/sip/include --qmake=/usr/local/opt/qt/bin/qmake QMAKE_MACOSX_DEPLOYMENT_TARGET=10.13 --qml-plugindir=/usr/local/Cellar/pyqt/5.9_1/share/pyqt/plugins --verbose
-Last 15 lines from /Users/dojo/Library/Logs/Homebrew/pyqt/01.python:
-configure.py
---with-debug
---bindir=/usr/local/Cellar/pyqt/5.9_1/bin
---destdir=/usr/local/Cellar/pyqt/5.9_1/lib/python2.7/site-packages
---stubsdir=/usr/local/Cellar/pyqt/5.9_1/lib/python2.7/site-packages/PyQt5
---sipdir=/usr/local/Cellar/pyqt/5.9_1/share/sip/Qt5
---sip-incdir=/usr/local/opt/sip/include
---qmake=/usr/local/opt/qt/bin/qmake
-QMAKE_MACOSX_DEPLOYMENT_TARGET=10.13
---qml-plugindir=/usr/local/Cellar/pyqt/5.9_1/share/pyqt/plugins
---verbose
-
-Usage: python configure.py [opts] [name=value] [name+=value]
-
-configure.py: error: no such option: --with-debug
+-- Configuring incomplete, errors occurred!
+See also "/tmp/boost-compute-20170909-11726-7hui8z/compute-boost-1.65.1/CMakeFiles/CMakeOutput.log".
+See also "/tmp/boost-compute-20170909-11726-7hui8z/compute-boost-1.65.1/CMakeFiles/CMakeError.log".
 
 Do not report this issue to Homebrew/brew or Homebrew/core!
 
 These open issues may also help:
-Formulae affected by Homebrew/brew#2482 https://github.com/Homebrew/homebrew-core/issues/13133
-Formulae without Sierra bottles https://github.com/Homebrew/homebrew-core/issues/6408
+Revisions for boost 1.65.0 needed https://github.com/Homebrew/homebrew-science/issues/6192
 
 
-==> Postinstalling pyqt
+
+==> Installing boost-compute from homebrew/science
+==> Postinstalling boost-compute
