@@ -1,8 +1,31 @@
 ==> Upgrading 1 outdated package, with result:
-boost-python 1.65.1
-==> Upgrading boost-python --with-python3
-==> Installing dependencies for boost-python: boost
-==> Installing boost-python dependency: boost
-==> Downloading https://dl.bintray.com/boostorg/release/1.65.1/source/boost_1_65_1.tar.bz2
-Already downloaded: /Users/dojo/Library/Caches/Homebrew/boost-1.65.1.tar.bz2
-==> Postinstalling boost-python
+gdb 8.0.1
+==> Upgrading gdb 
+==> Downloading https://ftp.gnu.org/gnu/gdb/gdb-8.0.1.tar.xz
+==> ./configure --prefix=/usr/local/Cellar/gdb/8.0.1 --with-python=/usr
+==> make
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall gdb`
+==> Caveats
+gdb requires special privileges to access Mach ports.
+You will need to codesign the binary. For instructions, see:
+
+  https://sourceware.org/gdb/wiki/BuildingOnDarwin
+
+On 10.12 (Sierra) or later with SIP, you need to run this:
+
+  echo "set startup-with-shell off" >> ~/.gdbinit
+==> Summary
+🍺  /usr/local/Cellar/gdb/8.0.1: 53 files, 9.3MB, built in 9 minutes 41 seconds
+==> Determining gdb bottle rebuild...
+==> Bottling gdb-8.0.1.high_sierra.bottle.1.tar.gz...
+==> Detecting if gdb-8.0.1.high_sierra.bottle.1.tar.gz is relocatable...
+./gdb-8.0.1.high_sierra.bottle.1.tar.gz
+  bottle do
+    rebuild 1
+    sha256 "20993c1eaf654180bc1704158cceebbee837611882c294af4960c433c7a1eeff" => :high_sierra
+  end
+Removing: /usr/local/Cellar/gdb/8.0... (53 files, 9.3MB)
+==> This operation has freed approximately 9.3MB of disk space.
+==> Postinstalling gdb
