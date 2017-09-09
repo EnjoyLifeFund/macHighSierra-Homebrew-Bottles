@@ -1,20 +1,26 @@
 ==> Upgrading 1 outdated package, with result:
-boost-mpi 1.65.1
-==> Upgrading boost-mpi 
+boost-python 1.65.1
+==> Upgrading boost-python --with-python3
 ==> Downloading https://dl.bintray.com/boostorg/release/1.65.1/source/boost_1_65_1.tar.bz2
-==> ./bootstrap.sh --prefix=/usr/local/Cellar/boost-mpi/1.65.1 --libdir=/usr/local/Cellar/boost-mpi/1.65.1/lib --with-libraries=mpi
-==> ./b2 --prefix=/usr/local/Cellar/boost-mpi/1.65.1 --libdir=/usr/local/Cellar/boost-mpi/1.65.1/lib -d2 -j4 --layout=tagged --user-config=user-config.jam threading=multi,single link=shared,static
+==> ./bootstrap.sh --prefix=/usr/local/Cellar/boost-python/1.65.1 --libdir=/usr/local/Cellar/boost-python/1.65.1/lib --with-libraries=python --with-python=python --with-python-root=/System/Library/Frameworks/Python.framework/Versions/2.7
+==> ./b2 --build-dir=build-python --stagedir=stage-python python=2.7 --prefix=/usr/local/Cellar/boost-python/1.65.1 --libdir=/usr/local/Cellar/boost-python/1.65.1/lib -d2 -j4 --layout=tagged --user-config=user-config.jam threading=multi,single link=shared,static
+==> ./bootstrap.sh --prefix=/usr/local/Cellar/boost-python/1.65.1 --libdir=/usr/local/Cellar/boost-python/1.65.1/lib --with-libraries=python --with-python=python3 --with-python-root=/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6
+==> ./b2 --build-dir=build-python3 --stagedir=stage-python3 python=3.6 --prefix=/usr/local/Cellar/boost-python/1.65.1 --libdir=/usr/local/Cellar/boost-python/1.65.1/lib -d2 -j4 --layout=tagged --user-config=user-config.jam threading=multi,single link=shared,static
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall boost-mpi`
-🍺  /usr/local/Cellar/boost-mpi/1.65.1: 6 files, 6.6MB, built in 6 minutes 41 seconds
-==> Determining boost-mpi bottle rebuild...
-==> Bottling boost-mpi-1.65.1.high_sierra.bottle.1.tar.gz...
-==> Detecting if boost-mpi-1.65.1.high_sierra.bottle.1.tar.gz is relocatable...
-./boost-mpi-1.65.1.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall boost-python`
+🍺  /usr/local/Cellar/boost-python/1.65.1: 465 files, 29.5MB, built in 8 minutes 53 seconds
+==> Auto-updated Homebrew!
+Updated 1 tap (caskroom/cask).
+No changes to formulae.
+
+==> Determining boost-python bottle rebuild...
+==> Bottling boost-python-1.65.1.high_sierra.bottle.1.tar.gz...
+==> Detecting if boost-python-1.65.1.high_sierra.bottle.1.tar.gz is relocatable...
+./boost-python-1.65.1.high_sierra.bottle.1.tar.gz
   bottle do
     rebuild 1
-    sha256 "3843260a4c32dc330c178c2bfc6cefabf23a7aae471806d96d0a064cc66a756d" => :high_sierra
+    sha256 "61121695788815449b93459c6782c88721bd8a4e6dd052f67278669590af6487" => :high_sierra
   end
-Removing: /usr/local/Cellar/boost-mpi/1.65.0... (6 files, 6.6MB)
-==> This operation has freed approximately 6.6MB of disk space.
-==> Postinstalling boost-mpi
+Removing: /usr/local/Cellar/boost-python/1.65.0... (465 files, 29.5MB)
+==> This operation has freed approximately 29.5MB of disk space.
+==> Postinstalling boost-python
