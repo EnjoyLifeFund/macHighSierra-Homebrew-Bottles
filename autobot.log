@@ -1,22 +1,5 @@
-==> Upgrading 1 outdated package, with result:
-gpp 2.25
-==> Upgrading gpp 
-==> Downloading https://files.nothingisreal.com/software/gpp/gpp-2.25.tar.bz2
-==> ./configure --prefix=/usr/local/Cellar/gpp/2.25 --mandir=/usr/local/Cellar/gpp/2.25/share/man
-==> make
-==> make check
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall gpp`
-🍺  /usr/local/Cellar/gpp/2.25: 12 files, 312.7KB, built in 13 seconds
-==> Determining gpp bottle rebuild...
-==> Bottling gpp-2.25.high_sierra.bottle.1.tar.gz...
-./gpp-2.25.high_sierra.bottle.1.tar.gz
-  bottle do
-    cellar :any_skip_relocation
-    rebuild 1
-    sha256 "39674894a5700a4e9767dc47889ee8aba0127876f4dd06e4bb802645eefd2dfd" => :high_sierra
-  end
-Removing: /usr/local/Cellar/gpp/2.24... (10 files, 139.6KB)
-==> This operation has freed approximately 139.6KB of disk space.
-==> Postinstalling gpp
+
+
+
+
+
