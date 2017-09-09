@@ -1,31 +1,22 @@
 ==> Upgrading 1 outdated package, with result:
-gdb 8.0.1
-==> Upgrading gdb 
-==> Downloading https://ftp.gnu.org/gnu/gdb/gdb-8.0.1.tar.xz
-==> ./configure --prefix=/usr/local/Cellar/gdb/8.0.1 --with-python=/usr
+gpp 2.25
+==> Upgrading gpp 
+==> Downloading https://files.nothingisreal.com/software/gpp/gpp-2.25.tar.bz2
+==> ./configure --prefix=/usr/local/Cellar/gpp/2.25 --mandir=/usr/local/Cellar/gpp/2.25/share/man
 ==> make
+==> make check
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall gdb`
-==> Caveats
-gdb requires special privileges to access Mach ports.
-You will need to codesign the binary. For instructions, see:
-
-  https://sourceware.org/gdb/wiki/BuildingOnDarwin
-
-On 10.12 (Sierra) or later with SIP, you need to run this:
-
-  echo "set startup-with-shell off" >> ~/.gdbinit
-==> Summary
-🍺  /usr/local/Cellar/gdb/8.0.1: 53 files, 9.3MB, built in 9 minutes 41 seconds
-==> Determining gdb bottle rebuild...
-==> Bottling gdb-8.0.1.high_sierra.bottle.1.tar.gz...
-==> Detecting if gdb-8.0.1.high_sierra.bottle.1.tar.gz is relocatable...
-./gdb-8.0.1.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall gpp`
+🍺  /usr/local/Cellar/gpp/2.25: 12 files, 312.7KB, built in 13 seconds
+==> Determining gpp bottle rebuild...
+==> Bottling gpp-2.25.high_sierra.bottle.1.tar.gz...
+./gpp-2.25.high_sierra.bottle.1.tar.gz
   bottle do
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "20993c1eaf654180bc1704158cceebbee837611882c294af4960c433c7a1eeff" => :high_sierra
+    sha256 "39674894a5700a4e9767dc47889ee8aba0127876f4dd06e4bb802645eefd2dfd" => :high_sierra
   end
-Removing: /usr/local/Cellar/gdb/8.0... (53 files, 9.3MB)
-==> This operation has freed approximately 9.3MB of disk space.
-==> Postinstalling gdb
+Removing: /usr/local/Cellar/gpp/2.24... (10 files, 139.6KB)
+==> This operation has freed approximately 139.6KB of disk space.
+==> Postinstalling gpp
