@@ -1,0 +1,14 @@
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> Updated Formulae
+caddy
+certbot
+
+==> Upgrading 1 outdated package, with result:
+boost 1.65.1
+==> Upgrading boost --with-icu4c
+==> Downloading https://dl.bintray.com/boostorg/release/1.65.1/source/boost_1_65_1.tar.bz2
+Already downloaded: /Users/dojo/Library/Caches/Homebrew/boost-1.65.1.tar.bz2
+==> Downloading https://dl.bintray.com/boostorg/release/1.65.1/source/boost_1_65_1.tar.bz2
+Already downloaded: /Users/dojo/Library/Caches/Homebrew/boost-1.65.1.tar.bz2
+==> Postinstalling boost
