@@ -1,41 +1,59 @@
 ==> Upgrading 1 outdated package, with result:
-osquery 2.7.0_2
-==> Upgrading osquery 
-==> Cloning https://github.com/facebook/osquery.git
-Updating /Users/dojo/Library/Caches/Homebrew/osquery--git
-==> Checking out tag 2.7.0
-==> Downloading https://github.com/facebook/osquery/commit/c50a9b1e82f.patch?full_index=1
-==> Patching
-==> Applying c50a9b1e82f.patch
-patching file CMakeLists.txt
-==> Downloading https://github.com/aws/aws-sdk-cpp/archive/1.1.20.tar.gz
-==> Downloading from https://codeload.github.com/aws/aws-sdk-cpp/tar.gz/1.1.20
-==> cmake .. -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/osquery/2.7.0_2 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -DSTATIC_LINKING=1 -DNO_HTTP_CLIENT=1 -DMINIMIZE_SIZE=ON -DBUILD_SHARED_LIBS=OFF -DBUILD_ONLY=ec2;firehose;kinesis;sts -DCMAKE_INSTALL_PREFIX=/private/tmp/osquery-20170909-44716-1l17bin/brew_vendor/aws-sdk-cpp
-==> make
-==> make install
-==> Downloading https://github.com/cpp-netlib/cpp-netlib/archive/cpp-netlib-0.12.0-final.tar.gz
-==> Downloading from https://codeload.github.com/cpp-netlib/cpp-netlib/tar.gz/cpp-netlib-0.12.0-final
-==> cmake . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/osquery/2.7.0_2 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -DCMAKE_INSTALL_PREFIX=/private/tmp/osquery-20170909-44716-1l17bin/brew_vendor/cpp-netlib -DCPP-NETLIB_BUILD_TESTS=OFF -DCPP-NETLIB_BUILD_EXAMPLES=OFF
-Last 15 lines from /Users/dojo/Library/Logs/Homebrew/osquery/04.cmake:
+pyqt 5.9_1
+==> Upgrading pyqt 
+==> Downloading https://downloads.sourceforge.net/project/pyqt/PyQt5/PyQt-5.9/PyQt5_gpl-5.9.tar.gz
+Already downloaded: /Users/dojo/Library/Caches/Homebrew/pyqt-5.9.tar.gz
+==> python configure.py --with-debug --bindir=/usr/local/Cellar/pyqt/5.9_1/bin --destdir=/usr/local/Cellar/pyqt/5.9_1/lib/python2.7/site-packages --stubsdir=/usr/local/Cellar/pyqt/5.9_1/lib/python2.7/site-packages/PyQt5 --sipdir=/usr/local/Cellar/pyqt/5.9_1/share/sip/Qt5 --sip-incdir=/usr/local/opt/sip/include --qmake=/usr/local/opt/qt/bin/qmake QMAKE_MACOSX_DEPLOYMENT_TARGET=10.13 --qml-plugindir=/usr/local/Cellar/pyqt/5.9_1/share/pyqt/plugins --verbose
+Last 15 lines from /Users/dojo/Library/Logs/Homebrew/pyqt/01.python:
+configure.py
+--with-debug
+--bindir=/usr/local/Cellar/pyqt/5.9_1/bin
+--destdir=/usr/local/Cellar/pyqt/5.9_1/lib/python2.7/site-packages
+--stubsdir=/usr/local/Cellar/pyqt/5.9_1/lib/python2.7/site-packages/PyQt5
+--sipdir=/usr/local/Cellar/pyqt/5.9_1/share/sip/Qt5
+--sip-incdir=/usr/local/opt/sip/include
+--qmake=/usr/local/opt/qt/bin/qmake
+QMAKE_MACOSX_DEPLOYMENT_TARGET=10.13
+--qml-plugindir=/usr/local/Cellar/pyqt/5.9_1/share/pyqt/plugins
+--verbose
 
+Usage: python configure.py [opts] [name=value] [name+=value]
 
--- Found OpenSSL: /usr/local/opt/openssl/lib/libcrypto.dylib (found version "1.0.2l") 
--- Looking for pthread.h
--- Looking for pthread.h - found
--- Looking for pthread_create
--- Looking for pthread_create - found
--- Found Threads: TRUE  
-CMake Error at CMakeLists.txt:131 (export):
-  export given target "cppnetlib-client-connections" which is not built by
-  this project.
-
-
--- Configuring incomplete, errors occurred!
-See also "/tmp/osquery--cpp-netlib-20170909-44716-r8knoa/cpp-netlib-cpp-netlib-0.12.0-final/CMakeFiles/CMakeOutput.log".
+configure.py: error: no such option: --with-debug
 
 Do not report this issue to Homebrew/brew or Homebrew/core!
 
+These open issues may also help:
+Formulae affected by Homebrew/brew#2482 https://github.com/Homebrew/homebrew-core/issues/13133
+Formulae without Sierra bottles https://github.com/Homebrew/homebrew-core/issues/6408
 
 
 
-==> Postinstalling osquery
+==> Downloading https://downloads.sourceforge.net/project/pyqt/PyQt5/PyQt-5.9/PyQt5_gpl-5.9.tar.gz
+Already downloaded: /Users/dojo/Library/Caches/Homebrew/pyqt-5.9.tar.gz
+==> python configure.py --with-debug --bindir=/usr/local/Cellar/pyqt/5.9_1/bin --destdir=/usr/local/Cellar/pyqt/5.9_1/lib/python2.7/site-packages --stubsdir=/usr/local/Cellar/pyqt/5.9_1/lib/python2.7/site-packages/PyQt5 --sipdir=/usr/local/Cellar/pyqt/5.9_1/share/sip/Qt5 --sip-incdir=/usr/local/opt/sip/include --qmake=/usr/local/opt/qt/bin/qmake QMAKE_MACOSX_DEPLOYMENT_TARGET=10.13 --qml-plugindir=/usr/local/Cellar/pyqt/5.9_1/share/pyqt/plugins --verbose
+Last 15 lines from /Users/dojo/Library/Logs/Homebrew/pyqt/01.python:
+configure.py
+--with-debug
+--bindir=/usr/local/Cellar/pyqt/5.9_1/bin
+--destdir=/usr/local/Cellar/pyqt/5.9_1/lib/python2.7/site-packages
+--stubsdir=/usr/local/Cellar/pyqt/5.9_1/lib/python2.7/site-packages/PyQt5
+--sipdir=/usr/local/Cellar/pyqt/5.9_1/share/sip/Qt5
+--sip-incdir=/usr/local/opt/sip/include
+--qmake=/usr/local/opt/qt/bin/qmake
+QMAKE_MACOSX_DEPLOYMENT_TARGET=10.13
+--qml-plugindir=/usr/local/Cellar/pyqt/5.9_1/share/pyqt/plugins
+--verbose
+
+Usage: python configure.py [opts] [name=value] [name+=value]
+
+configure.py: error: no such option: --with-debug
+
+Do not report this issue to Homebrew/brew or Homebrew/core!
+
+These open issues may also help:
+Formulae affected by Homebrew/brew#2482 https://github.com/Homebrew/homebrew-core/issues/13133
+Formulae without Sierra bottles https://github.com/Homebrew/homebrew-core/issues/6408
+
+
+==> Postinstalling pyqt
