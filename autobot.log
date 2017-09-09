@@ -1,26 +1,41 @@
 ==> Upgrading 1 outdated package, with result:
-boost-python 1.65.1
-==> Upgrading boost-python --with-python3
-==> Downloading https://dl.bintray.com/boostorg/release/1.65.1/source/boost_1_65_1.tar.bz2
-==> ./bootstrap.sh --prefix=/usr/local/Cellar/boost-python/1.65.1 --libdir=/usr/local/Cellar/boost-python/1.65.1/lib --with-libraries=python --with-python=python --with-python-root=/System/Library/Frameworks/Python.framework/Versions/2.7
-==> ./b2 --build-dir=build-python --stagedir=stage-python python=2.7 --prefix=/usr/local/Cellar/boost-python/1.65.1 --libdir=/usr/local/Cellar/boost-python/1.65.1/lib -d2 -j4 --layout=tagged --user-config=user-config.jam threading=multi,single link=shared,static
-==> ./bootstrap.sh --prefix=/usr/local/Cellar/boost-python/1.65.1 --libdir=/usr/local/Cellar/boost-python/1.65.1/lib --with-libraries=python --with-python=python3 --with-python-root=/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6
-==> ./b2 --build-dir=build-python3 --stagedir=stage-python3 python=3.6 --prefix=/usr/local/Cellar/boost-python/1.65.1 --libdir=/usr/local/Cellar/boost-python/1.65.1/lib -d2 -j4 --layout=tagged --user-config=user-config.jam threading=multi,single link=shared,static
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall boost-python`
-🍺  /usr/local/Cellar/boost-python/1.65.1: 465 files, 29.5MB, built in 8 minutes 53 seconds
-==> Auto-updated Homebrew!
-Updated 1 tap (caskroom/cask).
-No changes to formulae.
+osquery 2.7.0_2
+==> Upgrading osquery 
+==> Cloning https://github.com/facebook/osquery.git
+Updating /Users/dojo/Library/Caches/Homebrew/osquery--git
+==> Checking out tag 2.7.0
+==> Downloading https://github.com/facebook/osquery/commit/c50a9b1e82f.patch?full_index=1
+==> Patching
+==> Applying c50a9b1e82f.patch
+patching file CMakeLists.txt
+==> Downloading https://github.com/aws/aws-sdk-cpp/archive/1.1.20.tar.gz
+==> Downloading from https://codeload.github.com/aws/aws-sdk-cpp/tar.gz/1.1.20
+==> cmake .. -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/osquery/2.7.0_2 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -DSTATIC_LINKING=1 -DNO_HTTP_CLIENT=1 -DMINIMIZE_SIZE=ON -DBUILD_SHARED_LIBS=OFF -DBUILD_ONLY=ec2;firehose;kinesis;sts -DCMAKE_INSTALL_PREFIX=/private/tmp/osquery-20170909-44716-1l17bin/brew_vendor/aws-sdk-cpp
+==> make
+==> make install
+==> Downloading https://github.com/cpp-netlib/cpp-netlib/archive/cpp-netlib-0.12.0-final.tar.gz
+==> Downloading from https://codeload.github.com/cpp-netlib/cpp-netlib/tar.gz/cpp-netlib-0.12.0-final
+==> cmake . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/osquery/2.7.0_2 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -DCMAKE_INSTALL_PREFIX=/private/tmp/osquery-20170909-44716-1l17bin/brew_vendor/cpp-netlib -DCPP-NETLIB_BUILD_TESTS=OFF -DCPP-NETLIB_BUILD_EXAMPLES=OFF
+Last 15 lines from /Users/dojo/Library/Logs/Homebrew/osquery/04.cmake:
 
-==> Determining boost-python bottle rebuild...
-==> Bottling boost-python-1.65.1.high_sierra.bottle.1.tar.gz...
-==> Detecting if boost-python-1.65.1.high_sierra.bottle.1.tar.gz is relocatable...
-./boost-python-1.65.1.high_sierra.bottle.1.tar.gz
-  bottle do
-    rebuild 1
-    sha256 "61121695788815449b93459c6782c88721bd8a4e6dd052f67278669590af6487" => :high_sierra
-  end
-Removing: /usr/local/Cellar/boost-python/1.65.0... (465 files, 29.5MB)
-==> This operation has freed approximately 29.5MB of disk space.
-==> Postinstalling boost-python
+
+-- Found OpenSSL: /usr/local/opt/openssl/lib/libcrypto.dylib (found version "1.0.2l") 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - found
+-- Found Threads: TRUE  
+CMake Error at CMakeLists.txt:131 (export):
+  export given target "cppnetlib-client-connections" which is not built by
+  this project.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/tmp/osquery--cpp-netlib-20170909-44716-r8knoa/cpp-netlib-cpp-netlib-0.12.0-final/CMakeFiles/CMakeOutput.log".
+
+Do not report this issue to Homebrew/brew or Homebrew/core!
+
+
+
+
+==> Postinstalling osquery
