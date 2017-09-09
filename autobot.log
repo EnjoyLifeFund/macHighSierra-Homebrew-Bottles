@@ -1,23 +1,20 @@
 ==> Upgrading 1 outdated package, with result:
-boost 1.65.1
-==> Upgrading boost --with-icu4c
+boost-mpi 1.65.1
+==> Upgrading boost-mpi 
 ==> Downloading https://dl.bintray.com/boostorg/release/1.65.1/source/boost_1_65_1.tar.bz2
-Already downloaded: /Users/dojo/Library/Caches/Homebrew/boost-1.65.1.tar.bz2
-==> ./bootstrap.sh --prefix=/usr/local/Cellar/boost/1.65.1 --libdir=/usr/local/Cellar/boost/1.65.1/lib --with-icu=/usr/local/opt/icu4c --without-libraries=python,mpi
-==> ./b2 headers
-==> ./b2 --prefix=/usr/local/Cellar/boost/1.65.1 --libdir=/usr/local/Cellar/boost/1.65.1/lib -d2 -j4 --layout=tagged --user-config=user-config.jam -sNO_LZMA=1 install threading=multi,single link=shared,static
+==> ./bootstrap.sh --prefix=/usr/local/Cellar/boost-mpi/1.65.1 --libdir=/usr/local/Cellar/boost-mpi/1.65.1/lib --with-libraries=mpi
+==> ./b2 --prefix=/usr/local/Cellar/boost-mpi/1.65.1 --libdir=/usr/local/Cellar/boost-mpi/1.65.1/lib -d2 -j4 --layout=tagged --user-config=user-config.jam threading=multi,single link=shared,static
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall boost`
-🍺  /usr/local/Cellar/boost/1.65.1: 12,679 files, 418.7MB, built in 47 minutes 44 seconds
-==> Determining boost bottle rebuild...
-==> Bottling boost-1.65.1.high_sierra.bottle.1.tar.gz...
-==> Detecting if boost-1.65.1.high_sierra.bottle.1.tar.gz is relocatable...
-./boost-1.65.1.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall boost-mpi`
+🍺  /usr/local/Cellar/boost-mpi/1.65.1: 6 files, 6.6MB, built in 6 minutes 41 seconds
+==> Determining boost-mpi bottle rebuild...
+==> Bottling boost-mpi-1.65.1.high_sierra.bottle.1.tar.gz...
+==> Detecting if boost-mpi-1.65.1.high_sierra.bottle.1.tar.gz is relocatable...
+./boost-mpi-1.65.1.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any
     rebuild 1
-    sha256 "2c1940bcef2681a105bbf2c874e80e16f1120fede8f1217f8e4e61a62aeccbf3" => :high_sierra
+    sha256 "3843260a4c32dc330c178c2bfc6cefabf23a7aae471806d96d0a064cc66a756d" => :high_sierra
   end
-Removing: /usr/local/Cellar/boost/1.65.0... (12,677 files, 418.8MB)
-==> This operation has freed approximately 418.8MB of disk space.
-==> Postinstalling boost
+Removing: /usr/local/Cellar/boost-mpi/1.65.0... (6 files, 6.6MB)
+==> This operation has freed approximately 6.6MB of disk space.
+==> Postinstalling boost-mpi
