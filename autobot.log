@@ -1,6 +1,29 @@
-==> Upgrading 1 outdated package, with result:
-pyqt 5.9_1
-==> Upgrading pyqt 
-==> Downloading https://downloads.sourceforge.net/project/pyqt/PyQt5/PyQt-5.9/PyQt5_gpl-5.9.tar.gz
-Already downloaded: /Users/dojo/Library/Caches/Homebrew/pyqt-5.9.tar.gz
-==> python configure.py --bindir=/usr/local/Cellar/pyqt/5.9_1/bin --destdir=/usr/local/Cellar/pyqt/5.9_1/lib/python2.7/site-packages --stubsdir=/usr/local/Cellar/pyqt/5.9_1/lib/python2.7/site-packages/PyQt5 --sipdir=/usr/local/Cellar/pyqt/5.9_1/share/sip/Qt5 --sip-incdir=/usr/local/opt/sip/include --qmake=/usr/local/opt/qt/bin/qmake QMAKE_MACOSX_DEPLOYMENT_TARGET=10.13 --qml-plugindir=/usr/local/Cellar/pyqt/5.9_1/share/pyqt/plugins --verbose
+==> Using Homebrew-provided fortran compiler.
+This may be changed by setting the FC environment variable.
+==> Downloading http://www.netlib.org/lapack/lapack-3.7.1.tgz
+==> cmake .. -DBUILD_SHARED_LIBS:BOOL=ON -DLAPACKE:BOOL=ON -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/lapack/3.7.1 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall lapack`
+==> Caveats
+This formula is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/lapack/lib
+    CPPFLAGS: -I/usr/local/opt/lapack/include
+For pkg-config to find this software you may need to set:
+    PKG_CONFIG_PATH: /usr/local/opt/lapack/lib/pkgconfig
+
+==> Summary
+🍺  /usr/local/Cellar/lapack/3.7.1: 29 files, 10.4MB, built in 27 minutes 5 seconds
+==> Determining lapack bottle rebuild...
+==> Bottling lapack-3.7.1.high_sierra.bottle.2.tar.gz...
+==> Detecting if lapack-3.7.1.high_sierra.bottle.2.tar.gz is relocatable...
+./lapack-3.7.1.high_sierra.bottle.2.tar.gz
+  bottle do
+    rebuild 2
+    sha256 "ebfe67585033939f057528bdcb6fd469d747087aafc227d89d0eb8728b1fce8f" => :high_sierra
+  end
+==> Postinstalling lapack
