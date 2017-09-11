@@ -1,66 +1,112 @@
-/usr/bin/sandbox-exec -f /tmp/homebrew20170910-6015-1k142db.sb nice /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -W0 -I /usr/local/Homebrew/Library/Homebrew -- /usr/local/Homebrew/Library/Homebrew/build.rb /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/afuse.rb --build-bottle --verbose
-==> Downloading https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/afuse/afuse-0.4.1.tar.gz
-/usr/bin/curl --show-error --user-agent Homebrew/1.3.2-48-gf3ec40d (Macintosh; Intel Mac OS X 10.13) curl/7.54.0 --fail --silent --location --remote-time --continue-at - --output /Users/dojo/Library/Caches/Homebrew/afuse-0.4.1.tar.gz.incomplete https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/afuse/afuse-0.4.1.tar.gz
-==> Verifying afuse-0.4.1.tar.gz checksum
-tar xzf /Users/dojo/Library/Caches/Homebrew/afuse-0.4.1.tar.gz
-==> ./configure --disable-dependency-tracking --prefix=/usr/local/Cellar/afuse/0.4.1
-checking for a BSD-compatible install... /usr/bin/install -c
-checking whether build environment is sane... yes
-checking for a thread-safe mkdir -p... ./install-sh -c -d
-checking for gawk... no
-checking for mawk... no
-checking for nawk... no
-checking for awk... awk
-checking whether make sets $(MAKE)... yes
-checking whether make supports nested variables... yes
-checking for ranlib... ranlib
-checking for gcc... clang
-checking whether the C compiler works... yes
-checking for C compiler default output file name... a.out
-checking for suffix of executables... 
-checking whether we are cross compiling... no
-checking for suffix of object files... o
-checking whether we are using the GNU C compiler... yes
-checking whether clang accepts -g... yes
-checking for clang option to accept ISO C89... none needed
-checking for style of include used by make... GNU
-checking dependency style of clang... none
-checking for pkg-config... /usr/local/opt/pkg-config/bin/pkg-config
-checking pkg-config is at least version 0.9.0... yes
-checking for FUSE... yes
-checking for fuse_opt_parse... yes
-checking for setxattr... yes
-checking for fdatasync... yes
-checking for getline... yes
-checking for fgetln... yes
-checking that generated files are newer than configure... done
-configure: creating ./config.status
-config.status: creating Makefile
-config.status: creating src/Makefile
-config.status: creating compat/Makefile
-config.status: creating config.h
-config.status: executing depfiles commands
-==> make install
-Making install in src
-clang -DHAVE_CONFIG_H -I. -I..     -g -O2 -Wall -Wextra -D_FILE_OFFSET_BITS=64 -D_DARWIN_USE_64_BIT_INODE -I/usr/local/include/osxfuse/fuse -DFUSE_USE_VERSION=25 -c afuse.c
-clang -DHAVE_CONFIG_H -I. -I..     -g -O2 -Wall -Wextra -D_FILE_OFFSET_BITS=64 -D_DARWIN_USE_64_BIT_INODE -I/usr/local/include/osxfuse/fuse -DFUSE_USE_VERSION=25 -c fd_list.c
-clang -DHAVE_CONFIG_H -I. -I..     -g -O2 -Wall -Wextra -D_FILE_OFFSET_BITS=64 -D_DARWIN_USE_64_BIT_INODE -I/usr/local/include/osxfuse/fuse -DFUSE_USE_VERSION=25 -c dir_list.c
-clang -DHAVE_CONFIG_H -I. -I..     -g -O2 -Wall -Wextra -D_FILE_OFFSET_BITS=64 -D_DARWIN_USE_64_BIT_INODE -I/usr/local/include/osxfuse/fuse -DFUSE_USE_VERSION=25 -c utils.c
-clang -DHAVE_CONFIG_H -I. -I..     -g -O2 -Wall -Wextra -D_FILE_OFFSET_BITS=64 -D_DARWIN_USE_64_BIT_INODE -I/usr/local/include/osxfuse/fuse -DFUSE_USE_VERSION=25 -c string_sorted_list.c
-clang  -g -O2 -Wall -Wextra -D_FILE_OFFSET_BITS=64 -D_DARWIN_USE_64_BIT_INODE -I/usr/local/include/osxfuse/fuse -DFUSE_USE_VERSION=25   -o afuse afuse.o fd_list.o dir_list.o utils.o string_sorted_list.o  -L/usr/local/lib -losxfuse
-make[2]: Nothing to be done for `install-data-am'.
- .././install-sh -c -d '/usr/local/Cellar/afuse/0.4.1/bin'
- .././install-sh -c -d '/usr/local/Cellar/afuse/0.4.1/bin'
-mkdir: /usr/local/Cellar/afuse/0.4.1/bin: File exists
- /usr/bin/install -c afuse-avahissh '/usr/local/Cellar/afuse/0.4.1/bin'
-  /usr/bin/install -c afuse '/usr/local/Cellar/afuse/0.4.1/bin'
-make[2]: Nothing to be done for `install-exec-am'.
-make[2]: Nothing to be done for `install-data-am'.
-==> Cleaning
-==> Finishing up
-ln -s ../Cellar/afuse/0.4.1/bin/afuse afuse
-ln -s ../Cellar/afuse/0.4.1/bin/afuse-avahissh afuse-avahissh
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall afuse`
-==> Summary
-🍺  /usr/local/Cellar/afuse/0.4.1: 9 files, 60.3KB, built in 21 seconds
+==> Postinstalling boost-compute
+ with result:
+homebrew/science/boost-compute 1.65.1
+==> Upgrading homebrew/science/boost-compute 
+rm /usr/local/include/compute
+rm /usr/local/lib/cmake/BoostCompute
+/usr/bin/sandbox-exec -f /tmp/homebrew20170911-10248-m04m43.sb nice /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -W0 -I /usr/local/Homebrew/Library/Homebrew -- /usr/local/Homebrew/Library/Homebrew/build.rb /usr/local/Homebrew/Library/Taps/homebrew/homebrew-science/boost-compute.rb --build-bottle --verbose
+==> Downloading https://github.com/boostorg/compute/archive/boost-1.65.1.tar.gz
+==> Downloading from https://codeload.github.com/boostorg/compute/tar.gz/boost-1.65.1
+/usr/bin/curl --show-error --user-agent Homebrew/1.3.2-48-gf3ec40d (Macintosh; Intel Mac OS X 10.13) curl/7.54.0 --fail --silent --location --remote-time --continue-at - --output /Users/dojo/Library/Caches/Homebrew/boost-compute-1.65.1.tar.gz.incomplete https://codeload.github.com/boostorg/compute/tar.gz/boost-1.65.1
+==> Verifying boost-compute-1.65.1.tar.gz checksum
+tar xzf /Users/dojo/Library/Caches/Homebrew/boost-compute-1.65.1.tar.gz
+==> cmake . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/boost-compute/1.65.1 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev
+-- The C compiler identification is AppleClang 9.0.0.9000022
+-- The CXX compiler identification is AppleClang 9.0.0.9000022
+-- Check for working C compiler: /usr/local/Homebrew/Library/Homebrew/shims/super/clang
+-- Check for working C compiler: /usr/local/Homebrew/Library/Homebrew/shims/super/clang -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/local/Homebrew/Library/Homebrew/shims/super/clang++
+-- Check for working CXX compiler: /usr/local/Homebrew/Library/Homebrew/shims/super/clang++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for CL_VERSION_2_0
+-- Looking for CL_VERSION_2_0 - not found
+-- Looking for CL_VERSION_1_2
+-- Looking for CL_VERSION_1_2 - found
+-- Found OpenCL: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenCL.framework (found version "1.2") 
+CMake Error at /usr/local/Cellar/cmake/3.9.2/share/cmake/Modules/FindBoost.cmake:1878 (message):
+  Unable to find the requested Boost libraries.
+
+  Unable to find the Boost header files.  Please set BOOST_ROOT to the root
+  directory containing Boost or BOOST_INCLUDEDIR to the directory containing
+  Boost's headers.
+Call Stack (most recent call first):
+  CMakeLists.txt:24 (find_package)
+
+
+CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+Please set them or make sure they are set and tested correctly in the CMake files:
+Boost_INCLUDE_DIR (ADVANCED)
+   used as include directory in directory /tmp/boost-compute-20170911-10250-1opdkan/compute-boost-1.65.1
+   used as include directory in directory /tmp/boost-compute-20170911-10250-1opdkan/compute-boost-1.65.1
+   used as include directory in directory /tmp/boost-compute-20170911-10250-1opdkan/compute-boost-1.65.1
+   used as include directory in directory /tmp/boost-compute-20170911-10250-1opdkan/compute-boost-1.65.1
+   used as include directory in directory /tmp/boost-compute-20170911-10250-1opdkan/compute-boost-1.65.1
+   used as include directory in directory /tmp/boost-compute-20170911-10250-1opdkan/compute-boost-1.65.1
+
+-- Configuring incomplete, errors occurred!
+See also "/tmp/boost-compute-20170911-10250-1opdkan/compute-boost-1.65.1/CMakeFiles/CMakeOutput.log".
+See also "/tmp/boost-compute-20170911-10250-1opdkan/compute-boost-1.65.1/CMakeFiles/CMakeError.log".
+
+==> Formula
+Tap: homebrew/science
+Path: /usr/local/Homebrew/Library/Taps/homebrew/homebrew-science/boost-compute.rb
+==> Configuration
+HOMEBREW_VERSION: 1.3.2-48-gf3ec40d
+ORIGIN: https://github.com/Homebrew/brew
+HEAD: f3ec40d696b421e89f462d32f6f30a81f60d3e73
+Last commit: 4 hours ago
+Core tap ORIGIN: https://github.com/Homebrew/homebrew-core.git
+Core tap HEAD: 913a5dcccfae4c4f8aa8ea8b00130ae989e5a817
+Core tap last commit: 8 minutes ago
+HOMEBREW_PREFIX: /usr/local
+HOMEBREW_REPOSITORY: /usr/local/Homebrew
+HOMEBREW_CELLAR: /usr/local/Cellar
+HOMEBREW_BOTTLE_DOMAIN: https://homebrew.bintray.com
+CPU: quad-core 64-bit sandybridge
+Homebrew Ruby: 2.3.3 => /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby
+Clang: 9.0 build 900
+Git: 2.14.1 => /usr/local/bin/git
+Perl: /usr/local/bin/perl => /usr/local/Cellar/perl/5.26.0/bin/perl
+Python: /usr/local/opt/python/libexec/bin/python => /usr/local/Cellar/python/2.7.13_1/Frameworks/Python.framework/Versions/2.7/bin/python2.7
+Ruby: /usr/local/bin/ruby => /usr/local/Cellar/ruby/2.4.1_2/bin/ruby
+Java: 1.8.0_144, 1.8.0_131-zulu-8.21.0.1
+macOS: 10.13-x86_64
+Xcode: 9.0
+CLT: 9.0.0.0.1.1503068762
+X11: 2.7.11 => /opt/X11
+==> ENV
+HOMEBREW_CC: clang
+HOMEBREW_CXX: clang++
+SDKROOT: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk
+MAKEFLAGS: -j4
+CMAKE_PREFIX_PATH: /usr/local/opt/icu4c:/usr/local
+CMAKE_INCLUDE_PATH: /usr/include/libxml2:/System/Library/Frameworks/OpenGL.framework/Versions/Current/Headers
+CMAKE_LIBRARY_PATH: /System/Library/Frameworks/OpenGL.framework/Versions/Current/Libraries
+MACOSX_DEPLOYMENT_TARGET: 10.13
+PKG_CONFIG_PATH: /usr/local/opt/icu4c/lib/pkgconfig
+PKG_CONFIG_LIBDIR: /usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/10.13
+ACLOCAL_PATH: /usr/local/share/aclocal
+PATH: /usr/local/Homebrew/Library/Homebrew/shims/super:/usr/local/opt/cmake/bin:/usr/local/opt/icu4c/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Logs:
+     /Users/dojo/Library/Logs/Homebrew/boost-compute/00.options.out
+     /Users/dojo/Library/Logs/Homebrew/boost-compute/01.cmake
+     /Users/dojo/Library/Logs/Homebrew/boost-compute/01.cmake.cc
+     /Users/dojo/Library/Logs/Homebrew/boost-compute/CMakeCache.txt
+Do not report this issue to Homebrew/brew or Homebrew/core!
+
+These open issues may also help:
+Revisions for boost 1.65.1 needed https://github.com/Homebrew/homebrew-science/issues/6296
+
+
+
+ln -s ../Cellar/boost-compute/1.65.0/include/compute compute
+ln -s ../../Cellar/boost-compute/1.65.0/lib/cmake/BoostCompute BoostCompute
+==> Installing boost-compute from homebrew/science
