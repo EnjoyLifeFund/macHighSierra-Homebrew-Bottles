@@ -1,8 +1,10 @@
-tmpBot
+bot_path
+i386-llvm-4.0.1.high_sierra.bottle.1.tar.gz
 llvm-5.0.0.high_sierra.bottle.1.tar.gz
+message.txt
 rust-1.20.0.high_sierra.bottle.1.tar.gz
+tmpBot
+tmpbot
 tobe.bot
 tobe.run
-message.txt
-i386-llvm-4.0.1.high_sierra.bottle.1.tar.gz
 x86-64_llvm-4.0.1.high_sierra.bottle.1.tar.gzbot_path
