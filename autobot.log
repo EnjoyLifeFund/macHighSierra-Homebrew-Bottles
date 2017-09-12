@@ -1,0 +1,12 @@
+==> Installing h5utils from homebrew/science
+==> Using Homebrew-provided fortran compiler.
+This may be changed by setting the FC environment variable.
+==> Downloading https://github.com/stevengj/h5utils/releases/download/1.13/h5utils-1.13.tar.gz
+Already downloaded: /Users/dojo/Library/Caches/Homebrew/h5utils-1.13.tar.gz
+A checksum was not provided for this resource
+For your reference the SHA256 is: 7e8b05942908975455e81e12b0dcbc7bc12e9560c29d5203fce3b25d7de6e494
+==> ./configure --prefix=/usr/local/Cellar/h5utils/1.13_6 --without-octave
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall homebrew/science/h5utils`
+🍺  /usr/local/Cellar/h5utils/1.13_6: 39 files, 236.7KB, built in 16 seconds
