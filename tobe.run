@@ -11,12 +11,11 @@ brew postinstall "$@"
 function botok(){
 mv * ~/work/bottles
 cd ~/work/bottles
-gitsendmsg
+gitmsg
 }
 function gitmsg() {
 git add *;git commit -F message.txt;git push
 }
-bot homebrew/science/boost-compute;botok
 bot ffmpeg;botok
 bot freexl;botok
 bot gdk-pixbuf;botok
