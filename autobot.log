@@ -1,12 +1,2 @@
-==> Auto-updated Homebrew!
-Updated Homebrew from becd8d8 to 66d5b06.
-Updated 1 tap (homebrew/core).
-No changes to formulae.
-
-==> Downloading https://github.com/nickgillian/grt/archive/v0.0.1.tar.gz
-==> Downloading from https://codeload.github.com/nickgillian/grt/tar.gz/v0.0.1
-==> cmake .. -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/grt/0.0.1 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall grt`
-🍺  /usr/local/Cellar/grt/0.0.1: 159 files, 3.9MB, built in 3 minutes 13 seconds
+==> Downloading http://glaros.dtc.umn.edu/gkhome/fetch/sw/metis/metis-5.1.0.tar.gz
+==> make config prefix=/usr/local/Cellar/metis/5.1.0 shared=1
