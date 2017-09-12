@@ -1,11 +1,57 @@
 ==> Upgrading 1 outdated package, with result:
-freexl 1.0.4
-==> Upgrading freexl 
-==> Downloading https://www.gaia-gis.it/gaia-sins/freexl-sources/freexl-1.0.4.tar.gz
-Already downloaded: /Users/dojo/Library/Caches/Homebrew/freexl-1.0.4.tar.gz
-==> ./configure --prefix=/usr/local/Cellar/freexl/1.0.4 --disable-silent-rules
-==> make check
+gdk-pixbuf 2.36.10
+==> Upgrading gdk-pixbuf 
+==> Installing dependencies for gdk-pixbuf: glib, gobject-introspection
+==> Installing gdk-pixbuf dependency: glib
+==> Downloading https://download.gnome.org/sources/glib/2.54/glib-2.54.0.tar.xz
+Already downloaded: /Users/dojo/Library/Caches/Homebrew/glib-2.54.0.tar.xz
+==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/59e4d32/glib/hardcoded-paths.diff
+Already downloaded: /Users/dojo/Library/Caches/Homebrew/glib--patch-a4cb96b5861672ec0750cb30ecebe1d417d38052cac12fbb8a77dbf04a886fcb.diff
+==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/13efbb2/glib/gio.patch
+Already downloaded: /Users/dojo/Library/Caches/Homebrew/glib--patch-628f8ea171a29c67fb06461ce4cfe549846b8fe64d83466e18e225726615b997.patch
+==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/73738ca/glib/revert-appinfo-contenttype.patch
+Already downloaded: /Users/dojo/Library/Caches/Homebrew/glib--patch-675369c6d956b5533865178a2a78a6b2dcb921fbcfd81d35e92fc1592323e5e4.patch
+==> Patching
+==> Applying hardcoded-paths.diff
+patching file gio/gdbusprivate.c
+Hunk #1 succeeded at 2098 (offset -1 lines).
+Hunk #2 succeeded at 2108 (offset -1 lines).
+patching file gio/xdgmime/xdgmime.c
+patching file glib/gutils.c
+Hunk #1 succeeded at 2017 with fuzz 2 (offset 79 lines).
+==> Applying gio.patch
+patching file configure.ac
+patching file gio/Makefile.am
+Hunk #1 succeeded at 137 (offset 2 lines).
+Hunk #2 succeeded at 290 (offset 8 lines).
+Hunk #3 succeeded at 608 (offset 23 lines).
+==> Applying revert-appinfo-contenttype.patch
+patching file gio/Makefile.am
+Hunk #3 succeeded at 394 (offset 5 lines).
+Hunk #4 succeeded at 871 (offset 4 lines).
+Hunk #5 succeeded at 881 (offset 4 lines).
+patching file gio/giomodule.c
+patching file gio/glocalfileinfo.c
+Hunk #1 succeeded at 1269 (offset 10 lines).
+patching file gio/tests/Makefile.am
+==> autoreconf -i -f
+==> ./configure --disable-maintainer-mode --disable-silent-rules --disable-dtrace --disable-libelf --enable-static --prefix=/usr/local/Cellar/glib/2.54.0 --localstatedir=/usr/local/var --with-gio-module-dir=/usr/local/lib/gio/modules
+==> make
+==> make install
+🍺  /usr/local/Cellar/glib/2.54.0: 446 files, 23.3MB, built in 9 minutes 47 seconds
+==> Installing gdk-pixbuf dependency: gobject-introspection
+==> Downloading https://download.gnome.org/sources/gobject-introspection/1.54/gobject-introspection-1.54.0.tar.xz
+==> Downloading from http://mirror.umd.edu/gnome/sources/gobject-introspection/1.54/gobject-introspection-1.54.0.tar.xz
+==> ./configure --prefix=/usr/local/Cellar/gobject-introspection/1.54.0 PYTHON=python
+==> make
+==> make install
+🍺  /usr/local/Cellar/gobject-introspection/1.54.0: 231 files, 10.6MB, built in 1 minute 53 seconds
+==> Installing gdk-pixbuf
+==> Downloading https://download.gnome.org/sources/gdk-pixbuf/2.36/gdk-pixbuf-2.36.10.tar.xz
+==> Downloading from http://mirror.umd.edu/gnome/sources/gdk-pixbuf/2.36/gdk-pixbuf-2.36.10.tar.xz
+==> ./configure --disable-maintainer-mode --enable-debug=no --prefix=/usr/local/Cellar/gdk-pixbuf/2.36.10 --enable-introspection=yes --disable-Bsymbolic --enable-static --without-gdiplus
+==> make
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall freexl`
-🍺  /usr/local/Cellar/freexl/1.0.4: 12 files, 119.1KB, built in 28 seconds
+You can run it manually using `brew postinstall gdk-pixbuf`
+🍺  /usr/local/Cellar/gdk-pixbuf/2.36.10: 198 files, 4.3MB, built in 1 minute 22 seconds
