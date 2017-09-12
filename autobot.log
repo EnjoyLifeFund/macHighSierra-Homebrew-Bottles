@@ -1,0 +1,11 @@
+==> Upgrading 1 outdated package, with result:
+freexl 1.0.4
+==> Upgrading freexl 
+==> Downloading https://www.gaia-gis.it/gaia-sins/freexl-sources/freexl-1.0.4.tar.gz
+Already downloaded: /Users/dojo/Library/Caches/Homebrew/freexl-1.0.4.tar.gz
+==> ./configure --prefix=/usr/local/Cellar/freexl/1.0.4 --disable-silent-rules
+==> make check
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall freexl`
+🍺  /usr/local/Cellar/freexl/1.0.4: 12 files, 119.1KB, built in 28 seconds
