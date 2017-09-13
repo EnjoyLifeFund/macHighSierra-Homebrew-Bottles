@@ -1,17 +1,6 @@
-==> Downloading https://www.gaia-gis.it/gaia-sins/libspatialite-sources/libspatialite-4.3.0a.tar.gz
-Already downloaded: /Users/dojo/Library/Caches/Homebrew/libspatialite-4.3.0a.tar.gz
-==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/27a0e51936e01829d0a6f3c75a7fbcaf92bb133f/libspatialite/sqlite310.patch
-Already downloaded: /Users/dojo/Library/Caches/Homebrew/libspatialite--patch-459434f5e6658d6f63d403a7795aa5b198b87fc9f55944c714180e7de662fce2.patch
-==> Patching
-==> Applying sqlite310.patch
-patching file config.h.in
-patching file configure
-patching file configure.ac
-patching file src/spatialite/virtualXL.c
-patching file src/spatialite/virtualdbf.c
-patching file src/spatialite/virtualshape.c
-==> ./configure --prefix=/usr/local/Cellar/libspatialite/4.3.0a_3 --with-sysroot=/usr/local --enable-geocallbacks --enable-lwgeom=yes
+==> Downloading http://rpm5.org/files/popt/popt-1.16.tar.gz
+==> ./configure --prefix=/usr/local/Cellar/popt/1.16
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall libspatialite`
-🍺  /usr/local/Cellar/libspatialite/4.3.0a_3: 31 files, 18.8MB, built in 2 minutes 31 seconds
+You can run it manually using `brew postinstall popt`
+🍺  /usr/local/Cellar/popt/1.16: 11 files, 157KB, built in 24 seconds
