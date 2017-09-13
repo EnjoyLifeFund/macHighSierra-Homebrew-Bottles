@@ -1,7 +1,12 @@
-==> Downloading https://github.com/uclouvain/openjpeg/archive/v2.2.0.tar.gz
-==> Downloading from https://codeload.github.com/uclouvain/openjpeg/tar.gz/v2.2.0
-==> cmake . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/openjpeg/2.2.0 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -DBUILD_DOC=ON
+==> Downloading https://poppler.freedesktop.org/poppler-0.59.0.tar.xz
+==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/656cc7f/poppler/clang.diff
+==> Patching
+==> Applying clang.diff
+patching file poppler/StructElement.cc
+==> ./configure --prefix=/usr/local/Cellar/poppler/0.59.0_1 --enable-xpdf-headers --enable-poppler-glib --disable-gtk-test --enable-introspection=yes --disable-poppler-qt4 --disable-poppler-qt5
 ==> make install
+==> Downloading https://poppler.freedesktop.org/poppler-data-0.4.8.tar.gz
+==> make install prefix=/usr/local/Cellar/poppler/0.59.0_1
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall openjpeg`
-🍺  /usr/local/Cellar/openjpeg/2.2.0: 509 files, 12.5MB, built in 38 seconds
+You can run it manually using `brew postinstall poppler`
+🍺  /usr/local/Cellar/poppler/0.59.0_1: 479 files, 22.9MB, built in 2 minutes 26 seconds
