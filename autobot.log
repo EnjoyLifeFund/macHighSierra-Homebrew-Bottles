@@ -1,9 +1,10 @@
-==> Downloading https://www.apache.org/dyn/closer.cgi?path=xerces/c/3/sources/xerces-c-3.1.4.tar.gz
-==> Best Mirror http://mirrors.gigenet.com/apache/xerces/c/3/sources/xerces-c-3.1.4.tar.gz
-Trying a mirror...
-==> Downloading https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.1.4.tar.gz
-==> ./configure --prefix=/usr/local/Cellar/xerces-c/3.1.4
+==> Using Homebrew-provided fortran compiler.
+This may be changed by setting the FC environment variable.
+==> Downloading https://www.hdfgroup.org/ftp/HDF5/releases/hdf5-1.10/hdf5-1.10.1/src/hdf5-1.10.1.tar.bz2
+==> Downloading from https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.10/hdf5-1.10.1/src/hdf5-1.10.1.tar.bz2
+==> autoreconf -fiv
+==> ./configure --disable-silent-rules --prefix=/usr/local/Cellar/hdf5/1.10.1_2 --with-szlib=/usr/local/opt/szip --enable-build-mode=production --enable-fortran --disable-cxx --enable-parallel
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall xerces-c`
-🍺  /usr/local/Cellar/xerces-c/3.1.4: 491 files, 15.2MB, built in 3 minutes 19 seconds
+You can run it manually using `brew postinstall hdf5`
+🍺  /usr/local/Cellar/hdf5/1.10.1_2: 207 files, 14.2MB, built in 8 minutes 5 seconds
