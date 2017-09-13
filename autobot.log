@@ -1,8 +1,7 @@
-==> Downloading https://www.opendap.org/pub/source/libdap-3.19.0.tar.gz
-==> ./configure --prefix=/usr/local/Cellar/libdap/3.19.0_1 --with-included-regex
-==> make
-==> make check
+==> Downloading https://downloads.sourceforge.net/project/unixodbc/unixODBC/2.3.4/unixODBC-2.3.4.tar.gz
+==> Downloading from https://pilotfiber.dl.sourceforge.net/project/unixodbc/unixODBC/2.3.4/unixODBC-2.3.4.tar.gz
+==> ./configure --prefix=/usr/local/Cellar/unixodbc/2.3.4 --enable-static --enable-gui=no
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall libdap`
-🍺  /usr/local/Cellar/libdap/3.19.0_1: 163 files, 7.1MB, built in 4 minutes 9 seconds
+You can run it manually using `brew postinstall unixodbc`
+🍺  /usr/local/Cellar/unixodbc/2.3.4: 43 files, 1.8MB, built in 1 minute 52 seconds
