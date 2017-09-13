@@ -1,7 +1,12 @@
-==> Downloading https://downloads.sourceforge.net/podofo/podofo-0.9.5.tar.gz
-==> Downloading from https://downloads.sourceforge.net/project/podofo/podofo/0.9.5/podofo-0.9.5.tar.gz
-==> cmake .. -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/podofo/0.9.5_1 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -DPODOFO_BUILD_SHARED:BOOL=TRUE -DFREETYPE_INCLUDE_DIR_FT2BUILD=/usr/local/opt/freetype/include/freetype2 -DFREETYPE_INCLUDE_DIR_FTHEADER=/usr/local/opt/freetype/include/freetype2/config/ -DLUA_INCLUDE_DIR=FALSE -DLUA_LIBRARIES=FALSE
+==> Auto-updated Homebrew!
+Updated Homebrew from ef60688 to d1225b9.
+Updated 1 tap (caskroom/cask).
+No changes to formulae.
+
+==> Downloading https://bitbucket.org/multicoreware/x265/downloads/x265_2.5.tar.gz
+==> Downloading from https://bbuseruploads.s3.amazonaws.com/b8d6bf3b-c76e-4683-87c4-31459ce32bdd/downloads/9e1e5a75-820e-4f28-b6a3-f83e19d04927/x265_2.5.tar.gz?Signature=vlAHznvXEzCt9yNzyMCAUguEAc0%3D&Expires=1505277648&AWSAccessKeyId=AKIAIQWXW6WLXMB5QZAQ&versionId=QNntYWuQMYTdyUhl1FItj4YJcZHIlyHr&response-content-disposition=attachment%3B%20filename%3D%22x265_2.5.tar.gz%22
+==> cmake source -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/x265/2.5 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall podofo`
-🍺  /usr/local/Cellar/podofo/0.9.5_1: 152 files, 4.6MB, built in 1 minute 46 seconds
+You can run it manually using `brew postinstall x265`
+🍺  /usr/local/Cellar/x265/2.5: 11 files, 7.7MB, built in 1 minute 54 seconds
