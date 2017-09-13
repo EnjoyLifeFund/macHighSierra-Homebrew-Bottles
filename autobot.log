@@ -1,7 +1,7 @@
-==> Downloading https://downloads.sourceforge.net/project/unixodbc/unixODBC/2.3.4/unixODBC-2.3.4.tar.gz
-==> Downloading from https://pilotfiber.dl.sourceforge.net/project/unixodbc/unixODBC/2.3.4/unixODBC-2.3.4.tar.gz
-==> ./configure --prefix=/usr/local/Cellar/unixodbc/2.3.4 --enable-static --enable-gui=no
+==> Downloading https://downloads.sourceforge.net/project/lcms/lcms/2.8/lcms2-2.8.tar.gz
+==> Downloading from http://cfhcable.dl.sourceforge.net/project/lcms/lcms/2.8/lcms2-2.8.tar.gz
+==> ./configure --prefix=/usr/local/Cellar/little-cms2/2.8_1
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall unixodbc`
-🍺  /usr/local/Cellar/unixodbc/2.3.4: 43 files, 1.8MB, built in 1 minute 52 seconds
+You can run it manually using `brew postinstall little-cms2`
+🍺  /usr/local/Cellar/little-cms2/2.8_1: 18 files, 1MB, built in 36 seconds
