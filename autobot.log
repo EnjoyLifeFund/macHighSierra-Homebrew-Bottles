@@ -1,12 +1,9 @@
-==> Auto-updated Homebrew!
-Updated Homebrew from ef60688 to d1225b9.
-Updated 1 tap (caskroom/cask).
-No changes to formulae.
-
-==> Downloading https://bitbucket.org/multicoreware/x265/downloads/x265_2.5.tar.gz
-==> Downloading from https://bbuseruploads.s3.amazonaws.com/b8d6bf3b-c76e-4683-87c4-31459ce32bdd/downloads/9e1e5a75-820e-4f28-b6a3-f83e19d04927/x265_2.5.tar.gz?Signature=vlAHznvXEzCt9yNzyMCAUguEAc0%3D&Expires=1505277648&AWSAccessKeyId=AKIAIQWXW6WLXMB5QZAQ&versionId=QNntYWuQMYTdyUhl1FItj4YJcZHIlyHr&response-content-disposition=attachment%3B%20filename%3D%22x265_2.5.tar.gz%22
-==> cmake source -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/x265/2.5 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev
+==> Downloading https://www.apache.org/dyn/closer.cgi?path=xerces/c/3/sources/xerces-c-3.1.4.tar.gz
+==> Best Mirror http://mirrors.gigenet.com/apache/xerces/c/3/sources/xerces-c-3.1.4.tar.gz
+Trying a mirror...
+==> Downloading https://archive.apache.org/dist/xerces/c/3/sources/xerces-c-3.1.4.tar.gz
+==> ./configure --prefix=/usr/local/Cellar/xerces-c/3.1.4
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall x265`
-🍺  /usr/local/Cellar/x265/2.5: 11 files, 7.7MB, built in 1 minute 54 seconds
+You can run it manually using `brew postinstall xerces-c`
+🍺  /usr/local/Cellar/xerces-c/3.1.4: 491 files, 15.2MB, built in 3 minutes 19 seconds
