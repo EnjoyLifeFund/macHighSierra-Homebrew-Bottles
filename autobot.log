@@ -1,0 +1,13 @@
+==> Downloading https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/libkml/libkml-1.2.0.tar.gz
+==> Downloading https://gist.githubusercontent.com/dakcarto/7419882/raw/10ae08af224b3fee0617fa6288d806d3ccf37c0f/libkml-1.2-static-deps
+==> Patching
+patching file src/kml/base/file_posix.cc
+==> Applying libkml-1.2-static-deps
+patching file third_party/Makefile.in
+patch unexpectedly ends in middle of line
+Hunk #2 succeeded at 294 with fuzz 1.
+==> ./configure --prefix=/usr/local/Cellar/libkml/1.2.0
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall libkml`
+🍺  /usr/local/Cellar/libkml/1.2.0: 177 files, 4.3MB, built in 4 minutes 7 seconds
