@@ -1,7 +1,7 @@
-==> Downloading https://downloads.sourceforge.net/project/lcms/lcms/2.8/lcms2-2.8.tar.gz
-==> Downloading from http://cfhcable.dl.sourceforge.net/project/lcms/lcms/2.8/lcms2-2.8.tar.gz
-==> ./configure --prefix=/usr/local/Cellar/little-cms2/2.8_1
+==> Downloading https://github.com/uclouvain/openjpeg/archive/v2.2.0.tar.gz
+==> Downloading from https://codeload.github.com/uclouvain/openjpeg/tar.gz/v2.2.0
+==> cmake . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/openjpeg/2.2.0 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -DBUILD_DOC=ON
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall little-cms2`
-🍺  /usr/local/Cellar/little-cms2/2.8_1: 18 files, 1MB, built in 36 seconds
+You can run it manually using `brew postinstall openjpeg`
+🍺  /usr/local/Cellar/openjpeg/2.2.0: 509 files, 12.5MB, built in 38 seconds
