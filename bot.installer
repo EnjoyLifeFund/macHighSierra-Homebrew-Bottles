@@ -1,7 +1,7 @@
 #!/bin/bash
-echo "[Info] Get all tar.gz filename in tobe.install""
-echo -e "find . -name "*.tar.gz" | sed 's/^..//' | awk '{print "extract "$1}' > tobe.install"
-echo which extract >> tobe.install
-. tobe.install
+echo "[Info] Get all tar.gz filename in tobe.install"
+echo "find . -name "*.tar.gz" | sed 's/^..//' | awk '{print "extract "$1}' > tobe.install"
+echo "which extract >> tobe.install"
+echo ". tobe.install"
 find . -maxdepth 1 -type d | grep -v .git|grep -v tmpbot | sed 's/^..//' | sed '1d' | awk '{print mv $1 /usr/local/Cellar }' > tobe.move
 echo . tobe.move
