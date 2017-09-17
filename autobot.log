@@ -1,20 +1,15 @@
-==> Downloading https://ftp.gnu.org/gnu/autoconf/autoconf-2.64.tar.gz
-Already downloaded: /Users/ralic/Library/Caches/Homebrew/autoconf-2.64.tar.gz
-A checksum was not provided for this resource
-For your reference the SHA256 is: a84471733f86ac2c1240a6d28b705b05a6b79c3cca8835c3712efbdf813c5eb6
-==> ./configure --prefix=/usr/local/Cellar/autoconf/2.64 --with-lispdir=/usr/local/Cellar/autoconf/2.64/share/emacs/site-lisp/autoconf
+==> Downloading https://ftp.gnu.org/gnu/automake/automake-1.15.1.tar.xz
+Already downloaded: /Users/ralic/Library/Caches/Homebrew/automake-1.15.1.tar.xz
+==> ./configure --prefix=/usr/local/Cellar/automake/1.15.1
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall autoconf`
-==> Caveats
-Emacs Lisp files have been installed to:
-  /usr/local/share/emacs/site-lisp/autoconf
-==> Summary
-🍺  /usr/local/Cellar/autoconf/2.64: 69 files, 3.5MB, built in 10 seconds
-==> Determining autoconf bottle rebuild...
-==> Bottling autoconf-2.64.high_sierra.bottle.tar.gz...
-./autoconf-2.64.high_sierra.bottle.tar.gz
+You can run it manually using `brew postinstall automake`
+🍺  /usr/local/Cellar/automake/1.15.1: 131 files, 3.0MB, built in 10 seconds
+==> Determining automake bottle rebuild...
+==> Bottling automake-1.15.1.high_sierra.bottle.1.tar.gz...
+./automake-1.15.1.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
-    sha256 "66bff3ea978073355127b8100952c49b2b2bd6f4da4ade91636014cf9becaef6" => :high_sierra
+    rebuild 1
+    sha256 "d234d78c6dda96533bd50aaf256170e1cecc6ec1cf23af0bc276978cfbe0df8c" => :high_sierra
   end
