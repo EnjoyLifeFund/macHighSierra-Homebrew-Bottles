@@ -1,2 +1,20 @@
-==> Downloading https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.12.tar.gz
-==> ./configure --prefix=/usr/local/Cellar/libtasn1/4.12 --disable-silent-rules
+==> Downloading https://ftp.gnu.org/gnu/autoconf/autoconf-2.64.tar.gz
+Already downloaded: /Users/ralic/Library/Caches/Homebrew/autoconf-2.64.tar.gz
+A checksum was not provided for this resource
+For your reference the SHA256 is: a84471733f86ac2c1240a6d28b705b05a6b79c3cca8835c3712efbdf813c5eb6
+==> ./configure --prefix=/usr/local/Cellar/autoconf/2.64 --with-lispdir=/usr/local/Cellar/autoconf/2.64/share/emacs/site-lisp/autoconf
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall autoconf`
+==> Caveats
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/autoconf
+==> Summary
+🍺  /usr/local/Cellar/autoconf/2.64: 69 files, 3.5MB, built in 10 seconds
+==> Determining autoconf bottle rebuild...
+==> Bottling autoconf-2.64.high_sierra.bottle.tar.gz...
+./autoconf-2.64.high_sierra.bottle.tar.gz
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "66bff3ea978073355127b8100952c49b2b2bd6f4da4ade91636014cf9becaef6" => :high_sierra
+  end
