@@ -1,29 +1,18 @@
-==> Upgrading 1 outdated package, with result:
-json-c 0.12.1
-==> Upgrading json-c 
-rm /usr/local/include/json-c
-rm /usr/local/lib/libjson-c.2.dylib
-rm /usr/local/lib/libjson-c.a
-rm /usr/local/lib/libjson-c.dylib
-rm /usr/local/lib/pkgconfig/json-c.pc
-/usr/bin/sandbox-exec -f /tmp/homebrew20170917-74484-1wct9sg.sb nice /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -W0 -I /usr/local/Homebrew/Library/Homebrew -- /usr/local/Homebrew/Library/Homebrew/build.rb /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/json-c.rb --build-bottle --verbose
-==> Downloading https://github.com/json-c/json-c/archive/json-c-0.12.1-20160607.tar.gz
-==> Downloading from https://codeload.github.com/json-c/json-c/tar.gz/json-c-0.12.1-20160607
-/usr/bin/curl --show-error --user-agent Homebrew/1.X.Y (Macintosh; Intel Mac OS X 10.13) curl/7.54.0 --fail --silent --location --remote-time --continue-at - --output /Users/ralic/Library/Caches/Homebrew/json-c-0.12.1.tar.gz.incomplete https://codeload.github.com/json-c/json-c/tar.gz/json-c-0.12.1-20160607
-==> Verifying json-c-0.12.1.tar.gz checksum
-tar xzf /Users/ralic/Library/Caches/Homebrew/json-c-0.12.1.tar.gz
-==> ./configure --disable-dependency-tracking --disable-silent-rules --prefix=/usr/local/Cellar/json-c/0.12.1
+/usr/bin/sandbox-exec -f /tmp/homebrew20170917-46296-wyebnf.sb nice /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -W0 -I /usr/local/Homebrew/Library/Homebrew -- /usr/local/Homebrew/Library/Homebrew/build.rb /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/make.rb --build-bottle --verbose
+==> Downloading https://ftp.gnu.org/gnu/make/make-4.2.1.tar.bz2
+/usr/bin/curl --show-error --user-agent Homebrew/1.X.Y (Macintosh; Intel Mac OS X 10.13) curl/7.54.0 --fail --silent --location --remote-time --continue-at - --output /Users/ralic/Library/Caches/Homebrew/make-4.2.1.tar.bz2.incomplete https://ftp.gnu.org/gnu/make/make-4.2.1.tar.bz2 --connect-timeout 5
+==> Verifying make-4.2.1.tar.bz2 checksum
+tar xjf /Users/ralic/Library/Caches/Homebrew/make-4.2.1.tar.bz2
+==> ./configure --disable-dependency-tracking --prefix=/usr/local/Cellar/make/4.2.1_1 --program-prefix=g
 checking for a BSD-compatible install... /usr/bin/install -c
 checking whether build environment is sane... yes
-checking for a thread-safe mkdir -p... ./install-sh -c -d
+checking for a thread-safe mkdir -p... config/install-sh -c -d
 checking for gawk... no
 checking for mawk... no
 checking for nawk... no
 checking for awk... awk
 checking whether make sets $(MAKE)... yes
 checking whether make supports nested variables... yes
-checking whether make sets $(MAKE)... (cached) yes
-RDRAND Hardware RNG Hash Seed disabled. Use --enable-rdrand to enable
 checking for style of include used by make... GNU
 checking for gcc... clang
 checking whether the C compiler works... yes
@@ -49,194 +38,288 @@ checking for strings.h... yes
 checking for inttypes.h... yes
 checking for stdint.h... yes
 checking for unistd.h... yes
-checking fcntl.h usability... yes
-checking fcntl.h presence... yes
-checking for fcntl.h... yes
-checking limits.h usability... yes
-checking limits.h presence... yes
-checking for limits.h... yes
-checking for strings.h... (cached) yes
-checking syslog.h usability... yes
-checking syslog.h presence... yes
-checking for syslog.h... yes
-checking for unistd.h... (cached) yes
-checking sys/cdefs.h usability... yes
-checking sys/cdefs.h presence... yes
-checking for sys/cdefs.h... yes
-checking sys/param.h usability... yes
-checking sys/param.h presence... yes
-checking for sys/param.h... yes
-checking stdarg.h usability... yes
-checking stdarg.h presence... yes
-checking for stdarg.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for gcc... (cached) clang
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether clang accepts -g... (cached) yes
+checking for clang option to accept ISO C89... (cached) none needed
+checking whether clang understands -c and -o together... (cached) yes
+checking dependency style of clang... (cached) none
+checking for ranlib... ranlib
+checking how to run the C preprocessor... clang -E
+checking for ar... ar
+checking for perl... perl
+checking the archiver (ar) interface... ar
+checking build system type... x86_64-apple-darwin17.0.0
+checking host system type... x86_64-apple-darwin17.0.0
+checking for library containing strerror... none required
+checking for a sed that does not truncate output... /usr/local/Homebrew/Library/Homebrew/shims/super/sed
+checking whether NLS is requested... yes
+checking for msgfmt... no
+checking for gmsgfmt... :
+checking for xgettext... no
+checking for msgmerge... no
+checking for ld used by clang... /Library/Developer/CommandLineTools/usr/bin/ld
+checking if the linker (/Library/Developer/CommandLineTools/usr/bin/ld) is GNU ld... no
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... yes
+checking for CFLocaleCopyCurrent... yes
+checking for GNU gettext in libc... no
+checking for iconv... yes
+checking for working iconv... yes
+checking how to link with libiconv... -liconv
+checking for GNU gettext in libintl... no
+checking whether to use NLS... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for library containing getpwnam... none required
+checking for ANSI C header files... (cached) yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking whether stat file-mode macros are broken... no
+checking whether time.h and sys/time.h may both be included... yes
+checking for stdlib.h... (cached) yes
 checking locale.h usability... yes
 checking locale.h presence... yes
 checking for locale.h... yes
-checking endian.h usability... no
-checking endian.h presence... no
-checking for endian.h... no
-checking for inttypes.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/timeb.h usability... yes
+checking sys/timeb.h presence... yes
+checking for sys/timeb.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
 checking for an ANSI C-conforming const... yes
+checking return type of signal handlers... void
+checking for uid_t in sys/types.h... yes
+checking for pid_t... yes
+checking for off_t... yes
 checking for size_t... yes
-checking for vprintf... yes
-checking for _doprnt... no
-checking for working memcmp... yes
-checking for stdlib.h... (cached) yes
-checking for GNU libc compatible malloc... yes
-checking for stdlib.h... (cached) yes
-checking for GNU libc compatible realloc... yes
-checking for strcasecmp... yes
+checking for ssize_t... yes
+checking for unsigned long long int... yes
+checking for uintmax_t... yes
+checking for nanoseconds field of struct stat... st_mtimespec.tv_nsec
+checking whether to use high resolution file timestamps... yes
+checking for library containing clock_gettime... none required
+checking whether system uses MSDOS-style paths... no
+checking for standard gettimeofday... yes
 checking for strdup... yes
+checking for strndup... yes
+checking for mkstemp... yes
+checking for mktemp... yes
+checking for fdopen... yes
+checking for fileno... yes
+checking for dup... yes
+checking for dup2... yes
+checking for getcwd... yes
+checking for realpath... yes
+checking for sigsetmask... yes
+checking for sigaction... yes
+checking for getgroups... yes
+checking for seteuid... yes
+checking for setegid... yes
+checking for setlinebuf... yes
+checking for setreuid... yes
+checking for setregid... yes
+checking for getrlimit... yes
+checking for setrlimit... yes
+checking for setvbuf... yes
+checking for pipe... yes
 checking for strerror... yes
-checking for snprintf... yes
-checking for vsnprintf... yes
-checking for vasprintf... yes
-checking for open... yes
-checking for vsyslog... yes
+checking for strsignal... yes
+checking for lstat... yes
+checking for readlink... yes
+checking for atexit... yes
+checking for isatty... yes
+checking for ttyname... yes
+checking for pselect... yes
+checking whether bsd_signal is declared... yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for strcasecmp... yes
 checking for strncasecmp... yes
-checking for setlocale... yes
-checking whether INFINITY is declared... yes
-checking whether nan is declared... yes
-checking whether isnan is declared... yes
-checking whether isinf is declared... yes
-checking whether _isnan is declared... no
-checking whether _finite is declared... no
-checking if .gnu.warning accepts long strings... no
-checking build system type... x86_64-apple-darwin17.0.0
-checking host system type... x86_64-apple-darwin17.0.0
-checking how to print strings... printf
-checking for a sed that does not truncate output... /usr/local/Homebrew/Library/Homebrew/shims/super/sed
-checking for fgrep... /usr/bin/grep -F
-checking for ld used by clang... /Library/Developer/CommandLineTools/usr/bin/ld
-checking if the linker (/Library/Developer/CommandLineTools/usr/bin/ld) is GNU ld... no
-checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
-checking the name lister (/usr/bin/nm -B) interface... BSD nm
-checking whether ln -s works... yes
-checking the maximum length of command line arguments... 196608
-checking whether the shell understands some XSI constructs... yes
-checking whether the shell understands "+="... yes
-checking how to convert x86_64-apple-darwin17.0.0 file names to x86_64-apple-darwin17.0.0 format... func_convert_file_noop
-checking how to convert x86_64-apple-darwin17.0.0 file names to toolchain format... func_convert_file_noop
-checking for /Library/Developer/CommandLineTools/usr/bin/ld option to reload object files... -r
-checking for objdump... objdump
-checking how to recognize dependent libraries... pass_all
-checking for dlltool... no
-checking how to associate runtime and link libraries... printf %s\n
-checking for ar... ar
-checking for archiver @FILE support... no
-checking for strip... strip
-checking for ranlib... ranlib
-checking command to parse /usr/bin/nm -B output from clang object... ok
-checking for sysroot... no
-checking for mt... no
-checking if : is a manifest tool... no
-checking for dsymutil... dsymutil
-checking for nmedit... nmedit
-checking for lipo... lipo
-checking for otool... otool
-checking for otool64... no
-checking for -single_module linker flag... yes
-checking for -exported_symbols_list linker flag... yes
-checking for -force_load linker flag... yes
-checking for dlfcn.h... yes
-checking for objdir... .libs
-checking if clang supports -fno-rtti -fno-exceptions... yes
-checking for clang option to produce PIC... -fno-common -DPIC
-checking if clang PIC flag -fno-common -DPIC works... yes
-checking if clang static flag -static works... no
-checking if clang supports -c -o file.o... yes
-checking if clang supports -c -o file.o... (cached) yes
-checking whether the clang linker (/Library/Developer/CommandLineTools/usr/bin/ld) supports shared libraries... yes
-checking dynamic linker characteristics... darwin17.0.0 dyld
-checking how to hardcode library paths into programs... immediate
-checking whether stripping libraries is possible... yes
-checking if libtool supports shared libraries... yes
-checking whether to build shared libraries... yes
-checking whether to build static libraries... yes
-checking for -Bsymbolic-functions linker flag... no
+checking for strcmpi... no
+checking for strncmpi... no
+checking for stricmp... no
+checking for strnicmp... no
+checking for working strcoll... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking whether closedir returns void... no
+checking for pkg-config... no
+checking for GUILE... no
+checking for GUILE... no
+checking for getloadavg... yes
+checking for pstat_getdynamic... no
+checking for kstat_open in -lkstat... no
+checking for getloadavg... yes
+checking whether getloadavg requires setgid... no
+checking whether sys_siglist is declared... yes
+checking whether _sys_siglist is declared... no
+checking whether __sys_siglist is declared... no
+checking for sys/wait.h... yes
+checking for waitpid... yes
+checking for wait3... yes
+checking for union wait... no
+checking for SA_RESTART... yes
+checking whether dlopen is declared... yes
+checking whether dlsym is declared... yes
+checking whether dlerror is declared... yes
+checking for library containing dlopen... none required
+checking If the linker accepts -Wl,--export-dynamic... no
+checking If the linker accepts -rdynamic... yes
+checking for location of SCCS get command... get
+checking if system libc has GNU glob... no
+checking if malloc debugging is wanted... no
 checking that generated files are newer than configure... done
 configure: creating ./config.status
 config.status: creating Makefile
-config.status: creating json-c.pc
-config.status: creating tests/Makefile
-config.status: creating json-c-uninstalled.pc
+config.status: creating glob/Makefile
+config.status: creating po/Makefile.in
+config.status: creating config/Makefile
+config.status: creating doc/Makefile
+config.status: creating w32/Makefile
+config.status: creating tests/config-flags.pm
 config.status: creating config.h
-config.status: creating json_config.h
 config.status: executing depfiles commands
-config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: creating build.sh
 ==> make install
-Making install in .
-/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I.    -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c -o arraylist.lo arraylist.c
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c arraylist.c  -fno-common -DPIC -o .libs/arraylist.o
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c arraylist.c -o arraylist.o >/dev/null 2>&1
-/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I.    -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c -o debug.lo debug.c
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c debug.c  -fno-common -DPIC -o .libs/debug.o
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c debug.c -o debug.o >/dev/null 2>&1
-/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I.    -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c -o json_c_version.lo json_c_version.c
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c json_c_version.c  -fno-common -DPIC -o .libs/json_c_version.o
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c json_c_version.c -o json_c_version.o >/dev/null 2>&1
-/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I.    -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c -o json_object.lo json_object.c
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c json_object.c  -fno-common -DPIC -o .libs/json_object.o
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c json_object.c -o json_object.o >/dev/null 2>&1
-/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I.    -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c -o json_object_iterator.lo json_object_iterator.c
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c json_object_iterator.c  -fno-common -DPIC -o .libs/json_object_iterator.o
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c json_object_iterator.c -o json_object_iterator.o >/dev/null 2>&1
-/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I.    -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c -o json_tokener.lo json_tokener.c
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c json_tokener.c  -fno-common -DPIC -o .libs/json_tokener.o
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c json_tokener.c -o json_tokener.o >/dev/null 2>&1
-/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I.    -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c -o json_util.lo json_util.c
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c json_util.c  -fno-common -DPIC -o .libs/json_util.o
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c json_util.c -o json_util.o >/dev/null 2>&1
-/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I.    -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c -o linkhash.lo linkhash.c
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c linkhash.c  -fno-common -DPIC -o .libs/linkhash.o
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c linkhash.c -o linkhash.o >/dev/null 2>&1
-/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I.    -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c -o printbuf.lo printbuf.c
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c printbuf.c  -fno-common -DPIC -o .libs/printbuf.o
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c printbuf.c -o printbuf.o >/dev/null 2>&1
-/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I.    -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c -o random_seed.lo random_seed.c
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c random_seed.c  -fno-common -DPIC -o .libs/random_seed.o
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c random_seed.c -o random_seed.o >/dev/null 2>&1
-/bin/sh ./libtool  --tag=CC   --mode=link clang -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -version-info 2:2:0 -no-undefined   -o libjson-c.la -rpath /usr/local/Cellar/json-c/0.12.1/lib arraylist.lo debug.lo json_c_version.lo json_object.lo json_object_iterator.lo json_tokener.lo json_util.lo linkhash.lo printbuf.lo random_seed.lo  
-libtool: link: clang -dynamiclib  -o .libs/libjson-c.2.dylib  .libs/arraylist.o .libs/debug.o .libs/json_c_version.o .libs/json_object.o .libs/json_object_iterator.o .libs/json_tokener.o .libs/json_util.o .libs/linkhash.o .libs/printbuf.o .libs/random_seed.o    -O2   -install_name  /usr/local/Cellar/json-c/0.12.1/lib/libjson-c.2.dylib -compatibility_version 3 -current_version 3.2 -Wl,-single_module
-libtool: link: (cd ".libs" && rm -f "libjson-c.dylib" && ln -s "libjson-c.2.dylib" "libjson-c.dylib")
-libtool: link: ar cru .libs/libjson-c.a  arraylist.o debug.o json_c_version.o json_object.o json_object_iterator.o json_tokener.o json_util.o linkhash.o printbuf.o random_seed.o
-libtool: link: ranlib .libs/libjson-c.a
-libtool: link: ( cd ".libs" && rm -f "libjson-c.la" && ln -s "../libjson-c.la" "libjson-c.la" )
- ./install-sh -c -d '/usr/local/Cellar/json-c/0.12.1/lib'
- /bin/sh ./libtool   --mode=install /usr/bin/install -c   libjson-c.la '/usr/local/Cellar/json-c/0.12.1/lib'
-libtool: install: /usr/bin/install -c .libs/libjson-c.2.dylib /usr/local/Cellar/json-c/0.12.1/lib/libjson-c.2.dylib
-libtool: install: (cd /usr/local/Cellar/json-c/0.12.1/lib && { ln -s -f libjson-c.2.dylib libjson-c.dylib || { rm -f libjson-c.dylib && ln -s libjson-c.2.dylib libjson-c.dylib; }; })
-libtool: install: /usr/bin/install -c .libs/libjson-c.lai /usr/local/Cellar/json-c/0.12.1/lib/libjson-c.la
-libtool: install: /usr/bin/install -c .libs/libjson-c.a /usr/local/Cellar/json-c/0.12.1/lib/libjson-c.a
-libtool: install: chmod 644 /usr/local/Cellar/json-c/0.12.1/lib/libjson-c.a
-libtool: install: ranlib /usr/local/Cellar/json-c/0.12.1/lib/libjson-c.a
- ./install-sh -c -d '/usr/local/Cellar/json-c/0.12.1/include/json-c'
- /usr/bin/install -c -m 644 arraylist.h bits.h debug.h json.h json_config.h json_c_version.h json_inttypes.h json_object.h json_object_iterator.h json_object_private.h json_tokener.h json_util.h linkhash.h printbuf.h random_seed.h '/usr/local/Cellar/json-c/0.12.1/include/json-c'
- ./install-sh -c -d '/usr/local/Cellar/json-c/0.12.1/lib/pkgconfig'
- /usr/bin/install -c -m 644 json-c.pc '/usr/local/Cellar/json-c/0.12.1/lib/pkgconfig'
-Making install in tests
+Making install in glob
+clang -DHAVE_CONFIG_H -I. -I..     -g -O2 -c -o glob.o glob.c
+clang -DHAVE_CONFIG_H -I. -I..     -g -O2 -c -o fnmatch.o fnmatch.c
+rm -f libglob.a
+ar cru libglob.a glob.o fnmatch.o 
+ranlib libglob.a
 make[2]: Nothing to be done for `install-exec-am'.
 make[2]: Nothing to be done for `install-data-am'.
+Making install in config
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+Making install in po
+if test "make" = "gettext-tools"; then \
+	  ../config/install-sh -c -d /usr/local/Cellar/make/4.2.1_1/share/gettext/po; \
+	  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+	    /usr/bin/install -c -m 644 ./$file \
+			    /usr/local/Cellar/make/4.2.1_1/share/gettext/po/$file; \
+	  done; \
+	  for file in Makevars; do \
+	    rm -f /usr/local/Cellar/make/4.2.1_1/share/gettext/po/$file; \
+	  done; \
+	else \
+	  : ; \
+	fi
+Making install in doc
+make[2]: Nothing to be done for `install-exec-am'.
+ ../config/install-sh -c -d '/usr/local/Cellar/make/4.2.1_1/share/info'
+ /usr/bin/install -c -m 644 ./make.info ./make.info-1 ./make.info-2 '/usr/local/Cellar/make/4.2.1_1/share/info'
+ install-info --info-dir='/usr/local/Cellar/make/4.2.1_1/share/info' '/usr/local/Cellar/make/4.2.1_1/share/info/make.info'
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o ar.o ar.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o arscan.o arscan.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o commands.o commands.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o default.o default.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o dir.o dir.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o expand.o expand.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o file.o file.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o function.o function.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o getopt.o getopt.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o getopt1.o getopt1.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o guile.o guile.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o implicit.o implicit.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o job.o job.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o load.o load.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o loadapi.o loadapi.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o main.o main.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o misc.o misc.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o posixos.o posixos.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o output.o output.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o read.o read.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o remake.o remake.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o rule.o rule.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o signame.o signame.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o strcache.o strcache.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o variable.o variable.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o version.o version.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o vpath.o vpath.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o hash.o hash.c
+clang -DLOCALEDIR=\"/usr/local/Cellar/make/4.2.1_1/share/locale\" -DLIBDIR=\"/usr/local/Cellar/make/4.2.1_1/lib\" -DINCLUDEDIR=\"/usr/local/Cellar/make/4.2.1_1/include\" -DHAVE_CONFIG_H -I.  -I./glob    -g -O2 -c -o remote-stub.o remote-stub.c
+clang  -g -O2 -rdynamic  -o make ar.o arscan.o commands.o default.o dir.o expand.o file.o function.o getopt.o getopt1.o guile.o implicit.o job.o load.o loadapi.o main.o misc.o posixos.o output.o read.o remake.o rule.o signame.o strcache.o variable.o version.o vpath.o hash.o remote-stub.o glob/libglob.a   
+ config/install-sh -c -d '/usr/local/Cellar/make/4.2.1_1/bin'
+ config/install-sh -c -d '/usr/local/Cellar/make/4.2.1_1/include'
+ config/install-sh -c -d '/usr/local/Cellar/make/4.2.1_1/share/man/man1'
+ /usr/bin/install -c -m 644 gnumake.h '/usr/local/Cellar/make/4.2.1_1/include'
+  /usr/bin/install -c make '/usr/local/Cellar/make/4.2.1_1/bin/./gmake'
+ /usr/bin/install -c -m 644 'make.1' '/usr/local/Cellar/make/4.2.1_1/share/man/man1/gmake.1'
 ==> Cleaning
-rm /usr/local/Cellar/json-c/0.12.1/lib/libjson-c.la
+rm /usr/local/Cellar/make/4.2.1_1/share/info/dir
 ==> Finishing up
-ln -s ../Cellar/json-c/0.12.1/include/json-c json-c
-ln -s ../Cellar/json-c/0.12.1/lib/libjson-c.2.dylib libjson-c.2.dylib
-ln -s ../Cellar/json-c/0.12.1/lib/libjson-c.a libjson-c.a
-ln -s ../Cellar/json-c/0.12.1/lib/libjson-c.dylib libjson-c.dylib
-ln -s ../../Cellar/json-c/0.12.1/lib/pkgconfig/json-c.pc json-c.pc
+ln -s ../Cellar/make/4.2.1_1/bin/gmake gmake
+ln -s ../Cellar/make/4.2.1_1/include/gnumake.h gnumake.h
+ln -s ../../Cellar/make/4.2.1_1/share/info/make.info make.info
+info /usr/local/share/info/make.info
+ln -s ../../Cellar/make/4.2.1_1/share/info/make.info-1 make.info-1
+ln -s ../../Cellar/make/4.2.1_1/share/info/make.info-2 make.info-2
+ln -s ../../../Cellar/make/4.2.1_1/share/man/man1/gmake.1 gmake.1
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall json-c`
+You can run it manually using `brew postinstall make`
+==> Caveats
+All commands have been installed with the prefix 'g'.
+If you do not want the prefix, install using the "with-default-names" option.
+
+If you need to use these commands with their normal names, you
+can add a "gnubin" directory to your PATH from your bashrc like:
+
+    PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
+
+Additionally, you can access their man pages with normal names if you add
+the "gnuman" directory to your MANPATH from your bashrc as well:
+
+    MANPATH="/usr/local/opt/make/libexec/gnuman:$MANPATH"
 ==> Summary
-🍺  /usr/local/Cellar/json-c/0.12.1: 27 files, 155.8KB, built in 27 seconds
-==> Determining json-c bottle rebuild...
-==> Bottling json-c-0.12.1.high_sierra.bottle.1.tar.gz...
-/usr/bin/touch -h -t 201606062105.03 /usr/local/Cellar/json-c/0.12.1/lib/libjson-c.dylib
-tar cf /Volumes/data/WorkSpace/bottles/tmpbot/json-c/json-c-0.12.1.high_sierra.bottle.1.tar json-c/0.12.1
-gzip -f json-c-bottle.tar
-./json-c-0.12.1.high_sierra.bottle.1.tar.gz
+🍺  /usr/local/Cellar/make/4.2.1_1: 15 files, 956KB, built in 50 seconds
+==> Determining make bottle rebuild...
+==> Bottling make-4.2.1_1.high_sierra.bottle.1.tar.gz...
+/usr/bin/touch -h -t 201606101603.54 /usr/local/Cellar/make/4.2.1_1/libexec/gnubin/make
+/usr/bin/touch -h -t 201606101603.54 /usr/local/Cellar/make/4.2.1_1/libexec/gnuman/man1/make.1
+tar cf /Volumes/data/WorkSpace/bottles/tmpbot/make/make-4.2.1_1.high_sierra.bottle.1.tar make/4.2.1_1
+gzip -f make-bottle.tar
+/usr/local/Cellar/make/4.2.1_1/bin/gmake
+ --> match '/usr/local/Cellar/make/4.2.1_1/include' at offset 0x23d8b
+ --> match '/usr/local/Cellar/make/4.2.1_1/lib' at offset 0x24444
+/usr/local/Cellar/make/4.2.1_1/share/info/make.info-2
+ --> match ''/usr/local/etc', but write it as '$(prefix)/etc'.  (If you are' at offset 0x1ef1a
+/usr/local/Cellar/make/4.2.1_1/share/info/make.info-2
+ --> match ''$(localstatedir)' should normally be '/usr/local/var', but write' at offset 0x1f368
+
+./make-4.2.1_1.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any
     rebuild 1
-    sha256 "cf7d173595190b6b4620c11730d0ecf16141ab663b3e012e16bc72ad85e067a2" => :high_sierra
+    sha256 "cb4e2a066d2fc47648f67e7624424309e5ebfa7d3f8d4b600ebf7d1c055cde03" => :high_sierra
   end
