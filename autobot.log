@@ -1,15 +1,16 @@
-==> Downloading https://gmplib.org/download/gmp/gmp-6.1.2.tar.xz
-==> ./configure --prefix=/usr/local/Cellar/gmp/6.1.2 --enable-cxx --build=core2-apple-darwin17
+==> Downloading https://ftp.gnu.org/gnu/mpc/mpc-1.0.3.tar.gz
+==> ./configure --prefix=/usr/local/Cellar/libmpc/1.0.3_1 --with-gmp=/usr/local/opt/gmp --with-mpfr=/usr/local/opt/mpfr
 ==> make
 ==> make check
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall gmp`
-🍺  /usr/local/Cellar/gmp/6.1.2: 20 files, 3.1MB, built in 6 minutes 22 seconds
-==> Determining gmp bottle rebuild...
-==> Bottling gmp-6.1.2.high_sierra.bottle.tar.gz...
-./gmp-6.1.2.high_sierra.bottle.tar.gz
+You can run it manually using `brew postinstall libmpc`
+🍺  /usr/local/Cellar/libmpc/1.0.3_1: 12 files, 345.2KB, built in 1 minute 36 seconds
+==> Determining libmpc bottle rebuild...
+==> Bottling libmpc-1.0.3_1.high_sierra.bottle.1.tar.gz...
+./libmpc-1.0.3_1.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any
-    sha256 "24b98e7bcf8e56e3159c336a1fefafd7f28a17856e1eb0f80645ff1441789faa" => :high_sierra
+    rebuild 1
+    sha256 "26b2bf8e703901d5fe6d2a5ed20d660e482503febbe07d688b73d36fd1a754a7" => :high_sierra
   end
