@@ -1,26 +1,2 @@
-==> Downloading https://github.com/git-lfs/git-lfs/archive/v2.3.0.tar.gz
-==> Downloading from https://codeload.github.com/git-lfs/git-lfs/tar.gz/v2.3.0
-==> gem install ronn
-==> ./script/bootstrap
-==> ./script/man
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall git-lfs`
-==> Caveats
-Update your git config to finish installation:
-
-  # Update global git config
-  $ git lfs install
-
-  # Update system git config
-  $ git lfs install --system
-==> Summary
-🍺  /usr/local/Cellar/git-lfs/2.3.0: 65 files, 8.4MB, built in 2 minutes 6 seconds
-==> Determining git-lfs bottle rebuild...
-==> Bottling git-lfs-2.3.0.high_sierra.bottle.1.tar.gz...
-==> Detecting if git-lfs-2.3.0.high_sierra.bottle.1.tar.gz is relocatable...
-./git-lfs-2.3.0.high_sierra.bottle.1.tar.gz
-  bottle do
-    cellar :any_skip_relocation
-    rebuild 1
-    sha256 "b67aba0290f3d1efc88890a4471942714d31a7a81f60d9b9101dc6cefae43ca1" => :high_sierra
-  end
+==> Downloading https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.12.tar.gz
+==> ./configure --prefix=/usr/local/Cellar/libtasn1/4.12 --disable-silent-rules
