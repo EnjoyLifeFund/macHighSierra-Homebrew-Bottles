@@ -1,30 +1,26 @@
-==> Downloading https://www.kernel.org/pub/software/scm/git/git-2.14.1.tar.xz
-==> make install prefix=/usr/local/Cellar/git/2.14.1 sysconfdir=/usr/local/etc CC=clang CFLAGS= LDFLAGS= NO_OPENSSL=1 APPLE_COMMON_CRYPTO=1
-==> make CC=clang CFLAGS= LDFLAGS=
-==> make clean
-==> make
-==> make test
-==> make CC=clang CFLAGS= LDFLAGS=
-==> Downloading https://www.kernel.org/pub/software/scm/git/git-manpages-2.14.1.tar.xz
-==> Downloading https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.14.1.tar.xz
+==> Downloading https://github.com/git-lfs/git-lfs/archive/v2.3.0.tar.gz
+==> Downloading from https://codeload.github.com/git-lfs/git-lfs/tar.gz/v2.3.0
+==> gem install ronn
+==> ./script/bootstrap
+==> ./script/man
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall git`
+You can run it manually using `brew postinstall git-lfs`
 ==> Caveats
-Bash completion has been installed to:
-  /usr/local/etc/bash_completion.d
+Update your git config to finish installation:
 
-zsh completions and functions have been installed to:
-  /usr/local/share/zsh/site-functions
+  # Update global git config
+  $ git lfs install
 
-Emacs Lisp files have been installed to:
-  /usr/local/share/emacs/site-lisp/git
+  # Update system git config
+  $ git lfs install --system
 ==> Summary
-🍺  /usr/local/Cellar/git/2.14.1: 1,487 files, 33.4MB, built in 1 minute 43 seconds
-==> Determining git bottle rebuild...
-==> Bottling git-2.14.1.high_sierra.bottle.1.tar.gz...
-==> Detecting if git-2.14.1.high_sierra.bottle.1.tar.gz is relocatable...
-./git-2.14.1.high_sierra.bottle.1.tar.gz
+🍺  /usr/local/Cellar/git-lfs/2.3.0: 65 files, 8.4MB, built in 2 minutes 6 seconds
+==> Determining git-lfs bottle rebuild...
+==> Bottling git-lfs-2.3.0.high_sierra.bottle.1.tar.gz...
+==> Detecting if git-lfs-2.3.0.high_sierra.bottle.1.tar.gz is relocatable...
+./git-lfs-2.3.0.high_sierra.bottle.1.tar.gz
   bottle do
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "852581ab7fefd90a1983e6d00860298da0cd76d101bffec0959ff4dadc8418b9" => :high_sierra
+    sha256 "b67aba0290f3d1efc88890a4471942714d31a7a81f60d9b9101dc6cefae43ca1" => :high_sierra
   end
