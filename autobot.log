@@ -1,8 +1,30 @@
-==> Determining openssl@1.1 bottle rebuild...
-==> Bottling openssl@1.1-1.1.0f.high_sierra.bottle.1.tar.gz...
-==> Detecting if openssl@1.1-1.1.0f.high_sierra.bottle.1.tar.gz is relocatable...
-./openssl@1.1-1.1.0f.high_sierra.bottle.1.tar.gz
+==> Downloading https://www.kernel.org/pub/software/scm/git/git-2.14.1.tar.xz
+==> make install prefix=/usr/local/Cellar/git/2.14.1 sysconfdir=/usr/local/etc CC=clang CFLAGS= LDFLAGS= NO_OPENSSL=1 APPLE_COMMON_CRYPTO=1
+==> make CC=clang CFLAGS= LDFLAGS=
+==> make clean
+==> make
+==> make test
+==> make CC=clang CFLAGS= LDFLAGS=
+==> Downloading https://www.kernel.org/pub/software/scm/git/git-manpages-2.14.1.tar.xz
+==> Downloading https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.14.1.tar.xz
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall git`
+==> Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+zsh completions and functions have been installed to:
+  /usr/local/share/zsh/site-functions
+
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/git
+==> Summary
+🍺  /usr/local/Cellar/git/2.14.1: 1,487 files, 33.4MB, built in 1 minute 43 seconds
+==> Determining git bottle rebuild...
+==> Bottling git-2.14.1.high_sierra.bottle.1.tar.gz...
+==> Detecting if git-2.14.1.high_sierra.bottle.1.tar.gz is relocatable...
+./git-2.14.1.high_sierra.bottle.1.tar.gz
   bottle do
     rebuild 1
-    sha256 "7fd9549d15612de783f20a63bc3350908823582c1037b1b33f3bb878c3844f9b" => :high_sierra
+    sha256 "852581ab7fefd90a1983e6d00860298da0cd76d101bffec0959ff4dadc8418b9" => :high_sierra
   end
