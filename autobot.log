@@ -1,22 +1,8 @@
-==> Reinstalling curl 
-==> Downloading https://curl.haxx.se/download/curl-7.55.1.tar.bz2
-==> ./configure --disable-silent-rules --prefix=/usr/local/Cellar/curl/7.55.1 --with-darwinssl --without-ca-bundle --without-ca-path --without-libssh2 --without-libmetalink --without-gssapi --without-librtmp --disable-ares
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall curl`
-==> Caveats
-This formula is keg-only, which means it was not symlinked into /usr/local,
-because macOS already provides this software and installing another version in
-parallel can cause all kinds of trouble.
-
-If you need to have this software first in your PATH run:
-  echo 'export PATH="/usr/local/opt/curl/bin:$PATH"' >> ~/.bash_profile
-
-For compilers to find this software you may need to set:
-    LDFLAGS:  -L/usr/local/opt/curl/lib
-    CPPFLAGS: -I/usr/local/opt/curl/include
-For pkg-config to find this software you may need to set:
-    PKG_CONFIG_PATH: /usr/local/opt/curl/lib/pkgconfig
-
-==> Summary
-🍺  /usr/local/Cellar/curl/7.55.1: 399 files, 2.9MB, built in 2 minutes 42 seconds
+==> Determining readline bottle rebuild...
+==> Bottling readline-7.0.3_1.high_sierra.bottle.1.tar.gz...
+./readline-7.0.3_1.high_sierra.bottle.1.tar.gz
+  bottle do
+    cellar :any
+    rebuild 1
+    sha256 "21bb2464d245058394f38bfd00a9a758acf7e31ce1f9f539f85f3a5d5b06a7bb" => :high_sierra
+  end
