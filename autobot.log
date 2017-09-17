@@ -1,27 +1,8 @@
-==> Upgrading 1 outdated package, with result:
-cython 0.26.1
-==> Upgrading cython 
-==> Downloading https://files.pythonhosted.org/packages/68/41/2f259b62306268d9cf0d6434b4e83a2fb1785b34cfce27fdeeca3adffd0e/Cython-0.26.1.tar.gz
-Already downloaded: /Users/ralic/Library/Caches/Homebrew/cython-0.26.1.tar.gz
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/cython/0.26.1/libexec --single-version-externally-managed --record=installed.txt
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall cython`
-==> Caveats
-This formula is keg-only, which means it was not symlinked into /usr/local,
-because this formula is mainly used internally by other formulae.
-Users are advised to use `pip` to install cython.
-
-If you need to have this software first in your PATH run:
-  echo 'export PATH="/usr/local/opt/cython/bin:$PATH"' >> ~/.bash_profile
-
-==> Summary
-🍺  /usr/local/Cellar/cython/0.26.1: 426 files, 10.6MB, built in 1 minute 49 seconds
-==> Determining cython bottle rebuild...
-==> Bottling cython-0.26.1.high_sierra.bottle.1.tar.gz...
-==> Detecting if cython-0.26.1.high_sierra.bottle.1.tar.gz is relocatable...
-./cython-0.26.1.high_sierra.bottle.1.tar.gz
+==> Determining openssl@1.1 bottle rebuild...
+==> Bottling openssl@1.1-1.1.0f.high_sierra.bottle.1.tar.gz...
+==> Detecting if openssl@1.1-1.1.0f.high_sierra.bottle.1.tar.gz is relocatable...
+./openssl@1.1-1.1.0f.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
     rebuild 1
-    sha256 "515e0f9a8ae5a2db27342e0b599f72be7041d582d104a3ccd911d8c7ffbc2d99" => :high_sierra
+    sha256 "7fd9549d15612de783f20a63bc3350908823582c1037b1b33f3bb878c3844f9b" => :high_sierra
   end
