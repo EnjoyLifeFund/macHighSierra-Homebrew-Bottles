@@ -1,7 +1,4 @@
-==> Determining python3 bottle rebuild...
-==> Bottling python3-3.6.2.high_sierra.bottle.1.tar.gz...
-./python3-3.6.2.high_sierra.bottle.1.tar.gz
-  bottle do
-    rebuild 1
-    sha256 "8fd235ceb96973d51c500705e18f8395ee06d0b04f802c9d35465b556ad6bc17" => :high_sierra
-  end
+==> Auto-updated Homebrew!
+Updated 1 tap (caskroom/cask).
+No changes to formulae.
+
