@@ -7,11 +7,16 @@ aircrack-ng
 
 ant
 
+apache-spark
+
 apr
 
 apr-util
 ├── apr
 └── openssl
+
+asciidoc
+└── docbook
 
 asio
 └── openssl
@@ -20,6 +25,9 @@ augeas
 └── readline
 
 autoconf
+
+automake
+└── autoconf
 
 azure-cli
 ├── python3
@@ -36,9 +44,15 @@ bash
 
 bash-completion
 
+bazel
+
+binutils
+
+bison
+
 boost
 
-boost-compute
+homebrew/science/boost-compute
 └── boost
 
 boost-mpi
@@ -60,6 +74,24 @@ boost-mpi
 boost-python
 └── boost
 
+c-ares
+
+cabal-install
+└── ghc
+
+cairo
+├── freetype
+│   └── libpng
+├── fontconfig
+│   └── freetype
+│       └── libpng
+├── libpng
+├── pixman
+└── glib
+    ├── gettext
+    ├── libffi
+    └── pcre
+
 cassandra
 └── cython
 
@@ -77,6 +109,10 @@ cfitsio
 
 chrome-cli
 
+chromedriver
+
+clang-format
+
 cmake
 
 coreutils
@@ -89,8 +125,15 @@ cython
 
 docbook
 
+docbook-xsl
+└── docbook
+
+doxygen
+
 e2fsprogs
 └── gettext
+
+eigen
 
 epsilon
 └── popt
@@ -121,7 +164,15 @@ fontconfig
 └── freetype
     └── libpng
 
+freetype
+└── libpng
+
 freexl
+
+gawk
+├── mpfr
+│   └── gmp
+└── readline
 
 gcc
 ├── gmp
@@ -133,6 +184,8 @@ gcc
 │   └── gmp
 └── isl
     └── gmp
+
+px4/px4/gcc-arm-none-eabi-63
 
 gcsfuse
 
@@ -150,7 +203,40 @@ gd
     ├── libpng
     └── jpeg
 
+gdal
+├── libpng
+├── jpeg
+├── giflib
+├── libtiff
+│   └── jpeg
+├── libgeotiff
+│   ├── jpeg
+│   ├── libtiff
+│   │   └── jpeg
+│   └── proj
+├── proj
+├── geos
+├── json-c
+├── libxml2
+├── pcre
+├── sqlite
+│   └── readline
+├── freexl
+└── libspatialite
+    ├── proj
+    ├── geos
+    ├── sqlite
+    │   └── readline
+    ├── libxml2
+    ├── freexl
+    └── liblwgeom
+        ├── proj
+        ├── geos
+        └── json-c
+
 gdb
+
+gdbm
 
 gdk-pixbuf
 ├── glib
@@ -181,9 +267,21 @@ gdk-pixbuf
     │       └── pcre
     └── libffi
 
+geckodriver
+
 geos
 
+gettext
+
 gflags
+
+ghc
+
+giflib
+
+git
+
+git-lfs
 
 glib
 ├── gettext
@@ -192,6 +290,8 @@ glib
 
 glog
 └── gflags
+
+gmp
 
 gnatsd
 
@@ -207,6 +307,16 @@ gnome-doc-utils
 ├── docbook
 ├── gettext
 └── libxml2
+
+gnu-getopt
+└── gettext
+
+gnu-indent
+└── gettext
+
+gnu-sed
+
+gnu-tar
 
 gnu-time
 
@@ -238,7 +348,34 @@ gnutls
 
 go
 
+gobject-introspection
+├── pkg-config
+├── glib
+│   ├── gettext
+│   ├── libffi
+│   └── pcre
+├── cairo
+│   ├── freetype
+│   │   └── libpng
+│   ├── fontconfig
+│   │   └── freetype
+│   │       └── libpng
+│   ├── libpng
+│   ├── pixman
+│   └── glib
+│       ├── gettext
+│       ├── libffi
+│       └── pcre
+└── libffi
+
+godep
+└── go
+
 gpp
+
+gradle
+
+graphite2
 
 graphviz
 ├── libtool
@@ -257,13 +394,32 @@ graphviz
 │       └── jpeg
 └── libpng
 
+grep
+└── pcre
+
 grt
+
+gsl
+
+gts
+├── gettext
+├── glib
+│   ├── gettext
+│   ├── libffi
+│   └── pcre
+└── netpbm
+    ├── libtiff
+    │   └── jpeg
+    ├── jasper
+    │   └── jpeg
+    ├── jpeg
+    └── libpng
 
 gx
 
 gx-go
 
-h5utils
+homebrew/science/h5utils
 ├── libpng
 └── hdf5
     ├── gcc
@@ -277,6 +433,8 @@ h5utils
     │   └── isl
     │       └── gmp
     └── szip
+
+hadoop
 
 harfbuzz
 ├── freetype
@@ -324,6 +482,8 @@ heroku
 └── node
     └── icu4c
 
+hg-fast-export
+
 hidapi
 
 hub
@@ -333,20 +493,38 @@ hydra
 │   └── openssl
 └── openssl
 
+icdiff
+
 icu4c
+
+ilmbase
+
+intltool
 
 ipfs
 ├── gx
 └── gx-go
+
+iproute2mac
+
+isl
+└── gmp
+
+itstool
+└── libxml2
 
 jansson
 
 jasper
 └── jpeg
 
+jemalloc
+
 john-jumbo
 ├── openssl
 └── gmp
+
+jpeg
 
 jpeg-turbo
 
@@ -378,6 +556,9 @@ lapack
 
 ldns
 └── openssl@1.1
+
+libarchive
+└── xz
 
 libav
 ├── faac
@@ -412,15 +593,29 @@ libgeotiff
 │   └── jpeg
 └── proj
 
+libgpg-error
+
 libidn
 
 libkml
 
+liblwgeom
+├── proj
+├── geos
+└── json-c
+
 libmagic
+
+libmpc
+├── gmp
+└── mpfr
+    └── gmp
 
 libnet
 
 libogg
+
+libpng
 
 libspatialite
 ├── proj
@@ -437,6 +632,8 @@ libspatialite
 libssh2
 └── openssl
 
+libtasn1
+
 libtiff
 └── jpeg
 
@@ -446,7 +643,14 @@ libtrace
 ├── openssl
 └── wandio
 
+libunistring
+
+libusb
+
 libusb-compat
+└── libusb
+
+libuvc
 └── libusb
 
 libvorbis
@@ -455,6 +659,8 @@ libvorbis
 libvpx
 
 libxml2
+
+libyaml
 
 little-cms2
 ├── jpeg
@@ -469,14 +675,22 @@ lldpd
 llvm
 └── libffi
 
+lua
+
 lz4
+
+lzo
 
 m4
 
 make
 
+makedepend
+
 mariadb
 └── openssl
+
+maven
 
 mercurial
 └── python
@@ -505,7 +719,7 @@ mongodb
 mpfr
 └── gmp
 
-mynewt-newt
+runtimeco/mynewt/mynewt-newt
 
 nasm
 
@@ -541,6 +755,9 @@ netpbm
 ├── jpeg
 └── libpng
 
+nettle
+└── gmp
+
 nghttp2
 ├── c-ares
 ├── libev
@@ -555,6 +772,11 @@ nghttp2
 │   └── openssl
 └── jemalloc
 
+ninja
+
+nmap
+└── openssl
+
 node
 └── icu4c
 
@@ -566,6 +788,8 @@ numpy
     ├── gdbm
     ├── openssl
     └── xz
+
+ocaml
 
 open-mpi
 ├── gcc
@@ -627,6 +851,9 @@ opencv
         ├── openssl
         └── xz
 
+openexr
+└── ilmbase
+
 openjpeg
 ├── little-cms2
 │   ├── jpeg
@@ -682,6 +909,10 @@ osquery
 
 p11-kit
 └── libffi
+
+p7zip
+
+pandoc
 
 pango
 ├── cairo
@@ -753,7 +984,7 @@ pango
 
 parallel
 
-parallel-netcdf
+homebrew/science/parallel-netcdf
 ├── open-mpi
 │   ├── gcc
 │   │   ├── gmp
@@ -778,7 +1009,11 @@ parallel-netcdf
     └── isl
         └── gmp
 
+pcre
+
 perl
+
+pixman
 
 pkg-config
 
@@ -851,9 +1086,52 @@ poppler
 
 popt
 
+homebrew/portable/portable-openssl
+
+homebrew/portable/portable-readline
+
 portaudio
 
 proj
+
+pv
+
+pyqt
+├── python
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   ├── gdbm
+│   └── openssl
+├── python3
+│   ├── readline
+│   ├── sqlite
+│   │   └── readline
+│   ├── gdbm
+│   ├── openssl
+│   └── xz
+├── qt
+└── sip
+    ├── python
+    │   ├── readline
+    │   ├── sqlite
+    │   │   └── readline
+    │   ├── gdbm
+    │   └── openssl
+    └── python3
+        ├── readline
+        ├── sqlite
+        │   └── readline
+        ├── gdbm
+        ├── openssl
+        └── xz
+
+python
+├── readline
+├── sqlite
+│   └── readline
+├── gdbm
+└── openssl
 
 python3
 ├── readline
@@ -866,6 +1144,10 @@ python3
 qt
 
 rapidjson
+
+readline
+
+regina-rexx
 
 rocksdb
 ├── snappy
@@ -884,6 +1166,9 @@ rust
 └── libssh2
     └── openssl
 
+s-lang
+└── libpng
+
 s3fs
 ├── gnutls
 │   ├── libtasn1
@@ -897,6 +1182,8 @@ s3fs
 │   └── gmp
 └── libgcrypt
     └── libgpg-error
+
+scala
 
 scipy
 ├── gcc
@@ -934,6 +1221,10 @@ shared-mime-info
     ├── libffi
     └── pcre
 
+shellcheck
+
+shtool
+
 sip
 ├── python
 │   ├── readline
@@ -951,12 +1242,19 @@ sip
 
 sleuthkit
 
+snappy
+
 spdylay
 ├── libevent
 │   └── openssl
 └── openssl
 
+sphinx-doc
+
 spoof-mac
+
+sqlite
+└── readline
 
 squashfs
 ├── lzo
@@ -984,6 +1282,10 @@ suite-sparse
 swig
 └── pcre
 
+szip
+
+tachyon
+
 tbb
 
 tcl-tk
@@ -1008,11 +1310,27 @@ tiger-vnc
 
 tinycdb
 
+tomcat
+
+torrentcheck
+
+homebrew/science/triangle
+
 unixodbc
+
+valgrind
+
+wandio
 
 webp
 ├── libpng
 └── jpeg
+
+wget
+└── openssl@1.1
+
+with-readline
+└── readline
 
 x264
 
@@ -1020,7 +1338,23 @@ x265
 
 xerces-c
 
+xml-coreutils
+└── s-lang
+    └── libpng
+
+xmlto
+├── docbook
+├── docbook-xsl
+│   └── docbook
+└── gnu-getopt
+    └── gettext
+
 xvid
+
+xz
+
+yara
+└── openssl
 
 yasm
 

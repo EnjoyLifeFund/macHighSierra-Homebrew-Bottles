@@ -1,23 +1,8 @@
-==> Downloading https://xorg.freedesktop.org/releases/individual/util/makedepend-1.0.5.tar.bz2
-==> Downloading https://xorg.freedesktop.org/releases/individual/proto/xproto-7.0.28.tar.gz
-==> ./configure --disable-silent-rules --prefix=/private/tmp/makedepend-20170917-41338-1more6p/makedepend-1.0.5/xproto
-==> make install
-==> Downloading https://xorg.freedesktop.org/releases/individual/util/util-macros-1.19.0.tar.bz2
-==> ./configure --prefix=/private/tmp/makedepend-20170917-41338-1more6p/makedepend-1.0.5/xorg-macros
-==> make install
-==> ./configure --disable-silent-rules --prefix=/usr/local/Cellar/makedepend/1.0.5
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall makedepend`
-🍺  /usr/local/Cellar/makedepend/1.0.5: 8 files, 74.7KB, built in 1 minute 44 seconds
-==> Auto-updated Homebrew!
-Updated 1 tap (caskroom/cask).
-No changes to formulae.
-
-==> Determining makedepend bottle rebuild...
-==> Bottling makedepend-1.0.5.high_sierra.bottle.tar.gz...
-./makedepend-1.0.5.high_sierra.bottle.tar.gz
+==> Determining coreutils bottle rebuild...
+==> Bottling coreutils-8.28.high_sierra.bottle.1.tar.gz...
+==> Detecting if coreutils-8.28.high_sierra.bottle.1.tar.gz is relocatable...
+./coreutils-8.28.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
-    sha256 "107ab8b1be1f703738babe4946c89d85af25ed4e0516f5884f8def7aa1c00f1a" => :high_sierra
+    rebuild 1
+    sha256 "96ab5a87b079c9d7d5d2d8516017b710f096c28ed93fff43ccb8654a2e848d69" => :high_sierra
   end
