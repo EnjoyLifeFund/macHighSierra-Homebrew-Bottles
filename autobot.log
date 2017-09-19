@@ -1,1 +1,19 @@
-This formula doesn't require compiling.
+==> Downloading https://github.com/koalaman/shellcheck/archive/v0.4.6.tar.gz
+==> Downloading from https://codeload.github.com/koalaman/shellcheck/tar.gz/v0.4.6
+==> cabal sandbox init
+==> cabal update
+==> cabal install --jobs=4 --max-backjumps=100000 --only-dependencies
+==> cabal install --jobs=4 --max-backjumps=100000 --prefix=/usr/local/Cellar/shellcheck/0.4.6
+==> pandoc -s -t man shellcheck.1.md -o shellcheck.1
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall shellcheck`
+🍺  /usr/local/Cellar/shellcheck/0.4.6: 258 files, 6.9MB, built in 15 minutes 25 seconds
+==> Determining shellcheck bottle rebuild...
+==> Bottling shellcheck-0.4.6.high_sierra.bottle.2.tar.gz...
+==> Detecting if shellcheck-0.4.6.high_sierra.bottle.2.tar.gz is relocatable...
+./shellcheck-0.4.6.high_sierra.bottle.2.tar.gz
+  bottle do
+    cellar :any_skip_relocation
+    rebuild 2
+    sha256 "f1a51bdb1a56e09b6a86457293b892387d1e4383a9852512bb5c6c31c6cee0c7" => :high_sierra
+  end
