@@ -1,8 +1,17 @@
-==> Determining mercurial bottle rebuild...
-==> Bottling mercurial-4.3.2.high_sierra.bottle.1.tar.gz...
-==> Detecting if mercurial-4.3.2.high_sierra.bottle.1.tar.gz is relocatable...
-./mercurial-4.3.2.high_sierra.bottle.1.tar.gz
+==> Upgrading 1 outdated package, with result:
+fontconfig 2.12.6
+==> Upgrading fontconfig 
+==> Downloading https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.12.6.tar.bz2
+==> ./configure --disable-silent-rules --enable-static --with-add-fonts=/System/Library/Fonts,/Library/Fonts,~/Library/Fonts,/System/Library/Assets/com_apple_MobileAsset_Font4 --prefix=/usr/local/Cellar/fontconfig/2.12.6 --localstatedir=/usr/local/var --sysconfdir=/usr/local/etc
+==> make install RUN_FC_CACHE_TEST=false
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall fontconfig`
+🍺  /usr/local/Cellar/fontconfig/2.12.6: 474 files, 3MB, built in 1 minute 38 seconds
+==> Determining fontconfig bottle rebuild...
+==> Bottling fontconfig-2.12.6.high_sierra.bottle.1.tar.gz...
+==> Detecting if fontconfig-2.12.6.high_sierra.bottle.1.tar.gz is relocatable...
+./fontconfig-2.12.6.high_sierra.bottle.1.tar.gz
   bottle do
     rebuild 1
-    sha256 "9ae7a5a995b7edc1ac307610bf00fea8255c671655c58a803e961588957c2e75" => :high_sierra
+    sha256 "d91f776e5c98cc3fd0b80e2e425e4103b0f54621eabe74d2c6f9e35f43f7d0f0" => :high_sierra
   end
