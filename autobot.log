@@ -1,67 +1,9 @@
-==> Downloading https://files.pythonhosted.org/packages/10/91/ceb2e0d763e0c626f7afd7e3272a5bb76dd06eed1f0b908270ea31984062/Sphinx-1.6.3.tar.gz
-Already downloaded: /Users/ralic/Library/Caches/Homebrew/sphinx-doc-1.6.3.tar.gz
-==> Downloading https://files.pythonhosted.org/packages/07/a0/11d3d76df54b9701c0f7bf23ea9b00c61c5e14eb7962bb29aed866a5844e/setuptools-36.2.7.zip
-Already downloaded: /Users/ralic/Library/Caches/Homebrew/sphinx-doc--setuptools-36.2.7.zip
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/sphinx-doc/1.6.3_1/libexec/vendor --single-version-externally-managed --record=installed.txt
-==> Downloading https://files.pythonhosted.org/packages/d0/a5/e3a9ad3ee86aceeff71908ae562580643b955ea1b1d4f08ed6f7e8396bd7/alabaster-0.7.10.tar.gz
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/sphinx-doc/1.6.3_1/libexec/vendor --single-version-externally-managed --record=installed.txt
-==> Downloading https://files.pythonhosted.org/packages/92/22/643f3b75f75e0220c5ef9f5b72b619ccffe9266170143a4821d4885198de/Babel-2.4.0.tar.gz
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/sphinx-doc/1.6.3_1/libexec/vendor --single-version-externally-managed --record=installed.txt
-==> Downloading https://files.pythonhosted.org/packages/20/d0/3f7a84b0c5b89e94abbd073a5f00c7176089f526edb056686751d5064cbd/certifi-2017.7.27.1.tar.gz
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/sphinx-doc/1.6.3_1/libexec/vendor --single-version-externally-managed --record=installed.txt
-==> Downloading https://files.pythonhosted.org/packages/fc/bb/a5768c230f9ddb03acc9ef3f0d4a3cf93462473795d18e9535498c8f929d/chardet-3.0.4.tar.gz
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/sphinx-doc/1.6.3_1/libexec/vendor --single-version-externally-managed --record=installed.txt
-==> Downloading https://files.pythonhosted.org/packages/84/f4/5771e41fdf52aabebbadecc9381d11dea0fa34e4759b4071244fa094804c/docutils-0.14.tar.gz
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/sphinx-doc/1.6.3_1/libexec/vendor --single-version-externally-managed --record=installed.txt
-==> Downloading https://files.pythonhosted.org/packages/f4/bd/0467d62790828c23c47fc1dfa1b1f052b24efdf5290f071c7a91d0d82fd3/idna-2.6.tar.gz
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/sphinx-doc/1.6.3_1/libexec/vendor --single-version-externally-managed --record=installed.txt
-==> Downloading https://files.pythonhosted.org/packages/53/72/6c6f1e787d9cab2cc733cf042f125abec07209a58308831c9f292504e826/imagesize-0.7.1.tar.gz
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/sphinx-doc/1.6.3_1/libexec/vendor --single-version-externally-managed --record=installed.txt
-==> Downloading https://files.pythonhosted.org/packages/90/61/f820ff0076a2599dd39406dcb858ecb239438c02ce706c8e91131ab9c7f1/Jinja2-2.9.6.tar.gz
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/sphinx-doc/1.6.3_1/libexec/vendor --single-version-externally-managed --record=installed.txt
-==> Downloading https://files.pythonhosted.org/packages/4d/de/32d741db316d8fdb7680822dd37001ef7a448255de9699ab4bfcbdf4172b/MarkupSafe-1.0.tar.gz
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/sphinx-doc/1.6.3_1/libexec/vendor --single-version-externally-managed --record=installed.txt
-==> Downloading https://files.pythonhosted.org/packages/21/94/0e087bd669bb69da3b0996acfee97cee9f7d91c825991ad76eb863dc020d/numpydoc-0.7.0.tar.gz
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/sphinx-doc/1.6.3_1/libexec/vendor --single-version-externally-managed --record=installed.txt
-==> Downloading https://files.pythonhosted.org/packages/71/2a/2e4e77803a8bd6408a2903340ac498cb0a2181811af7c9ec92cb70b0308a/Pygments-2.2.0.tar.gz
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/sphinx-doc/1.6.3_1/libexec/vendor --single-version-externally-managed --record=installed.txt
-==> Downloading https://files.pythonhosted.org/packages/a4/09/c47e57fc9c7062b4e83b075d418800d322caa87ec0ac21e6308bd3a2d519/pytz-2017.2.zip
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/sphinx-doc/1.6.3_1/libexec/vendor --single-version-externally-managed --record=installed.txt
-==> Downloading https://files.pythonhosted.org/packages/b0/e1/eab4fc3752e3d240468a8c0b284607899d2fbfb236a56b7377a329aa8d09/requests-2.18.4.tar.gz
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/sphinx-doc/1.6.3_1/libexec/vendor --single-version-externally-managed --record=installed.txt
-==> Downloading https://files.pythonhosted.org/packages/b3/b2/238e2590826bfdd113244a40d9d3eb26918bd798fc187e2360a8367068db/six-1.10.0.tar.gz
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/sphinx-doc/1.6.3_1/libexec/vendor --single-version-externally-managed --record=installed.txt
-==> Downloading https://files.pythonhosted.org/packages/20/6b/d2a7cb176d4d664d94a6debf52cd8dbae1f7203c8e42426daa077051d59c/snowballstemmer-1.2.1.tar.gz
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/sphinx-doc/1.6.3_1/libexec/vendor --single-version-externally-managed --record=installed.txt
-==> Downloading https://files.pythonhosted.org/packages/c5/6b/f0630436b931ad4f8331a9399ca18a7d447f0fcc0c7178fb56b1aee68d01/sphinxcontrib-websupport-1.0.1.tar.gz
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/sphinx-doc/1.6.3_1/libexec/vendor --single-version-externally-managed --record=installed.txt
-==> Downloading https://files.pythonhosted.org/packages/ca/38/16ba8d542e609997fdcd0214628421c971f8c395084085354b11ff4ac9c3/typing-3.6.2.tar.gz
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/sphinx-doc/1.6.3_1/libexec/vendor --single-version-externally-managed --record=installed.txt
-==> Downloading https://files.pythonhosted.org/packages/ee/11/7c59620aceedcc1ef65e156cc5ce5a24ef87be4107c2b74458464e437a5d/urllib3-1.22.tar.gz
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/sphinx-doc/1.6.3_1/libexec/vendor --single-version-externally-managed --record=installed.txt
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/sphinx-doc/1.6.3_1/libexec --single-version-externally-managed --record=installed.txt
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall sphinx-doc`
-==> Caveats
-This formula is keg-only, which means it was not symlinked into /usr/local,
-because this formula is mainly used internally by other formulae.
-Users are advised to use `pip` to install sphinx-doc.
-
-If you need to have this software first in your PATH run:
-  echo 'export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"' >> ~/.bash_profile
-
-==> Summary
-🍺  /usr/local/Cellar/sphinx-doc/1.6.3_1: 3,383 files, 48.1MB, built in 10 minutes 23 seconds
-==> Auto-updated Homebrew!
-Updated 1 tap (homebrew/core).
-No changes to formulae.
-
-==> Determining sphinx-doc bottle rebuild...
-==> Bottling sphinx-doc-1.6.3_1.high_sierra.bottle.1.tar.gz...
-==> Detecting if sphinx-doc-1.6.3_1.high_sierra.bottle.1.tar.gz is relocatable...
-./sphinx-doc-1.6.3_1.high_sierra.bottle.1.tar.gz
+==> Determining cmake bottle rebuild...
+==> Bottling cmake-3.9.3_1.high_sierra.bottle.1.tar.gz...
+==> Detecting if cmake-3.9.3_1.high_sierra.bottle.1.tar.gz is relocatable...
+./cmake-3.9.3_1.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
+    cellar :any
     rebuild 1
-    sha256 "4e165291e4285a17ee58153b4cbcb5ef0a54992af57836f45bf482b62504e30f" => :high_sierra
+    sha256 "41b9a8572b36cd4bfd167983739fa4deb4ed59b40e5444692b3a75abb0cb5985" => :high_sierra
   end
