@@ -1,17 +1,8 @@
-==> Upgrading 1 outdated package, with result:
-szip 2.1.1
-==> Upgrading szip 
-==> Downloading https://support.hdfgroup.org/ftp/lib-external/szip/2.1.1/src/szip-2.1.1.tar.gz
-==> ./configure --prefix=/usr/local/Cellar/szip/2.1.1
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall szip`
-🍺  /usr/local/Cellar/szip/2.1.1: 14 files, 868.1KB, built in 49 seconds
-==> Determining szip bottle rebuild...
-==> Bottling szip-2.1.1.high_sierra.bottle.1.tar.gz...
-./szip-2.1.1.high_sierra.bottle.1.tar.gz
+==> Determining jpeg bottle rebuild...
+==> Bottling jpeg-9b.high_sierra.bottle.1.tar.gz...
+./jpeg-9b.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any
     rebuild 1
-    sha256 "6c73a1e0d0737058b924adbbcb0420d99ca70a4447f96e3553896ab630691fe4" => :high_sierra
+    sha256 "4efbacd0f8282ee3f2f7a0611c91885e4645fb2340b0379030dca7c34112b11a" => :high_sierra
   end
