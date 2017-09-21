@@ -1,17 +1,17 @@
 ==> Upgrading 1 outdated package, with result:
-fontconfig 2.12.6
-==> Upgrading fontconfig 
-==> Downloading https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.12.6.tar.bz2
-==> ./configure --disable-silent-rules --enable-static --with-add-fonts=/System/Library/Fonts,/Library/Fonts,~/Library/Fonts,/System/Library/Assets/com_apple_MobileAsset_Font4 --prefix=/usr/local/Cellar/fontconfig/2.12.6 --localstatedir=/usr/local/var --sysconfdir=/usr/local/etc
-==> make install RUN_FC_CACHE_TEST=false
+szip 2.1.1
+==> Upgrading szip 
+==> Downloading https://support.hdfgroup.org/ftp/lib-external/szip/2.1.1/src/szip-2.1.1.tar.gz
+==> ./configure --prefix=/usr/local/Cellar/szip/2.1.1
+==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall fontconfig`
-🍺  /usr/local/Cellar/fontconfig/2.12.6: 474 files, 3MB, built in 1 minute 38 seconds
-==> Determining fontconfig bottle rebuild...
-==> Bottling fontconfig-2.12.6.high_sierra.bottle.1.tar.gz...
-==> Detecting if fontconfig-2.12.6.high_sierra.bottle.1.tar.gz is relocatable...
-./fontconfig-2.12.6.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall szip`
+🍺  /usr/local/Cellar/szip/2.1.1: 14 files, 868.1KB, built in 49 seconds
+==> Determining szip bottle rebuild...
+==> Bottling szip-2.1.1.high_sierra.bottle.1.tar.gz...
+./szip-2.1.1.high_sierra.bottle.1.tar.gz
   bottle do
+    cellar :any
     rebuild 1
-    sha256 "d91f776e5c98cc3fd0b80e2e425e4103b0f54621eabe74d2c6f9e35f43f7d0f0" => :high_sierra
+    sha256 "6c73a1e0d0737058b924adbbcb0420d99ca70a4447f96e3553896ab630691fe4" => :high_sierra
   end
