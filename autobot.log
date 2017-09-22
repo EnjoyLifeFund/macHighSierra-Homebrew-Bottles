@@ -1,37 +1,24 @@
-==> Downloading https://github.com/ktossell/libuvc/archive/v0.0.6.tar.gz
-==> Downloading from https://codeload.github.com/ktossell/libuvc/tar.gz/v0.0.6
-==> cmake . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/libuvc/0.0.6 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev
-==> make
-==> make install
+==> Downloading https://services.gradle.org/distributions/gradle-4.2-all.zip
+==> Downloading from https://downloads.gradle.org/distributions/gradle-4.2-all.zip
+==> Upgrading 1 outdated package, with result:
+gradle 4.2
+==> Upgrading gradle 
+==> Downloading https://services.gradle.org/distributions/gradle-4.2-all.zip
+==> Downloading from https://downloads.gradle.org/distributions/gradle-4.2-all.zip
 The formula built, but is not symlinked into /usr/local
-Could not symlink include/libuvc/libuvc.h
-Target /usr/local/include/libuvc/libuvc.h
+Could not symlink bin/gradle
+Target /usr/local/bin/gradle
 already exists. You may want to remove it:
-  rm '/usr/local/include/libuvc/libuvc.h'
+  rm '/usr/local/bin/gradle'
 
 To force the link and overwrite all conflicting files:
-  brew link --overwrite libuvc
+  brew link --overwrite gradle
 
 To list all files that would be deleted:
-  brew link --overwrite --dry-run libuvc
+  brew link --overwrite --dry-run gradle
 
 Possible conflicting files are:
-/usr/local/include/libuvc/libuvc.h
-/usr/local/include/libuvc/libuvc_config.h
-/usr/local/lib/cmake/libuvc/libuvcConfig.cmake
-/usr/local/lib/cmake/libuvc/libuvcConfigVersion.cmake
-/usr/local/lib/cmake/libuvc/libuvcTargets-release.cmake
-/usr/local/lib/cmake/libuvc/libuvcTargets.cmake
-/usr/local/lib/libuvc.dylib
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall libuvc`
+/usr/local/bin/gradle
 ==> Summary
-🍺  /usr/local/Cellar/libuvc/0.0.6: 14 files, 181.3KB, built in 53 seconds
-==> Determining libuvc bottle rebuild...
-==> Bottling libuvc-0.0.6.high_sierra.bottle.1.tar.gz...
-./libuvc-0.0.6.high_sierra.bottle.1.tar.gz
-  bottle do
-    cellar :any
-    rebuild 1
-    sha256 "85f549190a9018b3c64e8179e44fcbb7dff1c9f382cbc06db9014c5337093e10" => :high_sierra
-  end
+🍺  /usr/local/Cellar/gradle/4.2: 180 files, 75.6MB, built in 41 seconds
+This formula doesn't require compiling.
