@@ -1,24 +1,30 @@
-==> Downloading https://services.gradle.org/distributions/gradle-4.2-all.zip
-==> Downloading from https://downloads.gradle.org/distributions/gradle-4.2-all.zip
-==> Upgrading 1 outdated package, with result:
-gradle 4.2
-==> Upgrading gradle 
-==> Downloading https://services.gradle.org/distributions/gradle-4.2-all.zip
-==> Downloading from https://downloads.gradle.org/distributions/gradle-4.2-all.zip
+==> Downloading https://github.com/mozilla/geckodriver/archive/v0.19.0.tar.gz
+==> Downloading from https://codeload.github.com/mozilla/geckodriver/tar.gz/v0.19.0
+==> cargo build
 The formula built, but is not symlinked into /usr/local
-Could not symlink bin/gradle
-Target /usr/local/bin/gradle
+Could not symlink bin/geckodriver
+Target /usr/local/bin/geckodriver
 already exists. You may want to remove it:
-  rm '/usr/local/bin/gradle'
+  rm '/usr/local/bin/geckodriver'
 
 To force the link and overwrite all conflicting files:
-  brew link --overwrite gradle
+  brew link --overwrite geckodriver
 
 To list all files that would be deleted:
-  brew link --overwrite --dry-run gradle
+  brew link --overwrite --dry-run geckodriver
 
 Possible conflicting files are:
-/usr/local/bin/gradle
+/usr/local/bin/geckodriver
+/usr/local/bin/wires
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall geckodriver`
 ==> Summary
-🍺  /usr/local/Cellar/gradle/4.2: 180 files, 75.6MB, built in 41 seconds
-This formula doesn't require compiling.
+🍺  /usr/local/Cellar/geckodriver/0.19.0: 13 files, 19.2MB, built in 4 minutes 7 seconds
+==> Determining geckodriver bottle rebuild...
+==> Bottling geckodriver-0.19.0.high_sierra.bottle.1.tar.gz...
+==> Detecting if geckodriver-0.19.0.high_sierra.bottle.1.tar.gz is relocatable...
+./geckodriver-0.19.0.high_sierra.bottle.1.tar.gz
+  bottle do
+    rebuild 1
+    sha256 "4272a301063cb04654d2504cff67af4448bcb9f440d59974f249a4751352a54d" => :high_sierra
+  end
