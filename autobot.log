@@ -1,24 +1,9 @@
-==> Auto-updated Homebrew!
-Updated Homebrew from 7d720e8f to 064c52ef.
-Updated 1 tap (homebrew/core).
-No changes to formulae.
-
-==> Upgrading 1 outdated package, with result:
-jasper 2.0.14
-==> Upgrading jasper 
-==> Downloading https://github.com/mdadams/jasper/archive/version-2.0.14.tar.gz
-==> Downloading from https://codeload.github.com/mdadams/jasper/tar.gz/version-2.0.14
-==> cmake .. -DGLUT_glut_LIBRARY=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/GLUT.framework -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/jasper/2.0.14 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev
-==> make
-==> make test
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall jasper`
-🍺  /usr/local/Cellar/jasper/2.0.14: 180 files, 3MB, built in 1 minute 20 seconds
-==> Determining jasper bottle rebuild...
-==> Bottling jasper-2.0.14.high_sierra.bottle.1.tar.gz...
-./jasper-2.0.14.high_sierra.bottle.1.tar.gz
+==> Determining shared-mime-info bottle rebuild...
+==> Bottling shared-mime-info-1.9.high_sierra.bottle.1.tar.gz...
+==> Detecting if shared-mime-info-1.9.high_sierra.bottle.1.tar.gz is relocatable...
+./shared-mime-info-1.9.high_sierra.bottle.1.tar.gz
   bottle do
+    cellar :any
     rebuild 1
-    sha256 "de6d992a14268b816bad317eecec40e332b7a8c822c48aacf45db34f5605e6c5" => :high_sierra
+    sha256 "102ef3d8f1b0e7f27ebfaf3a8029e343f86f363d263e0e9eb3e79c501bae850e" => :high_sierra
   end
