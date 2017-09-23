@@ -1,29 +1,24 @@
-==> Downloading https://curl.haxx.se/download/curl-7.55.1.tar.bz2
-Already downloaded: /Users/ralic/Library/Caches/Homebrew/curl-7.55.1.tar.bz2
-==> ./configure --disable-debug --disable-dependency-tracking --disable-silent-rules --prefix=/usr/local/Cellar/curl/7.55.1 --with-ssl=/usr/local/opt/openssl --with-ca-bundle=/usr/local/etc/openssl/cert.pem  --with-darwinssl --with-libssh2 --with-libmetalink --with-gssapi --with-librtmp=/usr/local/opt/rtmpdump/lib --enable-ares=/usr/local/opt/c-ares
+==> Downloading https://rakudo.perl6.org/downloads/star/rakudo-star-2017.07.tar.gz
+==> perl Configure.pl --prefix=/usr/local/Cellar/rakudo-star/2017.07 --backends=moar --gen-moar
+==> make
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall curl`
-==> Caveats
-This formula is keg-only, which means it was not symlinked into /usr/local,
-because macOS already provides this software and installing another version in
-parallel can cause all kinds of trouble.
+You can run it manually using `brew postinstall rakudo-star`
+🍺  /usr/local/Cellar/rakudo-star/2017.07: 1,569 files, 62.1MB, built in 17 minutes 6 seconds
 
-If you need to have this software first in your PATH run:
-  echo 'export PATH="/usr/local/opt/curl/bin:$PATH"' >> ~/.bash_profile
-
-For compilers to find this software you may need to set:
-    LDFLAGS:  -L/usr/local/opt/curl/lib
-    CPPFLAGS: -I/usr/local/opt/curl/include
-For pkg-config to find this software you may need to set:
-    PKG_CONFIG_PATH: /usr/local/opt/curl/lib/pkgconfig
-
-==> Summary
-🍺  /usr/local/Cellar/curl/7.55.1: 399 files, 3.0MB, built in 4 minutes 59 seconds
-==> Determining curl bottle rebuild...
-==> Bottling curl-7.55.1.high_sierra.bottle.1.tar.gz...
-./curl-7.55.1.high_sierra.bottle.1.tar.gz
+  
+|=> brew reinstall perl6 --with-gmp --with-icu4c --with-jvm --with-pcre --build-bottle
+==> Reinstalling rakudo-star --with-gmp --with-icu4c --with-pcre
+==> Downloading https://rakudo.perl6.org/downloads/star/rakudo-star-2017.07.tar.gz
+Already downloaded: /Users/ralic/Library/Caches/Homebrew/rakudo-star-2017.07.tar.gz
+==> perl Configure.pl --prefix=/usr/local/Cellar/rakudo-star/2017.07 --backends=moar,jvm --gen-moar
+==> make
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall rakudo-star`
+🍺  /usr/local/Cellar/rakudo-star/2017.07: 1,597 files, 62.1MB, built in 14 minutes 15 seconds
+./rakudo-star-2017.07.high_sierra.bottle.1.tar.gz
   bottle do
     rebuild 1
-    sha256 "b476a5c987b730dcefd2e6c7b50c41d7ba148b4d7435f9e42ca29cb5952eb18f" => :high_sierra
+    sha256 "d6f5589de55527424f6d71ba122ccd65643ddaf2e554d80e7f4d3c5e91b1ee35" => :high_sierra
   end
