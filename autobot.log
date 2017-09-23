@@ -1,15 +1,34 @@
-==> Downloading https://launchpad.net/libmetalink/trunk/libmetalink-0.1.3/+download/libmetalink-0.1.3.tar.xz
-==> Downloading from https://launchpadlibrarian.net/210087595/libmetalink-0.1.3.tar.xz
-==> ./configure --prefix=/usr/local/Cellar/libmetalink/0.1.3
+==> Downloading https://ftp.gnu.org/gnu/m4/m4-1.4.18.tar.xz
+==> Downloading https://raw.githubusercontent.com/macports/macports-ports/edf0ee1e2cf/devel/m4/files/secure_snprintf.patch
+==> Patching
+==> Applying secure_snprintf.patch
+patching file lib/vasnprintf.c
+Hunk #1 succeeded at 4858 (offset -11 lines).
+==> ./configure --prefix=/usr/local/Cellar/m4/1.4.18
+==> make
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall libmetalink`
-🍺  /usr/local/Cellar/libmetalink/0.1.3: 31 files, 178.8KB, built in 30 seconds
-==> Determining libmetalink bottle rebuild...
-==> Bottling libmetalink-0.1.3.high_sierra.bottle.1.tar.gz...
-./libmetalink-0.1.3.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall m4`
+==> Caveats
+This formula is keg-only, which means it was not symlinked into /usr/local,
+because macOS already provides this software and installing another version in
+parallel can cause all kinds of trouble.
+
+If you need to have this software first in your PATH run:
+  echo 'export PATH="/usr/local/opt/m4/bin:$PATH"' >> ~/.bash_profile
+
+==> Summary
+🍺  /usr/local/Cellar/m4/1.4.18: 13 files, 630.3KB, built in 3 minutes 22 seconds
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> Updated Formulae
+mycli
+
+==> Determining m4 bottle rebuild...
+==> Bottling m4-1.4.18.high_sierra.bottle.1.tar.gz...
+./m4-1.4.18.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "75d159ccab1dc65df290f41655f0a1394611def29637a499cbf9d14aef5e3fb5" => :high_sierra
+    sha256 "92312e8c5bb4cfb648244a8ea7d924eb604eb8f204d2e43d37122d49eec9a058" => :high_sierra
   end
