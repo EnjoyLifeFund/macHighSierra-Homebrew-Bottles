@@ -1,9 +1,33 @@
-==> Determining x11vnc bottle rebuild...
-==> Bottling x11vnc-0.9.13_1.high_sierra.bottle.1.tar.gz...
-==> Detecting if x11vnc-0.9.13_1.high_sierra.bottle.1.tar.gz is relocatable...
-./x11vnc-0.9.13_1.high_sierra.bottle.1.tar.gz
+==> Auto-updated Homebrew!
+Updated Homebrew from 182ed794 to a5b37e3b.
+No changes to formulae.
+
+==> Downloading https://www.apache.org/dyn/closer.cgi?path=/thrift/0.10.0/thrift-0.10.0.tar.gz
+Already downloaded: /Users/ralic/Library/Caches/Homebrew/thrift-0.10.0.tar.gz
+==> ./configure --prefix=/usr/local/Cellar/thrift/0.10.0 --libdir=/usr/local/Cellar/thrift/0.10.0/lib --with-openssl=/usr/local/opt/openssl --without-ruby --disable-tests --without-php_extension --without-haskell --without-java --without-perl --without-php --without-erlang
+==> make
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall thrift`
+==> Caveats
+To install Ruby binding:
+  gem install thrift
+
+To install PHP extension for e.g. PHP 5.5:
+  brew install homebrew/php/php55-thrift
+==> Summary
+🍺  /usr/local/Cellar/thrift/0.10.0: 7 files, 3.9MB, built in 3 minutes 54 seconds
+==> Auto-updated Homebrew!
+Updated 2 taps (homebrew/core, caskroom/cask).
+==> Updated Formulae
+spigot
+
+==> Determining thrift bottle rebuild...
+==> Bottling thrift-0.10.0.high_sierra.bottle.1.tar.gz...
+==> Detecting if thrift-0.10.0.high_sierra.bottle.1.tar.gz is relocatable...
+./thrift-0.10.0.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any
     rebuild 1
-    sha256 "8f6acba3408908b5e7739273c788ab07854c51ea68914989f134541d46a37ccd" => :high_sierra
+    sha256 "004395f3728dfa238e04bb8f91886369338cb9018e33780d3a86121dedd8a806" => :high_sierra
   end
