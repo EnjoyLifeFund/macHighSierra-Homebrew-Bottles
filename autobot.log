@@ -1,28 +1,17 @@
 ==> Auto-updated Homebrew!
-Updated 2 taps (homebrew/core, caskroom/cask).
-==> Updated Formulae
-cppad
-svtplay-dl
+Updated 1 tap (homebrew/core).
+No changes to formulae.
 
-==> Installing dependencies for librdkafka: lzlib
-==> Installing librdkafka dependency: lzlib
-==> Downloading https://homebrew.bintray.com/bottles/lzlib-1.9.high_sierra.bottle.tar.gz
-==> Pouring lzlib-1.9.high_sierra.bottle.tar.gz
-🍺  /usr/local/Cellar/lzlib/1.9: 10 files, 116.5KB
-==> Installing librdkafka
-==> Downloading https://github.com/edenhill/librdkafka/archive/v0.11.0.tar.gz
-==> Downloading from https://codeload.github.com/edenhill/librdkafka/tar.gz/v0.11.0
-==> ./configure --prefix=/usr/local/Cellar/librdkafka/0.11.0
-==> make
-==> make install
+==> Downloading https://mirrors.ocf.berkeley.edu/debian/pool/main/r/rtmpdump/rtmpdump_2.4+20151223.gitfa8646d.1.orig.tar.gz
+==> make CC=clang XCFLAGS= XLDFLAGS= MANDIR=/usr/local/Cellar/rtmpdump/2.4+20151223/share/man SYS=darwin prefix=/usr/local/Cellar/rtmpdump/2.4+20151223 sbindir=/usr/local/Cellar/rtmpdump/2.4+20151223/bin install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall librdkafka`
-🍺  /usr/local/Cellar/librdkafka/0.11.0: 14 files, 1.9MB, built in 1 minute 46 seconds
-==> Determining librdkafka bottle rebuild...
-==> Bottling librdkafka-0.11.0.high_sierra.bottle.1.tar.gz...
-./librdkafka-0.11.0.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall rtmpdump`
+🍺  /usr/local/Cellar/rtmpdump/2.4+20151223: 20 files, 418.8KB, built in 15 seconds
+==> Determining rtmpdump bottle rebuild...
+==> Bottling rtmpdump-2.4+20151223.high_sierra.bottle.1.tar.gz...
+./rtmpdump-2.4+20151223.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any
     rebuild 1
-    sha256 "eea58f3f4874918a114ff3163ddd6c5a86eefa919cee708d4ad4429400350029" => :high_sierra
+    sha256 "2335c0ce3ea44452be3616e9ea5ac2a0b6678563a6ac1890c40944bf2baa79b8" => :high_sierra
   end
