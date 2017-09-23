@@ -1,8 +1,12 @@
-==> Determining lzo bottle rebuild...
-==> Bottling lzo-2.10.high_sierra.bottle.1.tar.gz...
-./lzo-2.10.high_sierra.bottle.1.tar.gz
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+No changes to formulae.
+
+==> Determining nettle bottle rebuild...
+==> Bottling nettle-3.3.high_sierra.bottle.1.tar.gz...
+./nettle-3.3.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any
     rebuild 1
-    sha256 "55aea06ad047b4df6fcf33430194f217a130ca9e71837dddf625bbfaa5e90888" => :high_sierra
+    sha256 "b9aa11a998c75ae8d1b7f0054e89cd6aad00ba918566781668184b6aea0a4b1a" => :high_sierra
   end
