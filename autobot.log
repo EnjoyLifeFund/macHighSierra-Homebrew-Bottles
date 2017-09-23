@@ -1,33 +1,28 @@
 ==> Auto-updated Homebrew!
-Updated Homebrew from 182ed794 to a5b37e3b.
-No changes to formulae.
+Updated 2 taps (homebrew/core, caskroom/cask).
+==> Updated Formulae
+cppad
+svtplay-dl
 
-==> Downloading https://www.apache.org/dyn/closer.cgi?path=/thrift/0.10.0/thrift-0.10.0.tar.gz
-Already downloaded: /Users/ralic/Library/Caches/Homebrew/thrift-0.10.0.tar.gz
-==> ./configure --prefix=/usr/local/Cellar/thrift/0.10.0 --libdir=/usr/local/Cellar/thrift/0.10.0/lib --with-openssl=/usr/local/opt/openssl --without-ruby --disable-tests --without-php_extension --without-haskell --without-java --without-perl --without-php --without-erlang
+==> Installing dependencies for librdkafka: lzlib
+==> Installing librdkafka dependency: lzlib
+==> Downloading https://homebrew.bintray.com/bottles/lzlib-1.9.high_sierra.bottle.tar.gz
+==> Pouring lzlib-1.9.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/lzlib/1.9: 10 files, 116.5KB
+==> Installing librdkafka
+==> Downloading https://github.com/edenhill/librdkafka/archive/v0.11.0.tar.gz
+==> Downloading from https://codeload.github.com/edenhill/librdkafka/tar.gz/v0.11.0
+==> ./configure --prefix=/usr/local/Cellar/librdkafka/0.11.0
 ==> make
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall thrift`
-==> Caveats
-To install Ruby binding:
-  gem install thrift
-
-To install PHP extension for e.g. PHP 5.5:
-  brew install homebrew/php/php55-thrift
-==> Summary
-🍺  /usr/local/Cellar/thrift/0.10.0: 7 files, 3.9MB, built in 3 minutes 54 seconds
-==> Auto-updated Homebrew!
-Updated 2 taps (homebrew/core, caskroom/cask).
-==> Updated Formulae
-spigot
-
-==> Determining thrift bottle rebuild...
-==> Bottling thrift-0.10.0.high_sierra.bottle.1.tar.gz...
-==> Detecting if thrift-0.10.0.high_sierra.bottle.1.tar.gz is relocatable...
-./thrift-0.10.0.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall librdkafka`
+🍺  /usr/local/Cellar/librdkafka/0.11.0: 14 files, 1.9MB, built in 1 minute 46 seconds
+==> Determining librdkafka bottle rebuild...
+==> Bottling librdkafka-0.11.0.high_sierra.bottle.1.tar.gz...
+./librdkafka-0.11.0.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any
     rebuild 1
-    sha256 "004395f3728dfa238e04bb8f91886369338cb9018e33780d3a86121dedd8a806" => :high_sierra
+    sha256 "eea58f3f4874918a114ff3163ddd6c5a86eefa919cee708d4ad4429400350029" => :high_sierra
   end
