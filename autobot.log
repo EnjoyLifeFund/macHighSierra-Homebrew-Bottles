@@ -1,24 +1,242 @@
-==> Downloading https://rakudo.perl6.org/downloads/star/rakudo-star-2017.07.tar.gz
-==> perl Configure.pl --prefix=/usr/local/Cellar/rakudo-star/2017.07 --backends=moar --gen-moar
-==> make
+==> Upgrading 1 outdated package, with result:
+json-c 0.12.1
+==> Upgrading json-c 
+rm /usr/local/include/json-c
+rm /usr/local/lib/libjson-c.2.dylib
+rm /usr/local/lib/libjson-c.a
+rm /usr/local/lib/libjson-c.dylib
+rm /usr/local/lib/pkgconfig/json-c.pc
+/usr/bin/sandbox-exec -f /tmp/homebrew20170917-74484-1wct9sg.sb nice /System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/bin/ruby -W0 -I /usr/local/Homebrew/Library/Homebrew -- /usr/local/Homebrew/Library/Homebrew/build.rb /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/Formula/json-c.rb --build-bottle --verbose
+==> Downloading https://github.com/json-c/json-c/archive/json-c-0.12.1-20160607.tar.gz
+==> Downloading from https://codeload.github.com/json-c/json-c/tar.gz/json-c-0.12.1-20160607
+/usr/bin/curl --show-error --user-agent Homebrew/1.X.Y (Macintosh; Intel Mac OS X 10.13) curl/7.54.0 --fail --silent --location --remote-time --continue-at - --output /Users/ralic/Library/Caches/Homebrew/json-c-0.12.1.tar.gz.incomplete https://codeload.github.com/json-c/json-c/tar.gz/json-c-0.12.1-20160607
+==> Verifying json-c-0.12.1.tar.gz checksum
+tar xzf /Users/ralic/Library/Caches/Homebrew/json-c-0.12.1.tar.gz
+==> ./configure --disable-dependency-tracking --disable-silent-rules --prefix=/usr/local/Cellar/json-c/0.12.1
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... ./install-sh -c -d
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make sets $(MAKE)... (cached) yes
+RDRAND Hardware RNG Hash Seed disabled. Use --enable-rdrand to enable
+checking for style of include used by make... GNU
+checking for gcc... clang
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether clang accepts -g... yes
+checking for clang option to accept ISO C89... none needed
+checking whether clang understands -c and -o together... yes
+checking dependency style of clang... none
+checking how to run the C preprocessor... clang -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking for strings.h... (cached) yes
+checking syslog.h usability... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking for unistd.h... (cached) yes
+checking sys/cdefs.h usability... yes
+checking sys/cdefs.h presence... yes
+checking for sys/cdefs.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking endian.h usability... no
+checking endian.h presence... no
+checking for endian.h... no
+checking for inttypes.h... (cached) yes
+checking for an ANSI C-conforming const... yes
+checking for size_t... yes
+checking for vprintf... yes
+checking for _doprnt... no
+checking for working memcmp... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible realloc... yes
+checking for strcasecmp... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for snprintf... yes
+checking for vsnprintf... yes
+checking for vasprintf... yes
+checking for open... yes
+checking for vsyslog... yes
+checking for strncasecmp... yes
+checking for setlocale... yes
+checking whether INFINITY is declared... yes
+checking whether nan is declared... yes
+checking whether isnan is declared... yes
+checking whether isinf is declared... yes
+checking whether _isnan is declared... no
+checking whether _finite is declared... no
+checking if .gnu.warning accepts long strings... no
+checking build system type... x86_64-apple-darwin17.0.0
+checking host system type... x86_64-apple-darwin17.0.0
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/local/Homebrew/Library/Homebrew/shims/super/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by clang... /Library/Developer/CommandLineTools/usr/bin/ld
+checking if the linker (/Library/Developer/CommandLineTools/usr/bin/ld) is GNU ld... no
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 196608
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-apple-darwin17.0.0 file names to x86_64-apple-darwin17.0.0 format... func_convert_file_noop
+checking how to convert x86_64-apple-darwin17.0.0 file names to toolchain format... func_convert_file_noop
+checking for /Library/Developer/CommandLineTools/usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... no
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from clang object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dsymutil... dsymutil
+checking for nmedit... nmedit
+checking for lipo... lipo
+checking for otool... otool
+checking for otool64... no
+checking for -single_module linker flag... yes
+checking for -exported_symbols_list linker flag... yes
+checking for -force_load linker flag... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if clang supports -fno-rtti -fno-exceptions... yes
+checking for clang option to produce PIC... -fno-common -DPIC
+checking if clang PIC flag -fno-common -DPIC works... yes
+checking if clang static flag -static works... no
+checking if clang supports -c -o file.o... yes
+checking if clang supports -c -o file.o... (cached) yes
+checking whether the clang linker (/Library/Developer/CommandLineTools/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin17.0.0 dyld
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for -Bsymbolic-functions linker flag... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating json-c.pc
+config.status: creating tests/Makefile
+config.status: creating json-c-uninstalled.pc
+config.status: creating config.h
+config.status: creating json_config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
 ==> make install
+Making install in .
+/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I.    -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c -o arraylist.lo arraylist.c
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c arraylist.c  -fno-common -DPIC -o .libs/arraylist.o
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c arraylist.c -o arraylist.o >/dev/null 2>&1
+/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I.    -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c -o debug.lo debug.c
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c debug.c  -fno-common -DPIC -o .libs/debug.o
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c debug.c -o debug.o >/dev/null 2>&1
+/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I.    -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c -o json_c_version.lo json_c_version.c
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c json_c_version.c  -fno-common -DPIC -o .libs/json_c_version.o
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c json_c_version.c -o json_c_version.o >/dev/null 2>&1
+/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I.    -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c -o json_object.lo json_object.c
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c json_object.c  -fno-common -DPIC -o .libs/json_object.o
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c json_object.c -o json_object.o >/dev/null 2>&1
+/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I.    -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c -o json_object_iterator.lo json_object_iterator.c
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c json_object_iterator.c  -fno-common -DPIC -o .libs/json_object_iterator.o
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c json_object_iterator.c -o json_object_iterator.o >/dev/null 2>&1
+/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I.    -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c -o json_tokener.lo json_tokener.c
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c json_tokener.c  -fno-common -DPIC -o .libs/json_tokener.o
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c json_tokener.c -o json_tokener.o >/dev/null 2>&1
+/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I.    -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c -o json_util.lo json_util.c
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c json_util.c  -fno-common -DPIC -o .libs/json_util.o
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c json_util.c -o json_util.o >/dev/null 2>&1
+/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I.    -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c -o linkhash.lo linkhash.c
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c linkhash.c  -fno-common -DPIC -o .libs/linkhash.o
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c linkhash.c -o linkhash.o >/dev/null 2>&1
+/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I.    -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c -o printbuf.lo printbuf.c
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c printbuf.c  -fno-common -DPIC -o .libs/printbuf.o
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c printbuf.c -o printbuf.o >/dev/null 2>&1
+/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I.    -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c -o random_seed.lo random_seed.c
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c random_seed.c  -fno-common -DPIC -o .libs/random_seed.o
+libtool: compile:  clang -DHAVE_CONFIG_H -I. -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -c random_seed.c -o random_seed.o >/dev/null 2>&1
+/bin/sh ./libtool  --tag=CC   --mode=link clang -Wall -Werror -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -std=gnu99 -D_GNU_SOURCE -D_REENTRANT -g -O2 -version-info 2:2:0 -no-undefined   -o libjson-c.la -rpath /usr/local/Cellar/json-c/0.12.1/lib arraylist.lo debug.lo json_c_version.lo json_object.lo json_object_iterator.lo json_tokener.lo json_util.lo linkhash.lo printbuf.lo random_seed.lo  
+libtool: link: clang -dynamiclib  -o .libs/libjson-c.2.dylib  .libs/arraylist.o .libs/debug.o .libs/json_c_version.o .libs/json_object.o .libs/json_object_iterator.o .libs/json_tokener.o .libs/json_util.o .libs/linkhash.o .libs/printbuf.o .libs/random_seed.o    -O2   -install_name  /usr/local/Cellar/json-c/0.12.1/lib/libjson-c.2.dylib -compatibility_version 3 -current_version 3.2 -Wl,-single_module
+libtool: link: (cd ".libs" && rm -f "libjson-c.dylib" && ln -s "libjson-c.2.dylib" "libjson-c.dylib")
+libtool: link: ar cru .libs/libjson-c.a  arraylist.o debug.o json_c_version.o json_object.o json_object_iterator.o json_tokener.o json_util.o linkhash.o printbuf.o random_seed.o
+libtool: link: ranlib .libs/libjson-c.a
+libtool: link: ( cd ".libs" && rm -f "libjson-c.la" && ln -s "../libjson-c.la" "libjson-c.la" )
+ ./install-sh -c -d '/usr/local/Cellar/json-c/0.12.1/lib'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libjson-c.la '/usr/local/Cellar/json-c/0.12.1/lib'
+libtool: install: /usr/bin/install -c .libs/libjson-c.2.dylib /usr/local/Cellar/json-c/0.12.1/lib/libjson-c.2.dylib
+libtool: install: (cd /usr/local/Cellar/json-c/0.12.1/lib && { ln -s -f libjson-c.2.dylib libjson-c.dylib || { rm -f libjson-c.dylib && ln -s libjson-c.2.dylib libjson-c.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libjson-c.lai /usr/local/Cellar/json-c/0.12.1/lib/libjson-c.la
+libtool: install: /usr/bin/install -c .libs/libjson-c.a /usr/local/Cellar/json-c/0.12.1/lib/libjson-c.a
+libtool: install: chmod 644 /usr/local/Cellar/json-c/0.12.1/lib/libjson-c.a
+libtool: install: ranlib /usr/local/Cellar/json-c/0.12.1/lib/libjson-c.a
+ ./install-sh -c -d '/usr/local/Cellar/json-c/0.12.1/include/json-c'
+ /usr/bin/install -c -m 644 arraylist.h bits.h debug.h json.h json_config.h json_c_version.h json_inttypes.h json_object.h json_object_iterator.h json_object_private.h json_tokener.h json_util.h linkhash.h printbuf.h random_seed.h '/usr/local/Cellar/json-c/0.12.1/include/json-c'
+ ./install-sh -c -d '/usr/local/Cellar/json-c/0.12.1/lib/pkgconfig'
+ /usr/bin/install -c -m 644 json-c.pc '/usr/local/Cellar/json-c/0.12.1/lib/pkgconfig'
+Making install in tests
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+==> Cleaning
+rm /usr/local/Cellar/json-c/0.12.1/lib/libjson-c.la
+==> Finishing up
+ln -s ../Cellar/json-c/0.12.1/include/json-c json-c
+ln -s ../Cellar/json-c/0.12.1/lib/libjson-c.2.dylib libjson-c.2.dylib
+ln -s ../Cellar/json-c/0.12.1/lib/libjson-c.a libjson-c.a
+ln -s ../Cellar/json-c/0.12.1/lib/libjson-c.dylib libjson-c.dylib
+ln -s ../../Cellar/json-c/0.12.1/lib/pkgconfig/json-c.pc json-c.pc
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall rakudo-star`
-🍺  /usr/local/Cellar/rakudo-star/2017.07: 1,569 files, 62.1MB, built in 17 minutes 6 seconds
-
-  
-|=> brew reinstall perl6 --with-gmp --with-icu4c --with-jvm --with-pcre --build-bottle
-==> Reinstalling rakudo-star --with-gmp --with-icu4c --with-pcre
-==> Downloading https://rakudo.perl6.org/downloads/star/rakudo-star-2017.07.tar.gz
-Already downloaded: /Users/ralic/Library/Caches/Homebrew/rakudo-star-2017.07.tar.gz
-==> perl Configure.pl --prefix=/usr/local/Cellar/rakudo-star/2017.07 --backends=moar,jvm --gen-moar
-==> make
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall rakudo-star`
-🍺  /usr/local/Cellar/rakudo-star/2017.07: 1,597 files, 62.1MB, built in 14 minutes 15 seconds
-./rakudo-star-2017.07.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall json-c`
+==> Summary
+🍺  /usr/local/Cellar/json-c/0.12.1: 27 files, 155.8KB, built in 27 seconds
+==> Determining json-c bottle rebuild...
+==> Bottling json-c-0.12.1.high_sierra.bottle.1.tar.gz...
+/usr/bin/touch -h -t 201606062105.03 /usr/local/Cellar/json-c/0.12.1/lib/libjson-c.dylib
+tar cf /Volumes/data/WorkSpace/bottles/tmpbot/json-c/json-c-0.12.1.high_sierra.bottle.1.tar json-c/0.12.1
+gzip -f json-c-bottle.tar
+./json-c-0.12.1.high_sierra.bottle.1.tar.gz
   bottle do
+    cellar :any
     rebuild 1
-    sha256 "d6f5589de55527424f6d71ba122ccd65643ddaf2e554d80e7f4d3c5e91b1ee35" => :high_sierra
+    sha256 "cf7d173595190b6b4620c11730d0ecf16141ab663b3e012e16bc72ad85e067a2" => :high_sierra
   end
