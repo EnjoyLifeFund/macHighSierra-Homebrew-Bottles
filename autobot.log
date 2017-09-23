@@ -1,8 +1,11 @@
-==> Determining bash bottle rebuild...
-==> Bottling bash-4.4.12.high_sierra.bottle.1.tar.gz...
-==> Detecting if bash-4.4.12.high_sierra.bottle.1.tar.gz is relocatable...
-./bash-4.4.12.high_sierra.bottle.1.tar.gz
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+No changes to formulae.
+
+==> Determining ipv6toolkit bottle rebuild...
+==> Bottling ipv6toolkit-2.0.high_sierra.bottle.tar.gz...
+./ipv6toolkit-2.0.high_sierra.bottle.tar.gz
   bottle do
-    rebuild 1
-    sha256 "aaa23145756489fa817aee096beac47e1571ddb95835645e40cfb0912b99dd70" => :high_sierra
+    cellar :any_skip_relocation
+    sha256 "9e5c65a10b64dc7d54cb24e205835fb199e6919850886aebff56eb6224b5ba8e" => :high_sierra
   end
