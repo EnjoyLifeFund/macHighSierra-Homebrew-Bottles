@@ -1,11 +1,8 @@
-==> Auto-updated Homebrew!
-Updated 1 tap (homebrew/core).
-No changes to formulae.
-
-==> Determining ipv6toolkit bottle rebuild...
-==> Bottling ipv6toolkit-2.0.high_sierra.bottle.tar.gz...
-./ipv6toolkit-2.0.high_sierra.bottle.tar.gz
+==> Determining lzo bottle rebuild...
+==> Bottling lzo-2.10.high_sierra.bottle.1.tar.gz...
+./lzo-2.10.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
-    sha256 "9e5c65a10b64dc7d54cb24e205835fb199e6919850886aebff56eb6224b5ba8e" => :high_sierra
+    cellar :any
+    rebuild 1
+    sha256 "55aea06ad047b4df6fcf33430194f217a130ca9e71837dddf625bbfaa5e90888" => :high_sierra
   end
