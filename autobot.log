@@ -1,34 +1,29 @@
-==> Downloading https://ftp.gnu.org/gnu/m4/m4-1.4.18.tar.xz
-==> Downloading https://raw.githubusercontent.com/macports/macports-ports/edf0ee1e2cf/devel/m4/files/secure_snprintf.patch
-==> Patching
-==> Applying secure_snprintf.patch
-patching file lib/vasnprintf.c
-Hunk #1 succeeded at 4858 (offset -11 lines).
-==> ./configure --prefix=/usr/local/Cellar/m4/1.4.18
-==> make
+==> Downloading https://curl.haxx.se/download/curl-7.55.1.tar.bz2
+Already downloaded: /Users/ralic/Library/Caches/Homebrew/curl-7.55.1.tar.bz2
+==> ./configure --disable-debug --disable-dependency-tracking --disable-silent-rules --prefix=/usr/local/Cellar/curl/7.55.1 --with-ssl=/usr/local/opt/openssl --with-ca-bundle=/usr/local/etc/openssl/cert.pem  --with-darwinssl --with-libssh2 --with-libmetalink --with-gssapi --with-librtmp=/usr/local/opt/rtmpdump/lib --enable-ares=/usr/local/opt/c-ares
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall m4`
+You can run it manually using `brew postinstall curl`
 ==> Caveats
 This formula is keg-only, which means it was not symlinked into /usr/local,
 because macOS already provides this software and installing another version in
 parallel can cause all kinds of trouble.
 
 If you need to have this software first in your PATH run:
-  echo 'export PATH="/usr/local/opt/m4/bin:$PATH"' >> ~/.bash_profile
+  echo 'export PATH="/usr/local/opt/curl/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/curl/lib
+    CPPFLAGS: -I/usr/local/opt/curl/include
+For pkg-config to find this software you may need to set:
+    PKG_CONFIG_PATH: /usr/local/opt/curl/lib/pkgconfig
 
 ==> Summary
-🍺  /usr/local/Cellar/m4/1.4.18: 13 files, 630.3KB, built in 3 minutes 22 seconds
-==> Auto-updated Homebrew!
-Updated 1 tap (homebrew/core).
-==> Updated Formulae
-mycli
-
-==> Determining m4 bottle rebuild...
-==> Bottling m4-1.4.18.high_sierra.bottle.1.tar.gz...
-./m4-1.4.18.high_sierra.bottle.1.tar.gz
+🍺  /usr/local/Cellar/curl/7.55.1: 399 files, 3.0MB, built in 4 minutes 59 seconds
+==> Determining curl bottle rebuild...
+==> Bottling curl-7.55.1.high_sierra.bottle.1.tar.gz...
+./curl-7.55.1.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
     rebuild 1
-    sha256 "92312e8c5bb4cfb648244a8ea7d924eb604eb8f204d2e43d37122d49eec9a058" => :high_sierra
+    sha256 "b476a5c987b730dcefd2e6c7b50c41d7ba148b4d7435f9e42ca29cb5952eb18f" => :high_sierra
   end
