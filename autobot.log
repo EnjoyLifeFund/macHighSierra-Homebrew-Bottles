@@ -1,13 +1,8 @@
-==> Downloading https://www.si6networks.com/tools/ipv6toolkit/ipv6toolkit-v2.0.tar.gz
-==> make
-==> make install DESTDIR=/usr/local/Cellar/ipv6toolkit/2.0 PREFIX= MANPREFIX=/share
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall ipv6toolkit`
-🍺  /usr/local/Cellar/ipv6toolkit/2.0: 44 files, 2.9MB, built in 28 seconds
-==> Determining ipv6toolkit bottle rebuild...
-==> Bottling ipv6toolkit-2.0.high_sierra.bottle.tar.gz...
-./ipv6toolkit-2.0.high_sierra.bottle.tar.gz
+==> Determining nettle bottle rebuild...
+==> Bottling nettle-3.3.high_sierra.bottle.1.tar.gz...
+./nettle-3.3.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
-    sha256 "9e5c65a10b64dc7d54cb24e205835fb199e6919850886aebff56eb6224b5ba8e" => :high_sierra
+    cellar :any
+    rebuild 1
+    sha256 "b9aa11a998c75ae8d1b7f0054e89cd6aad00ba918566781668184b6aea0a4b1a" => :high_sierra
   end
