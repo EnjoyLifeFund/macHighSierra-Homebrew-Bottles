@@ -1,8 +1,13 @@
-==> Determining nettle bottle rebuild...
-==> Bottling nettle-3.3.high_sierra.bottle.1.tar.gz...
-./nettle-3.3.high_sierra.bottle.1.tar.gz
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> Updated Formulae
+sourcery
+
+==> Determining gettext bottle rebuild...
+==> Bottling gettext-0.19.8.1.high_sierra.bottle.1.tar.gz...
+==> Detecting if gettext-0.19.8.1.high_sierra.bottle.1.tar.gz is relocatable...
+./gettext-0.19.8.1.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any
     rebuild 1
-    sha256 "b9aa11a998c75ae8d1b7f0054e89cd6aad00ba918566781668184b6aea0a4b1a" => :high_sierra
+    sha256 "3423ca01fe36188970e0ba31676f80a69be42525f7f304f6b72d35c56001b279" => :high_sierra
   end
