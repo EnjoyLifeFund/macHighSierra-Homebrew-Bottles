@@ -1,17 +1,55 @@
 ==> Auto-updated Homebrew!
 Updated 1 tap (homebrew/core).
+==> Updated Formulae
+xa
+
+==> Installing dependencies for tesseract: autoconf-archive, leptonica
+==> Installing tesseract dependency: autoconf-archive
+==> Downloading https://homebrew.bintray.com/bottles/autoconf-archive-2017.03.21.high_sierra.bottle.tar.gz
+==> Pouring autoconf-archive-2017.03.21.high_sierra.bottle.tar.gz
+The formula built, but is not symlinked into /usr/local
+Could not symlink share/aclocal/ax_check_enable_debug.m4
+Target /usr/local/share/aclocal/ax_check_enable_debug.m4
+is a symlink belonging to gnome-common. You can unlink it:
+  brew unlink gnome-common
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite autoconf-archive
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run autoconf-archive
+
+Possible conflicting files are:
+/usr/local/share/aclocal/ax_check_enable_debug.m4 -> /usr/local/Cellar/gnome-common/3.18.0/share/aclocal/ax_check_enable_debug.m4
+/usr/local/share/aclocal/ax_code_coverage.m4 -> /usr/local/Cellar/gnome-common/3.18.0/share/aclocal/ax_code_coverage.m4
+==> Summary
+🍺  /usr/local/Cellar/autoconf-archive/2017.03.21: 582 files, 3.4MB
+==> Installing tesseract dependency: leptonica
+==> Downloading https://homebrew.bintray.com/bottles/leptonica-1.74.4_1.high_sierra.bottle.tar.gz
+==> Pouring leptonica-1.74.4_1.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/leptonica/1.74.4_1: 52 files, 5.6MB
+==> Installing tesseract
+==> Downloading https://github.com/tesseract-ocr/tesseract/archive/3.05.01.tar.gz
+==> Downloading from https://codeload.github.com/tesseract-ocr/tesseract/tar.gz/3.05.01
+==> ./autogen.sh
+==> ./configure --prefix=/usr/local/Cellar/tesseract/3.05.01
+==> make install
+==> Downloading https://github.com/tesseract-ocr/tessdata/raw/3.04.00/eng.traineddata
+==> Downloading from https://raw.githubusercontent.com/tesseract-ocr/tessdata/3.04.00/eng.traineddata
+==> Downloading https://github.com/tesseract-ocr/tessdata/raw/3.04.00/osd.traineddata
+==> Downloading from https://raw.githubusercontent.com/tesseract-ocr/tessdata/3.04.00/osd.traineddata
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall tesseract`
+🍺  /usr/local/Cellar/tesseract/3.05.01: 79 files, 38.7MB, built in 9 minutes 16 seconds
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
 No changes to formulae.
 
-==> Downloading https://mirrors.ocf.berkeley.edu/debian/pool/main/r/rtmpdump/rtmpdump_2.4+20151223.gitfa8646d.1.orig.tar.gz
-==> make CC=clang XCFLAGS= XLDFLAGS= MANDIR=/usr/local/Cellar/rtmpdump/2.4+20151223/share/man SYS=darwin prefix=/usr/local/Cellar/rtmpdump/2.4+20151223 sbindir=/usr/local/Cellar/rtmpdump/2.4+20151223/bin install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall rtmpdump`
-🍺  /usr/local/Cellar/rtmpdump/2.4+20151223: 20 files, 418.8KB, built in 15 seconds
-==> Determining rtmpdump bottle rebuild...
-==> Bottling rtmpdump-2.4+20151223.high_sierra.bottle.1.tar.gz...
-./rtmpdump-2.4+20151223.high_sierra.bottle.1.tar.gz
+==> Determining tesseract bottle rebuild...
+==> Bottling tesseract-3.05.01.high_sierra.bottle.1.tar.gz...
+==> Detecting if tesseract-3.05.01.high_sierra.bottle.1.tar.gz is relocatable...
+./tesseract-3.05.01.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any
     rebuild 1
-    sha256 "2335c0ce3ea44452be3616e9ea5ac2a0b6678563a6ac1890c40944bf2baa79b8" => :high_sierra
+    sha256 "9c96b5dd6f04f90016037635504ed0c1e210c6ac945787f3e28f2b6aaf64c115" => :high_sierra
   end
