@@ -1,83 +1,22 @@
 ==> Auto-updated Homebrew!
-Updated Homebrew from a5b37e3b to 24d74759.
-Updated 5 taps (homebrew/science, homebrew/portable, homebrew/core, caskroom/drivers, caskroom/cask).
-==> New Formulae
-abyss
-bowtie2
-fn
-libbitcoin-blockchain
-xmrig
-zim
-==> Updated Formulae
-artifactory
-bash-preexec
-binutils
-bit
-certstrap
-cimg
-direnv
-dtc
-eye-d3
-faac
-folly
-freetds
-git
-git-annex
-giter8
-gnupg-pkcs11-scd
-grip
-heroku
-homebrew/science/fwdpp
-homebrew/science/siril
-i3
-imagemagick
-imagemagick@6
-imapsync
-jenkins
-kotlin
-lftp
-libbitcoin
-libbitcoin-explorer
-libmodplug
-libnatpmp
-libofx
-libowfat
-libshout
-libtcod
-libxlsxwriter
-macvim
-mariadb@10.1
-monit
-mpw
-mutt
-neofetch
-openal-soft
-pegtl
-ponyc
-presto
-python
-sdl2
-sip
-swiftgen
-vim
-xtensor
-yarn
+Updated 1 tap (caskroom/cask).
+No changes to formulae.
 
 ==> Upgrading 1 outdated package, with result:
-faac 1.29.7.6
-==> Upgrading faac 
-==> Downloading https://downloads.sourceforge.net/project/faac/faac-src/faac-1.29/faac-1.29.7.6.tar.gz
-==> Downloading from https://ncu.dl.sourceforge.net/project/faac/faac-src/faac-1.29/faac-1.29.7.6.tar.gz
-==> ./configure --disable-silent-rules --prefix=/usr/local/Cellar/faac/1.29.7.6
-==> make install
+tbb 2018_U1
+==> Upgrading tbb 
+==> Downloading https://github.com/01org/tbb/archive/2018_U1.tar.gz
+==> Downloading from https://codeload.github.com/01org/tbb/tar.gz/2018_U1
+==> make tbb_build_prefix=BUILDPREFIX compiler=clang
+==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/tbb/2018_U1 --single-version-externally-managed --record=installed.txt
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall faac`
-🍺  /usr/local/Cellar/faac/1.29.7.6: 15 files, 203.9KB, built in 1 minute 13 seconds
-==> Determining faac bottle rebuild...
-==> Bottling faac-1.29.7.6.high_sierra.bottle.1.tar.gz...
-./faac-1.29.7.6.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall tbb`
+🍺  /usr/local/Cellar/tbb/2018_U1: 124 files, 2MB, built in 1 minute 55 seconds
+==> Determining tbb bottle rebuild...
+==> Bottling tbb-2018_U1.high_sierra.bottle.1.tar.gz...
+./tbb-2018_U1.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any
     rebuild 1
-    sha256 "39ce9520f807a9144e421c40bb5351e54f84d92e89f43afd97bf45ddc754579e" => :high_sierra
+    sha256 "3ac80428b0bdd1f18ae7b22c6172ccfa752dc2ac1616a76ae84f03037d375558" => :high_sierra
   end
