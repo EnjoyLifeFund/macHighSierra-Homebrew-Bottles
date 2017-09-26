@@ -1,37 +1,8 @@
-==> Auto-updated Homebrew!
-Updated 1 tap (caskroom/cask).
-No changes to formulae.
-
-==> Upgrading 1 outdated package, with result:
-git 2.14.2
-==> Upgrading git 
-==> Downloading https://www.kernel.org/pub/software/scm/git/git-2.14.2.tar.xz
-==> make install prefix=/usr/local/Cellar/git/2.14.2 sysconfdir=/usr/local/etc CC=clang CFLAGS= LDFLAGS= NO_OPENSSL=1 APPLE_COMMON_CRYPTO=1
-==> make CC=clang CFLAGS= LDFLAGS=
-==> make clean
-==> make
-==> make test
-==> make CC=clang CFLAGS= LDFLAGS=
-==> Downloading https://www.kernel.org/pub/software/scm/git/git-manpages-2.14.2.tar.xz
-==> Downloading https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.14.2.tar.xz
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall git`
-==> Caveats
-Bash completion has been installed to:
-  /usr/local/etc/bash_completion.d
-
-zsh completions and functions have been installed to:
-  /usr/local/share/zsh/site-functions
-
-Emacs Lisp files have been installed to:
-  /usr/local/share/emacs/site-lisp/git
-==> Summary
-🍺  /usr/local/Cellar/git/2.14.2: 1,485 files, 33.4MB, built in 5 minutes 46 seconds
-==> Determining git bottle rebuild...
-==> Bottling git-2.14.2.high_sierra.bottle.1.tar.gz...
-==> Detecting if git-2.14.2.high_sierra.bottle.1.tar.gz is relocatable...
-./git-2.14.2.high_sierra.bottle.1.tar.gz
+==> Determining python bottle rebuild...
+==> Bottling python-2.7.14.high_sierra.bottle.1.tar.gz...
+==> Detecting if python-2.7.14.high_sierra.bottle.1.tar.gz is relocatable...
+./python-2.7.14.high_sierra.bottle.1.tar.gz
   bottle do
     rebuild 1
-    sha256 "71bcc5000eefe90f7b8fe01eec9d3b5982904a70c3c6caa470d904641f8a3cd1" => :high_sierra
+    sha256 "58e06aea1061d7b3fc90636cea07cb9795b0bde13f9edef7ff99f7c68eb34955" => :high_sierra
   end
