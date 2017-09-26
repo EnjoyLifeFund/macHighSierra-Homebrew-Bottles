@@ -1,8 +1,73 @@
-==> Determining python bottle rebuild...
-==> Bottling python-2.7.14.high_sierra.bottle.1.tar.gz...
-==> Detecting if python-2.7.14.high_sierra.bottle.1.tar.gz is relocatable...
-./python-2.7.14.high_sierra.bottle.1.tar.gz
+==> Auto-updated Homebrew!
+Updated 3 taps (homebrew/science, homebrew/core, caskroom/cask).
+==> New Formulae
+landscaper
+==> Updated Formulae
+apache-arrow
+bartycrouch
+bluepill
+byobu
+homebrew/science/igv
+hugo
+osc
+overmind
+sphinx-doc
+taisei
+varnish
+zabbix
+
+==> Downloading https://ftp.gnu.org/gnu/binutils/binutils-2.29.1.tar.gz
+==> ./configure --enable-deterministic-archives --program-prefix=g --prefix=/usr/local/Cellar/binutils/2.29.1 --infodir=/usr/local/Cellar/binutils/2.29.1/share/info --mandir=/usr/local/Cellar/binutils/2.29.1/share/man --disable-werror --enable-interwork --enable-multilib --enable-64-bit-bfd --enable-targets=all
+==> make
+==> make install
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/gaddr2line
+Target /usr/local/bin/gaddr2line
+already exists. You may want to remove it:
+  rm '/usr/local/bin/gaddr2line'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite binutils
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run binutils
+
+Possible conflicting files are:
+/usr/local/bin/gaddr2line
+/usr/local/bin/gar
+/usr/local/bin/gc++filt
+/usr/local/bin/gcoffdump
+/usr/local/bin/gdlltool
+/usr/local/bin/gdllwrap
+/usr/local/bin/gelfedit
+/usr/local/bin/gnlmconv
+/usr/local/bin/gnm
+/usr/local/bin/gobjcopy
+/usr/local/bin/gobjdump
+/usr/local/bin/granlib
+/usr/local/bin/greadelf
+/usr/local/bin/gsize
+/usr/local/bin/gsrconv
+/usr/local/bin/gstrings
+/usr/local/bin/gstrip
+/usr/local/bin/gsysdump
+/usr/local/bin/gwindmc
+/usr/local/bin/gwindres
+/usr/local/lib/libbfd.a
+/usr/local/lib/libopcodes.a
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall binutils`
+==> Summary
+🍺  /usr/local/Cellar/binutils/2.29.1: 113 files, 142.5MB, built in 6 minutes 58 seconds
+==> Auto-updated Homebrew!
+Updated 1 tap (caskroom/cask).
+No changes to formulae.
+
+==> Determining binutils bottle rebuild...
+==> Bottling binutils-2.29.1.high_sierra.bottle.1.tar.gz...
+==> Detecting if binutils-2.29.1.high_sierra.bottle.1.tar.gz is relocatable...
+./binutils-2.29.1.high_sierra.bottle.1.tar.gz
   bottle do
     rebuild 1
-    sha256 "58e06aea1061d7b3fc90636cea07cb9795b0bde13f9edef7ff99f7c68eb34955" => :high_sierra
+    sha256 "4e12d05efe73572eb065148cace7a605fac36a37a8cd24638d7ce0d8f90f80d1" => :high_sierra
   end
