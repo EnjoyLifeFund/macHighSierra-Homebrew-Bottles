@@ -3,20 +3,35 @@ Updated 1 tap (caskroom/cask).
 No changes to formulae.
 
 ==> Upgrading 1 outdated package, with result:
-tbb 2018_U1
-==> Upgrading tbb 
-==> Downloading https://github.com/01org/tbb/archive/2018_U1.tar.gz
-==> Downloading from https://codeload.github.com/01org/tbb/tar.gz/2018_U1
-==> make tbb_build_prefix=BUILDPREFIX compiler=clang
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/tbb/2018_U1 --single-version-externally-managed --record=installed.txt
+git 2.14.2
+==> Upgrading git 
+==> Downloading https://www.kernel.org/pub/software/scm/git/git-2.14.2.tar.xz
+==> make install prefix=/usr/local/Cellar/git/2.14.2 sysconfdir=/usr/local/etc CC=clang CFLAGS= LDFLAGS= NO_OPENSSL=1 APPLE_COMMON_CRYPTO=1
+==> make CC=clang CFLAGS= LDFLAGS=
+==> make clean
+==> make
+==> make test
+==> make CC=clang CFLAGS= LDFLAGS=
+==> Downloading https://www.kernel.org/pub/software/scm/git/git-manpages-2.14.2.tar.xz
+==> Downloading https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.14.2.tar.xz
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall tbb`
-🍺  /usr/local/Cellar/tbb/2018_U1: 124 files, 2MB, built in 1 minute 55 seconds
-==> Determining tbb bottle rebuild...
-==> Bottling tbb-2018_U1.high_sierra.bottle.1.tar.gz...
-./tbb-2018_U1.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall git`
+==> Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+zsh completions and functions have been installed to:
+  /usr/local/share/zsh/site-functions
+
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/git
+==> Summary
+🍺  /usr/local/Cellar/git/2.14.2: 1,485 files, 33.4MB, built in 5 minutes 46 seconds
+==> Determining git bottle rebuild...
+==> Bottling git-2.14.2.high_sierra.bottle.1.tar.gz...
+==> Detecting if git-2.14.2.high_sierra.bottle.1.tar.gz is relocatable...
+./git-2.14.2.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any
     rebuild 1
-    sha256 "3ac80428b0bdd1f18ae7b22c6172ccfa752dc2ac1616a76ae84f03037d375558" => :high_sierra
+    sha256 "71bcc5000eefe90f7b8fe01eec9d3b5982904a70c3c6caa470d904641f8a3cd1" => :high_sierra
   end
