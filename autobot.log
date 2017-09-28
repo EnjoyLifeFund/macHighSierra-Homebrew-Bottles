@@ -1,33 +1,30 @@
-==> Auto-updated Homebrew!
-Updated 1 tap (caskroom/cask).
-No changes to formulae.
-
-==> Downloading http://files.itstool.org/itstool/itstool-2.0.2.tar.bz2
-==> ./configure --prefix=/usr/local/Cellar/itstool/2.0.2_2/libexec
-==> make install
+==> Downloading https://github.com/tools/godep/archive/v79.tar.gz
+==> Downloading from https://codeload.github.com/tools/godep/tar.gz/v79
+==> go build -o /usr/local/Cellar/godep/79_6/bin/godep
 The formula built, but is not symlinked into /usr/local
-Could not symlink bin/itstool
-Target /usr/local/bin/itstool
+Could not symlink bin/godep
+Target /usr/local/bin/godep
 already exists. You may want to remove it:
-  rm '/usr/local/bin/itstool'
+  rm '/usr/local/bin/godep'
 
 To force the link and overwrite all conflicting files:
-  brew link --overwrite itstool
+  brew link --overwrite godep
 
 To list all files that would be deleted:
-  brew link --overwrite --dry-run itstool
+  brew link --overwrite --dry-run godep
 
 Possible conflicting files are:
-/usr/local/bin/itstool
+/usr/local/bin/godep
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall itstool`
+You can run it manually using `brew postinstall godep`
 ==> Summary
-🍺  /usr/local/Cellar/itstool/2.0.2_2: 17 files, 191.6KB, built in 11 seconds
-==> Determining itstool bottle rebuild...
-==> Bottling itstool-2.0.2_2.high_sierra.bottle.2.tar.gz...
-./itstool-2.0.2_2.high_sierra.bottle.2.tar.gz
+🍺  /usr/local/Cellar/godep/79_6: 6 files, 9MB, built in 21 seconds
+==> Determining godep bottle rebuild...
+==> Bottling godep-79_6.high_sierra.bottle.1.tar.gz...
+==> Detecting if godep-79_6.high_sierra.bottle.1.tar.gz is relocatable...
+./godep-79_6.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
-    rebuild 2
-    sha256 "82c88c9d96bcfef1d3bea87f0106318169903dcda466eca367d9a48a38e46ae9" => :high_sierra
+    rebuild 1
+    sha256 "69bc6fafb66ece36bc8138d98c5de07d6c84ebf40d38b29991d343abb584d643" => :high_sierra
   end
