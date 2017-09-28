@@ -1,24 +1,8 @@
-==> Upgrading 1 outdated package, with result:
-gnatsd 1.0.4
-==> Upgrading gnatsd 
-==> Downloading https://github.com/nats-io/gnatsd/archive/v1.0.4.tar.gz
-==> Downloading from https://codeload.github.com/nats-io/gnatsd/tar.gz/v1.0.4
-==> go build -o /usr/local/Cellar/gnatsd/1.0.4/bin/gnatsd main.go
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall gnatsd`
-==> Caveats
-To have launchd start gnatsd now and restart at login:
-  brew services start gnatsd
-Or, if you don't want/need a background service you can just run:
-  gnatsd
-==> Summary
-🍺  /usr/local/Cellar/gnatsd/1.0.4: 7 files, 9MB, built in 27 seconds
-==> Determining gnatsd bottle rebuild...
-==> Bottling gnatsd-1.0.4.high_sierra.bottle.1.tar.gz...
-==> Detecting if gnatsd-1.0.4.high_sierra.bottle.1.tar.gz is relocatable...
-./gnatsd-1.0.4.high_sierra.bottle.1.tar.gz
+==> Determining sip bottle rebuild...
+==> Bottling sip-4.19.3_3.high_sierra.bottle.2.tar.gz...
+./sip-4.19.3_3.high_sierra.bottle.2.tar.gz
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "436f13111dc8f315d5f420e8712f64c64e20dc631bae4267ef878075ed6a9a77" => :high_sierra
+    rebuild 2
+    sha256 "c54ddc8fd88fd391784a8469f96d998b26532b0a362db0c80641745226a353c4" => :high_sierra
   end
