@@ -1,33 +1,26 @@
 ==> Upgrading 1 outdated package, with result:
-mariadb 10.2.9
-==> Upgrading mariadb 
-==> Downloading https://downloads.mariadb.org/f/mariadb-10.2.9/source/mariadb-10.2.9.tar.gz
-==> Downloading from http://ftp.ubuntu-tw.org/mirror/mariadb//mariadb-10.2.9/source/mariadb-10.2.9.tar.gz
-==> cmake . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/mariadb/10.2.9 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -DMYSQL_DATADIR=/usr/local/var/mysql -DINSTALL_INCLUDEDIR=include/mysql -DINSTALL_MANDIR=share/man -DINSTALL_DOCDIR=share/doc/mariadb -DINSTALL_INFODIR=share/info -DINSTALL_MYSQLSHAREDIR=share/mysql -DWITH_PCRE=bundled -DWITH_SSL=yes -DDEFAULT_CHARSET=utf8 -DDEFAULT_COLLATION=utf8_general_ci -DINSTALL_SYSCONFDIR=/usr/local/etc -DCOMPILATION_COMMENT=Homebrew -DPLUGIN_ROCKSDB=NO -DPLUGIN_TOKUDB=NO -DWITH_UNIT_TESTS=OFF -DWITH_READLINE=yes
-==> make
-==> make install
+cython 0.27
+==> Upgrading cython 
+==> Downloading https://files.pythonhosted.org/packages/94/63/f54920c2ddbe3e1341a4c268f7091bf1bf53c3d84f4b115aa5beea64aef9/Cython-0.27.tar.gz
+==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/cython/0.27/libexec --single-version-externally-managed --record=installed.txt
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall mariadb`
+You can run it manually using `brew postinstall cython`
 ==> Caveats
-A "/etc/my.cnf" from another install may interfere with a Homebrew-built
-server starting up correctly.
+This formula is keg-only, which means it was not symlinked into /usr/local,
+because this formula is mainly used internally by other formulae.
+Users are advised to use `pip` to install cython.
 
-MySQL is configured to only allow connections from localhost by default
+If you need to have this software first in your PATH run:
+  echo 'export PATH="/usr/local/opt/cython/bin:$PATH"' >> ~/.bash_profile
 
-To connect:
-    mysql -uroot
-
-To have launchd start mariadb now and restart at login:
-  brew services start mariadb
-Or, if you don't want/need a background service you can just run:
-  mysql.server start
 ==> Summary
-🍺  /usr/local/Cellar/mariadb/10.2.9: 628 files, 151MB, built in 18 minutes 52 seconds
-==> Determining mariadb bottle rebuild...
-==> Bottling mariadb-10.2.9.high_sierra.bottle.1.tar.gz...
-==> Detecting if mariadb-10.2.9.high_sierra.bottle.1.tar.gz is relocatable...
-./mariadb-10.2.9.high_sierra.bottle.1.tar.gz
+🍺  /usr/local/Cellar/cython/0.27: 428 files, 10.9MB, built in 2 minutes 11 seconds
+==> Determining cython bottle rebuild...
+==> Bottling cython-0.27.high_sierra.bottle.1.tar.gz...
+==> Detecting if cython-0.27.high_sierra.bottle.1.tar.gz is relocatable...
+./cython-0.27.high_sierra.bottle.1.tar.gz
   bottle do
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "ccdaf3172ca8612dab897f1bed390998b68377f5961f80a1524adfe53c5c020e" => :high_sierra
+    sha256 "8c4557c098292e3ca1f52e2e6f8791b4dc8ed0a8f2a227223bbb621e53a3937d" => :high_sierra
   end
