@@ -1,26 +1,24 @@
 ==> Upgrading 1 outdated package, with result:
-cython 0.27
-==> Upgrading cython 
-==> Downloading https://files.pythonhosted.org/packages/94/63/f54920c2ddbe3e1341a4c268f7091bf1bf53c3d84f4b115aa5beea64aef9/Cython-0.27.tar.gz
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/cython/0.27/libexec --single-version-externally-managed --record=installed.txt
+gnatsd 1.0.4
+==> Upgrading gnatsd 
+==> Downloading https://github.com/nats-io/gnatsd/archive/v1.0.4.tar.gz
+==> Downloading from https://codeload.github.com/nats-io/gnatsd/tar.gz/v1.0.4
+==> go build -o /usr/local/Cellar/gnatsd/1.0.4/bin/gnatsd main.go
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall cython`
+You can run it manually using `brew postinstall gnatsd`
 ==> Caveats
-This formula is keg-only, which means it was not symlinked into /usr/local,
-because this formula is mainly used internally by other formulae.
-Users are advised to use `pip` to install cython.
-
-If you need to have this software first in your PATH run:
-  echo 'export PATH="/usr/local/opt/cython/bin:$PATH"' >> ~/.bash_profile
-
+To have launchd start gnatsd now and restart at login:
+  brew services start gnatsd
+Or, if you don't want/need a background service you can just run:
+  gnatsd
 ==> Summary
-🍺  /usr/local/Cellar/cython/0.27: 428 files, 10.9MB, built in 2 minutes 11 seconds
-==> Determining cython bottle rebuild...
-==> Bottling cython-0.27.high_sierra.bottle.1.tar.gz...
-==> Detecting if cython-0.27.high_sierra.bottle.1.tar.gz is relocatable...
-./cython-0.27.high_sierra.bottle.1.tar.gz
+🍺  /usr/local/Cellar/gnatsd/1.0.4: 7 files, 9MB, built in 27 seconds
+==> Determining gnatsd bottle rebuild...
+==> Bottling gnatsd-1.0.4.high_sierra.bottle.1.tar.gz...
+==> Detecting if gnatsd-1.0.4.high_sierra.bottle.1.tar.gz is relocatable...
+./gnatsd-1.0.4.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "8c4557c098292e3ca1f52e2e6f8791b4dc8ed0a8f2a227223bbb621e53a3937d" => :high_sierra
+    sha256 "436f13111dc8f315d5f420e8712f64c64e20dc631bae4267ef878075ed6a9a77" => :high_sierra
   end
