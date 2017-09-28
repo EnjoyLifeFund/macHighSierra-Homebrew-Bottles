@@ -1,30 +1,32 @@
-==> Downloading https://github.com/tools/godep/archive/v79.tar.gz
-==> Downloading from https://codeload.github.com/tools/godep/tar.gz/v79
-==> go build -o /usr/local/Cellar/godep/79_6/bin/godep
-The formula built, but is not symlinked into /usr/local
-Could not symlink bin/godep
-Target /usr/local/bin/godep
-already exists. You may want to remove it:
-  rm '/usr/local/bin/godep'
-
-To force the link and overwrite all conflicting files:
-  brew link --overwrite godep
-
-To list all files that would be deleted:
-  brew link --overwrite --dry-run godep
-
-Possible conflicting files are:
-/usr/local/bin/godep
+==> Upgrading 1 outdated package, with result:
+bison 3.0.4_1
+==> Upgrading bison 
+==> Downloading https://ftp.gnu.org/gnu/bison/bison-3.0.4.tar.gz
+==> Downloading https://raw.githubusercontent.com/macports/macports-ports/14451f57e89/devel/bison/files/secure_snprintf.patch
+==> Patching
+==> Applying secure_snprintf.patch
+patching file lib/vasnprintf.c
+Hunk #1 succeeded at 4858 (offset -11 lines).
+==> ./configure --prefix=/usr/local/Cellar/bison/3.0.4_1
+==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall godep`
+You can run it manually using `brew postinstall bison`
+==> Caveats
+This formula is keg-only, which means it was not symlinked into /usr/local,
+because some formulae require a newer version of bison.
+
+If you need to have this software first in your PATH run:
+  echo 'export PATH="/usr/local/opt/bison/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/bison/lib
+
 ==> Summary
-🍺  /usr/local/Cellar/godep/79_6: 6 files, 9MB, built in 21 seconds
-==> Determining godep bottle rebuild...
-==> Bottling godep-79_6.high_sierra.bottle.1.tar.gz...
-==> Detecting if godep-79_6.high_sierra.bottle.1.tar.gz is relocatable...
-./godep-79_6.high_sierra.bottle.1.tar.gz
+🍺  /usr/local/Cellar/bison/3.0.4_1: 118 files, 2.7MB, built in 5 minutes 2 seconds
+==> Determining bison bottle rebuild...
+==> Bottling bison-3.0.4_1.high_sierra.bottle.1.tar.gz...
+./bison-3.0.4_1.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
     rebuild 1
-    sha256 "69bc6fafb66ece36bc8138d98c5de07d6c84ebf40d38b29991d343abb584d643" => :high_sierra
+    sha256 "b5fe1b8de7815e23790f38675585b6958b43a2fc4e2230d95e95ac69e5e3edd0" => :high_sierra
   end
