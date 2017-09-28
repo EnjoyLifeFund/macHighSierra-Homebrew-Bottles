@@ -1,29 +1,24 @@
-==> Upgrading 1 outdated package, with result:
-git-lfs 2.3.1
-==> Upgrading git-lfs 
-==> Downloading https://github.com/git-lfs/git-lfs/archive/v2.3.1.tar.gz
-==> Downloading from https://codeload.github.com/git-lfs/git-lfs/tar.gz/v2.3.1
-==> gem install ronn
-==> ./script/bootstrap
-==> ./script/man
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall git-lfs`
+==> Installing dependencies for heroku: node
+==> Installing heroku dependency: node
+==> Downloading https://homebrew.bintray.com/bottles/node-8.6.0.high_sierra.bottle.tar.gz
+==> Pouring node-8.6.0.high_sierra.bottle.tar.gz
 ==> Caveats
-Update your git config to finish installation:
-
-  # Update global git config
-  $ git lfs install
-
-  # Update system git config
-  $ git lfs install --system
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
 ==> Summary
-🍺  /usr/local/Cellar/git-lfs/2.3.1: 65 files, 8.4MB, built in 2 minutes 3 seconds
-==> Determining git-lfs bottle rebuild...
-==> Bottling git-lfs-2.3.1.high_sierra.bottle.1.tar.gz...
-==> Detecting if git-lfs-2.3.1.high_sierra.bottle.1.tar.gz is relocatable...
-./git-lfs-2.3.1.high_sierra.bottle.1.tar.gz
+🍺  /usr/local/Cellar/node/8.6.0: 4,152 files, 47.9MB
+==> Installing heroku
+==> Downloading https://registry.npmjs.org/heroku-cli/-/heroku-cli-6.14.30.tgz
+==> npm install -ddd --global --build-from-source --cache=/Users/ralic/Library/Caches/Homebrew/npm_cache --prefix=/usr/local/Cellar/heroku/6.14.30/libexec /private/tmp/heroku-20170929-78303-1whjnxl/package/heroku-cli-6.14.30.tgz
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall heroku`
+🍺  /usr/local/Cellar/heroku/6.14.30: 6,815 files, 40.2MB, built in 1 minute 45 seconds
+==> Determining heroku bottle rebuild...
+==> Bottling heroku-6.14.30.high_sierra.bottle.1.tar.gz...
+==> Detecting if heroku-6.14.30.high_sierra.bottle.1.tar.gz is relocatable...
+./heroku-6.14.30.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "ce93ec80c5c0351cf21281f0599dbea36f12cf9b1b0f1ee15231722314a6078b" => :high_sierra
+    sha256 "9c6840352ca45c0ca6f3dce2a85f2e4886ee8d526b45c0225e614933155639fe" => :high_sierra
   end
