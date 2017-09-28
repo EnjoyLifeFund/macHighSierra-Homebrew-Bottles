@@ -1,24 +1,33 @@
-==> Installing dependencies for heroku: node
-==> Installing heroku dependency: node
-==> Downloading https://homebrew.bintray.com/bottles/node-8.6.0.high_sierra.bottle.tar.gz
-==> Pouring node-8.6.0.high_sierra.bottle.tar.gz
-==> Caveats
-Bash completion has been installed to:
-  /usr/local/etc/bash_completion.d
-==> Summary
-🍺  /usr/local/Cellar/node/8.6.0: 4,152 files, 47.9MB
-==> Installing heroku
-==> Downloading https://registry.npmjs.org/heroku-cli/-/heroku-cli-6.14.30.tgz
-==> npm install -ddd --global --build-from-source --cache=/Users/ralic/Library/Caches/Homebrew/npm_cache --prefix=/usr/local/Cellar/heroku/6.14.30/libexec /private/tmp/heroku-20170929-78303-1whjnxl/package/heroku-cli-6.14.30.tgz
+==> Upgrading 1 outdated package, with result:
+mariadb 10.2.9
+==> Upgrading mariadb 
+==> Downloading https://downloads.mariadb.org/f/mariadb-10.2.9/source/mariadb-10.2.9.tar.gz
+==> Downloading from http://ftp.ubuntu-tw.org/mirror/mariadb//mariadb-10.2.9/source/mariadb-10.2.9.tar.gz
+==> cmake . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/mariadb/10.2.9 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -DMYSQL_DATADIR=/usr/local/var/mysql -DINSTALL_INCLUDEDIR=include/mysql -DINSTALL_MANDIR=share/man -DINSTALL_DOCDIR=share/doc/mariadb -DINSTALL_INFODIR=share/info -DINSTALL_MYSQLSHAREDIR=share/mysql -DWITH_PCRE=bundled -DWITH_SSL=yes -DDEFAULT_CHARSET=utf8 -DDEFAULT_COLLATION=utf8_general_ci -DINSTALL_SYSCONFDIR=/usr/local/etc -DCOMPILATION_COMMENT=Homebrew -DPLUGIN_ROCKSDB=NO -DPLUGIN_TOKUDB=NO -DWITH_UNIT_TESTS=OFF -DWITH_READLINE=yes
+==> make
+==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall heroku`
-🍺  /usr/local/Cellar/heroku/6.14.30: 6,815 files, 40.2MB, built in 1 minute 45 seconds
-==> Determining heroku bottle rebuild...
-==> Bottling heroku-6.14.30.high_sierra.bottle.1.tar.gz...
-==> Detecting if heroku-6.14.30.high_sierra.bottle.1.tar.gz is relocatable...
-./heroku-6.14.30.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall mariadb`
+==> Caveats
+A "/etc/my.cnf" from another install may interfere with a Homebrew-built
+server starting up correctly.
+
+MySQL is configured to only allow connections from localhost by default
+
+To connect:
+    mysql -uroot
+
+To have launchd start mariadb now and restart at login:
+  brew services start mariadb
+Or, if you don't want/need a background service you can just run:
+  mysql.server start
+==> Summary
+🍺  /usr/local/Cellar/mariadb/10.2.9: 628 files, 151MB, built in 18 minutes 52 seconds
+==> Determining mariadb bottle rebuild...
+==> Bottling mariadb-10.2.9.high_sierra.bottle.1.tar.gz...
+==> Detecting if mariadb-10.2.9.high_sierra.bottle.1.tar.gz is relocatable...
+./mariadb-10.2.9.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
     rebuild 1
-    sha256 "9c6840352ca45c0ca6f3dce2a85f2e4886ee8d526b45c0225e614933155639fe" => :high_sierra
+    sha256 "ccdaf3172ca8612dab897f1bed390998b68377f5961f80a1524adfe53c5c020e" => :high_sierra
   end
