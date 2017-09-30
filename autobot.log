@@ -1,29 +1,24 @@
 ==> Auto-updated Homebrew!
-Updated 1 tap (homebrew/core).
+Updated 2 taps (homebrew/core, caskroom/cask).
 ==> Updated Formulae
-faad2
-gsmartcontrol
-jose
-numpy
-selenium-server-standalone
-terragrunt
-tig
+bullet
+efl
 
-==> Upgrading 1 outdated package, with result:
-faac 1.29.7.7
-==> Upgrading faac 
-==> Downloading https://downloads.sourceforge.net/project/faac/faac-src/faac-1.29/faac-1.29.7.7.tar.gz
-==> Downloading from https://ncu.dl.sourceforge.net/project/faac/faac-src/faac-1.29/faac-1.29.7.7.tar.gz
-==> ./configure --disable-silent-rules --prefix=/usr/local/Cellar/faac/1.29.7.7
+==> Downloading https://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz
+==> ./configure --prefix=/usr/local/Cellar/autoconf/2.69 --with-lispdir=/usr/local/Cellar/autoconf/2.69/share/emacs/site-lisp/autoconf
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall faac`
-🍺  /usr/local/Cellar/faac/1.29.7.7: 15 files, 203.9KB, built in 1 minute 19 seconds
-==> Determining faac bottle rebuild...
-==> Bottling faac-1.29.7.7.high_sierra.bottle.1.tar.gz...
-./faac-1.29.7.7.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall autoconf`
+==> Caveats
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/autoconf
+==> Summary
+🍺  /usr/local/Cellar/autoconf/2.69: 71 files, 3.0MB, built in 25 seconds
+==> Determining autoconf bottle rebuild...
+==> Bottling autoconf-2.69.high_sierra.bottle.5.tar.gz...
+./autoconf-2.69.high_sierra.bottle.5.tar.gz
   bottle do
-    cellar :any
-    rebuild 1
-    sha256 "0e7bb2275cafc6bd22ba0ca36843de48dfa5e1e18c47e79eea32262b07c91e4b" => :high_sierra
+    cellar :any_skip_relocation
+    rebuild 5
+    sha256 "2fa26efb3b87ccb201205d252f62111bf19cfe9263e471d7d55372d9784fd6cc" => :high_sierra
   end
