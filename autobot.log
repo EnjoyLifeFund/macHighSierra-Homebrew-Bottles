@@ -1,52 +1,36 @@
 ==> Auto-updated Homebrew!
-Updated 1 tap (caskroom/cask).
-
-==> Downloading http://www.ijg.org/files/jpegsrc.v9b.tar.gz
-==> ./configure --disable-silent-rules --prefix=/usr/local/Cellar/jpeg/9b
-==> make install
-The formula built, but is not symlinked into /usr/local
-Could not symlink bin/cjpeg
-Target /usr/local/bin/cjpeg
-is a symlink belonging to jpeg-turbo. You can unlink it:
-  brew unlink jpeg-turbo
-
-To force the link and overwrite all conflicting files:
-  brew link --overwrite jpeg
-
-To list all files that would be deleted:
-  brew link --overwrite --dry-run jpeg
-
-Possible conflicting files are:
-/usr/local/bin/cjpeg -> /usr/local/Cellar/jpeg-turbo/1.5.2/bin/cjpeg
-/usr/local/bin/djpeg -> /usr/local/Cellar/jpeg-turbo/1.5.2/bin/djpeg
-/usr/local/bin/jpegtran -> /usr/local/Cellar/jpeg-turbo/1.5.2/bin/jpegtran
-/usr/local/bin/rdjpgcom -> /usr/local/Cellar/jpeg-turbo/1.5.2/bin/rdjpgcom
-/usr/local/bin/wrjpgcom -> /usr/local/Cellar/jpeg-turbo/1.5.2/bin/wrjpgcom
-/usr/local/include/jconfig.h -> /usr/local/Cellar/jpeg-turbo/1.5.2/include/jconfig.h
-/usr/local/include/jerror.h -> /usr/local/Cellar/jpeg-turbo/1.5.2/include/jerror.h
-/usr/local/include/jmorecfg.h -> /usr/local/Cellar/jpeg-turbo/1.5.2/include/jmorecfg.h
-/usr/local/include/jpeglib.h -> /usr/local/Cellar/jpeg-turbo/1.5.2/include/jpeglib.h
-/usr/local/share/man/man1/cjpeg.1 -> /usr/local/Cellar/jpeg-turbo/1.5.2/share/man/man1/cjpeg.1
-/usr/local/share/man/man1/djpeg.1 -> /usr/local/Cellar/jpeg-turbo/1.5.2/share/man/man1/djpeg.1
-/usr/local/share/man/man1/jpegtran.1 -> /usr/local/Cellar/jpeg-turbo/1.5.2/share/man/man1/jpegtran.1
-/usr/local/share/man/man1/rdjpgcom.1 -> /usr/local/Cellar/jpeg-turbo/1.5.2/share/man/man1/rdjpgcom.1
-/usr/local/share/man/man1/wrjpgcom.1 -> /usr/local/Cellar/jpeg-turbo/1.5.2/share/man/man1/wrjpgcom.1
-/usr/local/lib/libjpeg.a -> /usr/local/Cellar/jpeg-turbo/1.5.2/lib/libjpeg.a
-/usr/local/lib/libjpeg.dylib -> /usr/local/Cellar/jpeg-turbo/1.5.2/lib/libjpeg.dylib
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall jpeg`
-==> Summary
-🍺  /usr/local/Cellar/jpeg/9b: 20 files, 723.8KB, built in 1 minute 14 seconds
-==> Auto-updated Homebrew!
-Updated 1 tap (homebrew/core).
+Updated 2 taps (homebrew/science, homebrew/core).
+==> New Formulae
+gdcm
 ==> Updated Formulae
-elixir
+coreutils
+fdroidserver
 
-==> Determining jpeg bottle rebuild...
-==> Bottling jpeg-9b.high_sierra.bottle.1.tar.gz...
-./jpeg-9b.high_sierra.bottle.1.tar.gz
+==> Upgrading 1 outdated package, with result:
+ninja 1.8.2
+==> Upgrading ninja 
+==> Downloading https://github.com/ninja-build/ninja/archive/v1.8.2.tar.gz
+==> Downloading from https://codeload.github.com/ninja-build/ninja/tar.gz/v1.8.2
+==> python configure.py --bootstrap
+==> Downloading https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/googletest/gtest-1.7.0.zip
+==> ./configure.py --with-gtest=gtest
+==> ./ninja ninja_test
+==> ./ninja_test --gtest_filter=-SubprocessTest.SetWithLots
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall ninja`
+==> Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+zsh completions have been installed to:
+  /usr/local/share/zsh/site-functions
+==> Summary
+🍺  /usr/local/Cellar/ninja/1.8.2: 7 files, 273.2KB, built in 1 minute 30 seconds
+==> Determining ninja bottle rebuild...
+==> Bottling ninja-1.8.2.high_sierra.bottle.1.tar.gz...
+./ninja-1.8.2.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any
     rebuild 1
-    sha256 "fa0b4438d9bbda2b3d5d8f7df38838b50fe59964492b8e46f3590b98e634e8bb" => :high_sierra
+    sha256 "23a031db0e7dcdf9ea968c0c9219a9aeb935c2b5286cf3723fd9e3604f02ed45" => :high_sierra
   end
