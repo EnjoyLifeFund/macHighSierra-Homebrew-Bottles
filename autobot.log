@@ -1,24 +1,17 @@
-==> Auto-updated Homebrew!
-Updated 2 taps (homebrew/core, caskroom/cask).
-==> Updated Formulae
-bullet
-efl
-
-==> Downloading https://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz
-==> ./configure --prefix=/usr/local/Cellar/autoconf/2.69 --with-lispdir=/usr/local/Cellar/autoconf/2.69/share/emacs/site-lisp/autoconf
+==> Upgrading 1 outdated package, with result:
+autoconf-archive 2017.09.28
+==> Upgrading autoconf-archive 
+==> Downloading https://ftp.gnu.org/gnu/autoconf-archive/autoconf-archive-2017.09.28.tar.xz
+==> ./configure --prefix=/usr/local/Cellar/autoconf-archive/2017.09.28
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall autoconf`
-==> Caveats
-Emacs Lisp files have been installed to:
-  /usr/local/share/emacs/site-lisp/autoconf
-==> Summary
-🍺  /usr/local/Cellar/autoconf/2.69: 71 files, 3.0MB, built in 25 seconds
-==> Determining autoconf bottle rebuild...
-==> Bottling autoconf-2.69.high_sierra.bottle.5.tar.gz...
-./autoconf-2.69.high_sierra.bottle.5.tar.gz
+You can run it manually using `brew postinstall autoconf-archive`
+🍺  /usr/local/Cellar/autoconf-archive/2017.09.28: 583 files, 3.5MB, built in 23 seconds
+==> Determining autoconf-archive bottle rebuild...
+==> Bottling autoconf-archive-2017.09.28.high_sierra.bottle.1.tar.gz...
+./autoconf-archive-2017.09.28.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
-    rebuild 5
-    sha256 "2fa26efb3b87ccb201205d252f62111bf19cfe9263e471d7d55372d9784fd6cc" => :high_sierra
+    rebuild 1
+    sha256 "3a847c7d5959abe0eba5c7b3092f130d6ac34adaedaf0e2a236fb7545d7ca222" => :high_sierra
   end
