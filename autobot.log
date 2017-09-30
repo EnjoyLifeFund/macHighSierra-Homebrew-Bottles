@@ -1,36 +1,29 @@
 ==> Auto-updated Homebrew!
-Updated 2 taps (homebrew/science, homebrew/core).
-==> New Formulae
-gdcm
+Updated 1 tap (homebrew/core).
 ==> Updated Formulae
-coreutils
-fdroidserver
+faad2
+gsmartcontrol
+jose
+numpy
+selenium-server-standalone
+terragrunt
+tig
 
 ==> Upgrading 1 outdated package, with result:
-ninja 1.8.2
-==> Upgrading ninja 
-==> Downloading https://github.com/ninja-build/ninja/archive/v1.8.2.tar.gz
-==> Downloading from https://codeload.github.com/ninja-build/ninja/tar.gz/v1.8.2
-==> python configure.py --bootstrap
-==> Downloading https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/googletest/gtest-1.7.0.zip
-==> ./configure.py --with-gtest=gtest
-==> ./ninja ninja_test
-==> ./ninja_test --gtest_filter=-SubprocessTest.SetWithLots
+faac 1.29.7.7
+==> Upgrading faac 
+==> Downloading https://downloads.sourceforge.net/project/faac/faac-src/faac-1.29/faac-1.29.7.7.tar.gz
+==> Downloading from https://ncu.dl.sourceforge.net/project/faac/faac-src/faac-1.29/faac-1.29.7.7.tar.gz
+==> ./configure --disable-silent-rules --prefix=/usr/local/Cellar/faac/1.29.7.7
+==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall ninja`
-==> Caveats
-Bash completion has been installed to:
-  /usr/local/etc/bash_completion.d
-
-zsh completions have been installed to:
-  /usr/local/share/zsh/site-functions
-==> Summary
-🍺  /usr/local/Cellar/ninja/1.8.2: 7 files, 273.2KB, built in 1 minute 30 seconds
-==> Determining ninja bottle rebuild...
-==> Bottling ninja-1.8.2.high_sierra.bottle.1.tar.gz...
-./ninja-1.8.2.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall faac`
+🍺  /usr/local/Cellar/faac/1.29.7.7: 15 files, 203.9KB, built in 1 minute 19 seconds
+==> Determining faac bottle rebuild...
+==> Bottling faac-1.29.7.7.high_sierra.bottle.1.tar.gz...
+./faac-1.29.7.7.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any
     rebuild 1
-    sha256 "23a031db0e7dcdf9ea968c0c9219a9aeb935c2b5286cf3723fd9e3604f02ed45" => :high_sierra
+    sha256 "0e7bb2275cafc6bd22ba0ca36843de48dfa5e1e18c47e79eea32262b07c91e4b" => :high_sierra
   end
