@@ -1,14 +1,24 @@
-==> Downloading https://ftp.gnu.org/gnu/automake/automake-1.15.1.tar.xz
-==> ./configure --prefix=/usr/local/Cellar/automake/1.15.1
+==> Upgrading 1 outdated package, with result:
+ipfs 0.4.11
+==> Upgrading ipfs 
+==> Cloning https://github.com/ipfs/go-ipfs.git
+==> Checking out tag v0.4.11
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall automake`
-🍺  /usr/local/Cellar/automake/1.15.1: 131 files, 3.0MB, built in 48 seconds
-==> Determining automake bottle rebuild...
-==> Bottling automake-1.15.1.high_sierra.bottle.1.tar.gz...
-./automake-1.15.1.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall ipfs`
+==> Caveats
+To have launchd start ipfs now and restart at login:
+  brew services start ipfs
+Or, if you don't want/need a background service you can just run:
+  ipfs
+==> Summary
+🍺  /usr/local/Cellar/ipfs/0.4.11: 4 files, 27.6MB, built in 29 minutes 44 seconds
+==> Determining ipfs bottle rebuild...
+==> Bottling ipfs-0.4.11.high_sierra.bottle.1.tar.gz...
+==> Detecting if ipfs-0.4.11.high_sierra.bottle.1.tar.gz is relocatable...
+./ipfs-0.4.11.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "6a0f9d4a0cac65ef061bfc434c13c60cc89f4bb79b6153121f265af75c4649a0" => :high_sierra
+    sha256 "901bdf64ea848e253cc303f7cdeb136c7d287044b06eb2b8c88fa8292b722cdc" => :high_sierra
   end
