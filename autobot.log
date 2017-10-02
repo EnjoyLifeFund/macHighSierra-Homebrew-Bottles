@@ -1,24 +1,13 @@
 ==> Upgrading 1 outdated package, with result:
-ipfs 0.4.11
-==> Upgrading ipfs 
-==> Cloning https://github.com/ipfs/go-ipfs.git
-==> Checking out tag v0.4.11
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall ipfs`
+tomcat 8.5.23
+==> Upgrading tomcat 
+==> Downloading https://www.apache.org/dyn/closer.cgi?path=tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23.tar.gz
+==> Best Mirror http://ftp.mirror.tw/pub/apache/tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23.tar.gz
 ==> Caveats
-To have launchd start ipfs now and restart at login:
-  brew services start ipfs
+To have launchd start tomcat now and restart at login:
+  brew services start tomcat
 Or, if you don't want/need a background service you can just run:
-  ipfs
+  catalina run
 ==> Summary
-🍺  /usr/local/Cellar/ipfs/0.4.11: 4 files, 27.6MB, built in 29 minutes 44 seconds
-==> Determining ipfs bottle rebuild...
-==> Bottling ipfs-0.4.11.high_sierra.bottle.1.tar.gz...
-==> Detecting if ipfs-0.4.11.high_sierra.bottle.1.tar.gz is relocatable...
-./ipfs-0.4.11.high_sierra.bottle.1.tar.gz
-  bottle do
-    cellar :any_skip_relocation
-    rebuild 1
-    sha256 "901bdf64ea848e253cc303f7cdeb136c7d287044b06eb2b8c88fa8292b722cdc" => :high_sierra
-  end
+🍺  /usr/local/Cellar/tomcat/8.5.23: 632 files, 12.8MB, built in 2 minutes 56 seconds
+This formula doesn't require compiling.
