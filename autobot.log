@@ -1,30 +1,20 @@
+==> Downloading https://downloads.sourceforge.net/project/swig/swig/swig-3.0.12/swig-3.0.12.tar.gz
+==> Downloading from https://nchc.dl.sourceforge.net/project/swig/swig/swig-3.0.12/swig-3.0.12.tar.gz
+==> ./configure --prefix=/usr/local/Cellar/swig/3.0.12
+==> make
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall swig`
+🍺  /usr/local/Cellar/swig/3.0.12: 755 files, 5.5MB, built in 2 minutes 15 seconds
 ==> Auto-updated Homebrew!
 Updated 1 tap (caskroom/cask).
 No changes to formulae.
 
-==> Upgrading 1 outdated package, with result:
-cython 0.27.1
-==> Upgrading cython 
-==> Downloading https://files.pythonhosted.org/packages/10/32/21873ff231e069f860098b1602bb9e3ae2806d2f73ba661b5d806f200243/Cython-0.27.1.tar.gz
-==> python -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/cython/0.27.1/libexec --single-version-externally-managed --record=installed.txt
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall cython`
-==> Caveats
-This formula is keg-only, which means it was not symlinked into /usr/local,
-because this formula is mainly used internally by other formulae.
-Users are advised to use `pip` to install cython.
-
-If you need to have this software first in your PATH run:
-  echo 'export PATH="/usr/local/opt/cython/bin:$PATH"' >> ~/.bash_profile
-
-==> Summary
-🍺  /usr/local/Cellar/cython/0.27.1: 428 files, 10.8MB, built in 3 minutes 19 seconds
-==> Determining cython bottle rebuild...
-==> Bottling cython-0.27.1.high_sierra.bottle.1.tar.gz...
-==> Detecting if cython-0.27.1.high_sierra.bottle.1.tar.gz is relocatable...
-./cython-0.27.1.high_sierra.bottle.1.tar.gz
+==> Determining swig bottle rebuild...
+==> Bottling swig-3.0.12.high_sierra.bottle.1.tar.gz...
+==> Detecting if swig-3.0.12.high_sierra.bottle.1.tar.gz is relocatable...
+./swig-3.0.12.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
     rebuild 1
-    sha256 "3ea55ad3f767c8639a65addeaa559bea9e4143be5bcd2fd5496493d4da382364" => :high_sierra
+    sha256 "0c8fdfd399e998c4c7dd7ca123e27e56e9619fcb0ef8fcf0bd228bbb35d7ef1b" => :high_sierra
   end
