@@ -1,20 +1,19 @@
-==> Downloading https://downloads.sourceforge.net/project/swig/swig/swig-3.0.12/swig-3.0.12.tar.gz
-==> Downloading from https://nchc.dl.sourceforge.net/project/swig/swig/swig-3.0.12/swig-3.0.12.tar.gz
-==> ./configure --prefix=/usr/local/Cellar/swig/3.0.12
+==> Upgrading 1 outdated package, with result:
+libdap 3.19.1
+==> Upgrading libdap 
+==> Downloading https://www.opendap.org/pub/source/libdap-3.19.1.tar.gz
+==> ./configure --prefix=/usr/local/Cellar/libdap/3.19.1 --with-included-regex
 ==> make
+==> make check
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall swig`
-🍺  /usr/local/Cellar/swig/3.0.12: 755 files, 5.5MB, built in 2 minutes 15 seconds
-==> Auto-updated Homebrew!
-Updated 1 tap (caskroom/cask).
-No changes to formulae.
-
-==> Determining swig bottle rebuild...
-==> Bottling swig-3.0.12.high_sierra.bottle.1.tar.gz...
-==> Detecting if swig-3.0.12.high_sierra.bottle.1.tar.gz is relocatable...
-./swig-3.0.12.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall libdap`
+🍺  /usr/local/Cellar/libdap/3.19.1: 163 files, 7MB, built in 5 minutes 22 seconds
+==> Determining libdap bottle rebuild...
+==> Bottling libdap-3.19.1.high_sierra.bottle.1.tar.gz...
+==> Detecting if libdap-3.19.1.high_sierra.bottle.1.tar.gz is relocatable...
+./libdap-3.19.1.high_sierra.bottle.1.tar.gz
   bottle do
     rebuild 1
-    sha256 "0c8fdfd399e998c4c7dd7ca123e27e56e9619fcb0ef8fcf0bd228bbb35d7ef1b" => :high_sierra
+    sha256 "3908e02950d278b8175f2d55bb9c73b81919e0d55720c8eff09994952756d3f8" => :high_sierra
   end
