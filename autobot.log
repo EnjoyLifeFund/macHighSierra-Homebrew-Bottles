@@ -1,19 +1,43 @@
 ==> Upgrading 1 outdated package, with result:
-p11-kit 0.23.9
-==> Upgrading p11-kit 
-==> Downloading https://github.com/p11-glue/p11-kit/releases/download/0.23.9/p11-kit-0.23.9.tar.gz
-==> Downloading from https://github-production-release-asset-2e65be.s3.amazonaws.com/12060420/9632745c-a799-11e7-9c13-baeeebf1797a?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20171006%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171006T105053Z&X-Amz-Expires=300&X-Amz-Signature=560cc59dd3e6fe060605376a13da00b1d1f87010602ee105bd7519eac3b41bef&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dp11-kit-0.23.9.tar.gz&response-content-type=application%2Foctet-stream
-==> ./configure --disable-silent-rules --disable-trust-module --prefix=/usr/local/Cellar/p11-kit/0.23.9 --sysconfdir=/usr/local/etc --with-module-config=/usr/local/etc/pkcs11/modules --without-libtasn1
-==> make
-==> make check
-==> make install
+git-lfs 2.3.2
+==> Upgrading git-lfs 
+==> Installing dependencies for git-lfs: go
+==> Installing git-lfs dependency: go
+==> Downloading https://homebrew.bintray.com/bottles/go-1.9.1.high_sierra.bottle.tar.gz
+==> Pouring go-1.9.1.high_sierra.bottle.tar.gz
+==> Caveats
+A valid GOPATH is required to use the `go get` command.
+If $GOPATH is not specified, $HOME/go will be used by default:
+  https://golang.org/doc/code.html#GOPATH
+
+You may wish to add the GOROOT-based install location to your PATH:
+  export PATH=$PATH:/usr/local/opt/go/libexec/bin
+==> Summary
+🍺  /usr/local/Cellar/go/1.9.1: 7,639 files, 293.7MB
+==> Installing git-lfs
+==> Downloading https://github.com/git-lfs/git-lfs/archive/v2.3.2.tar.gz
+==> Downloading from https://codeload.github.com/git-lfs/git-lfs/tar.gz/v2.3.2
+==> gem install ronn
+==> ./script/bootstrap
+==> ./script/man
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall p11-kit`
-🍺  /usr/local/Cellar/p11-kit/0.23.9: 61 files, 2.5MB, built in 1 minute 47 seconds
-==> Determining p11-kit bottle rebuild...
-==> Bottling p11-kit-0.23.9.high_sierra.bottle.1.tar.gz...
-./p11-kit-0.23.9.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall git-lfs`
+==> Caveats
+Update your git config to finish installation:
+
+  # Update global git config
+  $ git lfs install
+
+  # Update system git config
+  $ git lfs install --system
+==> Summary
+🍺  /usr/local/Cellar/git-lfs/2.3.2: 65 files, 8.4MB, built in 1 minute 52 seconds
+==> Determining git-lfs bottle rebuild...
+==> Bottling git-lfs-2.3.2.high_sierra.bottle.1.tar.gz...
+==> Detecting if git-lfs-2.3.2.high_sierra.bottle.1.tar.gz is relocatable...
+./git-lfs-2.3.2.high_sierra.bottle.1.tar.gz
   bottle do
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "1dd7bc283cee8ff0540c196c583dfa85e30e8873cddea700c3c21ff1f3d6fa21" => :high_sierra
+    sha256 "0457cca687d7e069a5f2e5bafb4551b8a8865cfc28e12c9120918a0ba6f425f2" => :high_sierra
   end
