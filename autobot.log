@@ -1,7 +1,24 @@
+==> Auto-updated Homebrew!
+Updated 1 tap (caskroom/cask).
+No changes to formulae.
+
 ==> Upgrading 1 outdated package, with result:
-icdiff 1.9.1
-==> Upgrading icdiff 
-==> Downloading https://github.com/jeffkaufman/icdiff/archive/release-1.9.1.tar.gz
-==> Downloading from https://codeload.github.com/jeffkaufman/icdiff/tar.gz/release-1.9.1
-🍺  /usr/local/Cellar/icdiff/1.9.1: 6 files, 30.5KB, built in 15 seconds
-This formula doesn't require compiling.
+poppler 0.60.1
+==> Upgrading poppler 
+==> Downloading https://poppler.freedesktop.org/poppler-0.60.1.tar.xz
+Already downloaded: /Users/ralic/Library/Caches/Homebrew/poppler-0.60.1.tar.xz
+==> cmake . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/poppler/0.60.1 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -DENABLE_XPDF_HEADERS=ON -DENABLE_GLIB=ON -DBUILD_GTK_TESTS=OFF -DWITH_GObjectIntrospection=ON -DENABLE_QT4=OFF -DENABLE_QT5=ON -DENABLE_CMS=OFF
+==> make install
+==> Downloading https://poppler.freedesktop.org/poppler-data-0.4.8.tar.gz
+==> make install prefix=/usr/local/Cellar/poppler/0.60.1
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall poppler`
+🍺  /usr/local/Cellar/poppler/0.60.1: 443 files, 18.4MB, built in 3 minutes 8 seconds
+==> Determining poppler bottle rebuild...
+==> Bottling poppler-0.60.1.high_sierra.bottle.1.tar.gz...
+==> Detecting if poppler-0.60.1.high_sierra.bottle.1.tar.gz is relocatable...
+./poppler-0.60.1.high_sierra.bottle.1.tar.gz
+  bottle do
+    rebuild 1
+    sha256 "c1a7f10b09502ab7525608ccc64e5473d76f0f2aa2819c6fc0d1efeb6cc9c135" => :high_sierra
+  end
