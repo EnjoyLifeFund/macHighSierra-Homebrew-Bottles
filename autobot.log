@@ -1,8 +1,7 @@
-==> Determining glib bottle rebuild...
-==> Bottling glib-2.54.1.high_sierra.bottle.1.tar.gz...
-==> Detecting if glib-2.54.1.high_sierra.bottle.1.tar.gz is relocatable...
-./glib-2.54.1.high_sierra.bottle.1.tar.gz
-  bottle do
-    rebuild 1
-    sha256 "d2f061881263fac78fa18d5585bf06c7b78899c4235e3e517e563eb29992071b" => :high_sierra
-  end
+==> Upgrading 1 outdated package, with result:
+hg-fast-export 171002
+==> Upgrading hg-fast-export 
+==> Downloading https://github.com/frej/fast-export/archive/v171002.tar.gz
+==> Downloading from https://codeload.github.com/frej/fast-export/tar.gz/v171002
+🍺  /usr/local/Cellar/hg-fast-export/171002: 8 files, 38.5KB, built in 4 seconds
+This formula doesn't require compiling.
