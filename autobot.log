@@ -1,43 +1,22 @@
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+No changes to formulae.
+
 ==> Upgrading 1 outdated package, with result:
-git-lfs 2.3.2
-==> Upgrading git-lfs 
-==> Installing dependencies for git-lfs: go
-==> Installing git-lfs dependency: go
-==> Downloading https://homebrew.bintray.com/bottles/go-1.9.1.high_sierra.bottle.tar.gz
-==> Pouring go-1.9.1.high_sierra.bottle.tar.gz
-==> Caveats
-A valid GOPATH is required to use the `go get` command.
-If $GOPATH is not specified, $HOME/go will be used by default:
-  https://golang.org/doc/code.html#GOPATH
-
-You may wish to add the GOROOT-based install location to your PATH:
-  export PATH=$PATH:/usr/local/opt/go/libexec/bin
-==> Summary
-🍺  /usr/local/Cellar/go/1.9.1: 7,639 files, 293.7MB
-==> Installing git-lfs
-==> Downloading https://github.com/git-lfs/git-lfs/archive/v2.3.2.tar.gz
-==> Downloading from https://codeload.github.com/git-lfs/git-lfs/tar.gz/v2.3.2
-==> gem install ronn
-==> ./script/bootstrap
-==> ./script/man
+pyenv 1.1.5
+==> Upgrading pyenv 
+==> Downloading https://github.com/pyenv/pyenv/archive/v1.1.5.tar.gz
+==> Downloading from https://codeload.github.com/pyenv/pyenv/tar.gz/v1.1.5
+==> src/configure
+==> make -C src
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall git-lfs`
-==> Caveats
-Update your git config to finish installation:
-
-  # Update global git config
-  $ git lfs install
-
-  # Update system git config
-  $ git lfs install --system
-==> Summary
-🍺  /usr/local/Cellar/git-lfs/2.3.2: 65 files, 8.4MB, built in 1 minute 52 seconds
-==> Determining git-lfs bottle rebuild...
-==> Bottling git-lfs-2.3.2.high_sierra.bottle.1.tar.gz...
-==> Detecting if git-lfs-2.3.2.high_sierra.bottle.1.tar.gz is relocatable...
-./git-lfs-2.3.2.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall pyenv`
+🍺  /usr/local/Cellar/pyenv/1.1.5: 594 files, 2.3MB, built in 6 seconds
+==> Determining pyenv bottle rebuild...
+==> Bottling pyenv-1.1.5.high_sierra.bottle.1.tar.gz...
+./pyenv-1.1.5.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
+    cellar :any
     rebuild 1
-    sha256 "0457cca687d7e069a5f2e5bafb4551b8a8865cfc28e12c9120918a0ba6f425f2" => :high_sierra
+    sha256 "df18b782ee1a2a9322d6803b30121fbf656bc1a49001a0df3fed43db829dacbd" => :high_sierra
   end
