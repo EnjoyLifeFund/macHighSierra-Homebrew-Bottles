@@ -1,18 +1,7 @@
 ==> Upgrading 1 outdated package, with result:
-godep 79_7
-==> Upgrading godep 
-==> Downloading https://github.com/tools/godep/archive/v79.tar.gz
-==> Downloading from https://codeload.github.com/tools/godep/tar.gz/v79
-==> go build -o /usr/local/Cellar/godep/79_7/bin/godep
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall godep`
-🍺  /usr/local/Cellar/godep/79_7: 6 files, 9MB, built in 11 seconds
-==> Determining godep bottle rebuild...
-==> Bottling godep-79_7.high_sierra.bottle.1.tar.gz...
-==> Detecting if godep-79_7.high_sierra.bottle.1.tar.gz is relocatable...
-./godep-79_7.high_sierra.bottle.1.tar.gz
-  bottle do
-    cellar :any_skip_relocation
-    rebuild 1
-    sha256 "aae33ced0480a474919989331c4d2a3717d55c01158047d7e3aed03cf973b298" => :high_sierra
-  end
+icdiff 1.9.1
+==> Upgrading icdiff 
+==> Downloading https://github.com/jeffkaufman/icdiff/archive/release-1.9.1.tar.gz
+==> Downloading from https://codeload.github.com/jeffkaufman/icdiff/tar.gz/release-1.9.1
+🍺  /usr/local/Cellar/icdiff/1.9.1: 6 files, 30.5KB, built in 15 seconds
+This formula doesn't require compiling.
