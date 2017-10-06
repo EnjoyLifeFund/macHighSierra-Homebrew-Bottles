@@ -1,26 +1,23 @@
-==> Installing dependencies for poppler: glib, openjpeg
-==> Installing poppler dependency: glib
-==> Downloading https://homebrew.bintray.com/bottles/glib-2.54.1.high_sierra.bottle.tar.gz
-==> Pouring glib-2.54.1.high_sierra.bottle.tar.gz
-🍺  /usr/local/Cellar/glib/2.54.1: 430 files, 23MB
-==> Installing poppler dependency: openjpeg
-==> Downloading https://homebrew.bintray.com/bottles/openjpeg-2.3.0.high_sierra.bottle.tar.gz
-==> Pouring openjpeg-2.3.0.high_sierra.bottle.tar.gz
-🍺  /usr/local/Cellar/openjpeg/2.3.0: 515 files, 12.9MB
-==> Installing poppler
-==> Downloading https://poppler.freedesktop.org/poppler-0.60.0.tar.xz
-==> cmake . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/poppler/0.60.0 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -DENABLE_XPDF_HEADERS=ON -DENABLE_GLIB=ON -DBUILD_GTK_TESTS=OFF -DWITH_GObjectIntrospection=ON -DENABLE_QT4=OFF -DENABLE_QT5=OFF -DENABLE_CMS=OFF
+==> Upgrading 1 outdated package, with result:
+cmake 3.9.4
+==> Upgrading cmake 
+==> Downloading https://cmake.org/files/v3.9/cmake-3.9.4.tar.gz
+==> ./bootstrap --prefix=/usr/local/Cellar/cmake/3.9.4 --no-system-libs --parallel=4 --datadir=/share/cmake --docdir=/share/doc/cmake --mandir=/share/man --system-zlib --system-bzip2 --system-curl --sphinx-man --sphinx-build=/usr/local/opt/sphinx-doc/bin/sphinx-build
+==> make
 ==> make install
-==> Downloading https://poppler.freedesktop.org/poppler-data-0.4.8.tar.gz
-==> make install prefix=/usr/local/Cellar/poppler/0.60.0
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall poppler`
-🍺  /usr/local/Cellar/poppler/0.60.0: 443 files, 18.3MB, built in 1 minute 53 seconds
-==> Determining poppler bottle rebuild...
-==> Bottling poppler-0.60.0.high_sierra.bottle.1.tar.gz...
-==> Detecting if poppler-0.60.0.high_sierra.bottle.1.tar.gz is relocatable...
-./poppler-0.60.0.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall cmake`
+==> Caveats
+Emacs Lisp files have been installed to:
+  /usr/local/share/emacs/site-lisp/cmake
+==> Summary
+🍺  /usr/local/Cellar/cmake/3.9.4: 2,266 files, 31.4MB, built in 15 minutes 16 seconds
+==> Determining cmake bottle rebuild...
+==> Bottling cmake-3.9.4.high_sierra.bottle.1.tar.gz...
+==> Detecting if cmake-3.9.4.high_sierra.bottle.1.tar.gz is relocatable...
+./cmake-3.9.4.high_sierra.bottle.1.tar.gz
   bottle do
+    cellar :any
     rebuild 1
-    sha256 "be513a8f875938bc4f95b6004dbac1aa7b278407382693f23b6d27f0a6818c25" => :high_sierra
+    sha256 "3d6e872cdb8f268167ede8cfac8eea664bb8a0303e998063fe10ad5081a3d4dd" => :high_sierra
   end
