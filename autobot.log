@@ -1,22 +1,13 @@
 ==> Auto-updated Homebrew!
 Updated 1 tap (homebrew/core).
-No changes to formulae.
+==> Updated Formulae
+macosvpn
 
-==> Upgrading 1 outdated package, with result:
-pyenv 1.1.5
-==> Upgrading pyenv 
-==> Downloading https://github.com/pyenv/pyenv/archive/v1.1.5.tar.gz
-==> Downloading from https://codeload.github.com/pyenv/pyenv/tar.gz/v1.1.5
-==> src/configure
-==> make -C src
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall pyenv`
-🍺  /usr/local/Cellar/pyenv/1.1.5: 594 files, 2.3MB, built in 6 seconds
-==> Determining pyenv bottle rebuild...
-==> Bottling pyenv-1.1.5.high_sierra.bottle.1.tar.gz...
-./pyenv-1.1.5.high_sierra.bottle.1.tar.gz
+==> Determining node bottle rebuild...
+==> Bottling node-8.6.0.high_sierra.bottle.1.tar.gz...
+==> Detecting if node-8.6.0.high_sierra.bottle.1.tar.gz is relocatable...
+./node-8.6.0.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any
     rebuild 1
-    sha256 "df18b782ee1a2a9322d6803b30121fbf656bc1a49001a0df3fed43db829dacbd" => :high_sierra
+    sha256 "921794f78bf60465fe8667267bd6e527d28b6ca45d4bcdee622a85033c6ef624" => :high_sierra
   end
