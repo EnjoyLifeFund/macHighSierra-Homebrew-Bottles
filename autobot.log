@@ -1,8 +1,29 @@
-==> Determining go bottle rebuild...
-==> Bottling go-1.9.1.high_sierra.bottle.1.tar.gz...
-==> Detecting if go-1.9.1.high_sierra.bottle.1.tar.gz is relocatable...
-./go-1.9.1.high_sierra.bottle.1.tar.gz
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> Updated Formulae
+angular-cli
+bazel
+bowtie2
+fluent-bit
+gopass
+grpc
+khal
+terragrunt
+
+==> Upgrading 1 outdated package, with result:
+heroku 6.14.34
+==> Upgrading heroku 
+==> Downloading https://registry.npmjs.org/heroku-cli/-/heroku-cli-6.14.34.tgz
+==> npm install -ddd --global --build-from-source --cache=/Users/ralic/Library/Caches/Homebrew/npm_cache --prefix=/usr/local/Cellar/heroku/6.14.34/libexec /private/tmp/heroku-20171006-42935-kkveow/package/heroku-cli-6.14.34.tgz
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall heroku`
+🍺  /usr/local/Cellar/heroku/6.14.34: 6,962 files, 40.4MB, built in 2 minutes 12 seconds
+==> Determining heroku bottle rebuild...
+==> Bottling heroku-6.14.34.high_sierra.bottle.1.tar.gz...
+==> Detecting if heroku-6.14.34.high_sierra.bottle.1.tar.gz is relocatable...
+./heroku-6.14.34.high_sierra.bottle.1.tar.gz
   bottle do
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "b435c4649d1b2336a515fa4cd11660b28e5648fe689e2f1ac461b4b3487c8a65" => :high_sierra
+    sha256 "330357542f330cf949489f499266709ba486d55fc516a5158d8cabe1bdcbf477" => :high_sierra
   end
