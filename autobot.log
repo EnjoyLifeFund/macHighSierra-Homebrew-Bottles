@@ -1,23 +1,16 @@
-==> Upgrading 1 outdated package, with result:
-cmake 3.9.4
-==> Upgrading cmake 
-==> Downloading https://cmake.org/files/v3.9/cmake-3.9.4.tar.gz
-==> ./bootstrap --prefix=/usr/local/Cellar/cmake/3.9.4 --no-system-libs --parallel=4 --datadir=/share/cmake --docdir=/share/doc/cmake --mandir=/share/man --system-zlib --system-bzip2 --system-curl --sphinx-man --sphinx-build=/usr/local/opt/sphinx-doc/bin/sphinx-build
-==> make
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall cmake`
-==> Caveats
-Emacs Lisp files have been installed to:
-  /usr/local/share/emacs/site-lisp/cmake
-==> Summary
-🍺  /usr/local/Cellar/cmake/3.9.4: 2,266 files, 31.4MB, built in 15 minutes 16 seconds
-==> Determining cmake bottle rebuild...
-==> Bottling cmake-3.9.4.high_sierra.bottle.1.tar.gz...
-==> Detecting if cmake-3.9.4.high_sierra.bottle.1.tar.gz is relocatable...
-./cmake-3.9.4.high_sierra.bottle.1.tar.gz
+==> Auto-updated Homebrew!
+Updated 2 taps (homebrew/core, caskroom/cask).
+==> Updated Formulae
+subliminal
+==> Deleted Formulae
+rexster-console
+
+==> Determining openjpeg bottle rebuild...
+==> Bottling openjpeg-2.3.0.high_sierra.bottle.1.tar.gz...
+==> Detecting if openjpeg-2.3.0.high_sierra.bottle.1.tar.gz is relocatable...
+./openjpeg-2.3.0.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any
     rebuild 1
-    sha256 "3d6e872cdb8f268167ede8cfac8eea664bb8a0303e998063fe10ad5081a3d4dd" => :high_sierra
+    sha256 "1bf61dd8af6c994fc7f72457a927dbf43088aa7335ee72a2e90228f75e168370" => :high_sierra
   end
