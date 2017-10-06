@@ -1,7 +1,12 @@
 ==> Upgrading 1 outdated package, with result:
-hg-fast-export 171002
-==> Upgrading hg-fast-export 
-==> Downloading https://github.com/frej/fast-export/archive/v171002.tar.gz
-==> Downloading from https://codeload.github.com/frej/fast-export/tar.gz/v171002
-🍺  /usr/local/Cellar/hg-fast-export/171002: 8 files, 38.5KB, built in 4 seconds
+chromedriver 2.33
+==> Upgrading chromedriver 
+==> Downloading https://chromedriver.storage.googleapis.com/2.33/chromedriver_mac64.zip
+==> Caveats
+To have launchd start chromedriver now and restart at login:
+  brew services start chromedriver
+Or, if you don't want/need a background service you can just run:
+  chromedriver
+==> Summary
+🍺  /usr/local/Cellar/chromedriver/2.33: 4 files, 11.4MB, built in 6 minutes 47 seconds
 This formula doesn't require compiling.
