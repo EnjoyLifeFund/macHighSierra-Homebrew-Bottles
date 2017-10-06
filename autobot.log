@@ -1,16 +1,8 @@
-==> Auto-updated Homebrew!
-Updated 2 taps (homebrew/core, caskroom/cask).
-==> Updated Formulae
-subliminal
-==> Deleted Formulae
-rexster-console
-
-==> Determining openjpeg bottle rebuild...
-==> Bottling openjpeg-2.3.0.high_sierra.bottle.1.tar.gz...
-==> Detecting if openjpeg-2.3.0.high_sierra.bottle.1.tar.gz is relocatable...
-./openjpeg-2.3.0.high_sierra.bottle.1.tar.gz
+==> Determining glib bottle rebuild...
+==> Bottling glib-2.54.1.high_sierra.bottle.1.tar.gz...
+==> Detecting if glib-2.54.1.high_sierra.bottle.1.tar.gz is relocatable...
+./glib-2.54.1.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any
     rebuild 1
-    sha256 "1bf61dd8af6c994fc7f72457a927dbf43088aa7335ee72a2e90228f75e168370" => :high_sierra
+    sha256 "d2f061881263fac78fa18d5585bf06c7b78899c4235e3e517e563eb29992071b" => :high_sierra
   end
