@@ -1,12 +1,19 @@
 ==> Upgrading 1 outdated package, with result:
-chromedriver 2.33
-==> Upgrading chromedriver 
-==> Downloading https://chromedriver.storage.googleapis.com/2.33/chromedriver_mac64.zip
-==> Caveats
-To have launchd start chromedriver now and restart at login:
-  brew services start chromedriver
-Or, if you don't want/need a background service you can just run:
-  chromedriver
-==> Summary
-🍺  /usr/local/Cellar/chromedriver/2.33: 4 files, 11.4MB, built in 6 minutes 47 seconds
-This formula doesn't require compiling.
+p11-kit 0.23.9
+==> Upgrading p11-kit 
+==> Downloading https://github.com/p11-glue/p11-kit/releases/download/0.23.9/p11-kit-0.23.9.tar.gz
+==> Downloading from https://github-production-release-asset-2e65be.s3.amazonaws.com/12060420/9632745c-a799-11e7-9c13-baeeebf1797a?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20171006%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171006T105053Z&X-Amz-Expires=300&X-Amz-Signature=560cc59dd3e6fe060605376a13da00b1d1f87010602ee105bd7519eac3b41bef&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dp11-kit-0.23.9.tar.gz&response-content-type=application%2Foctet-stream
+==> ./configure --disable-silent-rules --disable-trust-module --prefix=/usr/local/Cellar/p11-kit/0.23.9 --sysconfdir=/usr/local/etc --with-module-config=/usr/local/etc/pkcs11/modules --without-libtasn1
+==> make
+==> make check
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall p11-kit`
+🍺  /usr/local/Cellar/p11-kit/0.23.9: 61 files, 2.5MB, built in 1 minute 47 seconds
+==> Determining p11-kit bottle rebuild...
+==> Bottling p11-kit-0.23.9.high_sierra.bottle.1.tar.gz...
+./p11-kit-0.23.9.high_sierra.bottle.1.tar.gz
+  bottle do
+    rebuild 1
+    sha256 "1dd7bc283cee8ff0540c196c583dfa85e30e8873cddea700c3c21ff1f3d6fa21" => :high_sierra
+  end
