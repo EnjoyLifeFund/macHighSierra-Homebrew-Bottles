@@ -1,25 +1,26 @@
-==> Upgrading 1 outdated package, with result:
-gdk-pixbuf 2.36.11
-==> Upgrading gdk-pixbuf 
-==> Installing dependencies for gdk-pixbuf: gobject-introspection
-==> Installing gdk-pixbuf dependency: gobject-introspection
-==> Downloading https://homebrew.bintray.com/bottles/gobject-introspection-1.54.1.high_sierra.bottle.tar.gz
-==> Pouring gobject-introspection-1.54.1.high_sierra.bottle.tar.gz
-🍺  /usr/local/Cellar/gobject-introspection/1.54.1: 173 files, 9.7MB
-==> Installing gdk-pixbuf
-==> Downloading https://download.gnome.org/sources/gdk-pixbuf/2.36/gdk-pixbuf-2.36.11.tar.xz
-==> Downloading from http://ftp.nara.wide.ad.jp/pub/X11/GNOME/sources/gdk-pixbuf/2.36/gdk-pixbuf-2.36.11.tar.xz
-==> ./configure --disable-maintainer-mode --enable-debug=no --prefix=/usr/local/Cellar/gdk-pixbuf/2.36.11 --enable-introspection=yes --disable-Bsymbolic --enable-static --without-gdiplus
-==> make
+==> Installing dependencies for poppler: glib, openjpeg
+==> Installing poppler dependency: glib
+==> Downloading https://homebrew.bintray.com/bottles/glib-2.54.1.high_sierra.bottle.tar.gz
+==> Pouring glib-2.54.1.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/glib/2.54.1: 430 files, 23MB
+==> Installing poppler dependency: openjpeg
+==> Downloading https://homebrew.bintray.com/bottles/openjpeg-2.3.0.high_sierra.bottle.tar.gz
+==> Pouring openjpeg-2.3.0.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/openjpeg/2.3.0: 515 files, 12.9MB
+==> Installing poppler
+==> Downloading https://poppler.freedesktop.org/poppler-0.60.0.tar.xz
+==> cmake . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/poppler/0.60.0 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -DENABLE_XPDF_HEADERS=ON -DENABLE_GLIB=ON -DBUILD_GTK_TESTS=OFF -DWITH_GObjectIntrospection=ON -DENABLE_QT4=OFF -DENABLE_QT5=OFF -DENABLE_CMS=OFF
 ==> make install
+==> Downloading https://poppler.freedesktop.org/poppler-data-0.4.8.tar.gz
+==> make install prefix=/usr/local/Cellar/poppler/0.60.0
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall gdk-pixbuf`
-🍺  /usr/local/Cellar/gdk-pixbuf/2.36.11: 200 files, 4.4MB, built in 1 minute 34 seconds
-==> Determining gdk-pixbuf bottle rebuild...
-==> Bottling gdk-pixbuf-2.36.11.high_sierra.bottle.1.tar.gz...
-==> Detecting if gdk-pixbuf-2.36.11.high_sierra.bottle.1.tar.gz is relocatable...
-./gdk-pixbuf-2.36.11.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall poppler`
+🍺  /usr/local/Cellar/poppler/0.60.0: 443 files, 18.3MB, built in 1 minute 53 seconds
+==> Determining poppler bottle rebuild...
+==> Bottling poppler-0.60.0.high_sierra.bottle.1.tar.gz...
+==> Detecting if poppler-0.60.0.high_sierra.bottle.1.tar.gz is relocatable...
+./poppler-0.60.0.high_sierra.bottle.1.tar.gz
   bottle do
     rebuild 1
-    sha256 "945d3040b5eb6b7b852c7745c9efad32b460e577e645f215d7023c7867e507ff" => :high_sierra
+    sha256 "be513a8f875938bc4f95b6004dbac1aa7b278407382693f23b6d27f0a6818c25" => :high_sierra
   end
