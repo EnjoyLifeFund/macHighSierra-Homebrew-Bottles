@@ -1,18 +1,15 @@
-==> Auto-updated Homebrew!
-Updated 1 tap (caskroom/cask).
-No changes to formulae.
-
-==> Downloading https://invisible-mirror.net/archives/byacc/byacc-20170709.tgz
-==> ./configure --program-prefix=b --prefix=/usr/local/Cellar/byacc/20170709 --man=/usr/local/Cellar/byacc/20170709/share/man
+==> Downloading https://libsdl.org/release/SDL2-2.0.7.tar.gz
+==> ./configure --prefix=/usr/local/Cellar/sdl2/2.0.7 --without-x
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall byacc`
-🍺  /usr/local/Cellar/byacc/20170709: 8 files, 230.7KB, built in 20 seconds
-==> Determining byacc bottle rebuild...
-==> Bottling byacc-20170709.high_sierra.bottle.1.tar.gz...
-./byacc-20170709.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall sdl2`
+🍺  /usr/local/Cellar/sdl2/2.0.7: 86 files, 3.9MB, built in 2 minutes 29 seconds
+==> Determining sdl2 bottle rebuild...
+==> Bottling sdl2-2.0.7.high_sierra.bottle.1.tar.gz...
+==> Detecting if sdl2-2.0.7.high_sierra.bottle.1.tar.gz is relocatable...
+./sdl2-2.0.7.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
+    cellar :any
     rebuild 1
-    sha256 "7f5ff37807c8a4253b1d7debde11ea75e090535a4312385f3d605cd49ea2b26b" => :high_sierra
+    sha256 "01c7dc4a2d314d91a1ca7d8be20cec8e9f82ad301bc628994503e09da13fda79" => :high_sierra
   end
