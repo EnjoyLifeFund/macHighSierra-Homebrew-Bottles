@@ -1,8 +1,18 @@
-==> Determining gobject-introspection bottle rebuild...
-==> Bottling gobject-introspection-1.54.1.high_sierra.bottle.1.tar.gz...
-==> Detecting if gobject-introspection-1.54.1.high_sierra.bottle.1.tar.gz is relocatable...
-./gobject-introspection-1.54.1.high_sierra.bottle.1.tar.gz
+==> Auto-updated Homebrew!
+Updated 1 tap (caskroom/cask).
+No changes to formulae.
+
+==> Downloading https://invisible-mirror.net/archives/byacc/byacc-20170709.tgz
+==> ./configure --program-prefix=b --prefix=/usr/local/Cellar/byacc/20170709 --man=/usr/local/Cellar/byacc/20170709/share/man
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall byacc`
+🍺  /usr/local/Cellar/byacc/20170709: 8 files, 230.7KB, built in 20 seconds
+==> Determining byacc bottle rebuild...
+==> Bottling byacc-20170709.high_sierra.bottle.1.tar.gz...
+./byacc-20170709.high_sierra.bottle.1.tar.gz
   bottle do
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "0458ab8117d1ac74f25a3c26703012473901990ce353d9e255fc49d94c85b722" => :high_sierra
+    sha256 "7f5ff37807c8a4253b1d7debde11ea75e090535a4312385f3d605cd49ea2b26b" => :high_sierra
   end
