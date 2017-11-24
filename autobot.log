@@ -1,16 +1,64 @@
+==> Auto-updated Homebrew!
+Updated 2 taps (homebrew/core, caskroom/cask).
+==> Updated Formulae
+ejabberd
+fwup
+gauge
+hana
+kvazaar
+libatomic_ops
+libsass
+libuv
+mapnik
+mgba
+minio
+miniupnpc
+nativefier
+nuget
+ocamlbuild
+opencbm
+pyqt
+qscintilla2
+rancher-cli
+roswell
+scalariform
+sip
+stormlib
+terragrunt
+thefuck
+xxhash
+zanata-client
+
 ==> Upgrading 1 outdated package, with result:
-angular-cli 1.5.4
-==> Upgrading angular-cli 
-==> Downloading https://registry.npmjs.org/@angular/cli/-/cli-1.5.4.tgz
-==> npm install -ddd --global --build-from-source --cache=/Users/ralic/Library/Caches/Homebrew/npm_cache --prefix=/usr/local/Cellar/angular-cli/1.5.4/libexec /private/tmp/angular-cli-20171124-76840-2950l6/package/angular-cli-1.5.4.tgz
+awscli 1.11.190
+==> Upgrading awscli 
+==> Downloading https://github.com/aws/aws-cli/archive/1.11.190.tar.gz
+==> Downloading from https://codeload.github.com/aws/aws-cli/tar.gz/1.11.190
+==> Downloading https://files.pythonhosted.org/packages/d4/0c/9840c08189e030873387a73b90ada981885010dd9aea134d6de30cd24cb8/virtualenv-15.1.0.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/tmp/awscli--homebrew-virtualenv-20171124-34575-1mpot42/target --single-version-externally-managed --record=installed.txt
+==> python3 -s /tmp/awscli--homebrew-virtualenv-20171124-34575-1mpot42/target/bin/virtualenv -p python3 /usr/local/Cellar/awscli/1.11.190/libexec
+==> /usr/local/Cellar/awscli/1.11.190/libexec/bin/pip install -v --no-binary :all: --ignore-installed /private/tmp/awscli-20171124-34575-1hymyqv/aws-cli-1.11.190
+==> /usr/local/Cellar/awscli/1.11.190/libexec/bin/pip uninstall -y awscli
+==> /usr/local/Cellar/awscli/1.11.190/libexec/bin/pip install -v --no-deps --no-binary :all: --ignore-installed /private/tmp/awscli-20171124-34575-1hymyqv/aws-cli-1.11.190
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall angular-cli`
-🍺  /usr/local/Cellar/angular-cli/1.5.4: 20,467 files, 126.7MB, built in 7 minutes 56 seconds
-==> Determining angular-cli bottle rebuild...
-==> Bottling angular-cli-1.5.4.high_sierra.bottle.1.tar.gz...
-==> Detecting if angular-cli-1.5.4.high_sierra.bottle.1.tar.gz is relocatable...
-./angular-cli-1.5.4.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall awscli`
+==> Caveats
+The "examples" directory has been installed to:
+  /usr/local/share/awscli/examples
+
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+zsh completions and functions have been installed to:
+  /usr/local/share/zsh/site-functions
+==> Summary
+🍺  /usr/local/Cellar/awscli/1.11.190: 5,020 files, 44.7MB, built in 2 minutes 48 seconds
+==> Determining awscli bottle rebuild...
+==> Bottling awscli-1.11.190.high_sierra.bottle.1.tar.gz...
+==> Detecting if awscli-1.11.190.high_sierra.bottle.1.tar.gz is relocatable...
+./awscli-1.11.190.high_sierra.bottle.1.tar.gz
   bottle do
+    cellar :any
     rebuild 1
-    sha256 "5277ccee144d3b1baf43d7a90efdbdfbd7275d656f5d7e8d27a2e396801d35fb" => :high_sierra
+    sha256 "467114202a49db0456ed95a77e95f0fe77fb278543b00f91d27ba4fae07fd1cc" => :high_sierra
   end
