@@ -1,19 +1,15 @@
-==> Auto-updated Homebrew!
-Updated 2 taps (homebrew/core, caskroom/cask).
-==> Updated Formulae
-libgosu
-qca
-
-==> Downloading https://mirrors.ocf.berkeley.edu/debian/pool/main/n/nc6/nc6_1.0.orig.tar.gz
-==> ./configure --prefix=/usr/local/Cellar/netcat6/1.0 --mandir=/usr/local/Cellar/netcat6/1.0/share/man
+==> Downloading https://dl.bintray.com/homebrew/mirror/dash-0.5.9.1.tar.gz
+==> ./configure --prefix=/usr/local/Cellar/dash/0.5.9.1 --with-libedit --enable-fnmatch --enable-glob
+==> make
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall netcat6`
-🍺  /usr/local/Cellar/netcat6/1.0: 11 files, 139.2KB, built in 1 minute 21 seconds
-==> Determining netcat6 bottle rebuild...
-==> Bottling netcat6-1.0.high_sierra.bottle.1.tar.gz...
-./netcat6-1.0.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall dash`
+🍺  /usr/local/Cellar/dash/0.5.9.1: 6 files, 212.1KB, built in 41 seconds
+==> Determining dash bottle rebuild...
+==> Bottling dash-0.5.9.1.high_sierra.bottle.1.tar.gz...
+./dash-0.5.9.1.high_sierra.bottle.1.tar.gz
   bottle do
+    cellar :any
     rebuild 1
-    sha256 "b76f026ff8d9f5334e4708b79f21cf6fb1354e45fac77a2148ce8e30e856cc06" => :high_sierra
+    sha256 "249dd6f50b1c0f36478c277c9450a2305e0530e5b7cafeda549984b7d6937994" => :high_sierra
   end
