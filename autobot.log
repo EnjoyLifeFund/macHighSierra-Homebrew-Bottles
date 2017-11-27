@@ -1,15 +1,30 @@
-==> Downloading https://dl.bintray.com/homebrew/mirror/dash-0.5.9.1.tar.gz
-==> ./configure --prefix=/usr/local/Cellar/dash/0.5.9.1 --with-libedit --enable-fnmatch --enable-glob
-==> make
+==> Installing dependencies for fish: pcre2
+==> Installing fish dependency: pcre2
+==> Downloading https://homebrew.bintray.com/bottles/pcre2-10.30.high_sierra.bottle.tar.gz
+==> Pouring pcre2-10.30.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/pcre2/10.30: 224 files, 5.2MB
+==> Installing fish
+==> Downloading https://github.com/fish-shell/fish-shell/releases/download/2.7.0/fish-2.7.0.tar.gz
+==> Downloading from https://github-production-release-asset-2e65be.s3.amazonaws.com/4279682/07691758-d070-11e7-93bc-c5104dbdd0ce?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20171127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171127T124959Z&X-Amz-Expires=300&X-Amz-Signature=e5bda70af8b3cbd5970d8365e217808ae611e3729adfcfd9c320e863430c7682&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dfish-2.7.0.tar.gz&response-content-type=application%2Foctet-stream
+==> ./configure --prefix=/usr/local/Cellar/fish/2.7.0 --with-extra-functionsdir=/usr/local/share/fish/vendor_functions.d --with-extra-completionsdir=/usr/local/share/fish/vendor_completions.d --with-extra-confdir=/usr/local/share/fish/vendor_conf.d SED=/usr/bin/sed
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall dash`
-🍺  /usr/local/Cellar/dash/0.5.9.1: 6 files, 212.1KB, built in 41 seconds
-==> Determining dash bottle rebuild...
-==> Bottling dash-0.5.9.1.high_sierra.bottle.1.tar.gz...
-./dash-0.5.9.1.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall fish`
+==> Caveats
+You will need to add:
+  /usr/local/bin/fish
+to /etc/shells.
+
+Then run:
+  chsh -s /usr/local/bin/fish
+to make fish your default shell.
+==> Summary
+🍺  /usr/local/Cellar/fish/2.7.0: 904 files, 7.6MB, built in 2 minutes 25 seconds
+==> Determining fish bottle rebuild...
+==> Bottling fish-2.7.0.high_sierra.bottle.1.tar.gz...
+==> Detecting if fish-2.7.0.high_sierra.bottle.1.tar.gz is relocatable...
+./fish-2.7.0.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any
     rebuild 1
-    sha256 "249dd6f50b1c0f36478c277c9450a2305e0530e5b7cafeda549984b7d6937994" => :high_sierra
+    sha256 "1fbd45df13c21d113242e5aa647557a1af5f73c00be3a2f4e241586a978b07f5" => :high_sierra
   end
