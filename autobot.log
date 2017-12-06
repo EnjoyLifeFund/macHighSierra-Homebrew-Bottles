@@ -1,25 +1,8 @@
-==> Auto-updated Homebrew!
-Updated 1 tap (caskroom/cask).
-No changes to formulae.
-
-==> Installing gporca from greenplum-db/tap
-==> Downloading https://github.com/greenplum-db/gporca/archive/v2.42.0.tar.gz
-Already downloaded: /Users/ralic/Library/Caches/Homebrew/gporca-2.42.0.tar.gz
-==> cmake -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/gporca/2.42.0
-==> make
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall greenplum-db/tap/gporca`
-🍺  /usr/local/Cellar/gporca/2.42.0: 1,074 files, 8.9MB, built in 13 minutes 48 seconds
-==> Auto-updated Homebrew!
-Updated 1 tap (caskroom/cask).
-No changes to formulae.
-
-==> Determining greenplum-db/tap/gporca bottle rebuild...
-==> Bottling gporca-2.42.0.high_sierra.bottle.tar.gz...
-==> Detecting if gporca-2.42.0.high_sierra.bottle.tar.gz is relocatable...
-./gporca-2.42.0.high_sierra.bottle.tar.gz
+==> Determining greenplum-db/tap/gp-xerces bottle rebuild...
+==> Bottling gp-xerces-1.high_sierra.bottle.tar.gz...
+==> Detecting if gp-xerces-1.high_sierra.bottle.tar.gz is relocatable...
+./gp-xerces-1.high_sierra.bottle.tar.gz
   bottle do
     cellar :any
-    sha256 "e9cfeb1dddac821195d44692423d9a71ec28a93218805d6a7aa641363b114f69" => :high_sierra
+    sha256 "634839e442af6d1844327b270b0dce5f303cc4d09dc0702f3c31a09c0e8f45de" => :high_sierra
   end
