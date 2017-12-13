@@ -1,8 +1,62 @@
-==> Determining greenplum-db/tap/gp-xerces bottle rebuild...
-==> Bottling gp-xerces-1.high_sierra.bottle.tar.gz...
-==> Detecting if gp-xerces-1.high_sierra.bottle.tar.gz is relocatable...
-./gp-xerces-1.high_sierra.bottle.tar.gz
+==> Auto-updated Homebrew!
+Updated Homebrew from f42d8acd to 7b558e05.
+Updated 4 taps (homebrew/science, homebrew/core, caskroom/drivers, caskroom/cask).
+==> New Formulae
+google-authenticator-libpam
+igv
+==> Updated Formulae
+abcmidi
+apm-server
+armadillo
+assimp
+bartycrouch
+bfg
+bitrise
+bmake
+clhep
+coffeescript
+corebird
+dpkg
+enchant
+folly
+fuse-emulator
+gearman
+gedit
+gitg
+global
+gnome-builder
+gnome-recipes
+gopass
+gspell
+gtkspell3
+heroku
+homebrew/science/swarm
+jboss-forge
+jenkins
+just
+kibana
+knot-resolver
+kompose
+kubeless
+latexila
+minio-mc
+pegtl
+pipenv
+vala
+xtensor
+
+==> Downloading https://github.com/posva/catimg/archive/v2.4.0.tar.gz
+==> Downloading from https://codeload.github.com/posva/catimg/tar.gz/v2.4.0
+==> cmake -DMAN_OUTPUT_PATH=/usr/local/Cellar/catimg/2.4.0/share/man/man1 . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/catimg/2.4.0 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall catimg`
+🍺  /usr/local/Cellar/catimg/2.4.0: 6 files, 78.9KB, built in 27 seconds
+==> Determining catimg bottle rebuild...
+==> Bottling catimg-2.4.0.high_sierra.bottle.1.tar.gz...
+./catimg-2.4.0.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any
-    sha256 "634839e442af6d1844327b270b0dce5f303cc4d09dc0702f3c31a09c0e8f45de" => :high_sierra
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "64b1ed6667a3c8013fe1046f352d68f748ebbd6de84cb27cce6155d88d770da3" => :high_sierra
   end
