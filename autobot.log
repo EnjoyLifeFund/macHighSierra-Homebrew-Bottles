@@ -1,62 +1,14 @@
-==> Auto-updated Homebrew!
-Updated Homebrew from f42d8acd to 7b558e05.
-Updated 4 taps (homebrew/science, homebrew/core, caskroom/drivers, caskroom/cask).
-==> New Formulae
-google-authenticator-libpam
-igv
-==> Updated Formulae
-abcmidi
-apm-server
-armadillo
-assimp
-bartycrouch
-bfg
-bitrise
-bmake
-clhep
-coffeescript
-corebird
-dpkg
-enchant
-folly
-fuse-emulator
-gearman
-gedit
-gitg
-global
-gnome-builder
-gnome-recipes
-gopass
-gspell
-gtkspell3
-heroku
-homebrew/science/swarm
-jboss-forge
-jenkins
-just
-kibana
-knot-resolver
-kompose
-kubeless
-latexila
-minio-mc
-pegtl
-pipenv
-vala
-xtensor
-
-==> Downloading https://github.com/posva/catimg/archive/v2.4.0.tar.gz
-==> Downloading from https://codeload.github.com/posva/catimg/tar.gz/v2.4.0
-==> cmake -DMAN_OUTPUT_PATH=/usr/local/Cellar/catimg/2.4.0/share/man/man1 . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/catimg/2.4.0 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev
-==> make install
+==> Downloading https://github.com/Oblomov/clinfo/archive/2.2.17.10.25.tar.gz
+==> Downloading from https://codeload.github.com/Oblomov/clinfo/tar.gz/2.2.17.10.25
+==> make MANDIR=/usr/local/Cellar/clinfo/2.2.17.10.25/share/man PREFIX=/usr/local/Cellar/clinfo/2.2.17.10.25 install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall catimg`
-🍺  /usr/local/Cellar/catimg/2.4.0: 6 files, 78.9KB, built in 27 seconds
-==> Determining catimg bottle rebuild...
-==> Bottling catimg-2.4.0.high_sierra.bottle.1.tar.gz...
-./catimg-2.4.0.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall clinfo`
+🍺  /usr/local/Cellar/clinfo/2.2.17.10.25: 6 files, 84.2KB, built in 4 seconds
+==> Determining clinfo bottle rebuild...
+==> Bottling clinfo-2.2.17.10.25.high_sierra.bottle.1.tar.gz...
+./clinfo-2.2.17.10.25.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "64b1ed6667a3c8013fe1046f352d68f748ebbd6de84cb27cce6155d88d770da3" => :high_sierra
+    sha256 "94fd3a0d49190b6e9eca025346d4a3bd3494367765088f3b9d928912de31b01d" => :high_sierra
   end
