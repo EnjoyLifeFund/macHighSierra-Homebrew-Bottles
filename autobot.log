@@ -1,85 +1,21 @@
-==> Auto-updated Homebrew!
-Updated Homebrew from c912d268 to 0cbe1f3a.
-Updated 4 taps (homebrew/science, homebrew/core, caskroom/cask, runtimeco/mynewt).
-==> New Formulae
-fbi-servefiles
-genometools
-gifski
-nopoll
-pinboard-notes-backup
-prodigal
-pspg
-rawtoaces
-runtimeco/mynewt/mynewt-newt@1.2
-runtimeco/mynewt/mynewt-newtmgr@1.2
-==> Updated Formulae
-apm-server
-arcade-learning-environment
-chakra
-conan
-couchdb
-dwdiff
-filebeat
-fobis
-freeling
-git-annex
-harfbuzz
-heartbeat
-hfstospell
-icu4c
-jhipster
-joplin
-libcdr
-liblcf
-libmspub
-libphonenumber
-libvisio
-libwebsockets
-mapnik
-metricbeat
-mimic
-monetdb
-mpd
-node
-node@8
-packetbeat
-pazpar2
-pegtl
-qpid-proton
-runtimeco/mynewt/mynewt-newt
-runtimeco/mynewt/mynewt-newtmgr
-sile
-stern
-tarantool
-tectonic
-widelands
-xrootd
-yaz
-zebra
-zorba
-
-==> Downloading https://github.com/tomnomnom/gron/archive/v0.5.0.tar.gz
-==> Downloading from https://codeload.github.com/tomnomnom/gron/tar.gz/v0.5.0
-==> Cloning https://github.com/fatih/color.git
-==> Checking out revision 34e4ee095d12986a2cef5ddb9aeb3b8cfcfea17c
-==> Cloning https://github.com/mattn/go-colorable.git
-==> Checking out revision ed8eb9e318d7a84ce5915b495b7d35e0cfe7b5a8
-==> Cloning https://github.com/mattn/go-isatty.git
-==> Checking out revision 3a115632dcd687f9c8cd01679c83a06a0e21c1f3
-==> Cloning https://github.com/nwidger/jsoncolor.git
-==> Checking out revision 0192e84d44af834c3a90c8a17bf670483b91ad5a
-==> Cloning https://github.com/pkg/errors.git
-==> Checking out revision 645ef00459ed84a119197bfb8d8205042c6df63d
-==> go build -o /usr/local/Cellar/gron/0.5.0/bin/gron
+==> Installing dependencies for jq: oniguruma
+==> Installing jq dependency: oniguruma
+==> Downloading https://homebrew.bintray.com/bottles/oniguruma-6.7.0.high_sierra.bottle.tar.gz
+==> Pouring oniguruma-6.7.0.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/oniguruma/6.7.0: 17 files, 1.2MB
+==> Installing jq
+==> Downloading https://github.com/stedolan/jq/releases/download/jq-1.5/jq-1.5.tar.gz
+==> Downloading from https://github-production-release-asset-2e65be.s3.amazonaws.com/5101141/f8d0df1e-439f-11e5-980c-9c1e050ee63f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20171214%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171214T234837Z&X-Amz-Expires=300&X-Amz-Signature=d85600128ded3678f7936e7676082ffbcb6a5d51a94265a282726ee710a59ab4&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Djq-1.5.tar.gz&response-content-type=application%2Foctet-stream
+==> ./configure --disable-silent-rules --disable-maintainer-mode --prefix=/usr/local/Cellar/jq/1.5_2
+==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall gron`
-🍺  /usr/local/Cellar/gron/0.5.0: 4 files, 6.1MB, built in 41 seconds
-==> Determining gron bottle rebuild...
-==> Bottling gron-0.5.0.high_sierra.bottle.1.tar.gz...
-==> Detecting if gron-0.5.0.high_sierra.bottle.1.tar.gz is relocatable...
-./gron-0.5.0.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall jq`
+🍺  /usr/local/Cellar/jq/1.5_2: 19 files, 946.6KB, built in 49 seconds
+==> Determining jq bottle rebuild...
+==> Bottling jq-1.5_2.high_sierra.bottle.1.tar.gz...
+./jq-1.5_2.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
+    cellar :any
     rebuild 1
-    sha256 "a2cde3e210c8fecaf24366555c989094943518440d62ea43388b005b6da02288" => :high_sierra
+    sha256 "4d7e180a8f9f66d4a648152eff06f2456e067bb58559eccd31b3e12ddb775980" => :high_sierra
   end
