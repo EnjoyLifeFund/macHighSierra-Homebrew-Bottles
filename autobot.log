@@ -1,14 +1,107 @@
-==> Downloading https://github.com/Oblomov/clinfo/archive/2.2.17.10.25.tar.gz
-==> Downloading from https://codeload.github.com/Oblomov/clinfo/tar.gz/2.2.17.10.25
-==> make MANDIR=/usr/local/Cellar/clinfo/2.2.17.10.25/share/man PREFIX=/usr/local/Cellar/clinfo/2.2.17.10.25 install
+==> Auto-updated Homebrew!
+Updated Homebrew from 7b558e05 to c912d268.
+Updated 3 taps (homebrew/science, homebrew/core, caskroom/cask).
+==> New Formulae
+arcade-learning-environment
+kedge
+qpid-proton
+==> Updated Formulae
+akamai
+angular-cli
+antlr
+antlr4-cpp-runtime
+chakra
+closure-compiler
+conan
+conjure-up
+convox
+davmail
+dhall-json
+direnv
+dnscrypt-proxy
+docfx
+duck
+emscripten
+erlang
+erlang@18
+erlang@19
+flyway
+freediameter
+fuse-zip
+fuseki
+gegl
+generate-json-schema
+git-crypt
+gitup
+goolabs
+gopass
+gpgme
+grafana
+grpc
+hdf5@1.8
+heroku
+homebrew/science/omcompiler
+homebrew/science/quicktree
+jenkins
+jenkins-lts
+jpeg-turbo
+juju
+juju-wait
+kapacitor
+kobalt
+kotlin
+libbluray
+libgcrypt
+libhttpseverywhere
+libmwaw
+libphonenumber
+libsodium
+mpich
+mujs
+mupdf
+mupdf-tools
+node
+node-build
+nsd
+nvm
+openmotif
+paket
+pandoc
+pandoc-crossref
+pilosa
+plantuml
+pow
+pqiv
+pushpin
+pyqt
+qemu
+rabbitmq
+reposurgeon
+sc-im
+sec
+sispmctl
+sourcery
+tomcat
+typescript
+whois
+youtube-dl
+yubico-piv-tool
+zebra
+zeromq
+zurl
+==> Deleted Formulae
+homebrew/science/moose
+
+==> Downloading https://files.pythonhosted.org/packages/b1/5d/4a5784409ff94900898ff671df2a32bf19469114eb8006286fda3fc7e8d5/doitlive-3.0.3.tar.gz
+==> python setup.py install --prefix=/usr/local/Cellar/doitlive/3.0.3/libexec
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall clinfo`
-🍺  /usr/local/Cellar/clinfo/2.2.17.10.25: 6 files, 84.2KB, built in 4 seconds
-==> Determining clinfo bottle rebuild...
-==> Bottling clinfo-2.2.17.10.25.high_sierra.bottle.1.tar.gz...
-./clinfo-2.2.17.10.25.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall doitlive`
+🍺  /usr/local/Cellar/doitlive/3.0.3: 65 files, 602.4KB, built in 22 seconds
+==> Determining doitlive bottle rebuild...
+==> Bottling doitlive-3.0.3.high_sierra.bottle.1.tar.gz...
+./doitlive-3.0.3.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "94fd3a0d49190b6e9eca025346d4a3bd3494367765088f3b9d928912de31b01d" => :high_sierra
+    sha256 "b0e2614176f051681991057a61317f391722eed2c24ed90f74a7386d2d9c32f3" => :high_sierra
   end
