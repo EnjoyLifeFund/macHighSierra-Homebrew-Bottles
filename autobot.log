@@ -1,107 +1,85 @@
 ==> Auto-updated Homebrew!
-Updated Homebrew from 7b558e05 to c912d268.
-Updated 3 taps (homebrew/science, homebrew/core, caskroom/cask).
+Updated Homebrew from c912d268 to 0cbe1f3a.
+Updated 4 taps (homebrew/science, homebrew/core, caskroom/cask, runtimeco/mynewt).
 ==> New Formulae
-arcade-learning-environment
-kedge
-qpid-proton
+fbi-servefiles
+genometools
+gifski
+nopoll
+pinboard-notes-backup
+prodigal
+pspg
+rawtoaces
+runtimeco/mynewt/mynewt-newt@1.2
+runtimeco/mynewt/mynewt-newtmgr@1.2
 ==> Updated Formulae
-akamai
-angular-cli
-antlr
-antlr4-cpp-runtime
+apm-server
+arcade-learning-environment
 chakra
-closure-compiler
 conan
-conjure-up
-convox
-davmail
-dhall-json
-direnv
-dnscrypt-proxy
-docfx
-duck
-emscripten
-erlang
-erlang@18
-erlang@19
-flyway
-freediameter
-fuse-zip
-fuseki
-gegl
-generate-json-schema
-git-crypt
-gitup
-goolabs
-gopass
-gpgme
-grafana
-grpc
-hdf5@1.8
-heroku
-homebrew/science/omcompiler
-homebrew/science/quicktree
-jenkins
-jenkins-lts
-jpeg-turbo
-juju
-juju-wait
-kapacitor
-kobalt
-kotlin
-libbluray
-libgcrypt
-libhttpseverywhere
-libmwaw
+couchdb
+dwdiff
+filebeat
+fobis
+freeling
+git-annex
+harfbuzz
+heartbeat
+hfstospell
+icu4c
+jhipster
+joplin
+libcdr
+liblcf
+libmspub
 libphonenumber
-libsodium
-mpich
-mujs
-mupdf
-mupdf-tools
+libvisio
+libwebsockets
+mapnik
+metricbeat
+mimic
+monetdb
+mpd
 node
-node-build
-nsd
-nvm
-openmotif
-paket
-pandoc
-pandoc-crossref
-pilosa
-plantuml
-pow
-pqiv
-pushpin
-pyqt
-qemu
-rabbitmq
-reposurgeon
-sc-im
-sec
-sispmctl
-sourcery
-tomcat
-typescript
-whois
-youtube-dl
-yubico-piv-tool
+node@8
+packetbeat
+pazpar2
+pegtl
+qpid-proton
+runtimeco/mynewt/mynewt-newt
+runtimeco/mynewt/mynewt-newtmgr
+sile
+stern
+tarantool
+tectonic
+widelands
+xrootd
+yaz
 zebra
-zeromq
-zurl
-==> Deleted Formulae
-homebrew/science/moose
+zorba
 
-==> Downloading https://files.pythonhosted.org/packages/b1/5d/4a5784409ff94900898ff671df2a32bf19469114eb8006286fda3fc7e8d5/doitlive-3.0.3.tar.gz
-==> python setup.py install --prefix=/usr/local/Cellar/doitlive/3.0.3/libexec
+==> Downloading https://github.com/tomnomnom/gron/archive/v0.5.0.tar.gz
+==> Downloading from https://codeload.github.com/tomnomnom/gron/tar.gz/v0.5.0
+==> Cloning https://github.com/fatih/color.git
+==> Checking out revision 34e4ee095d12986a2cef5ddb9aeb3b8cfcfea17c
+==> Cloning https://github.com/mattn/go-colorable.git
+==> Checking out revision ed8eb9e318d7a84ce5915b495b7d35e0cfe7b5a8
+==> Cloning https://github.com/mattn/go-isatty.git
+==> Checking out revision 3a115632dcd687f9c8cd01679c83a06a0e21c1f3
+==> Cloning https://github.com/nwidger/jsoncolor.git
+==> Checking out revision 0192e84d44af834c3a90c8a17bf670483b91ad5a
+==> Cloning https://github.com/pkg/errors.git
+==> Checking out revision 645ef00459ed84a119197bfb8d8205042c6df63d
+==> go build -o /usr/local/Cellar/gron/0.5.0/bin/gron
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall doitlive`
-🍺  /usr/local/Cellar/doitlive/3.0.3: 65 files, 602.4KB, built in 22 seconds
-==> Determining doitlive bottle rebuild...
-==> Bottling doitlive-3.0.3.high_sierra.bottle.1.tar.gz...
-./doitlive-3.0.3.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall gron`
+🍺  /usr/local/Cellar/gron/0.5.0: 4 files, 6.1MB, built in 41 seconds
+==> Determining gron bottle rebuild...
+==> Bottling gron-0.5.0.high_sierra.bottle.1.tar.gz...
+==> Detecting if gron-0.5.0.high_sierra.bottle.1.tar.gz is relocatable...
+./gron-0.5.0.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "b0e2614176f051681991057a61317f391722eed2c24ed90f74a7386d2d9c32f3" => :high_sierra
+    sha256 "a2cde3e210c8fecaf24366555c989094943518440d62ea43388b005b6da02288" => :high_sierra
   end
