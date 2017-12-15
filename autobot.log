@@ -1,35 +1,13 @@
 ==> Upgrading 1 outdated package, with result:
-gnuplot 5.2.2_1
-==> Upgrading gnuplot 
-==> Installing dependencies for gnuplot: lua
-==> Installing gnuplot dependency: lua
-==> Downloading https://homebrew.bintray.com/bottles/lua-5.3.4_2.high_sierra.bottle.tar.gz
-==> Pouring lua-5.3.4_2.high_sierra.bottle.tar.gz
+tomcat 8.5.24
+==> Upgrading tomcat 
+==> Downloading https://www.apache.org/dyn/closer.cgi?path=tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.tar.gz
+==> Best Mirror http://ftp.mirror.tw/pub/apache/tomcat/tomcat-8/v8.5.24/bin/apache-tomcat-8.5.24.tar.gz
 ==> Caveats
-Please be aware due to the way Luarocks is designed any binaries installed
-via Luarocks-5.3 AND 5.1 will overwrite each other in /usr/local/bin.
-
-This is, for now, unavoidable. If this is troublesome for you, you can build
-rocks with the `--tree=` command to a special, non-conflicting location and
-then add that to your `$PATH`.
+To have launchd start tomcat now and restart at login:
+  brew services start tomcat
+Or, if you don't want/need a background service you can just run:
+  catalina run
 ==> Summary
-🍺  /usr/local/Cellar/lua/5.3.4_2: 147 files, 752.9KB
-==> Installing gnuplot
-==> Downloading https://downloads.sourceforge.net/project/gnuplot/gnuplot/5.2.2/gnuplot-5.2.2.tar.gz
-==> Downloading from https://ncu.dl.sourceforge.net/project/gnuplot/gnuplot/5.2.2/gnuplot-5.2.2.tar.gz
-==> Downloading http://apps.jcns.fz-juelich.de/src/libcerf/libcerf-1.5.tgz
-==> ./configure --prefix=/private/tmp/gnuplot-20171216-97564-yl8s0r/gnuplot-5.2.2/libcerf --enable-static --disable-shared
-==> make install
-==> ./configure --disable-silent-rules --prefix=/usr/local/Cellar/gnuplot/5.2.2_1 --with-readline=/usr/local/opt/readline --without-tutorial --disable-wxwidgets --without-cairo --with-qt=no --without-aquaterm --without-x
-==> make
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall gnuplot`
-🍺  /usr/local/Cellar/gnuplot/5.2.2_1: 45 files, 2.5MB, built in 1 minute 50 seconds
-==> Determining gnuplot bottle rebuild...
-==> Bottling gnuplot-5.2.2_1.high_sierra.bottle.1.tar.gz...
-./gnuplot-5.2.2_1.high_sierra.bottle.1.tar.gz
-  bottle do
-    rebuild 1
-    sha256 "4474987b60c2bd78b12dec5a3bacdd103b7af8a1d0d11b95e44211d226fb7172" => :high_sierra
-  end
+🍺  /usr/local/Cellar/tomcat/8.5.24: 632 files, 12.8MB, built in 1 minute 21 seconds
+This formula doesn't require compiling.
