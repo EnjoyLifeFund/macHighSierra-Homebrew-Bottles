@@ -1,56 +1,29 @@
 ==> Upgrading 1 outdated package, with result:
-pyenv 1.2.0
-==> Upgrading pyenv 
-==> Installing dependencies for pyenv: openssl
-==> Installing pyenv dependency: openssl
-==> Downloading https://homebrew.bintray.com/bottles/openssl-1.0.2n.high_sierra.bottle.tar.gz
-==> Pouring openssl-1.0.2n.high_sierra.bottle.tar.gz
-==> Caveats
-A CA file has been bootstrapped using certificates from the SystemRoots
-keychain. To add additional certificates (e.g. the certificates added in
-the System keychain), place .pem files in
-  /usr/local/etc/openssl/certs
-
-and run
-  /usr/local/opt/openssl/bin/c_rehash
-
-This formula is keg-only, which means it was not symlinked into /usr/local,
-because Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries.
-
-If you need to have this software first in your PATH run:
-  echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
-
-For compilers to find this software you may need to set:
-    LDFLAGS:  -L/usr/local/opt/openssl/lib
-    CPPFLAGS: -I/usr/local/opt/openssl/include
-For pkg-config to find this software you may need to set:
-    PKG_CONFIG_PATH: /usr/local/opt/openssl/lib/pkgconfig
-
-==> Summary
-🍺  /usr/local/Cellar/openssl/1.0.2n: 1,792 files, 12.3MB
-==> Installing pyenv
-==> Downloading https://github.com/pyenv/pyenv/archive/v1.2.0.tar.gz
-==> Downloading from https://codeload.github.com/pyenv/pyenv/tar.gz/v1.2.0
-==> src/configure
-==> make -C src
+ceres-solver 1.13.0_3
+==> Upgrading ceres-solver 
+==> Installing dependencies for ceres-solver: glog, suite-sparse
+==> Installing ceres-solver dependency: glog
+==> Downloading https://homebrew.bintray.com/bottles/glog-0.3.5_2.high_sierra.bottle.tar.gz
+==> Pouring glog-0.3.5_2.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/glog/0.3.5_2: 20 files, 231KB
+==> Installing ceres-solver dependency: suite-sparse
+==> Downloading https://homebrew.bintray.com/bottles/suite-sparse-5.1.0.high_sierra.bottle.tar.gz
+==> Pouring suite-sparse-5.1.0.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/suite-sparse/5.1.0: 145 files, 7.5MB
+==> Installing ceres-solver
+==> Downloading http://ceres-solver.org/ceres-solver-1.13.0.tar.gz
+==> cmake . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/ceres-solver/1.13.0_3 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -DBUILD_SHARED_LIBS=ON -DEIGEN_INCLUDE_DIR=/usr/local/opt/eigen/include/eigen3 -DMETIS_LIBRARY=/usr/local/opt/metis/lib/libmetis.dylib -DGLOG_INCLUDE_DIR_HINTS=/usr/local/opt/glog/include -DGLOG_LIBRARY_DIR_HINTS=/usr/local/opt/glog/lib
+==> make
+==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall pyenv`
-==> Caveats
-Bash completion has been installed to:
-  /usr/local/etc/bash_completion.d
-
-zsh functions have been installed to:
-  /usr/local/share/zsh/site-functions
-
-fish completions have been installed to:
-  /usr/local/share/fish/vendor_completions.d
-==> Summary
-🍺  /usr/local/Cellar/pyenv/1.2.0: 580 files, 2.3MB, built in 7 seconds
-==> Determining pyenv bottle rebuild...
-==> Bottling pyenv-1.2.0.high_sierra.bottle.2.tar.gz...
-./pyenv-1.2.0.high_sierra.bottle.2.tar.gz
+You can run it manually using `brew postinstall ceres-solver`
+🍺  /usr/local/Cellar/ceres-solver/1.13.0_3: 474 files, 15.9MB, built in 8 minutes 50 seconds
+==> Determining ceres-solver bottle rebuild...
+==> Bottling ceres-solver-1.13.0_3.high_sierra.bottle.1.tar.gz...
+==> Detecting if ceres-solver-1.13.0_3.high_sierra.bottle.1.tar.gz is relocatable...
+./ceres-solver-1.13.0_3.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any
-    rebuild 2
-    sha256 "5f4cafa1c805094e6c8777569f22f1f28f41ae9ce5b2063a58ad0e0cedc29d35" => :high_sierra
+    rebuild 1
+    sha256 "d613dac90bf993f5dd21e1bdd6c820071824a97030478ae3967dd8cbb1feadb2" => :high_sierra
   end
