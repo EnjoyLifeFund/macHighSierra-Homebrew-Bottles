@@ -1,24 +1,245 @@
+==> Auto-updated Homebrew!
+Updated 2 taps (homebrew/core, caskroom/cask).
+==> Updated Formulae
+landscaper
+pmd
+
 ==> Upgrading 1 outdated package, with result:
-pandoc 2.0.5
-==> Upgrading pandoc 
-==> Downloading https://hackage.haskell.org/package/pandoc-2.0.5/pandoc-2.0.5.tar.gz
-==> cabal sandbox init
-==> cabal update
-==> cabal sandbox init
-==> cabal install --jobs=4 --max-backjumps=100000 --only-dependencies
-==> cabal install --jobs=4 --max-backjumps=100000 --prefix=/usr/local/Cellar/pandoc/2.0.5
+azure-cli 2.0.22
+==> Upgrading azure-cli 
+==> Downloading https://azurecliprod.blob.core.windows.net/releases/azure-cli-2.0.22.tar.gz
+==> Downloading https://files.pythonhosted.org/packages/00/50/0c6e9c4b52b9fd17800a3396abb14e5710ca5812d11ec9ab725026d31f78/adal-0.4.7.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/85/8e/0a35471fc38b9127df372f4e442ab4c90cf42e0dbc13bbe0944c30f34da8/applicationinsights-0.11.1.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/8b/54/4a431fe1dfac0d9ae9adc725d2fe543fad07fb7d87f15bd732ba63672bb4/argcomplete-1.9.3.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/31/53/8bca924b30cb79d6d70dbab6a99e8731d1e4dd3b090b7f3d8412a8d8ffbc/asn1crypto-0.23.0.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/4e/24/b6764cbb01ea09a1a8f464869ecc926cbc1d4e6dca580b2d16c974e41449/azure-batch-4.0.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/32/ee/27896a170b84c4aee99d5d111490e186e45e797ec158d1f303cfd8b65683/azure-batch-extensions-1.0.1.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/85/76/8809248c38bf1c994f40bc07cf3a17dec0aa00ba0915f159c904b040893e/azure-common-1.1.8.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/e1/ab/72c7c42220a6d881316bfbc4b1eace2ae37e6c291ccd13d6ae178fe388bd/azure-datalake-store-0.0.17.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/33/0f/9bbc92a4566986a3f1de311e95cd5a1c6ba473783d2c9381be38d1f9d946/azure-graphrbac-0.31.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/10/92/24d4371d566f447e2b4ecebb9c360ca52e80f0a3381504974b0e37d865e7/azure-keyvault-0.3.7.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/48/a8/5efd0bbeaa5cd64535f0e2dff8d6823d47e0ea1b421808351e06ceb25ca6/azure-mgmt-advisor-0.1.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/27/ed/e857a8d638fe605c24ca11fe776edad2b0ff697e2395fff25db254b37dfb/azure-mgmt-authorization-0.30.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/de/27/910b77c194c1e88f7e50dbb1132ed8afd834636bb5e2daf65c33caded215/azure-mgmt-batch-4.1.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/5c/e7/d29acdca0136c9e74cfcf8d78a12e9f890f77a66b375de7351f95dd2015e/azure-mgmt-batchai-0.2.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/53/78/fccfdc17d9c22757a58ce96b6f46d6c136f56672e7f1f74032129d64a4ad/azure-mgmt-billing-0.1.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/15/a3/33a514c152a474ccc49e787987dbc16612036625d6e2668ee5cb1b58c172/azure-mgmt-cdn-0.30.2.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/2d/98/998cc11d25751c3fc93078040c9f725641d34d3424dd9cada2b7edf585e4/azure-mgmt-cognitiveservices-1.0.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/fe/46/21e4d796a80e061806c14b0ca541b93a22f126b19aa166e3d784bcdef4d2/azure-mgmt-compute-3.1.0rc1.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/14/9d/06af7ceb4d25c417bab7704bd8bbccade00f907a1083ccfd2ccbb39927bf/azure-mgmt-consumption-1.0.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/4e/10/b302a742ed75f4b09722f8a9c2c4b708518ba158640bab27d58d636c3640/azure-mgmt-containerinstance-0.2.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/10/78/8a8b88b5cd662e0ac797996fad1a4ad09e3cad615fc9239d9a8fd46323b2/azure-mgmt-containerregistry-1.0.1.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/b1/e5/8b852272f046e6e17e9852338ac95cc1557ab2a51537de0eeed8fd79a5bb/azure-mgmt-containerservice-2.0.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/62/53/36f0c44f3b2cc64c3747002ab767d53dc96f793536c9d0b359c4df7ce98f/azure-mgmt-cosmosdb-0.2.1.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/a7/58/48e0ca69aa4b515992b743d37abfcb348d48d457bc878895be8e1913b740/azure-mgmt-datalake-analytics-0.2.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/f7/eb/3b330ffd3a925db473175c3a28244bdf87c4736ce16a55be7a7535c6bfa5/azure-mgmt-datalake-nspkg-2.0.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/b6/b2/bc411daf0e5cd1d2c62390b9e73559a53ffb8fb7f0253f35430e74eab17c/azure-mgmt-datalake-store-0.2.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/66/9e/7c8e4b5a09548af7ea8a37add50a0d9e4fd0f69a97b0870c889c684677cf/azure-mgmt-devtestlabs-2.0.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/41/43/ec4c6205a1b756e9feafe61346527c217171982fb5e6317f47fb0696600d/azure-mgmt-dns-1.2.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/7c/af/41a7e70d7f0b3bcbd6e52eba4a54807dc4639642a9d2a1cfd1357132e926/azure-mgmt-eventgrid-0.2.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/33/46/1283ee4c6dda32bd92018adcbdf521595a6ca80fa7e203064a2eb284d56d/azure-mgmt-iothub-0.4.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/e0/c2/6c572800601330c343f993b93432f06ff2abdc35ee40ef42f81ee3a00ec2/azure-mgmt-keyvault-0.40.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/b2/5a/ac8f8ce8b537d7c4ba6f21729a24c71da464f84d62f1e3d3daa533fb5963/azure-mgmt-monitor-0.4.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/b4/ab/4300eff535b4f64b5162e87f8ae5f58da4109554b7cf78e7fc2ff41ea66a/azure-mgmt-network-1.5.0rc3.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/fe/66/66eb0d5ead69b7371649466fa160a166de0d1ddafc4a1d7a172858a8abc9/azure-mgmt-nspkg-2.0.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/4f/bb/fd668496474ca4a43361a83e1db7de41d4f4ff632f74bd446ede9d9f7a2a/azure-mgmt-rdbms-0.1.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/a3/e9/476dbfc13000f7eda49b18a0c109827841b5381ce15acb651b5b4dec248e/azure-mgmt-recoveryservices-0.1.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/9f/fb/731b07c573c660780e660d883cb1d1a6d09c1b4ebd5348383eae854a4024/azure-mgmt-recoveryservicesbackup-0.1.1.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/c6/e5/4e63b267b483deeca8e41eaa0b5f8ccff03a2196ad86e80f5fe7af78dec7/azure-mgmt-redis-4.1.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/76/32/5d7c2d8e4f71679301562cef1ae4e18536d601741c5b4789a275659ed101/azure-mgmt-reservations-0.1.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/b2/39/e9c47857ff0271f337fa88ffa7e0c9914f32583bdfd5e1af3d39c0729eb7/azure-mgmt-resource-1.2.1.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/e6/79/597d3e5fe6ee4ac44a42918e83a99734d25f38f0f3ef48b854bbac0a34a3/azure-mgmt-servicefabric-0.1.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/4b/6f/ad8ef40cd574664556dec0f6dc0f3c5e627d9bd988697782b29dcb8fe1ed/azure-mgmt-sql-0.8.4.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/ae/75/783e08177ea2c64a8f6139614668905f181c4300a024feb71237b1926ffb/azure-mgmt-storage-1.4.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/68/4f/c8b62406174c8355b2c1fb62720152c0bb8046dd62bb1029fcf8c8d049d2/azure-mgmt-trafficmanager-0.40.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/c9/27/74a4d384efd03fb9aa8f0f971806695286961b45d154a0287eed2f142bcf/azure-mgmt-web-0.34.1.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/7f/6f/21a55969246a0ba273fb4a4a43c81bd8e209e3201b59677a6ab09d79dacb/azure-multiapi-storage-0.1.7.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/06/a2/77820fa07ec4657d6456b67edfa78856b4789ada42d1bb8e8485df19824e/azure-nspkg-2.0.0.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/42/50/f038b43107a48db27fc016cb604341aa62a3946cee8f3d422075c96cde6e/azure-storage-0.34.3.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/f3/ec/bb6b384b5134fd881b91b6aa3a88ccddaad0103857760711a5ab8c799358/bcrypt-3.1.4.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/23/3f/8be01c50ed24a4bd6b8da799839066ce0288f66f5e11f0367323467f0cbc/certifi-2017.11.5.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/c9/70/89b68b6600d479034276fed316e14b9107d50a62f5627da37fafe083fde3/cffi-1.11.2.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/fc/bb/a5768c230f9ddb03acc9ef3f0d4a3cf93462473795d18e9535498c8f929d/chardet-3.0.4.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/e6/76/257b53926889e2835355d74fec73d82662100135293e17d382e2b74d1669/colorama-0.3.9.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/78/c5/7188f15a92413096c93053d5304718e1f6ba88b818357d05d19250ebff85/cryptography-2.1.4.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/0e/1b/154666b208625dd4d946e949c4aa39d9150f4dac00796f0ec6b9a3abac7e/humanfriendly-4.4.1.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/f4/bd/0467d62790828c23c47fc1dfa1b1f052b24efdf5290f071c7a91d0d82fd3/idna-2.6.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/b1/80/fb8c13a4cd38eb5021dc3741a9e588e4d1de88d895c1910c6fc8a08b7a70/isodate-0.6.0.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/e5/21/795b7549397735e911b032f255cff5fb0de58f96da794274660bca4f58ef/jmespath-0.9.3.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/42/2e/51bd1739fe335095a2174db3f2f230346762e7e572471059540146a521f6/keyring-10.5.0.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/0c/53/014354fc93c591ccc4abff12c473ad565a2eb24dcd82490fae33dbf2539f/mock-2.0.0.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/fe/dc/dcd219db1e339320f13a7504ea5944c34c5f0e52e8f55cc343d0988baa59/msrest-0.4.19.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/b9/34/83862a6cfedb988450d2dc3643a6e26236cb23f7e4ac28deadf371570014/msrestazure-0.4.18.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/a5/8a/212e9b47fb54be109f3ff0684165bb38c51117f34e175c379fce5c7df754/oauthlib-2.0.6.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/c8/de/791773d6a4b23327c7475ae3d7ada0d07fa147bf77fb6f561a4a7d8afd11/paramiko-2.4.0.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/d5/d6/f2bf137d71e4f213b575faa9eb426a8775732432edb67588a8ee836ecb80/pbr-3.1.1.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/8a/ad/cf6b128866e78ad6d7f1dc5b7f99885fb813393d9860778b2984582e81b5/prompt_toolkit-1.0.15.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/eb/3d/b7d0fdf4a882e26674c68c20f40682491377c4db1439870f5b6f862f76ed/pyasn1-0.4.2.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/8c/2d/aad7f16146f4197a11f8e91fb81df177adcc2073d36a17b1491fd09df6ed/pycparser-2.18.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/be/17/5660bd3ffda81497ea8b8d0c1c7c6cabb9497aba1788e1d3356791aa109f/pydocumentdb-2.3.0.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/71/2a/2e4e77803a8bd6408a2903340ac498cb0a2181811af7c9ec92cb70b0308a/Pygments-2.2.0.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/c9/2a/ffd27735280696f6f244c8d1b4d2dd130511340475a29768ed317f9eaf0c/PyJWT-1.5.3.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/08/19/cf56e60efd122fa6d2228118a9b345455b13ffe16a14be81d025b03b261f/PyNaCl-1.2.1.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/3b/15/a5d90ab1a41075e8f0fae334f13452549528f82142b3b9d0c9d86ab7178c/pyOpenSSL-17.5.0.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/54/bb/f1db86504f7a49e1d9b9301531181b00a1c7325dc85a29160ee3eaa73a54/python-dateutil-2.6.1.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/60/88/d3152c234da4b2a1f7a989f89609ea488225eaea015bc16fbde2b3fdfefa/pytz-2017.3.zip
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/4a/85/db5a2df477072b2902b0eb892feb37d88ac635d36245a72a6a69b23b383a/PyYAML-3.12.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/b0/e1/eab4fc3752e3d240468a8c0b284607899d2fbfb236a56b7377a329aa8d09/requests-2.18.4.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/80/14/ad120c720f86c547ba8988010d5186102030591f71f7099f23921ca47fe5/requests-oauthlib-0.8.0.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/1d/a9/618f1e40e30c69ffab668493953e74e6c266f383af6e34e1b8f089e41139/scp-0.10.2.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/a5/a5/0830cfe34a4cfd0d1c3c8b614ede1edb2aaf999091ac8548dd19cb352e79/SecretStorage-2.3.1.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/16/d8/bc6316cf98419719bd59c91742194c111b6f2e85abac88e496adefaf7afe/six-1.11.0.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/dc/06/1d9969bbe7ad6895983016666699af2ab0b24d270c0abdecf51797d126cc/sshtunnel-0.1.2.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/1c/a1/3367581782ce79b727954f7aa5d29e6a439dc2490a9ac0e7ea0a7115435d/tabulate-0.7.7.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/ee/11/7c59620aceedcc1ef65e156cc5ce5a24ef87be4107c2b74458464e437a5d/urllib3-1.22.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/64/c8/c7311dde3d89d2f5e37f40f707447ef378c00a2dd359ce1bd119a152286f/vsts-cd-manager-1.0.1.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/55/11/e4a2bb08bb450fdbd42cc709dd40de4ed2c472cf0ccb9e64af22279c5495/wcwidth-0.1.7.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/fa/b4/f9886517624a4dcb81a1d766f68034344b7565db69f13d52697222daeb72/wheel-0.30.0.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/25/2b/6beed2107b148edc1321da0d489afc4617b9ed317ef7b72d4993cad9b684/Whoosh-2.7.4.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/57/17/a6acddc5f5993ea6eaf792b2e6c3be55e3e11f3b85206c818572585f61e1/xmltodict-0.11.0.tar.gz
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
+==> python3 -c import setuptools... --no-user-cfg install --prefix=/usr/local/Cellar/azure-cli/2.0.22/libexec --single-version-externally-managed --record=installed.txt
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall pandoc`
+You can run it manually using `brew postinstall azure-cli`
 ==> Caveats
 Bash completion has been installed to:
   /usr/local/etc/bash_completion.d
 ==> Summary
-🍺  /usr/local/Cellar/pandoc/2.0.5: 166 files, 63.7MB, built in 35 minutes
-==> Determining pandoc bottle rebuild...
-==> Bottling pandoc-2.0.5.high_sierra.bottle.1.tar.gz...
-==> Detecting if pandoc-2.0.5.high_sierra.bottle.1.tar.gz is relocatable...
-./pandoc-2.0.5.high_sierra.bottle.1.tar.gz
+🍺  /usr/local/Cellar/azure-cli/2.0.22: 14,256 files, 74.8MB, built in 9 minutes 9 seconds
+==> Determining azure-cli bottle rebuild...
+==> Bottling azure-cli-2.0.22.high_sierra.bottle.1.tar.gz...
+==> Detecting if azure-cli-2.0.22.high_sierra.bottle.1.tar.gz is relocatable...
+./azure-cli-2.0.22.high_sierra.bottle.1.tar.gz
   bottle do
+    cellar :any
     rebuild 1
-    sha256 "8f2b49abd200e9d0228d8d7eba847645dcd008f04445109ce93303ed683502e6" => :high_sierra
+    sha256 "989bad72ad3f9f681136935879b178a5c1d0c92dfb4e601c86a3922b593dbce1" => :high_sierra
   end
