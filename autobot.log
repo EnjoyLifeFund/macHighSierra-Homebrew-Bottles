@@ -1,27 +1,35 @@
 ==> Upgrading 1 outdated package, with result:
-heroku 6.14.42
-==> Upgrading heroku 
-==> Installing dependencies for heroku: node
-==> Installing heroku dependency: node
-==> Downloading https://homebrew.bintray.com/bottles/node-9.3.0_1.high_sierra.bottle.tar.gz
-==> Pouring node-9.3.0_1.high_sierra.bottle.tar.gz
+gnuplot 5.2.2_1
+==> Upgrading gnuplot 
+==> Installing dependencies for gnuplot: lua
+==> Installing gnuplot dependency: lua
+==> Downloading https://homebrew.bintray.com/bottles/lua-5.3.4_2.high_sierra.bottle.tar.gz
+==> Pouring lua-5.3.4_2.high_sierra.bottle.tar.gz
 ==> Caveats
-Bash completion has been installed to:
-  /usr/local/etc/bash_completion.d
+Please be aware due to the way Luarocks is designed any binaries installed
+via Luarocks-5.3 AND 5.1 will overwrite each other in /usr/local/bin.
+
+This is, for now, unavoidable. If this is troublesome for you, you can build
+rocks with the `--tree=` command to a special, non-conflicting location and
+then add that to your `$PATH`.
 ==> Summary
-🍺  /usr/local/Cellar/node/9.3.0_1: 5,125 files, 49.6MB
-==> Installing heroku
-==> Downloading https://registry.npmjs.org/heroku-cli/-/heroku-cli-6.14.42.tgz
-==> npm install -ddd --global --build-from-source --cache=/Users/ralic/Library/Caches/Homebrew/npm_cache --prefix=/usr/local/Cellar/heroku/6.14.42/libexec /private/tmp/heroku-20171216-95721-1ntgccz/package/heroku-cli-6.14.42.tgz
+🍺  /usr/local/Cellar/lua/5.3.4_2: 147 files, 752.9KB
+==> Installing gnuplot
+==> Downloading https://downloads.sourceforge.net/project/gnuplot/gnuplot/5.2.2/gnuplot-5.2.2.tar.gz
+==> Downloading from https://ncu.dl.sourceforge.net/project/gnuplot/gnuplot/5.2.2/gnuplot-5.2.2.tar.gz
+==> Downloading http://apps.jcns.fz-juelich.de/src/libcerf/libcerf-1.5.tgz
+==> ./configure --prefix=/private/tmp/gnuplot-20171216-97564-yl8s0r/gnuplot-5.2.2/libcerf --enable-static --disable-shared
+==> make install
+==> ./configure --disable-silent-rules --prefix=/usr/local/Cellar/gnuplot/5.2.2_1 --with-readline=/usr/local/opt/readline --without-tutorial --disable-wxwidgets --without-cairo --with-qt=no --without-aquaterm --without-x
+==> make
+==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall heroku`
-🍺  /usr/local/Cellar/heroku/6.14.42: 9,038 files, 42.6MB, built in 1 minute 15 seconds
-==> Determining heroku bottle rebuild...
-==> Bottling heroku-6.14.42.high_sierra.bottle.1.tar.gz...
-==> Detecting if heroku-6.14.42.high_sierra.bottle.1.tar.gz is relocatable...
-./heroku-6.14.42.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall gnuplot`
+🍺  /usr/local/Cellar/gnuplot/5.2.2_1: 45 files, 2.5MB, built in 1 minute 50 seconds
+==> Determining gnuplot bottle rebuild...
+==> Bottling gnuplot-5.2.2_1.high_sierra.bottle.1.tar.gz...
+./gnuplot-5.2.2_1.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
     rebuild 1
-    sha256 "114bf0961a5aa03c9c3f5aaad1a4afeda436c57dc8bf3b4881bbd5aef1517727" => :high_sierra
+    sha256 "4474987b60c2bd78b12dec5a3bacdd103b7af8a1d0d11b95e44211d226fb7172" => :high_sierra
   end
