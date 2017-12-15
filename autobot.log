@@ -1,21 +1,13 @@
-==> Installing dependencies for jq: oniguruma
-==> Installing jq dependency: oniguruma
-==> Downloading https://homebrew.bintray.com/bottles/oniguruma-6.7.0.high_sierra.bottle.tar.gz
-==> Pouring oniguruma-6.7.0.high_sierra.bottle.tar.gz
-🍺  /usr/local/Cellar/oniguruma/6.7.0: 17 files, 1.2MB
-==> Installing jq
-==> Downloading https://github.com/stedolan/jq/releases/download/jq-1.5/jq-1.5.tar.gz
-==> Downloading from https://github-production-release-asset-2e65be.s3.amazonaws.com/5101141/f8d0df1e-439f-11e5-980c-9c1e050ee63f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20171214%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171214T234837Z&X-Amz-Expires=300&X-Amz-Signature=d85600128ded3678f7936e7676082ffbcb6a5d51a94265a282726ee710a59ab4&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Djq-1.5.tar.gz&response-content-type=application%2Foctet-stream
-==> ./configure --disable-silent-rules --disable-maintainer-mode --prefix=/usr/local/Cellar/jq/1.5_2
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall jq`
-🍺  /usr/local/Cellar/jq/1.5_2: 19 files, 946.6KB, built in 49 seconds
-==> Determining jq bottle rebuild...
-==> Bottling jq-1.5_2.high_sierra.bottle.1.tar.gz...
-./jq-1.5_2.high_sierra.bottle.1.tar.gz
+==> Auto-updated Homebrew!
+Updated 1 tap (caskroom/cask).
+No changes to formulae.
+
+==> Determining grt bottle rebuild...
+==> Bottling grt-0.0.1.high_sierra.bottle.1.tar.gz...
+==> Detecting if grt-0.0.1.high_sierra.bottle.1.tar.gz is relocatable...
+./grt-0.0.1.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any
     rebuild 1
-    sha256 "4d7e180a8f9f66d4a648152eff06f2456e067bb58559eccd31b3e12ddb775980" => :high_sierra
+    sha256 "ff38567da760dde97f8c28f1be41c9e194a78f0fd58f1941a15256b1b845627c" => :high_sierra
   end
