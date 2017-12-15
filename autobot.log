@@ -1,29 +1,78 @@
-==> Upgrading 1 outdated package, with result:
-ceres-solver 1.13.0_3
-==> Upgrading ceres-solver 
-==> Installing dependencies for ceres-solver: glog, suite-sparse
-==> Installing ceres-solver dependency: glog
-==> Downloading https://homebrew.bintray.com/bottles/glog-0.3.5_2.high_sierra.bottle.tar.gz
-==> Pouring glog-0.3.5_2.high_sierra.bottle.tar.gz
-🍺  /usr/local/Cellar/glog/0.3.5_2: 20 files, 231KB
-==> Installing ceres-solver dependency: suite-sparse
-==> Downloading https://homebrew.bintray.com/bottles/suite-sparse-5.1.0.high_sierra.bottle.tar.gz
-==> Pouring suite-sparse-5.1.0.high_sierra.bottle.tar.gz
-🍺  /usr/local/Cellar/suite-sparse/5.1.0: 145 files, 7.5MB
-==> Installing ceres-solver
-==> Downloading http://ceres-solver.org/ceres-solver-1.13.0.tar.gz
-==> cmake . -DCMAKE_C_FLAGS_RELEASE=-DNDEBUG -DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/ceres-solver/1.13.0_3 -DCMAKE_BUILD_TYPE=Release -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_VERBOSE_MAKEFILE=ON -Wno-dev -DBUILD_SHARED_LIBS=ON -DEIGEN_INCLUDE_DIR=/usr/local/opt/eigen/include/eigen3 -DMETIS_LIBRARY=/usr/local/opt/metis/lib/libmetis.dylib -DGLOG_INCLUDE_DIR_HINTS=/usr/local/opt/glog/include -DGLOG_LIBRARY_DIR_HINTS=/usr/local/opt/glog/lib
-==> make
+==> Installing dependencies for gtkmm: libsigc++, glibmm, libtiff, atk, icu4c, harfbuzz, hicolor-icon-theme, gtk+, cairomm, pangomm, atkmm
+==> Installing gtkmm dependency: libsigc++
+==> Downloading https://homebrew.bintray.com/bottles/libsigc++-2.10.0.high_sierra.bottle.tar.gz
+==> Pouring libsigc++-2.10.0.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/libsigc++/2.10.0: 679 files, 14MB
+==> Installing gtkmm dependency: glibmm
+==> Downloading https://homebrew.bintray.com/bottles/glibmm-2.54.1.high_sierra.bottle.tar.gz
+==> Pouring glibmm-2.54.1.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/glibmm/2.54.1: 1,685 files, 46.2MB
+==> Installing gtkmm dependency: libtiff
+==> Downloading http://download.osgeo.org/libtiff/tiff-4.0.9.tar.gz
+==> ./configure --prefix=/usr/local/Cellar/libtiff/4.0.9 --without-x --with-jpeg-include-dir=/usr/local/opt/jpeg/include --with-jpeg-lib-dir=/usr/local/opt/jpeg/lib --with-lzma-include-dir=/usr/local/opt/xz/include --with-lzma-lib-dir=/usr/local/opt/xz/lib
+==> make install
+🍺  /usr/local/Cellar/libtiff/4.0.9: 246 files, 3.5MB, built in 1 minute 43 seconds
+==> Installing gtkmm dependency: atk
+==> Downloading https://homebrew.bintray.com/bottles/atk-2.26.1.high_sierra.bottle.tar.gz
+==> Pouring atk-2.26.1.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/atk/2.26.1: 209 files, 3.3MB
+==> Installing gtkmm dependency: icu4c
+==> Downloading https://homebrew.bintray.com/bottles/icu4c-60.2.high_sierra.bottle.tar.gz
+==> Pouring icu4c-60.2.high_sierra.bottle.tar.gz
+==> Caveats
+This formula is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides libicucore.dylib (but nothing else).
+
+If you need to have this software first in your PATH run:
+  echo 'export PATH="/usr/local/opt/icu4c/bin:$PATH"' >> ~/.bash_profile
+  echo 'export PATH="/usr/local/opt/icu4c/sbin:$PATH"' >> ~/.bash_profile
+
+For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/icu4c/lib
+    CPPFLAGS: -I/usr/local/opt/icu4c/include
+For pkg-config to find this software you may need to set:
+    PKG_CONFIG_PATH: /usr/local/opt/icu4c/lib/pkgconfig
+
+==> Summary
+🍺  /usr/local/Cellar/icu4c/60.2: 249 files, 67MB
+==> Installing gtkmm dependency: harfbuzz
+==> Downloading https://homebrew.bintray.com/bottles/harfbuzz-1.7.2_2.high_sierra.bottle.tar.gz
+==> Pouring harfbuzz-1.7.2_2.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/harfbuzz/1.7.2_2: 139 files, 5.3MB
+==> Installing gtkmm dependency: hicolor-icon-theme
+==> Downloading https://homebrew.bintray.com/bottles/hicolor-icon-theme-0.17.high_sierra.bottle.tar.gz
+==> Pouring hicolor-icon-theme-0.17.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/hicolor-icon-theme/0.17: 7 files, 77.1KB
+==> Installing gtkmm dependency: gtk+
+==> Downloading https://homebrew.bintray.com/bottles/gtk+-2.24.31_1.high_sierra.bottle.tar.gz
+==> Pouring gtk+-2.24.31_1.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/gtk+/2.24.31_1: 1,199 files, 53.0MB
+==> Installing gtkmm dependency: cairomm
+==> Downloading https://homebrew.bintray.com/bottles/cairomm-1.12.2.high_sierra.bottle.tar.gz
+==> Pouring cairomm-1.12.2.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/cairomm/1.12.2: 258 files, 3.9MB
+==> Installing gtkmm dependency: pangomm
+==> Downloading https://homebrew.bintray.com/bottles/pangomm-2.40.1.high_sierra.bottle.tar.gz
+==> Pouring pangomm-2.40.1.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/pangomm/2.40.1: 318 files, 5.4MB
+==> Installing gtkmm dependency: atkmm
+==> Downloading https://homebrew.bintray.com/bottles/atkmm-2.24.2.high_sierra.bottle.tar.gz
+==> Pouring atkmm-2.24.2.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/atkmm/2.24.2: 235 files, 5.2MB
+==> Installing gtkmm
+==> Downloading https://download.gnome.org/sources/gtkmm/2.24/gtkmm-2.24.5.tar.xz
+==> Downloading from https://mirrors.ustc.edu.cn/gnome/sources/gtkmm/2.24/gtkmm-2.24.5.tar.xz
+==> ./configure --prefix=/usr/local/Cellar/gtkmm/2.24.5
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall ceres-solver`
-🍺  /usr/local/Cellar/ceres-solver/1.13.0_3: 474 files, 15.9MB, built in 8 minutes 50 seconds
-==> Determining ceres-solver bottle rebuild...
-==> Bottling ceres-solver-1.13.0_3.high_sierra.bottle.1.tar.gz...
-==> Detecting if ceres-solver-1.13.0_3.high_sierra.bottle.1.tar.gz is relocatable...
-./ceres-solver-1.13.0_3.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall gtkmm`
+🍺  /usr/local/Cellar/gtkmm/2.24.5: 1,878 files, 127.5MB, built in 7 minutes 40 seconds
+==> Determining gtkmm bottle rebuild...
+==> Bottling gtkmm-2.24.5.high_sierra.bottle.1.tar.gz...
+==> Detecting if gtkmm-2.24.5.high_sierra.bottle.1.tar.gz is relocatable...
+./gtkmm-2.24.5.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any
     rebuild 1
-    sha256 "d613dac90bf993f5dd21e1bdd6c820071824a97030478ae3967dd8cbb1feadb2" => :high_sierra
+    sha256 "d81ea665406d0d87e0a04b59ac17037df73bbe37e3431f831ad08faf6faddd8c" => :high_sierra
   end
