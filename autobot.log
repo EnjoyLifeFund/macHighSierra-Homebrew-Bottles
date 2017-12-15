@@ -1,13 +1,56 @@
-==> Auto-updated Homebrew!
-Updated 1 tap (caskroom/cask).
-No changes to formulae.
+==> Upgrading 1 outdated package, with result:
+pyenv 1.2.0
+==> Upgrading pyenv 
+==> Installing dependencies for pyenv: openssl
+==> Installing pyenv dependency: openssl
+==> Downloading https://homebrew.bintray.com/bottles/openssl-1.0.2n.high_sierra.bottle.tar.gz
+==> Pouring openssl-1.0.2n.high_sierra.bottle.tar.gz
+==> Caveats
+A CA file has been bootstrapped using certificates from the SystemRoots
+keychain. To add additional certificates (e.g. the certificates added in
+the System keychain), place .pem files in
+  /usr/local/etc/openssl/certs
 
-==> Determining grt bottle rebuild...
-==> Bottling grt-0.0.1.high_sierra.bottle.1.tar.gz...
-==> Detecting if grt-0.0.1.high_sierra.bottle.1.tar.gz is relocatable...
-./grt-0.0.1.high_sierra.bottle.1.tar.gz
+and run
+  /usr/local/opt/openssl/bin/c_rehash
+
+This formula is keg-only, which means it was not symlinked into /usr/local,
+because Apple has deprecated use of OpenSSL in favor of its own TLS and crypto libraries.
+
+If you need to have this software first in your PATH run:
+  echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
+
+For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/openssl/lib
+    CPPFLAGS: -I/usr/local/opt/openssl/include
+For pkg-config to find this software you may need to set:
+    PKG_CONFIG_PATH: /usr/local/opt/openssl/lib/pkgconfig
+
+==> Summary
+🍺  /usr/local/Cellar/openssl/1.0.2n: 1,792 files, 12.3MB
+==> Installing pyenv
+==> Downloading https://github.com/pyenv/pyenv/archive/v1.2.0.tar.gz
+==> Downloading from https://codeload.github.com/pyenv/pyenv/tar.gz/v1.2.0
+==> src/configure
+==> make -C src
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall pyenv`
+==> Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+zsh functions have been installed to:
+  /usr/local/share/zsh/site-functions
+
+fish completions have been installed to:
+  /usr/local/share/fish/vendor_completions.d
+==> Summary
+🍺  /usr/local/Cellar/pyenv/1.2.0: 580 files, 2.3MB, built in 7 seconds
+==> Determining pyenv bottle rebuild...
+==> Bottling pyenv-1.2.0.high_sierra.bottle.2.tar.gz...
+./pyenv-1.2.0.high_sierra.bottle.2.tar.gz
   bottle do
     cellar :any
-    rebuild 1
-    sha256 "ff38567da760dde97f8c28f1be41c9e194a78f0fd58f1941a15256b1b845627c" => :high_sierra
+    rebuild 2
+    sha256 "5f4cafa1c805094e6c8777569f22f1f28f41ae9ce5b2063a58ad0e0cedc29d35" => :high_sierra
   end
