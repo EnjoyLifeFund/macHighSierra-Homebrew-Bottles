@@ -1,38 +1,66 @@
-==> Installing dependencies for gupnp: gsettings-desktop-schemas, glib-networking, vala, libsoup, gssdp
-==> Installing gupnp dependency: gsettings-desktop-schemas
-==> Downloading https://homebrew.bintray.com/bottles/gsettings-desktop-schemas-3.24.1.high_sierra.bottle.tar.gz
-==> Pouring gsettings-desktop-schemas-3.24.1.high_sierra.bottle.tar.gz
-==> /usr/local/opt/glib/bin/glib-compile-schemas /usr/local/share/glib-2.0/schemas
-🍺  /usr/local/Cellar/gsettings-desktop-schemas/3.24.1: 94 files, 3.8MB
-==> Installing gupnp dependency: glib-networking
-==> Downloading https://homebrew.bintray.com/bottles/glib-networking-2.54.1.high_sierra.bottle.tar.gz
-==> Pouring glib-networking-2.54.1.high_sierra.bottle.tar.gz
-==> /usr/local/opt/glib/bin/gio-querymodules /usr/local/lib/gio/modules
-🍺  /usr/local/Cellar/glib-networking/2.54.1: 79 files, 536.4KB
-==> Installing gupnp dependency: vala
-==> Downloading https://homebrew.bintray.com/bottles/vala-0.38.4.high_sierra.bottle.tar.gz
-==> Pouring vala-0.38.4.high_sierra.bottle.tar.gz
-🍺  /usr/local/Cellar/vala/0.38.4: 421 files, 14.3MB
-==> Installing gupnp dependency: libsoup
-==> Downloading https://homebrew.bintray.com/bottles/libsoup-2.60.2.high_sierra.bottle.tar.gz
-==> Pouring libsoup-2.60.2.high_sierra.bottle.tar.gz
-🍺  /usr/local/Cellar/libsoup/2.60.2: 201 files, 5.3MB
-==> Installing gupnp dependency: gssdp
-==> Downloading https://homebrew.bintray.com/bottles/gssdp-1.0.2.high_sierra.bottle.tar.gz
-==> Pouring gssdp-1.0.2.high_sierra.bottle.tar.gz
-🍺  /usr/local/Cellar/gssdp/1.0.2: 36 files, 396.0KB
-==> Installing gupnp
-==> Downloading https://download.gnome.org/sources/gupnp/1.0/gupnp-1.0.2.tar.xz
-==> Downloading from http://ftp.nara.wide.ad.jp/pub/X11/GNOME/sources/gupnp/1.0/gupnp-1.0.2.tar.xz
-==> ./configure --disable-silent-rules --prefix=/usr/local/Cellar/gupnp/1.0.2
-==> make install
+==> Auto-updated Homebrew!
+Updated Homebrew from 0cbe1f3a to 67c44026.
+Updated 3 taps (homebrew/core, caskroom/drivers, caskroom/cask).
+==> New Formulae
+inspectrum
+quicktype
+rst-lint
+rsync-time-backup
+==> Updated Formulae
+abcmidi
+awscli
+bedtools
+cairo
+chicken
+cmake
+conan
+consul
+cpprestsdk
+elasticsearch
+erlang
+galen
+gopass
+gpsbabel
+grakn
+grpc
+h2o
+kibana
+logstash
+metabase
+presto
+pspg
+redpen
+rtags
+ruby-build
+telegraf
+tig
+zanata-client
+==> Deleted Formulae
+angolmois
+
+==> Upgrading 1 outdated package, with result:
+rocksdb 5.8.8
+==> Upgrading rocksdb 
+==> Downloading https://github.com/facebook/rocksdb/archive/v5.8.8.tar.gz
+==> Downloading from https://codeload.github.com/facebook/rocksdb/tar.gz/v5.8.8
+==> make clean
+==> make static_lib
+==> make shared_lib
+==> make tools
+==> make install INSTALL_PATH=/usr/local/Cellar/rocksdb/5.8.8
+==> make clean
+==> make static_lib
+==> make shared_lib
+==> make install INSTALL_PATH=/usr/local/Cellar/rocksdb/5.8.8
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall gupnp`
-🍺  /usr/local/Cellar/gupnp/1.0.2: 96 files, 1.6MB, built in 1 minute 9 seconds
-==> Determining gupnp bottle rebuild...
-==> Bottling gupnp-1.0.2.high_sierra.bottle.1.tar.gz...
-./gupnp-1.0.2.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall rocksdb`
+🍺  /usr/local/Cellar/rocksdb/5.8.8: 104 files, 88.6MB, built in 15 minutes 33 seconds
+==> Determining rocksdb bottle rebuild...
+==> Bottling rocksdb-5.8.8.high_sierra.bottle.1.tar.gz...
+==> Detecting if rocksdb-5.8.8.high_sierra.bottle.1.tar.gz is relocatable...
+./rocksdb-5.8.8.high_sierra.bottle.1.tar.gz
   bottle do
+    cellar :any
     rebuild 1
-    sha256 "d99c00d45ce599ffa571e56dff937ebb0fc2f3abce5d29024676d3ef8c9ab733" => :high_sierra
+    sha256 "ee4c3b2a8e729afe775a6a69d5acdb3842f25532812ca0aa19bbe6f8d187b8a2" => :high_sierra
   end
