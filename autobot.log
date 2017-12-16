@@ -1,13 +1,8 @@
-==> Downloading http://mirrors.jenkins.io/war/2.95/jenkins.war
-==> Downloading from http://ftp.yz.yamagata-u.ac.jp/pub/misc/jenkins/war/2.95/jenkins.war
-==> jar xvf jenkins.war
-==> Caveats
-Note: When using launchctl the port will be 8080.
-
-To have launchd start jenkins now and restart at login:
-  brew services start jenkins
-Or, if you don't want/need a background service you can just run:
-  jenkins
-==> Summary
-🍺  /usr/local/Cellar/jenkins/2.95: 7 files, 73.9MB, built in 1 minute 11 seconds
-This formula doesn't require compiling.
+==> Determining node bottle rebuild...
+==> Bottling node-9.3.0_1.high_sierra.bottle.1.tar.gz...
+==> Detecting if node-9.3.0_1.high_sierra.bottle.1.tar.gz is relocatable...
+./node-9.3.0_1.high_sierra.bottle.1.tar.gz
+  bottle do
+    rebuild 1
+    sha256 "6e134e20c903a48d1884d83ec1a865b9f1c759e18255e6e2587d6e81752444bb" => :high_sierra
+  end
