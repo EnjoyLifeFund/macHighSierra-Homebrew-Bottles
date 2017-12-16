@@ -1,26 +1,22 @@
 ==> Upgrading 1 outdated package, with result:
-bazel 0.8.1
-==> Upgrading bazel 
-==> Downloading https://github.com/bazelbuild/bazel/releases/download/0.8.1/bazel-0.8.1-dist.zip
-==> Downloading from https://github-production-release-asset-2e65be.s3.amazonaws.com/20773773/8c440e82-d986-11e7-9c43-aef98bf33850?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20171216%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171216T022355Z&X-Amz-Expires=300&X-Amz-Signature=927ffdefbe285c8e9c0a35005ce911e6eae42fe286bb1b9aabb4bb4309313cd1&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dbazel-0.8.1-dist.zip&response-content-type=application%2Foctet-stream
-==> ./compile.sh
-==> ./output/bazel --output_user_root /private/tmp/bazel-20171216-27385-o3wdeq/output_user_root build scripts:bash_completion
+shellcheck 0.4.7
+==> Upgrading shellcheck 
+==> Downloading https://github.com/koalaman/shellcheck/archive/v0.4.7.tar.gz
+==> Downloading from https://codeload.github.com/koalaman/shellcheck/tar.gz/v0.4.7
+==> cabal sandbox init
+==> cabal update
+==> cabal install --jobs=4 --max-backjumps=100000 --only-dependencies
+==> cabal install --jobs=4 --max-backjumps=100000 --prefix=/usr/local/Cellar/shellcheck/0.4.7
+==> pandoc -s -t man shellcheck.1.md -o shellcheck.1
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall bazel`
-==> Caveats
-Bash completion has been installed to:
-  /usr/local/etc/bash_completion.d
-
-zsh completions have been installed to:
-  /usr/local/share/zsh/site-functions
-==> Summary
-🍺  /usr/local/Cellar/bazel/0.8.1: 12 files, 91.3MB, built in 42 minutes 15 seconds
-==> Determining bazel bottle rebuild...
-==> Bottling bazel-0.8.1.high_sierra.bottle.1.tar.gz...
-==> Detecting if bazel-0.8.1.high_sierra.bottle.1.tar.gz is relocatable...
-./bazel-0.8.1.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall shellcheck`
+🍺  /usr/local/Cellar/shellcheck/0.4.7: 8 files, 7.1MB, built in 11 minutes 29 seconds
+==> Determining shellcheck bottle rebuild...
+==> Bottling shellcheck-0.4.7.high_sierra.bottle.1.tar.gz...
+==> Detecting if shellcheck-0.4.7.high_sierra.bottle.1.tar.gz is relocatable...
+./shellcheck-0.4.7.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "17456be54ef34523d4ebf7c814ad3c1d610104c5fc074b1a179c80a3a2e17b00" => :high_sierra
+    sha256 "8f0ffad00250c234349034c5f7172a1e97c311be04e513ac1d577d7789f5b81c" => :high_sierra
   end
