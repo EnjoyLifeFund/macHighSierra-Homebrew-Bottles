@@ -1,8 +1,17 @@
-==> Determining node bottle rebuild...
-==> Bottling node-9.3.0_1.high_sierra.bottle.1.tar.gz...
-==> Detecting if node-9.3.0_1.high_sierra.bottle.1.tar.gz is relocatable...
-./node-9.3.0_1.high_sierra.bottle.1.tar.gz
+==> Upgrading 1 outdated package, with result:
+imagemagick 7.0.7-14
+==> Upgrading imagemagick 
+==> Downloading https://dl.bintray.com/homebrew/mirror/imagemagick-7.0.7-14.tar.xz
+==> ./configure --disable-osx-universal-binary --prefix=/usr/local/Cellar/imagemagick/7.0.7-14 --disable-silent-rules --enable-shared --enable-static --with-modules --disable-opencl --disable-openmp --without-webp --without-openjp2 --without-gslib --with-gs-font-dir=/usr/local/share/ghostscript/fonts --without-fftw --without-pango --without-x --with-freetype=yes --without-wmf
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall imagemagick`
+🍺  /usr/local/Cellar/imagemagick/7.0.7-14: 1,523 files, 23.1MB, built in 6 minutes 3 seconds
+==> Determining imagemagick bottle rebuild...
+==> Bottling imagemagick-7.0.7-14.high_sierra.bottle.1.tar.gz...
+==> Detecting if imagemagick-7.0.7-14.high_sierra.bottle.1.tar.gz is relocatable...
+./imagemagick-7.0.7-14.high_sierra.bottle.1.tar.gz
   bottle do
     rebuild 1
-    sha256 "6e134e20c903a48d1884d83ec1a865b9f1c759e18255e6e2587d6e81752444bb" => :high_sierra
+    sha256 "a756440b399691a34371b11dad36e488344f3391e99c9194d528959130ea3338" => :high_sierra
   end
