@@ -1,12 +1,20 @@
-==> Auto-updated Homebrew!
-Updated 1 tap (caskroom/cask).
-No changes to formulae.
-
-==> Determining lua bottle rebuild...
-==> Bottling lua-5.3.4_2.high_sierra.bottle.1.tar.gz...
-./lua-5.3.4_2.high_sierra.bottle.1.tar.gz
+==> Upgrading 1 outdated package, with result:
+libgcrypt 1.8.2
+==> Upgrading libgcrypt 
+==> Downloading https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.8.2.tar.bz2
+==> ./configure --disable-silent-rules --enable-static --prefix=/usr/local/Cellar/libgcrypt/1.8.2 --disable-asm --with-libgpg-error-prefix=/usr/local/opt/libgpg-error --disable-jent-support
+==> make
+==> make check
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall libgcrypt`
+🍺  /usr/local/Cellar/libgcrypt/1.8.2: 19 files, 2.6MB, built in 3 minutes 28 seconds
+==> Determining libgcrypt bottle rebuild...
+==> Bottling libgcrypt-1.8.2.high_sierra.bottle.1.tar.gz...
+==> Detecting if libgcrypt-1.8.2.high_sierra.bottle.1.tar.gz is relocatable...
+./libgcrypt-1.8.2.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any
     rebuild 1
-    sha256 "5e290d72821d3f60b4f61330240cc203ba198064551cba539cdb6f799cb2d4af" => :high_sierra
+    sha256 "04cfdc67c8e12465aeaafe4d79c5bf28b87d3596b87ed979a8a05e2f7e614af4" => :high_sierra
   end
