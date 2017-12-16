@@ -1,24 +1,14 @@
-==> Auto-updated Homebrew!
-Updated 1 tap (caskroom/cask).
-No changes to formulae.
-
-==> Installing dependencies for neofetch: screenresolution
-==> Installing neofetch dependency: screenresolution
-==> Downloading https://homebrew.bintray.com/bottles/screenresolution-1.6.high_sierra.bottle.tar.gz
-==> Pouring screenresolution-1.6.high_sierra.bottle.tar.gz
-🍺  /usr/local/Cellar/screenresolution/1.6: 5 files, 41.0KB
-==> Installing neofetch
-==> Downloading https://github.com/dylanaraps/neofetch/archive/3.3.0.tar.gz
-==> Downloading from https://codeload.github.com/dylanaraps/neofetch/tar.gz/3.3.0
-==> make install PREFIX=/usr/local/Cellar/neofetch/3.3.0 SYSCONFDIR=/usr/local/etc
+==> Downloading https://github.com/BlueM/cliclick/archive/3.3.tar.gz
+==> Downloading from https://codeload.github.com/BlueM/cliclick/tar.gz/3.3
+==> make
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall neofetch`
-🍺  /usr/local/Cellar/neofetch/3.3.0: 142 files, 268.4KB, built in 5 seconds
-==> Determining neofetch bottle rebuild...
-==> Bottling neofetch-3.3.0.high_sierra.bottle.1.tar.gz...
-./neofetch-3.3.0.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall cliclick`
+🍺  /usr/local/Cellar/cliclick/3.3: 5 files, 108.9KB, built in 16 seconds
+==> Determining cliclick bottle rebuild...
+==> Bottling cliclick-3.3.high_sierra.bottle.1.tar.gz...
+./cliclick-3.3.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "95ca30986c5025cc06ab1546e469d14c021fbb8e39f7f621551ca02d1f2c1045" => :high_sierra
+    sha256 "316b62c91fbb8a28d6462bfdd64c3a8e4da8966e10f237b5044354311cdc0ecc" => :high_sierra
   end
