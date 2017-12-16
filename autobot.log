@@ -1,16 +1,13 @@
-==> Auto-updated Homebrew!
-Updated 1 tap (caskroom/cask).
-No changes to formulae.
-
-==> Upgrading 1 outdated package, with result:
-chromedriver 2.34
-==> Upgrading chromedriver 
-==> Downloading https://chromedriver.storage.googleapis.com/2.34/chromedriver_mac64.zip
+==> Downloading http://mirrors.jenkins.io/war/2.95/jenkins.war
+==> Downloading from http://ftp.yz.yamagata-u.ac.jp/pub/misc/jenkins/war/2.95/jenkins.war
+==> jar xvf jenkins.war
 ==> Caveats
-To have launchd start chromedriver now and restart at login:
-  brew services start chromedriver
+Note: When using launchctl the port will be 8080.
+
+To have launchd start jenkins now and restart at login:
+  brew services start jenkins
 Or, if you don't want/need a background service you can just run:
-  chromedriver
+  jenkins
 ==> Summary
-🍺  /usr/local/Cellar/chromedriver/2.34: 4 files, 10.9MB, built in 5 seconds
+🍺  /usr/local/Cellar/jenkins/2.95: 7 files, 73.9MB, built in 1 minute 11 seconds
 This formula doesn't require compiling.
