@@ -1,14 +1,18 @@
-==> Downloading https://github.com/BlueM/cliclick/archive/3.3.tar.gz
-==> Downloading from https://codeload.github.com/BlueM/cliclick/tar.gz/3.3
-==> make
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> Updated Formulae
+ocaml-num
+
+==> Downloading http://www.willnolan.com/cputhrottle/cputhrottle-1.0.0.tar.gz
+==> make all
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall cliclick`
-🍺  /usr/local/Cellar/cliclick/3.3: 5 files, 108.9KB, built in 16 seconds
-==> Determining cliclick bottle rebuild...
-==> Bottling cliclick-3.3.high_sierra.bottle.1.tar.gz...
-./cliclick-3.3.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall cputhrottle`
+🍺  /usr/local/Cellar/cputhrottle/1.0.0: 3 files, 68.2KB, built in 10 seconds
+==> Determining cputhrottle bottle rebuild...
+==> Bottling cputhrottle-1.0.0.high_sierra.bottle.1.tar.gz...
+./cputhrottle-1.0.0.high_sierra.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "316b62c91fbb8a28d6462bfdd64c3a8e4da8966e10f237b5044354311cdc0ecc" => :high_sierra
+    sha256 "81817afd4f0e835fe4df86bb1f1a31acd1eade7a324be45d1abb1b54bd2adfe6" => :high_sierra
   end
