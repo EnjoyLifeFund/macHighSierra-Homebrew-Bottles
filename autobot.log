@@ -1,22 +1,16 @@
+==> Auto-updated Homebrew!
+Updated 1 tap (caskroom/cask).
+No changes to formulae.
+
 ==> Upgrading 1 outdated package, with result:
-shellcheck 0.4.7
-==> Upgrading shellcheck 
-==> Downloading https://github.com/koalaman/shellcheck/archive/v0.4.7.tar.gz
-==> Downloading from https://codeload.github.com/koalaman/shellcheck/tar.gz/v0.4.7
-==> cabal sandbox init
-==> cabal update
-==> cabal install --jobs=4 --max-backjumps=100000 --only-dependencies
-==> cabal install --jobs=4 --max-backjumps=100000 --prefix=/usr/local/Cellar/shellcheck/0.4.7
-==> pandoc -s -t man shellcheck.1.md -o shellcheck.1
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall shellcheck`
-🍺  /usr/local/Cellar/shellcheck/0.4.7: 8 files, 7.1MB, built in 11 minutes 29 seconds
-==> Determining shellcheck bottle rebuild...
-==> Bottling shellcheck-0.4.7.high_sierra.bottle.1.tar.gz...
-==> Detecting if shellcheck-0.4.7.high_sierra.bottle.1.tar.gz is relocatable...
-./shellcheck-0.4.7.high_sierra.bottle.1.tar.gz
-  bottle do
-    cellar :any_skip_relocation
-    rebuild 1
-    sha256 "8f0ffad00250c234349034c5f7172a1e97c311be04e513ac1d577d7789f5b81c" => :high_sierra
-  end
+chromedriver 2.34
+==> Upgrading chromedriver 
+==> Downloading https://chromedriver.storage.googleapis.com/2.34/chromedriver_mac64.zip
+==> Caveats
+To have launchd start chromedriver now and restart at login:
+  brew services start chromedriver
+Or, if you don't want/need a background service you can just run:
+  chromedriver
+==> Summary
+🍺  /usr/local/Cellar/chromedriver/2.34: 4 files, 10.9MB, built in 5 seconds
+This formula doesn't require compiling.
