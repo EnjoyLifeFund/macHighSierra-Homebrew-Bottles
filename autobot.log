@@ -1,11 +1,18 @@
-==> Auto-updated Homebrew!
-Updated 1 tap (caskroom/cask).
-No changes to formulae.
-
+==> Installing mynewt-newt from runtimeco/mynewt
 ==> Upgrading 1 outdated package, with result:
-gradle 4.4
-==> Upgrading gradle 
-==> Downloading https://services.gradle.org/distributions/gradle-4.4-all.zip
-==> Downloading from https://downloads.gradle.org/distributions/gradle-4.4-all.zip
-🍺  /usr/local/Cellar/gradle/4.4: 185 files, 80.5MB, built in 1 minute 4 seconds
-This formula doesn't require compiling.
+runtimeco/mynewt/mynewt-newt HEAD-59b3a5d
+==> Upgrading runtimeco/mynewt/mynewt-newt 
+==> Cloning https://github.com/apache/mynewt-newt.git
+==> Checking out branch master
+==> go install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall runtimeco/mynewt/mynewt-newt`
+🍺  /usr/local/Cellar/mynewt-newt/HEAD-816b20c: 3 files, 7.9MB, built in 18 seconds
+==> Determining runtimeco/mynewt/mynewt-newt bottle rebuild...
+==> Bottling mynewt-newt-HEAD-816b20c.high_sierra.bottle.tar.gz...
+==> Detecting if mynewt-newt-HEAD-816b20c.high_sierra.bottle.tar.gz is relocatable...
+./mynewt-newt-HEAD-816b20c.high_sierra.bottle.tar.gz
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "530c31910837cb1a30b5b5e06bb23be8c081d4a7ddfb942e8c13105ca9f1a2ad" => :high_sierra
+  end
