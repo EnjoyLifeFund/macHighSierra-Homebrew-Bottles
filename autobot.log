@@ -1,34 +1,102 @@
-==> Upgrading 1 outdated package, with result:
-jpeg-turbo 1.5.3
-==> Upgrading jpeg-turbo 
-==> Downloading https://downloads.sourceforge.net/project/libjpeg-turbo/1.5.3/libjpeg-turbo-1.5.3.tar.gz
-==> Downloading from https://jaist.dl.sourceforge.net/project/libjpeg-turbo/1.5.3/libjpeg-turbo-1.5.3.tar.gz
-==> ./configure --prefix=/usr/local/Cellar/jpeg-turbo/1.5.3 --with-jpeg8 --mandir=/usr/local/Cellar/jpeg-turbo/1.5.3/share/man
-==> make
-==> make test
+==> Installing dependencies for gedit: pygobject, py2cairo, pygtk, gtk-mac-integration, aspell, enchant, iso-codes, gspell, libpeas, gtksourceview3, libcroco, librsvg, adwaita-icon-theme
+==> Installing gedit dependency: pygobject
+==> Downloading https://homebrew.bintray.com/bottles/pygobject-2.28.7.high_sierra.bottle.tar.gz
+==> Pouring pygobject-2.28.7.high_sierra.bottle.tar.gz
+==> Caveats
+Python modules have been installed and Homebrew's site-packages is not
+in your Python sys.path, so you will not be able to import the modules
+this formula installed. If you plan to develop with these modules,
+please run:
+  mkdir -p /Users/ralic/Library/Python/2.7/lib/python/site-packages
+  echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> /Users/ralic/Library/Python/2.7/lib/python/site-packages/homebrew.pth
+==> Summary
+🍺  /usr/local/Cellar/pygobject/2.28.7: 140 files, 3.2MB
+==> Installing gedit dependency: py2cairo
+==> Downloading https://homebrew.bintray.com/bottles/py2cairo-1.15.4.high_sierra.bottle.tar.gz
+==> Pouring py2cairo-1.15.4.high_sierra.bottle.tar.gz
+==> Caveats
+Python modules have been installed and Homebrew's site-packages is not
+in your Python sys.path, so you will not be able to import the modules
+this formula installed. If you plan to develop with these modules,
+please run:
+  mkdir -p /Users/ralic/Library/Python/2.7/lib/python/site-packages
+  echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> /Users/ralic/Library/Python/2.7/lib/python/site-packages/homebrew.pth
+==> Summary
+🍺  /usr/local/Cellar/py2cairo/1.15.4: 13 files, 213.2KB
+==> Installing gedit dependency: pygtk
+==> Downloading https://homebrew.bintray.com/bottles/pygtk-2.24.0_1.high_sierra.bottle.2.tar.gz
+==> Pouring pygtk-2.24.0_1.high_sierra.bottle.2.tar.gz
+==> Caveats
+Python modules have been installed and Homebrew's site-packages is not
+in your Python sys.path, so you will not be able to import the modules
+this formula installed. If you plan to develop with these modules,
+please run:
+  mkdir -p /Users/ralic/Library/Python/2.7/lib/python/site-packages
+  echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> /Users/ralic/Library/Python/2.7/lib/python/site-packages/homebrew.pth
+==> Summary
+🍺  /usr/local/Cellar/pygtk/2.24.0_1: 591 files, 15.4MB
+==> Installing gedit dependency: gtk-mac-integration
+==> Downloading https://homebrew.bintray.com/bottles/gtk-mac-integration-2.0.8_1.high_sierra.bottle.tar.gz
+==> Pouring gtk-mac-integration-2.0.8_1.high_sierra.bottle.tar.gz
+==> Caveats
+Python modules have been installed and Homebrew's site-packages is not
+in your Python sys.path, so you will not be able to import the modules
+this formula installed. If you plan to develop with these modules,
+please run:
+  mkdir -p /Users/ralic/Library/Python/2.7/lib/python/site-packages
+  echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> /Users/ralic/Library/Python/2.7/lib/python/site-packages/homebrew.pth
+==> Summary
+🍺  /usr/local/Cellar/gtk-mac-integration/2.0.8_1: 53 files, 347.0KB
+==> Installing gedit dependency: aspell
+==> Downloading https://homebrew.bintray.com/bottles/aspell-0.60.6.1_1.high_sierra.bottle.tar.gz
+==> Pouring aspell-0.60.6.1_1.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/aspell/0.60.6.1_1: 267 files, 35.6MB
+==> Installing gedit dependency: enchant
+==> Downloading https://homebrew.bintray.com/bottles/enchant-2.1.2.high_sierra.bottle.tar.gz
+==> Pouring enchant-2.1.2.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/enchant/2.1.2: 23 files, 249.4KB
+==> Installing gedit dependency: iso-codes
+==> Downloading https://homebrew.bintray.com/bottles/iso-codes-3.77.high_sierra.bottle.tar.gz
+==> Pouring iso-codes-3.77.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/iso-codes/3.77: 878 files, 16.5MB
+==> Installing gedit dependency: gspell
+==> Downloading https://homebrew.bintray.com/bottles/gspell-1.6.1_1.high_sierra.bottle.tar.gz
+==> Pouring gspell-1.6.1_1.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/gspell/1.6.1_1: 105 files, 775.7KB
+==> Installing gedit dependency: libpeas
+==> Downloading https://homebrew.bintray.com/bottles/libpeas-1.22.0.high_sierra.bottle.tar.gz
+==> Pouring libpeas-1.22.0.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/libpeas/1.22.0: 141 files, 1.6MB
+==> Installing gedit dependency: gtksourceview3
+==> Downloading https://homebrew.bintray.com/bottles/gtksourceview3-3.24.6.high_sierra.bottle.tar.gz
+==> Pouring gtksourceview3-3.24.6.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/gtksourceview3/3.24.6: 340 files, 6.9MB
+==> Installing gedit dependency: libcroco
+==> Downloading https://homebrew.bintray.com/bottles/libcroco-0.6.12.high_sierra.bottle.tar.gz
+==> Pouring libcroco-0.6.12.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/libcroco/0.6.12: 80 files, 1.7MB
+==> Installing gedit dependency: librsvg
+==> Downloading https://homebrew.bintray.com/bottles/librsvg-2.40.19.high_sierra.bottle.tar.gz
+==> Pouring librsvg-2.40.19.high_sierra.bottle.tar.gz
+==> /usr/local/opt/gdk-pixbuf/bin/gdk-pixbuf-query-loaders --update-cache
+🍺  /usr/local/Cellar/librsvg/2.40.19: 51 files, 1.6MB
+==> Installing gedit dependency: adwaita-icon-theme
+==> Downloading https://homebrew.bintray.com/bottles/adwaita-icon-theme-3.26.1.high_sierra.bottle.tar.gz
+==> Pouring adwaita-icon-theme-3.26.1.high_sierra.bottle.tar.gz
+🍺  /usr/local/Cellar/adwaita-icon-theme/3.26.1: 5,545 files, 26.1MB
+==> Installing gedit
+==> Downloading https://download.gnome.org/sources/gedit/3.22/gedit-3.22.1.tar.xz
+==> Downloading from https://mirrors.ustc.edu.cn/gnome/sources/gedit/3.22/gedit-3.22.1.tar.xz
+==> ./configure --disable-silent-rules --prefix=/usr/local/Cellar/gedit/3.22.1_1 --disable-updater --disable-schemas-compile --disable-python
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall jpeg-turbo`
-==> Caveats
-This formula is keg-only, which means it was not symlinked into /usr/local,
-because libjpeg-turbo is not linked to prevent conflicts with the standard libjpeg.
-
-If you need to have this software first in your PATH run:
-  echo 'export PATH="/usr/local/opt/jpeg-turbo/bin:$PATH"' >> ~/.bash_profile
-
-For compilers to find this software you may need to set:
-    LDFLAGS:  -L/usr/local/opt/jpeg-turbo/lib
-    CPPFLAGS: -I/usr/local/opt/jpeg-turbo/include
-For pkg-config to find this software you may need to set:
-    PKG_CONFIG_PATH: /usr/local/opt/jpeg-turbo/lib/pkgconfig
-
-==> Summary
-🍺  /usr/local/Cellar/jpeg-turbo/1.5.3: 37 files, 2.6MB, built in 1 minute 50 seconds
-==> Determining jpeg-turbo bottle rebuild...
-==> Bottling jpeg-turbo-1.5.3.high_sierra.bottle.1.tar.gz...
-./jpeg-turbo-1.5.3.high_sierra.bottle.1.tar.gz
+You can run it manually using `brew postinstall gedit`
+🍺  /usr/local/Cellar/gedit/3.22.1_1: 200 files, 9.3MB, built in 2 minutes
+==> Determining gedit bottle rebuild...
+==> Bottling gedit-3.22.1_1.high_sierra.bottle.1.tar.gz...
+==> Detecting if gedit-3.22.1_1.high_sierra.bottle.1.tar.gz is relocatable...
+./gedit-3.22.1_1.high_sierra.bottle.1.tar.gz
   bottle do
-    cellar :any
     rebuild 1
-    sha256 "c3a9e0aba7ecb6f1c9be8a06455fe70d1ecc4f81dd04247bfdb616e518681533" => :high_sierra
+    sha256 "87c54bc2e836cb83ef92748c706baa69c5575218a27a035299447800930d034d" => :high_sierra
   end
