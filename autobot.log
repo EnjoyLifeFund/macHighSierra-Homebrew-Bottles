@@ -2,47 +2,11 @@
 Updated 1 tap (caskroom/cask).
 No changes to formulae.
 
-==> Upgrading 1 outdated package, with result:
-qt 5.10.0
-==> Upgrading qt 
-==> Downloading https://download.qt.io/official_releases/qt/5.10/5.10.0/single/qt-everywhere-src-5.10.0.tar.xz
-==> Downloading from http://ftp.jaist.ac.jp/pub/qtproject/archive/qt/5.10/5.10.0/single/qt-everywhere-src-5.10.0.tar.xz
-==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/e8fe6567/qt5/restore-pc-files.patch
-==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/9c97726e2b153099049326ade23fe24b52b778fe/qt/QTBUG-65075.diff
-==> Patching
-==> Applying restore-pc-files.patch
-patching file qtbase/mkspecs/features/qt_module.prf
-Hunk #1 succeeded at 266 (offset 21 lines).
-==> Applying QTBUG-65075.diff
-patching file qtwebview/src/webview/qwebview_darwin.mm
-==> ./configure -verbose -prefix /usr/local/Cellar/qt/5.10.0 -release -opensource -confirm-license -system-zlib -qt-libpng -qt-libjpeg -qt-freetype -qt-pcre -nomake tests -no-rpath -pkg-config -dbus-runtime -nomake examples
-==> make
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall qt`
-==> Caveats
-We agreed to the Qt opensource license for you.
-If this is unacceptable you should uninstall.
-
-This formula is keg-only, which means it was not symlinked into /usr/local,
-because Qt 5 has CMake issues when linked.
-
-If you need to have this software first in your PATH run:
-  echo 'export PATH="/usr/local/opt/qt/bin:$PATH"' >> ~/.bash_profile
-
-For compilers to find this software you may need to set:
-    LDFLAGS:  -L/usr/local/opt/qt/lib
-    CPPFLAGS: -I/usr/local/opt/qt/include
-For pkg-config to find this software you may need to set:
-    PKG_CONFIG_PATH: /usr/local/opt/qt/lib/pkgconfig
-
-==> Summary
-🍺  /usr/local/Cellar/qt/5.10.0: 9,353 files, 290MB, built in 367 minutes 51 seconds
-==> Determining qt bottle rebuild...
-==> Bottling qt-5.10.0.high_sierra.bottle.1.tar.gz...
-==> Detecting if qt-5.10.0.high_sierra.bottle.1.tar.gz is relocatable...
-./qt-5.10.0.high_sierra.bottle.1.tar.gz
+==> Determining lua bottle rebuild...
+==> Bottling lua-5.3.4_2.high_sierra.bottle.1.tar.gz...
+./lua-5.3.4_2.high_sierra.bottle.1.tar.gz
   bottle do
+    cellar :any
     rebuild 1
-    sha256 "c1a0202730382e5fb0cc6bbda16227208ea84bfde4dfa8c6280798f88d47c8ac" => :high_sierra
+    sha256 "5e290d72821d3f60b4f61330240cc203ba198064551cba539cdb6f799cb2d4af" => :high_sierra
   end
